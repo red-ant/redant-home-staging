@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - workflow
+      - master
 
 jobs:
   build-and-deploy:
@@ -21,8 +21,7 @@ jobs:
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+          restore-keys: ${{ runner.os }}-gems-
 
       - name: Install Gems
         run: |
@@ -44,20 +43,17 @@ jobs:
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          restore-keys: ${{ runner.os }}-yarn-
 
       - name: Install Packages
-        run: |
-          yarn install --pure-lockfile
+        run: yarn install --pure-lockfile
 
       - name: Build
-        run: |
-          yarn build
+        run: yarn build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages-workflow
+          BRANCH: gh-pages
           FOLDER: _site
