@@ -1,19 +1,22 @@
+{% assign postLimit = 20 %}
+{% assign postCount = site.categories[include.category] | size %}
 <section class="py-3 py-sm-5 container">
   <div class="macy-container">
-    {% for post in site.categories[include.category] limit:1 %} {% include
-    post-card-wide.html %} {% endfor %}
+    {% for post in site.categories[include.category] limit:1 %}
+      {% include post-card-wide.html %}
+    {% endfor %}
   </div>
 
   <div id="macy-container" data-columns="3" data-columns-small="2">
-    {% assign postLimit = 20 %} {% for post in site.categories[include.category]
-    offset:1 limit:postLimit %} {% include post-card.html %} {% endfor %}
+    {% for post in site.categories[include.category] offset:1 limit:postLimit %}
+      {% include post-card.html %}
+    {% endfor %}
   </div>
 </section>
 
-{% assign postCount = site.categories[include.category] | size %} {% if
-postCount > postLimit %}
+{% if postCount > postLimit %}
 <div class="container text-center py-5">
-  <a href="">
+  <a href="/blog">
     <h5 class="mb-0">Show more posts</h5>
   </a>
 </div>
