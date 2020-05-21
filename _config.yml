@@ -16,6 +16,11 @@ gtm:
   dev: GTM-N3CM249
   prod: GTM-P7QNBDH
 ampdir: amp
+defaults:
+  - scope:
+      path: admin
+    values:
+      sitemap: false
 
 # Jekyll Plugins
 plugins:
