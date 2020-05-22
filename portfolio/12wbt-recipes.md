@@ -3,7 +3,7 @@ layout: project
 theme: 12wbt
 project_url: https://www.12wbt.com
 project_date: '2013 - '
-team_size: 0 people
+team_size:
 slug: 12wbt-recipes
 title: 12WBT Recipes
 tagline: Restructuring the recipe data

@@ -20,7 +20,7 @@ images:
   - filename: voome-chatbot-2.jpg
   - filename: voome-chatbot-3.jpg
   - filename: voome-chatbot-4.jpg
-team_size: 0 people
+team_size:
 lines_of_code: ''
 
 ---

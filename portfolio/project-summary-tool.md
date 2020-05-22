@@ -21,7 +21,7 @@ images:
   - filename: pst-3.jpg
   - filename: pst-4.jpg
   - filename: pst-5.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 

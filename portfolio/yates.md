@@ -22,7 +22,7 @@ images:
   - filename: yates-2.jpg
   - filename: yates-3.jpg
   - filename: yates-4.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 

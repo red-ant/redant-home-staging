@@ -15,7 +15,7 @@ images:
   - filename: whats-on-1.jpg
   - filename: whats-on-2.jpg
   - filename: whats-on-3.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 
