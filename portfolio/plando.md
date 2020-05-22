@@ -17,7 +17,7 @@ technologies:
   - Grape Ruby API
 images:
   - filename: plando-1.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 

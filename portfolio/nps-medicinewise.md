@@ -21,7 +21,7 @@ images:
   - filename: nps-medicinewise-2.jpg
   - filename: nps-medicinewise-3.jpg
   - filename: nps-medicinewise-4.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 

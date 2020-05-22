@@ -27,7 +27,7 @@ images:
   - filename: voome-programs-1.jpg
   - filename: voome-programs-2.jpg
   - filename: voome-programs-3.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 

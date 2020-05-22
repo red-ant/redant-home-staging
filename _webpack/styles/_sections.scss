@@ -163,7 +163,7 @@ section {
   }
 
   .card {
-    background: transparent;
+    background: $transparent;
 
     p {
       @include montserrat($montserrat-medium);
@@ -228,13 +228,17 @@ section {
 
   #section-stuff-we-made {
     .content {
-      height: 500px;
       padding: 100px 0 90px 0;
     }
 
     .svg-wrapper {
       position: absolute;
       width: 50%;
+
+      svg {
+        bottom: 0;
+        position: absolute;
+      }
     }
   }
 

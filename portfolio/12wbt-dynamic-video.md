@@ -13,7 +13,7 @@ technologies:
 images:
   - filename: 12wbt-dynamic-video-1.jpg
   - filename: 12wbt-dynamic-video-2.jpg
-team_size: 0 people
+team_size:
 project_type: ''
 lines_of_code: ''
 ---
