@@ -34,6 +34,6 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 **Use social proof**
 
-![](/assets/uploads/2020/homepage.png)
-
 [Download our Homepage playbook](pdf)
+
+![](/assets/uploads/2020/homepage.png)
