@@ -26,7 +26,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 **Remove automatic carousels**
 
-**Research shows that carousels rarely work**
+![](/assets/uploads/2020/group2.jpg)**Research shows that carousels rarely work**
 
 **Clear benefit-oriented value prop above the fold**
 
