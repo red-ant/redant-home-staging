@@ -47,7 +47,7 @@ project_type: ''
 
 What started life as a basic MVP is now a fully fledged lifestyle platform, with thousands of active members at any one time. Members sign-up for a 3 month “round” which gives them access to a personalised weekly plan for exercise, meal planning and mindset. Members feel fully supported on their transformation journey with tailored dynamic content, including a weekly motivational video session with Michelle Bridges.
 
-#### Project snapshot:
+<h2 class="h4">Project snapshot:</h2>
 
 - A round takes 12 weeks to complete, plus a 4 week "preseason"
 - All workout and 12wbt recipe content is behind a paywall
@@ -56,7 +56,7 @@ What started life as a basic MVP is now a fully fledged lifestyle platform, with
 - All content is personalised and delivered via web, PDF, email and mobile app
 - Connects with devices such as Fitbit, as well as other platforms like MyFitnessPal
 
-#### Here's how it works:
+<h2 class="h4">Here's how it works:</h2>
 
 It's all digital - no physical meals, meetings, DVDs etc. You join for \$199, then set up your goals (eg: "I'd like to lose 5kg for my wedding in March"). Based on who you are and what you're trying to achieve, you can then pick from a menu of programs - weight loss, running, strength and so on. Everyone starts with 4 weeks of Pre-Season, which is all about getting prepared. Then you go into 12 successive weeks of training and nutrition. Everyone starts together at the same time, and progresses through at the same pace.
 
@@ -72,7 +72,7 @@ Anyway - back to the actual product. Probably the best way to check it out is to
 
 You [can read a bit more about](/our-work/our-work-michelle-bridges-12wbt-build/) the 12WBT project on this post, and [about localisation for USA version](/our-work/developing-12wbt-usa/) here. If you're really interested, or just bored at work and trying to fill in some time, check out the [12wbt dynamic videos project](/portfolio/12wbt-dynamic-video/) summary or the [Daily Companion app](/portfolio/12wbt-daily-app/).
 
-#### More Detail
+<h2 class="h4">More Detail</h2>
 
 - **Paid membership site** - members join and buy a subscription for a 3 month “round” – either up front or recurring weekly payments with high bursts of traffic when all members need to access the site at the same time.
 - **Content system** - members sign up and get content & tools each week. As the program progresses through the 12 weeks, different features appear.
