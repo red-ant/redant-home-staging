@@ -33,7 +33,7 @@ lines_of_code: ''
 
 ---
 
-#### Project Description
+<h2 class="h4">Project Description</h2>
 
 Voome Programs. It’s for those who don’t like to commit long term, but still need a bit of guidance and enjoy working out to the dulcet tones of their favourite fitness and nutrition experts.
 

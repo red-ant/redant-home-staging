@@ -18,7 +18,7 @@ project_type: ''
 lines_of_code: ''
 ---
 
-#### Project Description
+<h2 class="h4">Project Description</h2>
 
 People often talk about scaling things. Scaling a business to handle more customers. Scaling a web site to handle more traffic. A site that scales well works fine even as traffic increases.
 

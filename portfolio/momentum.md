@@ -20,6 +20,6 @@ lines_of_code: ''
 
 ---
 
-#### Project Description
+<h2 class="h4">Project Description</h2>
 
 A learning platform targetted at small business. There are a series of courses that help them improve their business.

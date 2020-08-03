@@ -26,7 +26,7 @@ project_type: ''
 
 ---
 
-#### Project Description
+<h2 class="h4">Project Description</h2>
 
 The Outdoor Media Association (OMA) appointed us to build the Australian Out of Home (OOH) industry’s first Automated Proposal Platform (APP).
 
@@ -38,6 +38,6 @@ The platform will enable media agencies to request proposals from OMA member com
 
 Charmaine Moldrich, CEO, OMA
 
-#### What is MOVE?
+<h2 class="h4">What is MOVE?</h2>
 
 MOVE (Measurement of Outdoor Visibility and Exposure) is the first industry-wide audience measurement system for Outdoor media in Australia. It has been endorsed by the Outdoor Media Association (OMA), the Media Federation of Australia (MFA) and the Australian Association of National Advertisers (AANA). MOVE is a quantitative audience measurement currency that covers all major outdoor advertising environments including roadside, airports, railway/bus stations, buses/trains/trams and shopping centres. MOVE can produce audience measurement results for any combination of formats or tailored packages. As well as providing results numerically, an inbuilt mapping functionality visually displays the reach of a campaign against the chosen demographic and market(s).

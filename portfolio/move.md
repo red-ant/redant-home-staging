@@ -25,7 +25,7 @@ published: false
 
 From the press release:
 
-#### Development of Out of Home Industry’s Automated Proposal Platform commences
+<h2 class="h4">Development of Out of Home Industry’s Automated Proposal Platform commences</h2>
 
 The Outdoor Media Association (OMA) has today announced the appointment of Red Ant to build the Australian Out of Home (OOH) industry’s first Automated Proposal Platform (APP).
 
@@ -39,7 +39,7 @@ The APP will be built in an agile process, with the first stage to be released i
 
 “Having the OMA and its members take an industry approach is seen as a critical future facing step for this sector. This initiative forms part of a vital foundation that ultimately leads to further streamlining and automation of the OOH workflow. It will ensure increased standardisation across the OOH eco-system can be delivered which in turn will allow for the unlocking data in the mid to longer term. We look forward to working with the OMA and its member as they share their plans and allow for continued input ensuring it meets the needs of agency stakeholders and their clients,” said Victor Corones, Managing Director, Magna Global and Chair of the MFA Systems Committee.
 
-### About MOVE
+<h2 class="h4">About MOVE</h2>
 
 MOVE is Australia’s premier quantitative audience measurement currency for Out of Home (OOH) media, covering major OOH environments including roadside, airports, railway/bus stations, buses/trains/trams and shopping centres.
 

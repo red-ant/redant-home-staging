@@ -27,7 +27,7 @@ lines_of_code: ''
 
 ---
 
-#### Project Description
+<h2 class="h4">Project Description</h2>
 
 NPS provides free, independent, evidence-based info on medicines, health conditions & medical tests for health professionals & consumers. Over 7 million Australians are aware of NPS MedicineWise, and the website had 13 million visits in the 2016-17 financial year.
 
@@ -45,7 +45,7 @@ Behind the scenes, the project included initiatives that would save money and in
 
 <div style="padding:20px;background:#eee;">
 
-<h4> Hang on - what is a Headless CMS?</h4>
+<h2 class="h4">Hang on - what is a Headless CMS?</h2>
 
 Don't worry- this can be confusing. This type of CMS is less talked and less understood than a traditional platform style CMS (like Sitecore, WordPress or Drupal). In a nutshell, a Headless CMS is a backend only content management system that behaves like a content repository, making content accessible via a RESTful API for display on any device.
 

@@ -25,7 +25,7 @@ lines_of_code: ''
 
 ---
 
-#### Project Description
+<h2 class="h4">Project Description</h2>
 
 Selleys is more than just a brand website for maintenance and cleaning products. It’s a DIY-lovers one stop shop for all things home care and renovation. With thousands of pages of content on everything from how to repair holes in a plaster wall, to car care and pest control, Selleys has evolved into an extensive website with interactive tools, member exclusive content and more.
 
