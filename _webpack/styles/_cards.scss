@@ -19,24 +19,27 @@
     }
   }
 
-  h5.card-title {
-    @include montserrat();
-    font-size: 26px;
+  h5,
+  .h5 {
+    &.card-title {
+      @include montserrat();
+      font-size: 26px;
 
-    span {
-      @include montserrat($montserrat-bold);
-    }
+      span {
+        @include montserrat($montserrat-bold);
+      }
 
-    &.text-green {
-      color: $green-200;
-    }
+      &.text-green {
+        color: $green-200;
+      }
 
-    &.text-orange {
-      color: $orange-200;
-    }
+      &.text-orange {
+        color: $orange-200;
+      }
 
-    &.text-red {
-      color: $red;
+      &.text-red {
+        color: $red;
+      }
     }
   }
 
