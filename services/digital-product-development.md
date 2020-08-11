@@ -14,7 +14,6 @@ class: digital-product-development
           <span class="d-block text-red-dark">Development</span>
           <span class="d-block text-red">Workshop</span>
         </h1>
-
         <p class="subheading">
           Help you plan, develop and deliver your digital product. Start with a 1:1 Workshop, and finish with your very own Product Roadmap and Agile Sprint Plan.
         </p>
@@ -29,7 +28,6 @@ class: digital-product-development
         />
       </div>
     </div>
-
   </div>
 </header>
 
@@ -118,7 +116,7 @@ class: digital-product-development
           Back up your product development with a this actionable guide and show how you can get thins done.
         </p>
         <p>
-          Using <a href="#faqs-agile-methodology" data-toggle="collapse" data-target="#a5" aria-expanded="true" aria-controls="a5"Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
+          Using <a href="#faqs-agile-methodology" data-toggle="collapse" data-target="#a5" aria-expanded="true" aria-controls="a5"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
         </p>
       </div>
     </div>

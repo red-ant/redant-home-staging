@@ -22,9 +22,8 @@ project_type: ''
 
 ---
 
-<p class="h3">Digital roadmapping, Agile Process, Ruby on Rails, React, Systems Integration, Stripe Payments</p>
+<h2 class="h3">Digital roadmapping, Agile Process, Ruby on Rails, React, Systems Integration, Stripe Payments</h2>
 
-<br>
 <h2 class="h4">Project background</h2>
 
 Matrix Education is a High School Tutoring College with a huge number of courses across 5 Sydney locations. They needed a student, enrolment and timetable management platform that would better support their business now and into the future. Investing in the new platform would allow the business to grow, help more students and take the pressure off the Admin Team.

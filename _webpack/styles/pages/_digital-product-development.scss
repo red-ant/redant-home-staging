@@ -68,14 +68,9 @@
 
   .hero,
   .intro {
-    @include media-breakpoint-only(md) {
-      padding-bottom: 400px;
-    }
-
     @include media-breakpoint-down(sm) {
       margin-top: 20px;
       padding-top: 3rem !important;
-      padding-bottom: 355px !important;
 
       &::before {
         width: 345px;
@@ -87,8 +82,6 @@
     }
 
     @include media-breakpoint-up(md) {
-      min-height: 670px;
-
       .btn-lg {
         font-size: 1.7rem;
       }
