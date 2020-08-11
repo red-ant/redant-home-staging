@@ -45,4 +45,4 @@ With the planning in place, execution was straightforward. We created a common d
 
 <h2 class="h4">How can we help you?</h2>
 
-If you need help to make use of your data or provide better projections or visualisations of data contact us for a [free initial consult](/ruby-on-rails-code-review/).
+If you need help to make use of your data or provide better projections or visualisations of data contact us for a [free initial consult](/free-initial-consult-code-review/).
