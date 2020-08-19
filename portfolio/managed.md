@@ -39,11 +39,11 @@ The “special sauce” is that it removes the need for an Agent to maintain a T
 
 Benefits for each of the key user groups:
 
-<h2 class="h4">For Property Managers</h2>
+## For Property Managers
 
 Managing a large property portfolio is extremely time consuming. We’ve seen many managers who have 50 Post-it notes and 10 different browser tabs open at once to manage everything. Things get missed, and there is never enough time in the day. The Managed platform automates tasks and payments. Payments are instant, so there is no audit burden of a Trust account. This allows PMs to move into an investment manager role and provide real value and efficiency. Some agencies have changed to become completely virtual, running a nation wide portfolio just using this platform.
 
-<h2 class="h4">For Landlords</h2>
+## For Landlords
 
 A common thread we heard from owners was around transparency. They don’t want to actively manage their investment property, but many felt a bit in the dark about what their Property Manager is doing.
 The Managed platform strengthens the connection between owner and PM. They get paid immediately, and can get a real time view of incoming and outgoing payments. Key information like benchmarking
@@ -56,7 +56,7 @@ and improvements based on condition report data
 
 <div class="alert alert-info"> <i class="fa fa-line-chart mr-2"></i> If you put in a new kitchen, it would cost between $8-12k but with the increased rent you’d make that back in around 8 months </div>
 
-<h2 class="h4">For Tenants</h2>
+## For Tenants
 
 Once a property is set up in Managed, the on-boarding experience for a tenant is pretty smooth. They can set up different bank accounts and payment methods, as well as control how and when payments get made. Often at the start of a lease there are some irregular payments (like paying the first 4 days, and then fortnightly after that but less your deposit) - these are now clear and easy to understand.
 
@@ -64,7 +64,7 @@ A tenant might want to buy something that will improve the property - like a new
 
 A tenant can also make maintenance or repair requests. Once approved, these go through a workflow so the PM can organise a convenient time with the Tenant etc.
 
-<h2 class="h4">For Tradespeople</h2>
+## For Tradespeople
 
 Doing work for Property Managers is often a bugbear for Tradespeople. They might do the job but not get paid for ages, the work required can be unclear or garbled, or they might turn up to a property and the tenant doesn’t know anything about the work or didn't know they were coming.
 

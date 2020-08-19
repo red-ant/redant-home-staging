@@ -22,7 +22,7 @@ lines_of_code: ''
 
 ---
 
-<h2 class="h4">Project Description</h2>
+## Project Description
 
 Mentored is the digital side of Mark Bouris’s Channel 7 TV series The Mentor. A Mentor is a trusted advisor, someone you can turn to for advice and guidance, especially in business. Mentored.com.au is scaling that notion for the Australian small business community.
 

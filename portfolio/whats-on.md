@@ -21,7 +21,7 @@ lines_of_code: ''
 
 ---
 
-<h2 class="h4">Project Description</h2>
+## Project Description
 
 What’s On is no ordinary events website. To maximise engagement with the many different communities within the City of Sydney, we built a customised event listing function, allowing organisers to submit their events directly to the website. Visitors can browse events listings via a range of search tools, to find local events, free events and more.
 

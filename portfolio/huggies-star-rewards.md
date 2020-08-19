@@ -24,7 +24,7 @@ lines_of_code: ''
 
 ---
 
-<h2 class="h4">Project Description</h2>
+## Project Description
 
 We’ve been working with Huggies for over a decade and in that time we’ve worked on many promotions together. Most recently, we created a shop and redeem rewards program in partnership with Fisher-Price Smart Stages. We were asked to find a simple solution that promoted brand loyalty to Huggies and boosted traffic to their site. Our solution was the Huggies Star Rewards Program. We needed this promotion to be integrated into the huggies.com.au site so we could connect with the existing 600,000 members. That was easy – we were already well-acquainted with the site.
 

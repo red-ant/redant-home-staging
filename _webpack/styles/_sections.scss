@@ -49,6 +49,10 @@ section {
 }
 
 #section-project-content {
+  h2 {
+    @extend .h4;
+  }
+
   img {
     @extend .img-fluid;
   }

@@ -25,7 +25,7 @@ lines_of_code: ''
 
 ---
 
-<h2 class="h4">Project Description</h2>
+## Project Description
 
 If you’ve already read through [Voome Weekly](/portfolio/voome-weekly) and [Voome Programs](/portfolio/voome-programs), you’ll know what a gem of a product this is. And the Voome Ingredient Chatbot really takes the cake.
 

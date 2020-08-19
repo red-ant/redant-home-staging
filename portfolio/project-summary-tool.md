@@ -27,7 +27,7 @@ lines_of_code: ''
 
 ---
 
-<h2 class="h4">Project Description</h2>
+## Project Description
 
 Projectt is a tool we've created to use internally, but we now sell as a Saas product. It’s a tool that came about as a bit of an indulgence - we wanted to be better at what we do, and we decided to build something to help with that. What happened next will blow your mind.
 
