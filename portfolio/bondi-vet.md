@@ -32,7 +32,7 @@ Visitors to the site can watch pet care videos from our experts and veterinarian
 
 Every step along the user journey, there are prompts to become a member. Once the user has signed up and set up their profile (and their pet’s profile) we can use this information to customise their experience. This means tools are pre-filled with the correct breed information, forum questions can be tagged with the user’s pets and relevant promotion notifications get sent to the right users.
 
-#### Project Detail
+## Project Detail
 
 - QA system
 - content management

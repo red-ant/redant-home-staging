@@ -45,7 +45,7 @@ Now 12WBT already had this- they have a very successful digital product, with lo
 
 But there were some specific user issues we needed to address for people using the product on mobile.
 
-#### Workouts
+## Workouts
 
 If you take your phone to the park, you might want to prop it up and play through a workout video while you do the workout. Except that the damn thing will keep on going to sleep if you don't touch the screen. So that's a problem.
 
@@ -55,13 +55,13 @@ Another was that with 12WBT, we do some [clever things with video workouts](/por
 
 Using "native" functionality on the phone (which requires an App) allows you to get around this. Rather than code running in a browser, which then asks the underlying system (iOS) to do something like play a sound or take a photo, native app code can do this directly.
 
-#### Offline
+## Offline
 
 If you work out at the gym, there might be times when mobile data isn't available. The gym is underground or in a location where coverage isn't great. You're there to do a workout, and it is disappointing / embarrassing if it won't play or drops out half way.
 
 Again, "native" functionality means we can store assets on the phone. This is what an app like Spotify does- when you save a track it stores the file on your phone. The first time you played it, it came off the Cloud. The second time, it plays back from your local version. We did a similar thing, but we take the step of pre-downloading all of the files a user might need for that week. Obviously Spotify can't know what you're going to listen to this week, but with 12WBT we can see from your profile and fitness plan what you'll be doing.
 
-#### Pro Tip: don't try to do everything / pick your battles
+## Pro Tip: don't try to do everything / pick your battles
 
 Along with starting with the solution ("I need an app"), another common mistake we see is assuming 1:1 parity as a requirement: "Everything the user can do on my web platform, they should be able to do in my App. Otherwise it will suck."
 I'd challenge that- what things could be better delivered as an App? Are there steps that make sense to be different?

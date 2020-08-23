@@ -61,7 +61,7 @@ So, what can you do?
 - **Be useful not irritating** - stop interrupting them with TVCs and popups. Provide something genuinely useful. Be authentic. Provide utility.
 - **No! Not an infomercial!** - digital doesn’t mean doing an infomercial or a brochureware web site.
 
-### Here's what we've done with Huggies
+## Here's what we've done with Huggies
 
 First a disclaimer: this has taken us a while. It has taken literally ~~years~~ decades to get this far.
 

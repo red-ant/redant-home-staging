@@ -27,14 +27,14 @@ lines_of_code: ''
 
 ---
 
-#### How it works
+## How it works
 
 Marketing is changing. If you have something to sell, rather than engaging a media agency to buy consumer’s attention, you can now work directly with influential “micro influencers” using Social. Tribe is a market place tool that facilitates this.
 
 Tribe is an online influencer marketplace. As a brand, you can publish a brief and influencers will respond with ideas and proposals. You pick the one(s) that best fit your message. As an influencer, you’ll get to pick who you want to work with, get paid to come up with ideas and push posts to your followers.
 We built this marketplace, which connects the two groups. It handles everything from ideation and briefing through to payment.
 
-#### Project Description
+## Project Description
 
 As a heads up, I found working on this project fairly confronting. I have very few followers on social media. For me, getting to double figures would be just amazing. It turns out there are all these people out there that actually have quite a lot of followers. I'm not talking about celebrities with an impossibly large number of followers, but "micro influencers" that might be into a particular Thing, and have a healthy following of people also into that Thing. I think I need to work on finding my Thing.
 
@@ -53,7 +53,7 @@ Anyway, the whole point of the Tribe Marketplace is to help brands connect with 
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bxEYt3DuLF4?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-#### Tech
+## Tech
 
 In terms of the technical stuff:
 
