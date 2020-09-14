@@ -4,24 +4,25 @@ theme: matrix-education
 slug: matrix-education
 title: Matrix Education
 tagline: Education Management Platform
-description: A new Education Management Platform improves student experience, delivers business insights and supports a fast growing College.
+description: A new Education Management Platform improves student experience, delivers
+  business insights and supports a fast growing College.
 project_url: https://www.matrix.edu.au/
 client: Matrix Education
 project_date: January 2019 - now
 team_size: 5 people
 lines_of_code: 25,000+
 technologies:
-  - Ruby on Rails
-  - ReactJS
-  - CSS
-  - HTML
-  - Stripe Payments
+- Ruby on Rails
+- ReactJS
+- CSS
+- HTML
+- Stripe Payments
 images:
-  - filename: matrix-education-1.jpg
+- filename: matrix-education-1.jpg
 project_type: ''
+published: false
 
 ---
-
 ## Digital roadmapping, Agile Process, Ruby on Rails, React, Systems Integration, Stripe Payments
 
 ## Project background
