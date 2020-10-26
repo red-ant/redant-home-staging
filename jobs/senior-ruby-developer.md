@@ -24,7 +24,7 @@ How about if I explain us a bit more:
 1. **We’re not consultants.** We don’t take on projects for a few months and then hand over (all the while knowing that this elegant yet fragile code is pretty much impossible to maintain). We like being where the tyre hits the road, because we think that is where stuff gets really interesting. We value long term projects, because we know that by refining and iterating we can continually improve an idea.
 2. **We all work together.** To work together as a high performing team, we think meaningful conversations and interactions are important. To make great digital things, so many different parts need to come together perfectly - from UX to DevOps.
 3. **We’re not an ad agency & we don’t outsource.** We build. We’re pretty geeky, and while we have content, UX & design people, we’re undeniably technical. And to be technically good you need not only good people but excellent processes and a strong tech culture. People that care. We’re not that company that seems to build things but actually gets all the work done by the offshore team in Nepal or Poland or wherever. I’m sure those guys are great, but I think there are better things you could be doing with your career other than baby sitting an offshore team. Personally I’d rather clean my ears with a Dremel.
-4. **We work with nice people** as our clients. Life is too short to work with dickheads, and it goes both ways. 
+4. **We work with nice people** as our clients. Life is too short to work with dickheads, and it goes both ways.
 
 ### Full time
 
@@ -44,4 +44,4 @@ Really well. Probably much better than where you are right now. But nowhere near
 
 ### Interested?
 
-If you’re interested in this position, pro tip: please don’t send in a huge Word doc CV. Just shoot an email to [Sarah](mailto:jobs@redant.com.au) with an outline of the kind of projects you’ve worked on, and some insight into who you are. We would love to hear from you.
+If you’re interested in this position, pro tip: please don’t send in a huge Word doc CV. Just shoot an email to [Sarah](mailto:jobs@redant.com.au) >> jobs@redant.com.au with an outline of the kind of projects you’ve worked on, and some insight into who you are. We would love to hear from you.
