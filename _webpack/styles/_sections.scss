@@ -48,6 +48,12 @@ section {
   background-size: contain;
 }
 
+#section-job-content {
+  h3 {
+    margin: 40px 0 10px 0;
+  }
+}
+
 #section-project-content {
   h2 {
     @extend .h4;

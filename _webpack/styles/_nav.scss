@@ -1,3 +1,39 @@
+.announcement-bar {
+  color: $white;
+  max-width: 1400px;
+  padding: 14px 0;
+  height: $announcement-bar-height;
+  z-index: 101;
+
+  span {
+    @include montserrat($montserrat-bold);
+    margin: 0 10px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    height: $announcement-bar-height * 2;
+
+    span {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+.announcement-spacer {
+  height: $navbar-height + $announcement-bar-height;
+
+  @include media-breakpoint-down(sm) {
+    height: $navbar-height + ($announcement-bar-height * 2);
+  }
+}
+
 .blog-navbar {
   color: #fff;
   position: relative;
@@ -70,15 +106,12 @@
 }
 
 .navbar {
-  position: fixed;
   display: flex;
   align-items: center;
-  width: 100%;
   max-width: $layout-max-width;
   padding: 14px 0;
   background-color: $white;
   height: $navbar-height; // must match .nav-spacer
-  z-index: 100;
 
   > .container {
     display: block;
@@ -106,6 +139,12 @@
   }
 }
 
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
 .nav-spacer {
   // this sits directly after the position fixed navbar to fill the same space
   // means we can avoid top padding the next element
@@ -116,8 +155,6 @@
   position: relative;
   width: 30px;
   height: 30px;
-  //transform: rotate(0deg);
-  //transition: 0.5s ease-in-out;
   z-index: 101;
   cursor: pointer;
 
