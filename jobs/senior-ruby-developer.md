@@ -21,7 +21,7 @@ We will never, ever, ever ask you to [participate in a Shabooyah roll call](http
 
 You’re an experienced developer. You know your stuff. Making nice things is what you do. Pride in the craft of engineering awesome features. You give thoughtful, considered code reviews.
 
-Sure, you could probably do some Start Up thing. Or you could get a job with a fancy title at a Google/Salesforce/IBM etc. and do the [Shabooyah](https://www.reddit.com/r/videos/comments/k3efwo/workplace_from_your_nightmares/). But we think you’ll probably like it here.
+Sure, you could probably do some Start Up thing. Or you could get a job with a fancy title at a Google/Salesforce/IBM etc. and find yourself [one night wearing your tie as a headband](https://www.youtube.com/watch?v=QzDHoKKdMkM). But we think you’ll probably like it more here.
 
 How about if I explain us a bit more:
 
