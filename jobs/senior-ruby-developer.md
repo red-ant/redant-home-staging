@@ -9,7 +9,7 @@ summary: Looking for a great place to work on interesting projects?
 ---
 ### Us
 
-We’re a Ruby development agency. We’ve been around for over 25 years, with a stable, growing business. We tend to work on larger projects, typically with a mix of Front End, Back End and DevOps tasks.
+We’re a Ruby development agency. We’ve been around for over 25 years, with a stable, growing business. We're busy. We tend to work on larger projects, typically with a mix of Front End, Back End and DevOps tasks.
 
 Rather than work on just one projects, each of our team typically work across a number of  projects. Each person has 2-3 projects. Some of our clients are funded start-ups, but most of our work is for well-established companies with meaty problems to solve - like tricky payment flows, security and scaling.
 
@@ -30,7 +30,7 @@ How about if I explain us a bit more:
 
 ### Full time
 
-This is a full time position. Just in case you're planning out your side hustle. This isn't it. And no, watching that Youtube about the 4h work week and how you have never actually worked out how to quit Vim and your plan is to get some guys in Vietnam to do all your dev work is not something you should bring up in the interview.
+This is a full time position. Just in case you're planning out your side hustle. This isn't it. And no, reading that book about the 4h work week and how you have never actually worked out how to quit Vim without turning off your mac and your fiendish plan is to get some guys in Vietnam to do all your dev work is not something you should bring up in the interview. Maybe tell us ahead of time and we can avoid tears later.
 
 ### Is this remote or on site?
 
