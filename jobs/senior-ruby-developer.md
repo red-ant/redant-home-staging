@@ -11,7 +11,7 @@ summary: Looking for a great place to work on interesting projects?
 
 We’re a Ruby development agency. We’ve been around for over 25 years, with a stable, growing business. We tend to work on larger projects, typically with a mix of Front End, Back End and DevOps tasks.
 
-Rather than work on just one projects, each of our team typically work across a number of  projects. Each person has 2-3 projects. Some of our clients are funded start-ups, but most of our work is for well-established clients with meaty problems to solve - like tricky payment flows, security and scaling.
+Rather than work on just one projects, each of our team typically work across a number of  projects. Each person has 2-3 projects. Some of our clients are funded start-ups, but most of our work is for well-established companies with meaty problems to solve - like tricky payment flows, security and scaling.
 
 We value quiet thinkers and creative innovation. We try to automate as much of our processes as we can, so our engineers can focus on their work rather than babysitting a deploy. You will never, ever, ever get asked to [participate in a Shabooyah roll call](https://www.reddit.com/r/videos/comments/k3efwo/workplace_from_your_nightmares/).
 
