@@ -34,11 +34,13 @@ This is a full time position. Just in case you're planning out your side hustle.
 
 ### Is this remote or on site?
 
-Well, with the dreaded Rona, everything has changed. We used to all work together in a really nice, light filled office that was located in the very epicentre of HipsterLand. But since early March, we've all been working from home. So we'll kit out your home office just right, and we'll Slack and Zoom away. You can work from wherever you'd like.
+Well, with the dreaded Rona, everything has changed. We used to all work together in a really nice, light filled office that was located in the very epicentre of HipsterLand, Surry Hills. But since early March, we've all been working from home. So we'll kit out your home office just right, and we'll Slack and Zoom away. You can work from wherever you'd like.
 
 ### So you all work from home, but pretty soon you'll all be back in the office, right?
 
-Nup. We're pretty tight operationally. We track what people are working on, how well they're progressing, and how happy they are with their work. Since we changed to work from home, our productivity is way up, sick leave is way down, and we're pretty busy. So we're good.
+Nup. We're pretty tight operationally. We track what people are working on, how well they're progressing, and how happy they are with their work. Since we changed to work from home, our productivity is way up, sick leave is way down, the teams happy and we're pretty busy. So we're good. 
+
+However not everyone can work from their home, so we're also able to arrange an office if that works better for you.
 
 ### How much it pays
 
