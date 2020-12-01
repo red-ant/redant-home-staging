@@ -13,13 +13,15 @@ We’re a Ruby development agency. We’ve been around for over 25 years, with a
 
 Rather than work on just one projects, each of our team typically work across a number of  projects. Each person has 2-3 projects. Some of our clients are funded start-ups, but most of our work is for well-established companies with meaty problems to solve - like tricky payment flows, security and scaling.
 
-We value quiet thinkers and creative innovation. We try to automate as much of our processes as we can, so our engineers can focus on their work rather than babysitting a deploy. You will never, ever, ever get asked to [participate in a Shabooyah roll call](https://www.reddit.com/r/videos/comments/k3efwo/workplace_from_your_nightmares/).
+We value quiet thinkers and creative innovation. We try to automate as much of our processes as we can, so our engineers can focus on their work rather than babysitting a deploy. 
+
+We will never, ever, ever ask you to [participate in a Shabooyah roll call](https://www.reddit.com/r/videos/comments/k3efwo/workplace_from_your_nightmares/).
 
 ### You
 
 You’re an experienced developer. You know your stuff. Making nice things is what you do. Pride in the craft of engineering awesome features. You give thoughtful, considered code reviews.
 
-Sure, you could probably do some Start Up thing. Or you could get a job with a fancy title at a Google/Salesforce/IBM etc. and do the [Shaabohyah](https://www.reddit.com/r/videos/comments/k3efwo/workplace_from_your_nightmares/). But we think you’ll probably like it here.
+Sure, you could probably do some Start Up thing. Or you could get a job with a fancy title at a Google/Salesforce/IBM etc. and do the [Shabooyah](https://www.reddit.com/r/videos/comments/k3efwo/workplace_from_your_nightmares/). But we think you’ll probably like it here.
 
 How about if I explain us a bit more:
 
