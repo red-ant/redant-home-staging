@@ -1,7 +1,7 @@
 ---
 layout: Pearsons School of Floristry
 theme: redant
-project_url: https://
+project_url: https://pearsonsschool.com.au/
 project_date: "2019"
 team_size: 0 people
 slug: ''
