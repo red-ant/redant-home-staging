@@ -1,7 +1,7 @@
 ---
 layout: Pearsons Florist
 theme: 12wbt
-project_url: https://
+project_url: https://www.pearsonsflorist.com.au/
 project_date: "2020"
 team_size: 0 people
 slug: ''
