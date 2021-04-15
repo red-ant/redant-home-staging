@@ -1,13 +1,24 @@
-{% if page.nav == 'navbar-aos' %}
-<nav
-  class="navbar nav-overlay"
-  data-aos-anchor=".navbar-aos"
-  data-aos="navbar-aos"
-  data-aos-anchor-placement="bottom-bottom"
->
+<div class="nav-container">
+  {% if site.announcement_bar == true %}
+    <div class="bg-dark d-flex justify-content-center align-items-center announcement-bar">
+      <span>We're hiring! </span> We're looking for a Senior Rails Developer
+      <span>
+        <a href="/jobs/senior-ruby-developer/">
+          Apply now
+        </a>
+      </span>
+    </div>
+  {% endif %}
+  {% if page.nav == 'navbar-aos' %}
+    <nav
+      class="navbar nav-overlay"
+      data-aos-anchor=".navbar-aos"
+      data-aos="navbar-aos"
+      data-aos-anchor-placement="bottom-bottom"
+    >
   {% else %}
-  <nav class="navbar nav-overlay">
-    {% endif %}
+    <nav class="navbar nav-overlay">
+  {% endif %}
     <div class="container">
       <div class="d-flex flex-column">
         <div class="d-flex justify-content-between">
@@ -22,22 +33,32 @@
             <div class="d-none d-lg-block">
               <ul class="nav justify-content-end">
                 <li class="nav-item">
-                  <a href="/get-started/" class="get-started-link nav-link">Get started</a>
+                  <a href="/get-started/" class="get-started-link nav-link">
+                    Get started
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/about/" class="about-link nav-link">About us</a>
+                  <a href="/about/" class="about-link nav-link">
+                    About us
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/portfolio/" class="portfolio-link nav-link">Portfolio</a>
+                  <a href="/portfolio/" class="portfolio-link nav-link">
+                    Portfolio
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/technology/" class="technology-link nav-link">Technology</a>
+                  <a href="/technology/" class="technology-link nav-link">
+                    Technology
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a href="/blog/" class="blog-link nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/contact-us/" class="contact-us-link nav-link">Contact</a>
+                  <a href="/contact-us/" class="contact-us-link nav-link">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
@@ -78,5 +99,9 @@
       </ul>
     </div>
   </nav>
+</div>
+{% if site.announcement_bar == true %}
+  <div class="announcement-spacer"></div>
+{% else %}
   <div class="nav-spacer"></div>
-</nav>
+{% endif %}
