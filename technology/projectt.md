@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Integrations
 type: Integration
 title: Projectt
 subtitle: We’re Projectt integration Experts

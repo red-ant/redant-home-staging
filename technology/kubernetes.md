@@ -1,5 +1,6 @@
 ---
 layout: technology
+category:
 type: Technology
 title: Kubernetes
 subtitle: We’re Kubernetes Experts

@@ -1,0 +1,29 @@
+{% assign index = 1 %}
+{% for slug in site.data.technology.order %}
+  {% assign pages = site.pages | where: 'slug', slug | where: 'category', include.category %}
+  {% for page in pages %}
+    <div class="portfolio-tile text-black mb-0 col">
+      <div class="row content px-2 mb-2">
+        <div class="col-12">
+          <a href="{{ page.url }}" class="mb-0">
+            <div
+              class="technology-image-preview rounded-circle mb-4"
+              style="background-image: url('{{ page.image }}');"
+            ></div>
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="{{ page.url }}" class="portfolio-tile text-black mb-3">
+            <h5 class="mb-0 text-red-light">{{ page.title }}</h5>
+            <small class="text-muted subheading-xs">{{page.type}}</small>
+          </a>
+          <p class="technology-description">{{ page.listing_description }}</p>
+        </div>
+      </div>
+    </div>
+    {% if index == 3 %}
+      <div class="w-100"></div>
+    {% endif %}
+    {% assign index = index | plus: 1 %}
+  {% endfor %}
+{% endfor %}

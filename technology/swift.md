@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Languages
 type: Technology
 title: Swift
 subtitle: We’re native iOS development experts

@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Integrations
 type: Integration
 title: Tableau
 subtitle: We’re Tableau integration Experts

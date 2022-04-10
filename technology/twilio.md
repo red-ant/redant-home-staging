@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Integrations
 type: Integration
 title: Twilio
 subtitle: We’re Twilio integration Experts

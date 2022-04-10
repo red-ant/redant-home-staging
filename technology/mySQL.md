@@ -1,5 +1,6 @@
 ---
 layout: technology
+category:
 type: Technology
 title: MySQL and PostgreSQL
 subtitle: MySQL database experience

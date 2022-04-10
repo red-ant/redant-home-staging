@@ -1,5 +1,6 @@
 ---
 layout: default
+class: technology-list
 permalink: /technology/
 title: Technologies and Integrations we work with
 description: Technologies we work in - Ruby on Rails, React, Javascript, Swift iOS
@@ -12,47 +13,89 @@ keywords: Technologies, Ruby on Rails, React, Javascript, Swift iOS
 >
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 py-3">
+      <div class="col-sm-11 py-3">
         <h1 class="mb-4">Technology and Integrations</h1>
         <p class="subheading-small">
-          Technologies and Integrations we work with
+          We've tried and tested so many technologies and integrations over the
+          years. These are the technologies we know to provide the most
+          reliable, scalable e-commerce solutions.
         </p>
-      </div>
-      <div class="col-sm-6 text-center">
-        <img
-          class="img-responsive"
-          src="{{ site.data.webpack['illustration-technology.png'] }}"
-        />
       </div>
     </div>
   </div>
 </header>
 
 <section id="section-technology-list" class="ga-section py-5">
-  <div class="container">
-    <div id="macy-container" data-columns="3" data-columns-small="2">
-      {% for slug in site.data.technology.order %} {% assign pages = site.pages
-      | where:'slug', slug %} {% for page in pages %}
-      <div class="portfolio-tile text-black mb-0">
-        <div class="row content px-2 mb-2">
-          <div class="col-12">
-            <a href="{{ page.url }}" class="mb-0">
-              <div
-                class="technology-image-preview rounded-circle mb-4"
-                style="background-image: url('{{ page.image }}');"
-              ></div>
-            </a>
-          </div>
-          <div class="col-12">
-            <a href="{{ page.url }}" class="portfolio-tile text-black mb-3">
-              <h5 class="mb-0 text-red-dark">{{ page.title }}</h5>
-              <small class="text-muted">{{page.type}}</small>
-            </a>
-            <p>{{ page.listing_description }}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %} {% endfor %}
+  <div class="section-padding"></div>
+  <div class="container section-padding">
+    <h2 class="mb-4">
+      Reliable Programing Languages
+    </h2>
+    <p class="subheading-small">
+      Let’s start with programming languages. Since 2006 we have specialised in
+      Ruby on Rails for full stack development complimented by a mix of
+      Javascript frameworks depending on the requirements, from sprinklings of
+      Stimulus though to complete React or Angular frontends.
+    </p>
+    <div class="row mb-5">
+      {% include technology-by-category.html category="Languages" %}
+    </div>
+  </div>
+  <div class="container section-padding">
+    <h2 class="mb-4">
+      Reliable Payment Gateways
+    </h2>
+    <p class="subheading-small">
+      Choosing a reliable e-commerce platform can make all the difference to
+      both your customer’s experience and seamless integration into your
+      customer management and fulfillment systems. We often use platforms such
+      as Stripe or Assembly for our client’s e-commerce platforms - they provide
+      unparalleled flexibility to integrate with your business systems. We
+      especially like the out of the box security features, fast set up and the
+      ability to grow as your business scales.
+    </p>
+    <div class="row mb-5">
+      {% include technology-by-category.html category="Payments" %}
+    </div>
+  </div>
+  <div class="container section-padding">
+    <h2 class="mb-4">
+      Reliable Hosting Services at Scale
+    </h2>
+    <p class="subheading-small">
+      Web infrastructure can be really easy to set up. But it can often be quite
+      difficult to manage reliably. We often take over projects which were set
+      up quickly, but now need to be made more reliable and secure.
+    </p>
+    <p class="subheading-small">
+      We try to automate as many processes as possible, so that everything can
+      be rebuilt from well tested build scripts. We use tools like Docker and
+      Kubernetes to help with the orchestration. From there, we can set up on
+      any of the major providers such as Amazon AWS, Azure or Google GCS.
+      Another option is to use a platform such as Heroku. Here are the systems
+      we use with our clients.
+    </p>
+    <div class="row mb-5">
+      {% include technology-by-category.html category="Hosting" %}
+    </div>
+  </div>
+  <div class="container section-padding">
+    <h2 class="mb-4">
+      Reliable Service Integrations
+    </h2>
+    <p class="subheading-small">
+      Integrating complex services is what we do best. We can combine
+      information from different sources and create a unique tool to support
+      your information systems and business processes. We can create tools to
+      give you more insight into your business activities today and make better
+      predictions into the future. We even created our own integration tool -
+      Projectt - to track the health of all of our client projects so we can
+      make sure we have the right resources to meet deadlines. We can also
+      provide greater transparency to our clients who can see how we manage our
+      tasks and resources to get the job done.
+    </p>
+    <div class="row mb-5">
+      {% include technology-by-category.html category="Integrations" %}
     </div>
   </div>
 </section>

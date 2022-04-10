@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Languages
 type: Technology
 title: ReactJS
 subtitle: We’re experts with ReactJS

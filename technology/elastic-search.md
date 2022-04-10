@@ -1,5 +1,6 @@
 ---
 layout: technology
+category:
 type: Technology
 title: Elasticsearch
 subtitle: We’re Elasticsearch Experts
