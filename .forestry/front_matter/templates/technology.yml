@@ -2,115 +2,113 @@
 label: technology
 hide_body: false
 fields:
-  - type: text
-    name: layout
-    label: layout
-    config:
-      required: true
-    default: technology
-  - name: category
-    type: select
-    default: []
-    config:
-      required: true
-      options:
-        - Languages
-        - Payments
-        - Hosting
-        - Integrations
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: category
-    description:
-      Determines which category section this item falls under in the technology
-      listing page
-  - name: type
-    type: select
-    default: []
-    config:
-      required: true
-      options:
-        - Technology
-        - Integration
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: type
-    description:
-      Determines which subcategory this item belongs to in the technology
-      list
-  - type: text
-    name: title
-    label: title
-    config:
-      required: true
-  - type: text
-    name: subtitle
-    label: subtitle
-    config:
-      required: true
-  - type: textarea
-    name: description
-    label: description
-    config:
-      required: true
-  - name: listing_description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: listing_description
-  - type: text
-    name: slug
-    label: slug
-    config:
-      required: false
-  - type: list
-    name: projects
-    label: projects
-    description: Project slugs
-    config:
-      min: '1'
-      use_select: false
-      source:
-        type: documents
-  - type: file
-    name: image
-    label: image
-  - type: text
-    name: how_title
-    label: how_title
-    config:
-      required: true
-  - type: list
-    name: how_bulletpoints
-    label: how_bulletpoints
-    config:
-      use_select: false
-      source:
-        type: documents
+- type: text
+  name: layout
+  label: layout
+  config:
+    required: true
+  default: technology
+- name: category
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Languages
+    - Payments
+    - Hosting
+    - Integrations
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: category
+  description: Determines which category section this item falls under in the technology
+    listing page
+- name: type
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Technology
+    - Integration
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: type
+  description: Determines which subcategory this item belongs to in the technology
+    list
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: subtitle
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: description
+  config:
+    required: true
+- name: listing_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: listing_description
+- type: text
+  name: slug
+  label: slug
+  config:
+    required: false
+- type: list
+  name: projects
+  label: projects
+  description: Project slugs
+  config:
+    min: '1'
+    use_select: false
+    source:
+      type: documents
+- type: file
+  name: image
+  label: image
+- type: text
+  name: how_title
+  label: how_title
+  config:
+    required: true
+- type: list
+  name: how_bulletpoints
+  label: how_bulletpoints
+  config:
+    use_select: false
+    source:
+      type: documents
 pages:
-  - technology/assembly.md
-  - technology/aws.md
-  - technology/docker.md
-  - technology/elastic-search.md
-  - technology/heroku.md
-  - technology/jira.md
-  - technology/kubernetes.md
-  - technology/mySQL.md
-  - technology/projectt.md
-  - technology/reactJS.md
-  - technology/ruby-on-rails.md
-  - technology/salesforce-marketing-cloud.md
-  - technology/stripe-payments.md
-  - technology/swift.md
-  - technology/tableau.md
-  - technology/twilio.md
+- technology/assembly.md
+- technology/aws.md
+- technology/docker.md
+- technology/elastic-search.md
+- technology/heroku.md
+- technology/jira.md
+- technology/kubernetes.md
+- technology/mySQL.md
+- technology/projectt.md
+- technology/reactJS.md
+- technology/ruby-on-rails.md
+- technology/salesforce-marketing-cloud.md
+- technology/stripe-payments.md
+- technology/swift.md
+- technology/tableau.md
+- technology/twilio.md
