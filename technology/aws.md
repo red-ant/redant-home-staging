@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Hosting
 type: Integration
 title: Amazon Web Services (AWS)
 subtitle: We’re AWS integration Experts

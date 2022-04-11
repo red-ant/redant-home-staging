@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Integrations
 type: Integration
 title: Salesforce Marketing Cloud
 subtitle: We're experts in integrating Salesforce

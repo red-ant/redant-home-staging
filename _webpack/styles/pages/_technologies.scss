@@ -1,0 +1,38 @@
+// SITE UPDATE - some of there stylyes will become defaults for the new layouts
+.technology-detail,
+.technology-list {
+  h1,
+  .h1 {
+    @include montserrat($montserrat-medium);
+    font-size: 80px;
+  }
+
+  h2,
+  .h2 {
+    @include montserrat($montserrat-medium);
+    font-size: 46px;
+  }
+
+  .portfolio-tile .subheading-xs {
+    @include montserrat($montserrat-semibold);
+    font-size: 16px;
+  }
+
+  .subheading-small {
+    @include montserrat($montserrat-light);
+    font-size: 20px;
+  }
+
+  .technology-description {
+    @include montserrat($montserrat-light);
+    font-size: 20px;
+  }
+
+  .default-padding {
+    padding: 180px 0 180px 0;
+  }
+
+  .section-padding {
+    padding-bottom: 180px;
+  }
+}

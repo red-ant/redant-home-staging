@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Integrations
 type: Integration
 title: Jira
 subtitle: We’re Jira integration Experts

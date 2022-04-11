@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Languages
 type: Technology
 title: Ruby on Rails
 subtitle: We’re Ruby on Rails Experts

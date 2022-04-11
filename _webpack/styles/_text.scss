@@ -216,12 +216,27 @@ strong {
   color: $red;
 }
 
+.text-red-light {
+  color: $red-light;
+}
+
 .text-red-dark {
   color: $red-300;
 }
 
 .text-white {
   color: $white;
+}
+
+.underscore {
+  &::before {
+    @include block();
+    content: '';
+    display: block;
+    left: -62px;
+    top: 10px;
+    background-color: $red-light;
+  }
 }
 
 .white-space-normal {

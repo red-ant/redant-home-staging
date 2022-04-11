@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Payments
 type: Technology
 title: Stripe Payments
 subtitle: We’re Stripe Payments integration Experts

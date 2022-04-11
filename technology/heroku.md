@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Hosting
 type: Integration
 title: Heroku
 subtitle: We’re Heroku integration Experts

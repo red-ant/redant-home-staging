@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Hosting
 type: Technology
 title: Docker
 subtitle: We’re Docker Experts

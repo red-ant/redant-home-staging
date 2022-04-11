@@ -1,5 +1,6 @@
 ---
 layout: technology
+category: Payments
 type: Integration
 title: Assembly Payments
 subtitle: We’re Assembly Payments integration Experts
