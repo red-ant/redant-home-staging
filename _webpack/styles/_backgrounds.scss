@@ -101,7 +101,7 @@
   background-image: url('~images/bg-technology-detail.png');
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @include media-breakpoint-down(md) {
     background-size: cover;

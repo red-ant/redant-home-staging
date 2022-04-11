@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body>
+  <body class="technology-detail">
     <div class="main-layout">
       {% include nav.html %}
       <header
@@ -22,7 +22,7 @@
           <div class="row mt-4">
             <div class="col-12 col-sm-8 col-lg-6">
               <h1 class="pb-4">{{ page.title }}</h1>
-              <h5 class="subheading">{{ page.subtitle}}</h5>
+              <h5 class="subheading mb-2">{{ page.subtitle}}</h5>
               <div class="col p-md-0">
                 {{ page.description }}
               </div>
@@ -65,7 +65,7 @@
         <div class="container py-5 py-sm-0">
           <div class="row">
             <div class="col">
-              <h3>{{ page.how_title }}</h3>
+              <h2>{{ page.how_title }}</h2>
             </div>
           </div>
 
@@ -94,22 +94,31 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <hr class="hr-long bg-black" />
+            <hr class="hr-long bg-gray-light" />
           </div>
         </div>
       </div>
       {% endif %} {% include section-companies.html %}
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <hr class="hr-long bg-gray-light" />
+          </div>
+        </div>
+      </div>
 
-      <section
-        id="section-engagement"
-        class="ga-section section-border bg-gray-light default-padding"
-      >
-        <p class="h1 text-center pb-4">Engagement Models</p>
+      <section id="section-engagement" class="ga-section default-padding">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 mb-3 mb-md-0">
+            <div class="col">
+              <p class="h2 pb-4">How we can help</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0 border">
               <div class="px-4 py-5 tile bg-white table rounded-sm">
-                <h3 class="mt-0 text-red-dark">New Builds</h3>
+                <p class="mt-0 subheading-xs">New Builds</p>
+                <div class="underscore mb-3"></div>
                 We create, design and build new apps and platforms. We can help
                 you design for scale, as well as strategy or product support as
                 you need it. We'll take responsibility for delivering your
@@ -119,18 +128,20 @@
                 your project.
               </div>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
+            <div class="col-md-4 mb-3 mb-md-0 border-top border-bottom">
               <div class="px-4 py-5 tile bg-white table rounded-sm">
-                <h3 class="mt-0 text-red-dark">Existing Apps</h3>
+                <p class="mt-0 subheading-small">Existing Apps</p>
+                <div class="underscore mb-3"></div>
                 We can also take over an existing project. Often companies need
                 a bit more experience, developer resourcing, or help in
                 completing certain features before they launch. Or you might
                 need more development tasks done to your existing platform.
               </div>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
+            <div class="col-md-4 mb-3 mb-md-0 border">
               <div class="px-4 py-5 tile bg-white table rounded-sm">
-                <h3 class="mt-0 text-red-dark">Devops and Platform Support</h3>
+                <p class="mt-0 subheading-small">Devops and Platform Support</p>
+                <div class="underscore mb-3"></div>
                 We also provide a comprehensive Devops and Platform Support
                 service. We'll take on responsibility for monitoring and
                 providing technical support as part of an ongoing plan that we
@@ -141,13 +152,21 @@
         </div>
       </section>
 
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <hr class="hr-long bg-gray-light" />
+          </div>
+        </div>
+      </div>
+
       {% for slug in page.projects %} {% assign pages = site.pages | where:
       'slug', slug %} {% if forloop.first %}
       <section class="default-padding">
         <div class="container">
-          <h3 class="mb-5 text-center">
+          <h2 class="mb-5">
             Some of our {{ page.title }} projects
-          </h3>
+          </h2>
           <div id="macy-container" data-columns="2" data-columns-small="1">
             {% endif %} {% for item in pages %}
             <div
@@ -160,8 +179,8 @@
               >
                 <div class="content mb-2">
                   <h2 class="text-{{ item.theme }}">{{ item.title }}</h2>
-                  <p class="my-4 tagline">{{ item.tagline }}</p>
-                  <p>{{ item.description }}</p>
+                  <p class="my-4 subheading-small">{{ item.tagline }}</p>
+                  <p class="technology-description">{{ item.description }}</p>
                 </div>
                 <div class="svg-container">
                   <div class="svg-wrapper">
