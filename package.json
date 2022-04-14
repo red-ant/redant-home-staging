@@ -6,9 +6,7 @@
   "author": "Jason Taylor <jason@redant.com.au>",
   "license": "UNLICENSED",
   "engines": {
-    "node": "12.22.11",
-    "npm": "6.14.16",
-    "yarn": "1.22.5"
+    "node": "12.22.11"
   },
   "scripts": {
     "start": "concurrently 'yarn start:webpack' 'yarn start:jekyll'",
