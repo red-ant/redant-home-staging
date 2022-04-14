@@ -11,14 +11,17 @@ project_date: '2013'
 technologies:
   - Ruby on Rails
   - MySQL
-images:
-  - filename: whats-on-1.jpg
-  - filename: whats-on-2.jpg
-  - filename: whats-on-3.jpg
 team_size:
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/whats-on/whats-on-1.jpg
+  - type: gallery
+    path: /assets/images/projects/whats-on/whats-on-2.jpg
+  - type: gallery
+    path: /assets/images/projects/whats-on/whats-on-3.jpg
+  - type: desktop
+    path: /assets/images/projects/whats-on/whats-on-hero-desktop.jpg
 ---
 
 ## Project Description

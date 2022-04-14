@@ -21,9 +21,11 @@ technologies:
   - MoneyTech
   - ReactJS
   - Refile
-images: []
-project_type: ''
-
+images:
+  - type: mobile
+    path: /assets/images/projects/managed/managed-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/managed/managed-hero-desktop.jpg
 ---
 
 Managed is a platform for residential real estate. It’s used by property management agents to run a portfolio of rental properties.

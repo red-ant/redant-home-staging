@@ -16,14 +16,20 @@ technologies:
   - PostgreSQL
 team_size: 4 people
 lines_of_code: 450k
-images:
-  - filename: outdoor-automated-proposal-platform-1.jpg
-  - filename: outdoor-automated-proposal-platform-2.jpg
-  - filename: outdoor-automated-proposal-platform-3.jpg
-  - filename: outdoor-automated-proposal-platform-4.jpg
 project_url: https://
-project_type: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/outdoor-automated-proposal-platform/outdoor-automated-proposal-platform-1.jpg
+  - type: gallery
+    path: /assets/images/projects/outdoor-automated-proposal-platform/outdoor-automated-proposal-platform-2.jpg
+  - type: gallery
+    path: /assets/images/projects/outdoor-automated-proposal-platform/outdoor-automated-proposal-platform-3.jpg
+  - type: gallery
+    path: /assets/images/projects/outdoor-automated-proposal-platform/outdoor-automated-proposal-platform-4.jpg
+  - type: mobile
+    path: /assets/images/projects/outdoor-automated-proposal-platform/outdoor-automated-proposal-platform-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/outdoor-automated-proposal-platform/outdoor-automated-proposal-platform-hero-desktop.jpg
 ---
 
 ## Project Description

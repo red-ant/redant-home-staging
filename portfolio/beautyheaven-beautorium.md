@@ -13,10 +13,9 @@ lines_of_code: 10k
 technologies:
   - Ruby on Rails
 images:
-  - filename: beautyheaven-beautorium-screens.jpg
+  - type: gallery
     title: Member Offer page (Desktop)
-project_type: ''
-
+    path: /assets/images/projects/beautyheaven-beautorium/beautyheaven-beautorium-screens.jpg
 ---
 
 #### Project Description

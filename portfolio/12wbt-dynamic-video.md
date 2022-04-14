@@ -10,12 +10,17 @@ client: 12WBT
 project_date: '2015'
 technologies:
   - Brightcove
-images:
-  - filename: 12wbt-dynamic-video-1.jpg
-  - filename: 12wbt-dynamic-video-2.jpg
 team_size:
-project_type: ''
 lines_of_code: ''
+images:
+  - type: gallery
+    path: /assets/images/projects/12wbt-dynamic-video/12wbt-dynamic-video-1.jpg
+  - type: gallery
+    path: /assets/images/projects/12wbt-dynamic-video/12wbt-dynamic-video-2.jpg
+  - type: mobile
+    path: /assets/images/projects/12wbt-dynamic-video/12wbt-dynamic-video-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/12wbt-dynamic-video/12wbt-dynamic-video-hero-desktop.jpg
 ---
 
 ## Project Description
@@ -40,8 +45,8 @@ The "traditional" approach for fitness videos is to shoot the scene with say 3 i
 
 We took a different approach on 12WBT. Instead of shooting the workout in one long sequence, we got the video team to try shooting each routine separately. We also asked that each exercise (for example: a pushup) starts and finishes in the same position in the video frame.
 
-![Regular Workout Videos]({{ site.data.webpack['12wbt-video-diagram-1.jpg'] }})
-![Dynamic Workout Videos]({{ site.data.webpack['12wbt-video-diagram-2.jpg'] }})
+![Regular Workout Videos](/assets/images/12wbt-video-diagram-1.jpg)
+![Dynamic Workout Videos](/assets/images/12wbt-video-diagram-2.jpg)
 
 We created a workout design tool, which allowed the content team to build different workouts for different types of users. So they could quickly make a pushup > skip > burpee > star > etc routine, and then make another with slight variations.
 

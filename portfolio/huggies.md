@@ -30,18 +30,27 @@ technologies:
   - Reactful
   - 'Channel Advisor price data '
   - Facebook authentication
-images:
-  - filename: huggies-1.jpg
-  - filename: huggies-2.jpg
-  - filename: huggies-3.jpg
-  - filename: huggies-4.jpg
-  - filename: huggies-5.jpg
-  - filename: huggies-6.jpg
-  - filename: huggies-7.jpg
 team_size: 12 people
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-1.jpg
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-2.jpg
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-3.jpg
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-4.jpg
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-5.jpg
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-6.jpg
+  - type: gallery
+    path: /assets/images/projects/huggies/huggies-7.jpg
+  - type: mobile
+    path: /assets/images/projects/huggies/huggies-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/huggies/huggies-hero-desktop.jpg
 ---
 
 Running a successful consumer brand in Australia is really tough. Retailers are constantly discounting, and teach consumers to buy on discount signals rather than product quality. Then Disrupters like Amazon make it even harder.

@@ -1,12 +1,14 @@
-import fake1 from './images/fakenews/fake1.jpg';
-import fake2 from './images/fakenews/fake2.jpg';
-import fake3 from './images/fakenews/fake3.jpg';
-import fake4 from './images/fakenews/fake4.jpg';
-import fake5 from './images/fakenews/fake5.jpg';
-import fake6 from './images/fakenews/fake6.jpg';
-import fake7 from './images/fakenews/fake7.jpg';
-import fake8 from './images/fakenews/fake8.jpg';
-import fake9 from './images/fakenews/fake9.jpg';
+import $ from "jquery";
+
+import fake1 from "../images/fakenews/fake1.jpg";
+import fake2 from "../images/fakenews/fake2.jpg";
+import fake3 from "../images/fakenews/fake3.jpg";
+import fake4 from "../images/fakenews/fake4.jpg";
+import fake5 from "../images/fakenews/fake5.jpg";
+import fake6 from "../images/fakenews/fake6.jpg";
+import fake7 from "../images/fakenews/fake7.jpg";
+import fake8 from "../images/fakenews/fake8.jpg";
+import fake9 from "../images/fakenews/fake9.jpg";
 
 const init = $(() => {
   const selector = `[data-read-more]`;
@@ -89,7 +91,7 @@ const init = $(() => {
         <div class="col-md-3">
           <a href="${article.link}" class="card read-more-card">
             <div class="card-img-wrapper">
-              <img class="card-img-top" src="${article.image}" alt="${article.title}" />
+              <img class="card-img-top" src="/assets/bundle/${article.image}" alt="${article.title}" />
             </div>
             <div class="card-block py-3">
               <h4 class="card-title">${article.title}</h4>

@@ -1,5 +1,5 @@
 .bg-about {
-  background-image: url('~images/bg-about-hero.png');
+  background-image: url('/assets/images/bg-about-hero.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +37,7 @@
 }
 
 .bg-code-review {
-  background-image: url('~images/code-review.jpg');
+  background-image: url('/assets/images/code-review.jpg');
 
   &.default-padding {
     padding: 130px 0 90px 0;
@@ -57,7 +57,7 @@
 }
 
 .bg-get-started {
-  background-image: url('~images/bg-get-started-hero.png');
+  background-image: url('/assets/images/bg-get-started-hero.png');
   background-position: top left;
   background-repeat: no-repeat;
   position: absolute;
@@ -67,7 +67,7 @@
 
 .bg-map {
   height: 400px;
-  background-image: url('~images/map.jpg');
+  background-image: url('/assets/images/map.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,14 +82,14 @@
 }
 
 .bg-portfolio-list {
-  background-image: url('~images/bg-portfolio-list.png');
+  background-image: url('/assets/images/bg-portfolio-list.png');
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .bg-technology {
-  background-image: url('~images/bg-technology-hero.png');
+  background-image: url('/assets/images/bg-technology-hero.png');
   background-position: center top;
   background-repeat: no-repeat;
   position: absolute;
@@ -98,7 +98,7 @@
 }
 
 .bg-technology-detail {
-  background-image: url('~images/bg-technology-detail.png');
+  background-image: url('/assets/images/bg-technology-detail.png');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;

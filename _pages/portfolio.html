@@ -11,32 +11,31 @@ redirect_from:
   <div class="container">
     <h1 class="default-padding">Portfolio</h1>
     <div id="macy-container" data-columns="2" data-columns-small="1">
-      {% for slug in site.data.portfolio.order %} {% assign pages = site.pages |
-      where:'slug', slug %} {% for page in pages %}
-      <div
-        id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
-        class="ga-section card mb-1"
-      >
-        <a
-          href="{{ page.dir }}"
-          class="portfolio-tile bg-gray bg-{{ page.theme }} text-black"
-        >
-          <div class="content mb-2">
-            <h2 class="text-{{ page.theme }}">{{ page.title }}</h2>
-            <p class="my-4 tagline">{{ page.tagline }}</p>
-            <p>{{ page.description }}</p>
+      {% for slug in site.data.portfolio.order %}
+        {% assign pages = site.pages | where:'slug', slug %}
+        {% for page in pages %}
+          <div
+            id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
+            class="ga-section card mb-1"
+          >
+            <a
+              href="{{ page.dir }}"
+              class="portfolio-tile bg-gray bg-{{ page.theme }} text-black"
+            >
+              <div class="content mb-2">
+                <h2 class="text-{{ page.theme }}">{{ page.title }}</h2>
+                <p class="my-4 tagline">{{ page.tagline }}</p>
+                <p>{{ page.description }}</p>
+              </div>
+              <div class="svg-container">
+                <div class="svg-wrapper">
+                  {% include svg/preview-left.svg title=page.title images=page.images %}
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="svg-container">
-            <div class="svg-wrapper">
-              {% if page.project_type == 'mobile' %} {% include
-              svg/preview-mobile.svg slug=page.slug title=page.title %} {% else
-              %} {% include svg/preview-left.svg slug=page.slug title=page.title
-              img_height=page.desktop_img_height %} {% endif %}
-            </div>
-          </div>
-        </a>
-      </div>
-      {% endfor %} {% endfor %}
+        {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </section>

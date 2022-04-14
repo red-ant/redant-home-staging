@@ -6,7 +6,7 @@ description: >-
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://redant.com.au' # the base hostname & protocol for your site, e.g. http://example.com
 url_host: 'redant.com.au'
-logo: 'assets/webpack/logo_redant.png'
+logo: '/assets/images/logo_redant.png'
 announcement_bar: true
 
 # Build settings
@@ -22,6 +22,10 @@ defaults:
       path: admin
     values:
       sitemap: false
+sass:
+  implementation: sass-embedded
+  load_paths:
+    - node_modules
 
 # Jekyll Plugins
 plugins:
@@ -33,32 +37,18 @@ plugins:
 # Include for processing.
 include:
   - _pages
-  - _posts
-  - portfolio
-  - services
-  - technology
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
   - docker-compose.yml
   - Dockerfile
   - package.json
+  - Rakefile
   - README.md
   - script
-  - src
-  - webpack.config.js
   - yarn.lock
-  - yarn-error.log
   - archive
   - drafts
-  - _posts/archive
-  - _posts/drafts
   - jobs/archive
-  - .release.json
-  - .stage
-  - vendor

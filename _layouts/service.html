@@ -133,11 +133,7 @@
                 </div>
                 <div class="svg-container">
                   <div class="svg-wrapper">
-                    {% if page.project_type == 'mobile' %} {% include
-                    svg/preview-mobile.svg slug=page.slug title=page.title %} {%
-                    else %} {% include svg/preview-left.svg slug=page.slug
-                    title=page.title img_height=page.desktop_img_height %} {%
-                    endif %}
+                    {% include svg/preview-left.svg title=page.title images=page.images %}
                   </div>
                 </div>
               </a>
@@ -169,8 +165,7 @@
         })();
       </script>
 
-      {% include footer.html %} {% include slidedown-container.html %} {%
-      include scripts.html %}
+      {% include footer.html %} {% include slidedown-container.html %}
     </div>
   </body>
 </html>

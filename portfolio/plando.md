@@ -11,16 +11,19 @@ description:
 project_url: https://plando.com
 client: PlanDo
 project_date: 2013-now
-desktop_img_height: 488
 technologies:
   - AngularJS
   - Grape Ruby API
-images:
-  - filename: plando-1.jpg
 team_size:
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/plando/plando-1.jpg
+  - type: mobile
+    path: /assets/images/projects/plando/plando-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/plando/plando-hero-desktop.jpg
+    height: 488
 ---
 
 ## Project Description

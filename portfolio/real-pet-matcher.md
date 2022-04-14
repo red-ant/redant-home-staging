@@ -14,12 +14,16 @@ technologies:
   - Kubernetes
   - Amazon Web Services (AWS)
   - Google AI Machine Learning
-images:
-  - filename: real-pet-matcher-1.jpg
-  - filename: real-pet-matcher-2.jpg
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/real-pet-matcher/real-pet-matcher-1.jpg
+  - type: gallery
+    path: /assets/images/projects/real-pet-matcher/real-pet-matcher-2.jpg
+  - type: mobile
+    path: /assets/images/projects/real-pet-matcher/real-pet-matcher-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/real-pet-matcher/real-pet-matcher-hero-desktop.jpg
 ---
 
 ## How it works

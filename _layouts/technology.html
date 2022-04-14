@@ -184,11 +184,7 @@
                 </div>
                 <div class="svg-container">
                   <div class="svg-wrapper">
-                    {% if item.project_type == 'mobile' %} {% include
-                    svg/preview-mobile.svg slug=item.slug title=item.title %} {%
-                    else %} {% include svg/preview-left.svg slug=item.slug
-                    title=item.title img_height=item.desktop_img_height %} {%
-                    endif %}
+                    {% include svg/preview-left.svg title=page.title images=page.images %}
                   </div>
                 </div>
               </a>
@@ -197,8 +193,7 @@
           </div>
         </div>
       </section>
-      {% endif %} {% endfor %} {% include footer.html %} {% include scripts.html
-      %}
+      {% endif %} {% endfor %} {% include footer.html %}
     </div>
   </body>
 </html>

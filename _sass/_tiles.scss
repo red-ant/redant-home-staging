@@ -1,13 +1,15 @@
+@use "sass:math";
+
 .tile {
   position: relative;
   padding-top: $grid-gutter-width;
 
   &:nth-child(2n) {
-    padding-right: $grid-gutter-width / 2;
+    padding-right: math.div($grid-gutter-width, 2);
   }
 
   &:nth-child(3n) {
-    padding-left: $grid-gutter-width / 2;
+    padding-left: math.div($grid-gutter-width, 2);
   }
 
   .tile-count {
@@ -21,15 +23,15 @@
 
   h4 {
     font-size: 1.35rem;
-    margin: $grid-gutter-width 0 $grid-gutter-width / 2;
+    margin: $grid-gutter-width 0 math.div($grid-gutter-width, 2);
   }
 
   @include media-breakpoint-down(sm) {
-    padding-left: $grid-gutter-width / 2;
-    padding-right: $grid-gutter-width / 2;
+    padding-left: math.div($grid-gutter-width, 2);
+    padding-right: math.div($grid-gutter-width, 2);
 
     h4 {
-      margin: 0 0 $grid-gutter-width / 2;
+      margin: 0 0 math.div($grid-gutter-width, 2);
     }
   }
 }
@@ -107,7 +109,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    padding: $grid-gutter-width / 2;
+    padding: math.div($grid-gutter-width, 2);
   }
 }
 

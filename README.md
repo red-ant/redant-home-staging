@@ -4,8 +4,7 @@
 
 The Red Ant Website based on [Jekyll + Webpack](https://github.com/red-ant/jekyll-webpack).
 
-The app uses a standard Jekyll structure with all uncompiled asset source files
-located in `./_webpack`.
+The app uses a standard Jekyll structure with javascript compiled via esbuild.
 
 ## Quick start with yarn :runner:
 
@@ -16,7 +15,7 @@ cd ~/src
 git clone git@github.com:red-ant/redant-home.git
 cd redant-home
 bundle install && yarn install
-yarn start
+yarn dev
 open http://localhost:4000
 ```
 
@@ -30,23 +29,6 @@ Alternatively you can use the supplied docker-compose to get up and running:
 
 ```
 docker-compose up
-```
-
-## Commiting
-
-In order to keep code style minimally consistent this project has stylelint for SCSS, eslint for JS and [prettier](https://github.com/prettier/eslint-config-prettier) configured.
-Linting will run automatically when attempting to add a new commit
-
-Run linting manually:
-
-```bash
-$ yarn lint
-```
-
-Bypass pre-commit linting:
-
-```bash
-$ git commit -m "<YOUR COMMIT MESSAGE>" --no-verify
 ```
 
 ## Updating portfolio order
@@ -68,19 +50,11 @@ In the file `/_data/portfolio.json` you can change the order of the projects sho
 
 Use forestry.io -> https://redant.com.au/admin
 
-**Project image sizes:** Project images for desktop on the project detail header might vary in size. The desktop images are recalculated to 45.92% of the original image height in pixels and the default size is 729px. If an image is smaller than this default size, then you will have to add the calculated pixel height (to be supplied by Kap) in the project markdown file under the parameter `desktop_img_height`.
+**Project image sizes:** Project images for desktop on the project detail header might vary in size. The desktop images are recalculated to 45.92% of the original image height in pixels and the default size is 729px. If an image is smaller than this default size, then you will have to add the calculated pixel height (to be supplied by Kap) in the project markdown file under the parameter `hero.desktop.height`.
 
 Generally all images for posts / pages should be uploaded and handled through the forestry cms. Uploaded images live in `/assets/uploads`.
 
 Assets used within templates should live within `/assets/layout`.
-
-Assets loaded within js or css are handled by webpack and should reside in `_webpack/images`. Within SASS files images can be referenced with a `~` as below:
-
-```
-.class-name {
-  background-image: url('~images/folder123/folder123-image.jpg');
-}
-```
 
 ### Forestry
 

@@ -29,14 +29,14 @@
               <div class="post-detail-container section-border">
                 <p>{{ page.description }}</p>
               </div>
-              {% endif %} {% include gallery.html images=page.images
-              slug=page.slug %}
+              {% endif %}
+              {% include gallery.html images=page.images slug=page.slug %}
             </div>
           </div>
         </div>
       </section>
       <section class="pb-5 d-none d-sm-block" data-read-more></section>
-      {% include footer.html %} {% include scripts.html %}
+      {% include footer.html %}
     </div>
   </body>
 </html>

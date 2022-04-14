@@ -137,7 +137,8 @@ class: homepage
         </div>
 
         <div class="svg-wrapper">
-          {% include svg/preview-right.svg slug="managed" title="Managed App" %}
+          {% assign featured = site.pages | where: "slug", "managed" | first %}
+          {% include svg/preview-right.svg title="Managed App" images=featured.images %}
         </div>
       </div>
     </div>
@@ -169,7 +170,8 @@ class: homepage
         </div>
 
         <div class="svg-wrapper">
-          {% include svg/preview-right.svg slug="12wbt" title="12wbt" %}
+          {% assign featured = site.pages | where: "slug", "12wbt" | first %}
+          {% include svg/preview-right.svg title="12wbt" images=featured.images %}
         </div>
       </div>
     </div>
@@ -203,7 +205,8 @@ class: homepage
         </div>
 
         <div class="svg-wrapper">
-          {% include svg/preview-right.svg slug="huggies" title="Huggies" %}
+          {% assign featured = site.pages | where: "slug", "huggies" | first %}
+          {% include svg/preview-right.svg title="Huggies" images=featured.images %}
         </div>
       </div>
     </div>
@@ -253,9 +256,8 @@ class: homepage
             <p>
               Ruby on Rails also helps us create very high quality code. Each
               part of code has
-              <a href="/automated-testing/testing-web-projects-in-rails/"
-                >a series of Automated Tests</a
-              >. These perform checks to make sure that feature is working as it
+              <a href="/automated-testing/testing-web-projects-in-rails/">a series of Automated Tests</a>.
+              These perform checks to make sure that feature is working as it
               should. These get run every time a change is made. By doing this,
               we know that one change hasn’t broken something else. As soon as
               anything breaks or changes, our Continuous Integration server lets

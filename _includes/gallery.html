@@ -1,12 +1,13 @@
+{% assign images = include.images | where: "type", "gallery" %}
 <div class="row gallery-tiles">
-  {% for image in include.images %}
+  {% for image in images %}
     <div class="col-12">
-      <a href="{{ site.data.webpack[image.filename] }}"
+      <a href="{{ image.path }}"
         class="gallery-img"
         data-index="{{ forloop.index }}"
         data-toggle="modal"
         data-target="#gallery-modal">
-        <img src="{{ site.data.webpack[image.filename] }}" class="img-fluid" alt="Red Ant - {{ include.alt_attr }}">
+        <img src="{{ image.path }}" class="img-fluid" alt="Red Ant - {{ include.alt_attr }}">
       </a>
     </div>
   {% endfor %}
@@ -29,9 +30,9 @@
       <section class="carousel-wrapper">
         <div class="carousel-arrows"></div>
         <div class="carousel">
-          {% for image in include.images %}
+          {% for image in images %}
             <div class="slide">
-              <img class="d-block img-fluid" src="{{ site.data.webpack[image.filename] }}" alt="Red Ant - {{ include.alt_attr }}">
+              <img class="d-block img-fluid" src="{{ image.path }}" alt="Red Ant - {{ include.alt_attr }}">
               <h5 class="text-center mt-3">{{ image.title }}</h5>
             </div>
           {% endfor %}

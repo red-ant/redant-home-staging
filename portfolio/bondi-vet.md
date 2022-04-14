@@ -14,16 +14,25 @@ technologies:
   - Sendgrid
   - Fastly
   - Wistia
-images:
-  - filename: bondi-vet-1.jpg
-  - filename: bondi-vet-2.jpg
-  - filename: bondi-vet-3.jpg
-  - filename: bondi-vet-4.jpg
-  - filename: bondi-vet-5.jpg
-  - filename: bondi-vet-6.jpg
 team_size: 4 people
-project_type: ''
 lines_of_code: ''
+images:
+  - type: gallery
+    path: /assets/images/projects/bondi-vet/bondi-vet-1.jpg
+  - type: gallery
+    path: /assets/images/projects/bondi-vet/bondi-vet-2.jpg
+  - type: gallery
+    path: /assets/images/projects/bondi-vet/bondi-vet-3.jpg
+  - type: gallery
+    path: /assets/images/projects/bondi-vet/bondi-vet-4.jpg
+  - type: gallery
+    path: /assets/images/projects/bondi-vet/bondi-vet-5.jpg
+  - type: gallery
+    path: /assets/images/projects/bondi-vet/bondi-vet-6.jpg
+  - type: mobile
+    path: /assets/images/projects/bondi-vet/bondi-vet-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/bondi-vet/bondi-vet-hero-desktop.jpg
 ---
 
 We’ve partnered with <a href="http://wtfn.com/">WTFN</a> to bring bondivet.com to life, combining Red Ant’s technical know-how and WTFN’s extensive catalogue of content. The website aims to capitalise on the popularity of the TV show to build an active online audience.

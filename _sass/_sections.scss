@@ -26,13 +26,13 @@ section {
 
 .section-hero {
   background-color: $gray-100;
-  background-image: url('~images/bg-home-hero-mobile.png');
+  background-image: url("/assets/images/bg-home-hero-mobile.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
 
   .hero-image {
-    background-image: url('~images/home-hero.png');
+    background-image: url("/assets/images/home-hero.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -42,7 +42,7 @@ section {
 }
 
 #section-code-review-hero {
-  background-image: url('~images/bg-code-review-hero.png');
+  background-image: url("/assets/images/bg-code-review-hero.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -92,14 +92,14 @@ section {
   }
 
   .bg-services-1 {
-    background-image: url('~images/bg-services-mobile-1.png');
+    background-image: url("/assets/images/bg-services-mobile-1.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   .bg-services-2 {
-    background-image: url('~images/bg-services-mobile-2.png');
+    background-image: url("/assets/images/bg-services-mobile-2.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -157,7 +157,7 @@ section {
   padding-bottom: 5rem;
 
   &.bg-green {
-    background-image: url('~images/bg-testimonials-green.png');
+    background-image: url("/assets/images/bg-testimonials-green.png");
 
     .card {
       color: $green-200;
@@ -165,7 +165,7 @@ section {
   }
 
   &.bg-red {
-    background-image: url('~images/bg-testimonials-red.png');
+    background-image: url("/assets/images/bg-testimonials-red.png");
 
     .card {
       color: $red;
@@ -190,7 +190,7 @@ section {
   @include dashes($orange-200);
 
   &.about-reasons {
-    background-image: url('~images/bg-work-reasons.png');
+    background-image: url("/assets/images/bg-work-reasons.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -209,7 +209,7 @@ section {
 }
 
 #section-workshop-hero {
-  background-image: url('~images/bg-product-dev-hero.png');
+  background-image: url("/assets/images/bg-product-dev-hero.png");
   background-position: left top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -217,7 +217,7 @@ section {
 
 .cta-panel {
   background-color: #353933;
-  background-image: url('~images/services/digital-workshop/bg-cta.jpg');
+  background-image: url("/assets/images/services/digital-workshop/bg-cta.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -230,7 +230,7 @@ section {
 
 @include media-breakpoint-up(sm) {
   #section-service-options {
-    background-image: url('~images/bg-get-started-services.png');
+    background-image: url("/assets/images/bg-get-started-services.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -257,7 +257,7 @@ section {
   }
 
   .section-hero {
-    background-image: url('~images/bg-home-hero.png');
+    background-image: url("/assets/images/bg-home-hero.png");
 
     .hero-image {
       margin: 0;

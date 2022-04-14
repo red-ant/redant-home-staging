@@ -8,15 +8,18 @@ description: A data visualisation tool utilises customer data to better predict 
 project_url:
 client: Transport NSW and Veitch Lister Consulting
 project_date: 2019 (~6 months)
-desktop_img_height: 450
 team_size: 5
 lines_of_code:
 technologies:
   - Ruby on Rails
 images:
-  - filename: sydney-trains-1.jpg
-  - filename: sydney-trains-2.jpg
-project_type: ''
+  - type: gallery
+    path: /assets/images/projects/sydney-trains/sydney-trains-1.jpg
+  - type: gallery
+    path: /assets/images/projects/sydney-trains/sydney-trains-2.jpg
+  - type: desktop
+    path: /assets/images/projects/sydney-trains/sydney-trains-hero-desktop.jpg
+    height: 450
 ---
 
 ## Project background

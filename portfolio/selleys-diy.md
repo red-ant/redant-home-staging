@@ -16,13 +16,18 @@ technologies:
   - Radiant CMS
   - Paperclip
 team_size: 2 people
-images:
-  - filename: selleys-diy-1.jpg
-  - filename: selleys-diy-2.jpg
-  - filename: selleys-diy-3.jpg
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/selleys-diy/selleys-diy-1.jpg
+  - type: gallery
+    path: /assets/images/projects/selleys-diy/selleys-diy-2.jpg
+  - type: gallery
+    path: /assets/images/projects/selleys-diy/selleys-diy-3.jpg
+  - type: mobile
+    path: /assets/images/projects/selleys-diy/selleys-diy-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/selleys-diy/selleys-diy-hero-desktop.jpg
 ---
 
 ## Project Description

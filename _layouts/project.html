@@ -9,10 +9,7 @@
         <div class="project-preview-content">
           <div class="bg-angled bg-detail-{{ page.theme }}"></div>
           <div class="bg-gradient"></div>
-          {% if page.project_type == 'mobile' %} {% include
-          svg/preview-mobile.svg slug=page.slug title=page.title %} {% else %}
-          {% include svg/preview-right-middle.svg slug=page.slug
-          title=page.title img_height=page.desktop_img_height %} {% endif %}
+          {% include svg/preview-left.svg title=page.title images=page.images %}
         </div>
       </header>
 
@@ -78,7 +75,7 @@
         </div>
       </section>
 
-      {% include footer.html %} {% include scripts.html %}
+      {% include footer.html %}
     </div>
   </body>
 </html>

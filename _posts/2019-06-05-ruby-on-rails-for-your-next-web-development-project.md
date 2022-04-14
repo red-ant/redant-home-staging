@@ -28,7 +28,7 @@ publisher: Red Ant
 <section id="section-intro" class="bg-black"> <div class="container"> <div class="row align-items-center">
 <div class="col-md-8 pt-5"> <h1 class="project-title pb-2 mw-100"> Why choose Ruby on Rails? </h1> <hr> </div> <div class="col-md-4 text-center">
 
-<img class="img-fluid" src="{{ site.data.webpack['ruby-bg.png'] }}" alt="Ruby" width="200" height="225"/> </div> <div class="col-12 pt-3 pb-5"> <p class="text-lg"> The no nonsense guide for entrepreneurs, startups, product owners or anyone that is a bit baffled about tech stack options. </p> </div> </div> </div> </section>
+<img class="img-fluid" src="/assets/images/ruby-bg.png" alt="Ruby" width="200" height="225"/> </div> <div class="col-12 pt-3 pb-5"> <p class="text-lg"> The no nonsense guide for entrepreneurs, startups, product owners or anyone that is a bit baffled about tech stack options. </p> </div> </div> </div> </section>
 
 <section class="bg-gray-light py-5 text-md">
 <div class="container">

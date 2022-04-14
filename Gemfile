@@ -10,7 +10,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+gem "jekyll"
 gem "amp-jekyll"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -33,5 +33,5 @@ gem "public_suffix"
 # Required by heroku to build via the rake task
 gem "rake"
 
-# Installs yarn for heroku, not used anywhere else
-gem "webpacker"
+# Use Dart to compile sass
+gem "sass-embedded"

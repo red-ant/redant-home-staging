@@ -1,0 +1,30 @@
+---
+# Empty front matter so it compiles
+---
+
+@import "variables";
+@import "mixins";
+
+@import "bootstrap/scss/bootstrap";
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+@import "aos/dist/aos";
+
+@import "animations";
+@import "backgrounds";
+@import "buttons";
+@import "cards";
+@import "carousel";
+@import "footer";
+@import "headers";
+@import "layout";
+@import "modals";
+@import "nav";
+@import "payment-form";
+@import "sections";
+@import "text";
+@import "tiles";
+@import "accordion";
+@import "typeform";
+@import "digital-product-development";
+@import "technologies";

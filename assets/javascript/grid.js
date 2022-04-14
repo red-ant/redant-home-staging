@@ -1,12 +1,13 @@
-import Macy from 'macy';
+import $ from "jquery";
+import Macy from "macy";
 
-const init = $(function() {
+const init = $(function () {
   function init() {
-    if ($('#macy-container').length) {
-      var columns = $('#macy-container').data('columns');
-      var columnsSmall = $('#macy-container').data('columns-small');
+    if ($("#macy-container").length) {
+      var columns = $("#macy-container").data("columns");
+      var columnsSmall = $("#macy-container").data("columns-small");
       Macy({
-        container: '#macy-container',
+        container: "#macy-container",
         columns: columns,
         margin: 20,
         breakAt: {

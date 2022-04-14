@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .footer {
   background-color: $gray-600;
   color: $white;
@@ -12,7 +14,7 @@
   }
 
   .icon-list {
-    padding-left: $grid-gutter-width / 2 + 10;
+    padding-left: math.div($grid-gutter-width, 2) + 10;
 
     .fa {
       margin-left: -20px;

@@ -1,11 +1,12 @@
-import 'slick-carousel';
+import $ from "jquery";
+import "slick-carousel";
 
-const init = $(function() {
-  let $slick = $('.slick-redant');
+const init = $(function () {
+  let $slick = $(".slick-redant");
 
   if ($slick.length) {
     $slick.slick({
-      lazyLoad: 'ondemand',
+      lazyLoad: "ondemand",
       dots: true,
       arrows: false,
       autoplay: true,
