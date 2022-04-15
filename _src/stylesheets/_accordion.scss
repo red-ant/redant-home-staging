@@ -16,7 +16,7 @@
       position: relative;
 
       &::after {
-        content: '\f106';
+        content: "\f106";
         font-family: FontAwesome, sans-serif;
         position: absolute;
         top: 50%;
@@ -28,7 +28,7 @@
         color: #343a40;
 
         &::after {
-          content: '\f107';
+          content: "\f107";
         }
       }
     }

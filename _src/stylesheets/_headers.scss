@@ -47,7 +47,7 @@
 }
 
 .blog-header--agile {
-  background-image: url('/assets/images/headers/agile.jpg');
+  background-image: url("/assets/images/headers/agile.jpg");
   background-size: cover;
 }
 
@@ -73,7 +73,7 @@
     font-size: 75px;
     // gotham medium
     &.slash::before {
-      content: '/';
+      content: "/";
     }
 
     @include media-breakpoint-down(sm) {

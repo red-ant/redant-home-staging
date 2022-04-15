@@ -1,4 +1,4 @@
-@import 'mixins';
+@import "mixins";
 
 body {
   background-color: $gray-700;
@@ -24,7 +24,7 @@ body {
     list-style-type: none;
 
     li::before {
-      content: '\2014';
+      content: "\2014";
       position: absolute;
       margin-left: -38px;
       font-weight: bold;
@@ -94,7 +94,7 @@ body {
 }
 
 .ruby {
-  background-image: url('/assets/images/ruby.png');
+  background-image: url("/assets/images/ruby.png");
 }
 
 .homepage .ruby {

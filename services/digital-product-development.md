@@ -83,7 +83,7 @@ class: digital-product-development
     </div>
     <div class="row align-items-center pb-4">
       <div class="col-6 offset-3 col-md-5 offset-md-0 order-md-2 px-4 py-sm-4 py-lg-0">
-        <img class="img-fluid" src="/assets/images/icon-workshop.png" alt="Red Ant Digital Disovery Workshop. One day workshop to get to know you and the core of your product" />
+        <img class="img-fluid" src="/assets/images/services/digital-workshop/icon-workshop.png" alt="Red Ant Digital Disovery Workshop. One day workshop to get to know you and the core of your product" />
       </div>
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3">Discovery Workshop</h3>
@@ -94,7 +94,7 @@ class: digital-product-development
     </div>
     <div class="row align-items-center py-4">
       <div class="col-6 offset-3 col-md-5 offset-md-0 px-4 py-sm-4 py-lg-0">
-        <img class="img-fluid" src="/assets/images/icon-roadmap.png" alt="Red Ant Product Roadmap. Using the findings of the workshop, we compile your very own Product Roadmap." />
+        <img class="img-fluid" src="/assets/images/services/digital-workshop/icon-roadmap.png" alt="Red Ant Product Roadmap. Using the findings of the workshop, we compile your very own Product Roadmap." />
       </div>
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3 text-red-dark">Product Roadmap</h3>
@@ -108,7 +108,7 @@ class: digital-product-development
     </div>
     <div class="row align-items-center pt-4">
       <div class="col-6 offset-3 col-md-5 offset-md-0 order-md-2 px-4 py-sm-4 py-lg-0">
-        <img class="img-fluid" src="/assets/images/icon-sprint-plan.png" alt="Red Ant Agile Sprint Plan. Back up your product development with a this actionable guide and show how you can get things done " />
+        <img class="img-fluid" src="/assets/images/services/digital-workshop/icon-sprint-plan.png" alt="Red Ant Agile Sprint Plan. Back up your product development with a this actionable guide and show how you can get things done " />
       </div>
       <div class="col-12 col-md-7">
         <h3  class="mb-4 mt-3 text-red"> Agile Sprint Plan</h3>

@@ -19,7 +19,7 @@
         margin-bottom: 0.5rem;
 
         &::before {
-          content: '\f00c';
+          content: "\f00c";
           font-family: FontAwesome, sans-serif;
           color: $red;
           position: absolute;

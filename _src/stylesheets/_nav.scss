@@ -66,7 +66,7 @@
 
       &::after {
         display: block;
-        content: '';
+        content: "";
         background: #f00;
         height: 100%;
         width: 1px;
@@ -84,7 +84,7 @@
 
       &::after {
         display: block;
-        content: '';
+        content: "";
         background: $gray-300;
         height: 100%;
         width: 1px;
@@ -211,7 +211,7 @@
 
         &.active::before {
           background-color: $red;
-          content: '';
+          content: "";
           display: block;
           height: 4px;
           margin-left: -54px;
@@ -268,7 +268,7 @@
       padding: 15% 0;
 
       .links {
-        [data-aos='nav-link'],
+        [data-aos="nav-link"],
         a {
           &::before {
             margin-top: $font-size-base * 1.4;

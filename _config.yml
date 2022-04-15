@@ -3,10 +3,10 @@ email: ben@redant.com.au
 description: >-
   Red Ant is a Technical Agency. We create & build exceptional digital products.
   These live as web sites, in mobile apps, and in social networks.
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://redant.com.au' # the base hostname & protocol for your site, e.g. http://example.com
-url_host: 'redant.com.au'
-logo: '/assets/images/logo_redant.png'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://redant.com.au" # the base hostname & protocol for your site, e.g. http://example.com
+url_host: "redant.com.au"
+logo: "/assets/images/logo_redant.png"
 announcement_bar: true
 
 # Build settings
@@ -21,10 +21,6 @@ defaults:
       path: admin
     values:
       sitemap: false
-sass:
-  implementation: sass-embedded
-  load_paths:
-    - node_modules
 
 # Jekyll Plugins
 plugins:
@@ -40,6 +36,7 @@ include:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - build.js
   - docker-compose.yml
   - Dockerfile
   - package.json
@@ -50,3 +47,4 @@ exclude:
   - archive
   - drafts
   - jobs/archive
+  - assets/javascript

@@ -1,6 +1,10 @@
 import $ from "jquery";
 import "slick-carousel";
 
+// Compiles into bundle/index.css
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 const init = $(function () {
   let $slick = $(".slick-redant");
 

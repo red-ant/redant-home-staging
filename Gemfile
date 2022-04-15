@@ -33,4 +33,4 @@ gem "public_suffix"
 gem "rake"
 
 # Use Dart to compile sass
-gem "sass-embedded"
+# gem "sass-embedded"

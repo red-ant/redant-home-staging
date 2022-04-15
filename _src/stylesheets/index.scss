@@ -1,13 +1,12 @@
----
-# Empty front matter so it compiles
----
-
 @import "variables";
 @import "mixins";
 
-@import "bootstrap/scss/bootstrap";
+$slick-font-path: "slick-carousel/slick/fonts/";
+$slick-loader-path: "slick-carousel/slick/";
 @import "slick-carousel/slick/slick";
 @import "slick-carousel/slick/slick-theme";
+
+@import "bootstrap/scss/bootstrap";
 @import "aos/dist/aos";
 
 @import "animations";

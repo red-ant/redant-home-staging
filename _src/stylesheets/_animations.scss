@@ -1,4 +1,4 @@
-[data-aos='platform-svg'] {
+[data-aos="platform-svg"] {
   .square {
     transform: translate(0);
     transition-duration: 1.2s;
@@ -24,7 +24,7 @@
   }
 }
 
-[data-aos='approach-svg'] {
+[data-aos="approach-svg"] {
   .square-wrapper {
     transform: translate(240px, 0);
 
@@ -69,7 +69,7 @@
   }
 }
 
-[data-aos='dropshadow'] {
+[data-aos="dropshadow"] {
   transform: translate(0, 40px);
 
   .shadow1,
