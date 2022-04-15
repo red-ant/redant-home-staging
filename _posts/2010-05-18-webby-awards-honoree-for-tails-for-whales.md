@@ -34,11 +34,6 @@ The Tails for Whales site has been selected as an honoree for [the Webby Awards]
 
 We designed and built the site, all based on the awesome idea from Ben at Republic. Here is his explanation of the Tails for Whales campaign. A great example of what you can do with a good idea.
 
-{% if page.url contains 'amp/' %}
-<amp-iframe width="560" height="315" src="https://www.youtube.com/embed/v6iGXFEEOOU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen layout="responsive"></amp-iframe>
-{% else %}
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v6iGXFEEOOU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen layout="responsive"></iframe>
-{% endif %}
 
 _image credit: [Twinkle Bell](https://www.flickr.com/photos/twinklebell/)_

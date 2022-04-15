@@ -16,7 +16,6 @@ google_analtyics: UA-421251-1
 gtm:
   dev: GTM-N3CM249
   prod: GTM-P7QNBDH
-ampdir: amp
 defaults:
   - scope:
       path: admin
@@ -31,7 +30,6 @@ sass:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - amp-jekyll
   - jekyll-redirect-from
 
 # Include for processing.

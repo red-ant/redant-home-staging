@@ -49,22 +49,12 @@ The problem is that there are a few technical issues with accurately recording u
 
 Here's a simple example, using the [Twitter join form](https://twitter.com/signup) as an example. The first screencast is what a user actually sees:
 
-{% if page.url contains 'amp/' %}
-<amp-iframe width="560" height="315" src="https://www.youtube.com/embed/TxLYUw2PVWI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen layout="responsive"></amp-iframe>
-{% else %}
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TxLYUw2PVWI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen layout="responsive"></iframe>
-{% endif %}
 
 This is (in my humble opinion) a pretty nice join form. It gives lots of clear feedback and helpful suggestions. The form uses Ajax to check if that username is available or in the right format, plus comes up with some helpful suggestions. In this example user tries a few and then chooses one of the suggested names.
 
 This is how the same user behaviour on this form would look like via Clicktale. Note the absence of any kind of prompts or help text, and the pauses while the user reads the validation message (which isn't visible).
-{% if page.url contains 'amp/' %}
-<amp-iframe width="560" height="315" src="https://www.youtube.com/embed/PocHJYNAR7s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen layout="responsive"></amp-iframe>
-{% else %}
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PocHJYNAR7s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen layout="responsive"></iframe>
-{% endif %}
 
 If you were viewing this playback to get a sense of how the form was being used, you might conclude that the user is having real trouble with filling it in. Not only that, but none of the prompts are appearing and the form looks totally broken. Have we tested in all browsers? Is this a problem that occurs under load? What is this user doing differently to all our test results?
 

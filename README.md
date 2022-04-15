@@ -72,13 +72,3 @@ The site can be deployed to gh-pages manually with:
 ```
 yarn release
 ```
-
-## AMP
-
-AMP requires a customised css file that requires the minimum Bootstrap styles to render posts. This is handled by webpack using the amp.js entrypoint which compiles to /assets/amp.[hash].css.
-
-- `src/styles/amp/` contains all custom AMP styles. This is required because AMP limits the stylesheet size to 50kb and has constraints that our custom styles need to adhere to.
-- `script/amp` is called post build which copies `/assets/amp.[hash].css` to `_includes/amp/index.css` for Jekyll to consume. This is handled by webpack using the `src/amp.js` entrypoint which compiles to `/assets/amp.[hash].css`.
-- `_layouts/amp.html` is the main template the amp-jekyll plugin uses to generate the AMP pages
-- `_includes/amp` contains the customised headers and elements AMP needs in order to be valid
-- Reference at [amp-jekyll plugin](https://github.com/juusaw/amp-jekyll) and [here](https://nbsoftsolutions.com/blog/creating-a-parallel-amp-site-with-jekyll).

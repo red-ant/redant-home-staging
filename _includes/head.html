@@ -21,12 +21,6 @@
   {% if site.gtm %}
     {% include gtm.html %}
   {% endif %}
-  {% if page.path contains '_posts' %}
-    <link
-      rel="amphtml"
-      href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}"
-    />
-  {% endif %}
   <script>
     if (!(window.fetch&&window.Promise&&[].includes&&Object.assign&&window.Map)) {
       document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
