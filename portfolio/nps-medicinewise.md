@@ -17,7 +17,7 @@ technologies:
   - WAVE visually impaired testing tool as part of CI build chain
 project_date: 2015-17
 team_size:
-lines_of_code: ''
+lines_of_code: ""
 images:
   - type: gallery
     path: /assets/images/projects/nps-medicinewise/nps-medicinewise-1.jpg
@@ -47,7 +47,7 @@ A good CMS can help with some parts of this, and a good process workflow can hel
 
 Behind the scenes, the project included initiatives that would save money and increase efficiency for NPS administrators. One of the key requirements for NPS was for multiple members of the NPS team to be able to update content at the same time. We implemented a Headless CMS to provide the level of flexibility required to let multiple content editors update content at the same time, avoiding rigid publishing workflows and bottlenecks.
 
-![Scrivito editing CMS](/assets/images/scrivito-1.gif)
+![Scrivito editing CMS](/assets/images/projects/nps-medicinewise/scrivito-1.gif)
 
 <div style="padding:20px;background:#eee;">
 
@@ -69,7 +69,7 @@ Pick your CMS by first understanding your total requirements, then determine if 
 
 Anyway, back to the NPS project. The next phase of the project was to update the rest of quite a large existing site to also use Scrivito. This meant designing and building new templates, as well as the content team updating literally thousands of pages of content. One of the nice features is the ability to create working copies. This means anyone on a team can start working on a version of the site, and then merge their changes when they are done without overwriting other people’s changes.
 
-![Scrivito working copies](/assets/images/scrivito-working-copy.gif)
+![Scrivito working copies](/assets/images/projects/nps-medicinewise/scrivito-working-copy.gif)
 
 Finally, all of this needed to get set up in a resilient manner. Part of the site relied on automated feeds, so we needed to make sure if there was an error in the feed, it would get automatically healed (in the case of a missing image or tag) or reported to a human. We used Automated Tests to make sure the code was working correctly, and finally deployed to a Kubernetes cluster on Amazon AWS.
 

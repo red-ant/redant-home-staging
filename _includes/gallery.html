@@ -1,43 +1,64 @@
 {% assign images = include.images | where: "type", "gallery" %}
-<div class="row gallery-tiles">
-  {% for image in images %}
+<div data-controller="slick" data-slick-style-value="gallery">
+  <div class="row gallery-tiles">
+    {% for image in images %}
     <div class="col-12">
-      <a href="{{ image.path }}"
+      <a
+        href="{{ image.path }}"
         class="gallery-img"
-        data-index="{{ forloop.index }}"
         data-toggle="modal"
-        data-target="#gallery-modal">
-        <img src="{{ image.path }}" class="img-fluid" alt="Red Ant - {{ include.alt_attr }}">
+        data-target="#gallery-modal"
+        data-slick-index="{{ forloop.index | minus: 1 }}"
+        data-action="click->slick#slideTo"
+      >
+        <img
+          src="{{ image.path }}"
+          class="img-fluid"
+          alt="Red Ant - {{ include.alt_attr }}"
+        />
       </a>
     </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
 
-<div id="gallery-modal"
-  class="modal fade"
-  data-backdrop="static"
-  aria-labelledby="gallery-modal"
-  aria-hidden="true"
-  role="dialog"
-  tabindex="-1">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <section class="carousel-wrapper">
-        <div class="carousel-arrows"></div>
-        <div class="carousel">
-          {% for image in images %}
-            <div class="slide">
-              <img class="d-block img-fluid" src="{{ image.path }}" alt="Red Ant - {{ include.alt_attr }}">
-              <h5 class="text-center mt-3">{{ image.title }}</h5>
-            </div>
-          {% endfor %}
+  <div
+    id="gallery-modal"
+    class="modal fade"
+    role="dialog"
+    tabindex="-1"
+    aria-labelledby="gallery-modal"
+    aria-hidden="true"
+    data-backdrop="static"
+  >
+    <div
+      class="modal-dialog"
+      role="document"
+      data-action="shown.bs.modal->slick#slideTo"
+    >
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      </section>
+        <section data-slick-target="slider">
+          {% for image in images %}
+          <div class="slide">
+            <img
+              class="d-block img-fluid"
+              src="{{ image.path }}"
+              alt="Red Ant - {{ include.alt_attr }}"
+            />
+            <h5 class="text-center mt-3">{{ image.title }}</h5>
+          </div>
+          {% endfor %}
+        </section>
+      </div>
     </div>
   </div>
 </div>

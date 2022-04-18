@@ -78,7 +78,7 @@ class: digital-product-development
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p class="h1 text-center mb-5" >How it works</p>
+        <p class="h1 text-center mb-5">How it works</p>
       </div>
     </div>
     <div class="row align-items-center pb-4">
@@ -88,7 +88,7 @@ class: digital-product-development
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3">Discovery Workshop</h3>
         <p>
-          One day <a href="#faqs-discovery-workshop" data-toggle="collapse" data-target="#a1" aria-expanded="true" aria-controls="a1">workshop</a> to get to know you and the core of your product. Bring vision of your business, audiences, stakeholders and organisational goals into focus.
+          One day <a href="#faqs-discovery-workshop" data-toggle="collapse" data-target="#a1" data-controller="scroll-to">workshop</a> to get to know you and the core of your product. Bring vision of your business, audiences, stakeholders and organisational goals into focus.
         </p>
       </div>
     </div>
@@ -99,7 +99,7 @@ class: digital-product-development
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3 text-red-dark">Product Roadmap</h3>
         <p>
-          Using the findings of the workshop, we compile your <a href="#faqs-product-roadmap" data-toggle="collapse" data-target="#a2" aria-expanded="true" aria-controls="a2">Product Roadmap</a>.
+          Using the findings of the workshop, we compile your <a href="#faqs-product-roadmap" data-toggle="collapse" data-target="#a2" data-controller="scroll-to">Product Roadmap</a>.
         </p>
         <p>
           This one page document communicates the big picture of your product with phases of development and business goals. So you can promote and share your vision with your stakeholder with confidence.
@@ -116,7 +116,7 @@ class: digital-product-development
           Back up your product development with a this actionable guide and show how you can get thins done.
         </p>
         <p>
-          Using <a href="#faqs-agile-methodology" data-toggle="collapse" data-target="#a5" aria-expanded="true" aria-controls="a5"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
+          Using <a href="#faqs-agile-methodology" data-toggle="collapse" data-target="#a5" data-controller="scroll-to"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
         </p>
       </div>
     </div>
@@ -154,8 +154,7 @@ class: digital-product-development
       <div class="col">
         <div class="accordion" id="workshop-faqs">
           <div class="card">
-            <div class="anchor" id="faqs-discovery-workshop" ></div>
-            <div class="card-header">
+            <div id="faqs-discovery-workshop" class="card-header">
               <h3 class="mb-0">
                 <button
                   class="btn btn-link collapsed"
@@ -187,8 +186,7 @@ class: digital-product-development
             </div>
           </div>
           <div class="card">
-            <div class="anchor" id="faqs-product-roadmap" ></div>
-            <div class="card-header">
+            <div id="faqs-product-roadmap" class="card-header">
               <h3 class="mb-0">
                 <button
                   class="btn btn-link collapsed"
@@ -210,8 +208,7 @@ class: digital-product-development
             </div>
           </div>
           <div class="card">
-            <div class="anchor" id="faqs-agile-sprint-plan" ></div>
-            <div class="card-header" >
+            <div id="faqs-agile-sprint-plan" class="card-header">
               <h3 class="mb-0">
                 <button
                   class="btn btn-link collapsed "
@@ -233,10 +230,9 @@ class: digital-product-development
               </div>
             </div>
           </div>
-          <div class="card" >
-            <div class="anchor" id="faqs-agile-methodology" ></div>
-            <div class="card-header">
-              <h3 class="mb-0" >
+          <div class="card">
+            <div id="faqs-agile-methodology" class="card-header">
+              <h3 class="mb-0">
                 <button
                   class="btn btn-link  collapsed"
                   type="button"

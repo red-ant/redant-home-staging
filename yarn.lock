@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@hotwired/stimulus@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@hotwired/stimulus/-/stimulus-3.0.1.tgz#141f15645acaa3b133b7c247cad58ae252ffae85"
+  integrity sha512-oHsJhgY2cip+K2ED7vKUNd2P+BEswVhrCYcJ802DSsblJFv7mPFVk3cQKvm2vHgHeDVdnj7oOKrBbzp1u8D+KA==
+
 "@iarna/toml@2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
@@ -2206,6 +2211,16 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
+
+stimulus-reveal-controller@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/stimulus-reveal-controller/-/stimulus-reveal-controller-4.0.0.tgz#61579baf536d0015e618be1a54bc6aa6cb0d0e22"
+  integrity sha512-LyzASoA5tl3yid+yzzZ3dF+560dGffma+c6ph+Eq3ylG4gn9SK/SPMbajRrFsPDpiFuAa49K3dlHTW6nMg9aFg==
+
+stimulus-scroll-to@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/stimulus-scroll-to/-/stimulus-scroll-to-4.0.0.tgz#433a726d37c76762d80b2e30a619bff116408608"
+  integrity sha512-/2qWiC/F2D0l1+FnOL1spTH9H6g/P5e1j/N7Ei2sgZ2/621l+t1qLzrWfHhrHDdmKAq3HlFFxNY6YEMC1jpVRw==
 
 strict-uri-encode@^2.0.0:
   version "2.0.0"

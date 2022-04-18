@@ -7,7 +7,7 @@
     {% endfor %}
   </div>
 
-  <div id="macy-container" data-columns="3" data-columns-small="2">
+  <div data-controller="macy">
     {% for post in site.categories[include.category] offset:1 limit:postLimit %}
       {% include post-card.html %}
     {% endfor %}

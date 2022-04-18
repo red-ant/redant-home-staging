@@ -42,3 +42,17 @@
     transition: 0.2s;
   }
 }
+
+// Shouldn't do this but work with what exists
+.btn-link {
+  color: $red;
+
+  &:hover {
+    color: #df4140bf;
+  }
+}
+
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}

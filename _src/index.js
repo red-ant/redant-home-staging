@@ -4,4 +4,5 @@ window.jquery = window.$ = jquery;
 
 import "bootstrap";
 import "./stylesheets/index.scss";
+import "./controllers";
 import "./javascript";

@@ -103,45 +103,53 @@
       </section>
       {% endif %}
 
-      <section class="py-5">
-        <div class="container">
-          <h2 class="font-weight-normal mb-5 text-center">
-            Relevant case study project
-          </h2>
-          <div id="macy-container" data-columns="1" data-columns-small="1">
-            {% for slug in page.projects %} {% assign pages = site.pages |
-            where: 'slug', slug %} {% for page in pages %}
+      {% assign count = page.projects | size %}
+      {% if count > 0 %}
+        <section class="py-5">
+          <div class="container">
+            <h2 class="font-weight-normal mb-5 text-center">
+              Relevant case study project
+            </h2>
             <div
-              id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
-              class="ga-section card mb-1"
-            >
-              <a
-                href="{{ page.dir }}"
-                class="portfolio-tile bg-gray bg-{{ page.theme }}"
-              >
-                <div class="content mb-2">
-                  <h2>{{ page.title }}</h2>
-                  <div class="hr-wrapper">
-                    <hr class="hr-white" />
+              data-controller="macy"
+              data-macy-columns-lg-value="1"
+              data-macy-columns-md-value="1">
+              {% for slug in page.projects %}
+                {% assign pages = site.pages | where: 'slug', slug %}
+                {% for page in pages %}
+                  <div
+                    id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
+                    class="ga-section card mb-1"
+                  >
+                    <a
+                      href="{{ page.dir }}"
+                      class="portfolio-tile bg-gray bg-{{ page.theme }}"
+                    >
+                      <div class="content mb-2">
+                        <h2>{{ page.title }}</h2>
+                        <div class="hr-wrapper">
+                          <hr class="hr-white" />
+                        </div>
+                        <h3 class="h5 my-4">{{ page.tagline }}</h3>
+                        <p>{{ page.description }}</p>
+                        <p>
+                          Click for more details
+                          <i class="fa fa-chevron-right ml-1"></i>
+                        </p>
+                      </div>
+                      <div class="svg-container">
+                        <div class="svg-wrapper">
+                          {% include svg/preview-left.svg title=page.title images=page.images %}
+                        </div>
+                      </div>
+                    </a>
                   </div>
-                  <h3 class="h5 my-4">{{ page.tagline }}</h3>
-                  <p>{{ page.description }}</p>
-                  <p>
-                    Click for more details
-                    <i class="fa fa-chevron-right ml-1"></i>
-                  </p>
-                </div>
-                <div class="svg-container">
-                  <div class="svg-wrapper">
-                    {% include svg/preview-left.svg title=page.title images=page.images %}
-                  </div>
-                </div>
-              </a>
+                {% endfor %}
+              {% endfor %}
             </div>
-            {% endfor %} {% endfor %}
           </div>
-        </div>
-      </section>
+        </section>
+      {% endif %}
 
       <script>
         (function() {

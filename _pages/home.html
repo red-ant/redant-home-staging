@@ -52,7 +52,9 @@ class: homepage
       <div class="col-md-4 px-3 px-sm-2 mb-3 mb-sm-0">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title text-green mb-0 h5">We <span>Advise</span></h2>
+            <h2 class="card-title text-green mb-0 h5">
+              We <span>Advise</span>
+            </h2>
             <hr class="hr-green" />
             <p class="card-text pt-3">
               We can give you advice and a blueprint for how to proceed for the
@@ -138,7 +140,8 @@ class: homepage
 
         <div class="svg-wrapper">
           {% assign featured = site.pages | where: "slug", "managed" | first %}
-          {% include svg/preview-right.svg title="Managed App" images=featured.images %}
+          {% include svg/preview-right.svg title="Managed App"
+          images=featured.images %}
         </div>
       </div>
     </div>
@@ -170,8 +173,8 @@ class: homepage
         </div>
 
         <div class="svg-wrapper">
-          {% assign featured = site.pages | where: "slug", "12wbt" | first %}
-          {% include svg/preview-right.svg title="12wbt" images=featured.images %}
+          {% assign featured = site.pages | where: "slug", "12wbt" | first %} {%
+          include svg/preview-right.svg title="12wbt" images=featured.images %}
         </div>
       </div>
     </div>
@@ -206,7 +209,8 @@ class: homepage
 
         <div class="svg-wrapper">
           {% assign featured = site.pages | where: "slug", "huggies" | first %}
-          {% include svg/preview-right.svg title="Huggies" images=featured.images %}
+          {% include svg/preview-right.svg title="Huggies"
+          images=featured.images %}
         </div>
       </div>
     </div>
@@ -238,7 +242,7 @@ class: homepage
           web sites and apps.
         </p>
         <div class="collapse-group">
-          <div class="collapse" id="more-about-rails">
+          <div id="more-about-rails" class="collapse">
             <p>
               Ruby on Rails speeds up many of the simple tasks, and allows for
               extremely rapid creation of prototypes and working code. It also
@@ -256,22 +260,23 @@ class: homepage
             <p>
               Ruby on Rails also helps us create very high quality code. Each
               part of code has
-              <a href="/automated-testing/testing-web-projects-in-rails/">a series of Automated Tests</a>.
-              These perform checks to make sure that feature is working as it
+              <a href="/automated-testing/testing-web-projects-in-rails/"
+                >a series of Automated Tests</a
+              >. These perform checks to make sure that feature is working as it
               should. These get run every time a change is made. By doing this,
               we know that one change hasn’t broken something else. As soon as
               anything breaks or changes, our Continuous Integration server lets
               us know and the code is fixed.
             </p>
           </div>
-
           <a
-            href="#more-about-rails"
-            class="more"
+            href="#section-ruby-on-rails"
+            class="btn btn-link btn-red p-0"
             data-toggle="collapse"
             data-target="#more-about-rails"
-            >Read more.</a
-          >
+            data-controller="scroll-to">
+            Read more.
+          </a>
         </div>
       </div>
     </div>
@@ -288,11 +293,9 @@ class: homepage
         <a href="/blog/" class="more">View all</a>
       </div>
     </div>
-    <div id="macy-container" data-columns="3" data-columns-small="2">
-      {% for post in site.posts limit:3 %}
-        {% unless include.type != nil or include.type == post.type %}
-          {% include post-card.html %}
-        {% endunless %}
+    <div data-controller="macy">
+      {% for post in site.posts limit:3 %} {% unless include.type != nil or
+      include.type == post.type %} {% include post-card.html %} {% endunless %}
       {% endfor %}
     </div>
   </div>

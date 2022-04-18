@@ -124,7 +124,7 @@
   .nav-link {
     @include montserrat($montserrat-semibold);
     color: $black;
-
+    font-size: 0.9em;
     &.active,
     &:focus,
     &:hover {

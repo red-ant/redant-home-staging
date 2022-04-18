@@ -1,11 +1,15 @@
 const { sassPlugin } = require("esbuild-sass-plugin");
 
+const watch = process.argv.includes("--watch");
+
 require("esbuild")
   .build({
     entryPoints: ["_src/index.js"],
     outdir: "assets/bundle",
+    watch: watch,
+    minify: !watch,
+    logLevel: "debug",
     bundle: true,
-    minify: true,
     external: ["/assets/*"],
     loader: {
       ".gif": "file",

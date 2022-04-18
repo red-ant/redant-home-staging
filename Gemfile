@@ -32,5 +32,5 @@ gem "public_suffix"
 # Required by heroku to build via the rake task
 gem "rake"
 
-# Use Dart to compile sass
-# gem "sass-embedded"
+# Required for Ruby v3
+gem "webrick"

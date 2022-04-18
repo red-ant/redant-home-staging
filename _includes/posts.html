@@ -1,6 +1,9 @@
 <section class="py-5 container">
-  <div id="macy-container" data-columns="3" data-columns-small="2">
-    {% for post in site.posts %} {% unless include.type != nil or include.type
-    == post.type %} {% include post-card.html %} {% endunless %} {% endfor %}
+  <div data-controller="macy">
+    {% for post in site.posts %}
+      {% unless include.type != nil or include.type == post.type %}
+        {% include post-card.html %}
+      {% endunless %}
+    {% endfor %}
   </div>
 </section>
