@@ -1,4 +1,4 @@
-ruby "2.7.5"
+ruby "2.7.6"
 
 source "https://rubygems.org"
 
@@ -31,6 +31,3 @@ gem "public_suffix"
 
 # Required by heroku to build via the rake task
 gem "rake"
-
-# Required for Ruby v3
-gem "webrick"

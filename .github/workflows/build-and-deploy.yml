@@ -31,7 +31,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 12.22.11
+          node-version: 16.13.1
 
       - name: Locate Yarn Cache
         id: yarn-cache-dir-path

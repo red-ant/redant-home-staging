@@ -63,7 +63,6 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -76,10 +75,9 @@ DEPENDENCIES
   public_suffix
   rake
   tzinfo-data
-  webrick
 
 RUBY VERSION
-   ruby 2.7.5p203
+   ruby 2.7.6p219
 
 BUNDLED WITH
    2.1.4
