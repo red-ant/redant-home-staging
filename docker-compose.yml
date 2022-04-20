@@ -1,21 +1,19 @@
-version: '3'
+version: "3"
 
 services:
-  webpack: &default
-    command: yarn start:webpack
+  esbuild: &default
     build: .
+    command: yarn esbuild --watch
     volumes:
-      - .:/usr/local/app
-      - bundle:/usr/local/bundle
-      - node_modules:/usr/local/app/node_modules
+      - .:/srv/jekyll
+      - node_modules:/srv/jekyll/node_modules
 
   jekyll:
     <<: *default
-    command: yarn start:jekyll --host 0.0.0.0
+    command: bundle exec jekyll serve --livereload --host 0.0.0.0
     ports:
       - 4000:4000
       - 35729:35729
 
 volumes:
-  ? bundle
-  ? node_modules
+  node_modules:

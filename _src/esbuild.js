@@ -1,5 +1,4 @@
 const { sassPlugin } = require("esbuild-sass-plugin");
-
 const watch = process.argv.includes("--watch");
 
 require("esbuild")

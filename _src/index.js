@@ -2,7 +2,8 @@
 import jquery from "jquery";
 window.jquery = window.$ = jquery;
 
-import "bootstrap";
 import "./stylesheets/index.scss";
+
+import "bootstrap";
+import "./aos";
 import "./controllers";
-import "./javascript";

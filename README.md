@@ -19,13 +19,7 @@ yarn dev
 open http://localhost:4000
 ```
 
-If nokogiri fails, then try:
-
-```
-bundle config build.nokogiri --use-system-libraries --with-xml2-include=$(brew --prefix libxml2)/include/libxml2
-```
-
-Alternatively you can use the supplied docker-compose to get up and running:
+Alternatively you can use the supplied docker-compose to get up and running, pass `--build` on the first run:
 
 ```
 docker-compose up
@@ -54,8 +48,6 @@ Use forestry.io -> https://redant.com.au/admin
 
 Generally all images for posts / pages should be uploaded and handled through the forestry cms. Uploaded images live in `/assets/uploads`.
 
-Assets used within templates should live within `/assets/layout`.
-
 ### Forestry
 
 Forestry front matters and settings are in the `.forestry` folder.
@@ -65,10 +57,4 @@ All forestry page asset uploads are set to go into the `/assets/uploads` folder.
 
 ## Release / Deploy
 
-Forestry will compile and deploy the site when saving changes or pushing.
-
-The site can be deployed to gh-pages manually with:
-
-```
-yarn release
-```
+A github workflow will compile and deploy to `gh_pages` when updates are pushed to `master`.

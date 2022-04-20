@@ -1,17 +1,12 @@
-FROM starefossen/ruby-node:2-8-alpine
+FROM jekyll/jekyll:4.2.2
 
-# Minimum requirements to run jekyll / webpack
-RUN apk add --no-cache --update bash \
-                                build-base \
-                                yarn
-
-WORKDIR /usr/local/app
+WORKDIR /srv/jekyll
 ENV PATH ${WORKDIR}/node_modules/.bin:$PATH
 
-ADD Gemfile* ./
+ADD Gemfile Gemfile.lock ./
 RUN bundle install
 
 ADD package.json yarn.lock ./
-RUN yarn install --pure-lockfile
+RUN yarn install
 
 COPY . ./

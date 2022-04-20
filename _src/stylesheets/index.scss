@@ -1,20 +1,14 @@
-@import "variables";
+@import "bootstrap";
 @import "mixins";
 
-$slick-font-path: "slick-carousel/slick/fonts/";
-$slick-loader-path: "slick-carousel/slick/";
-@import "slick-carousel/slick/slick";
-@import "slick-carousel/slick/slick-theme";
-
-@import "bootstrap/scss/bootstrap";
-@import "aos/dist/aos";
-
+@import "accordion";
 @import "animations";
 @import "backgrounds";
 @import "borders";
 @import "buttons";
 @import "cards";
 @import "carousel";
+@import "digital-product-development";
 @import "footer";
 @import "headers";
 @import "layout";
@@ -22,9 +16,7 @@ $slick-loader-path: "slick-carousel/slick/";
 @import "nav";
 @import "payment-form";
 @import "sections";
+@import "technologies";
 @import "text";
 @import "tiles";
-@import "accordion";
 @import "typeform";
-@import "digital-product-development";
-@import "technologies";
