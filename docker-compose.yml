@@ -2,15 +2,18 @@ version: "3"
 
 services:
   esbuild: &default
-    build: .
-    command: yarn esbuild --watch
+    image: jekyll/jekyll:4.2.2
+    working_dir: /srv/jekyll
+    command: bash -c "yarn install && yarn esbuild --watch"
+    container_name: esbuild
     volumes:
       - .:/srv/jekyll
       - node_modules:/srv/jekyll/node_modules
 
   jekyll:
     <<: *default
-    command: bundle exec jekyll serve --livereload --host 0.0.0.0
+    command: bash -c "bundle install && jekyll serve --livereload --host 0.0.0.0"
+    container_name: jekyll
     ports:
       - 4000:4000
       - 35729:35729
