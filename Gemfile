@@ -29,5 +29,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Install manually as Forestry can't locate this
 gem "public_suffix"
 
-# Required by heroku to run build tasks via the Rakefile
-gem "rake"
+# Required for Ruby v3
+gem "webrick"
