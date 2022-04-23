@@ -31,13 +31,17 @@ body {
       font-weight: bold;
     }
   }
+}
 
-  &.dashed-green {
-    ul {
-      li::before {
-        color: $green-200;
-      }
-    }
+.dashed-green {
+  li::before {
+    color: $green-200;
+  }
+}
+
+.dashed-red {
+  li::before {
+    color: $red;
   }
 }
 
