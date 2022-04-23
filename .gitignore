@@ -3,7 +3,5 @@
 .tool-versions
 *.log
 *.bak
-_includes/amp/index.css
 _site
 node_modules
-assets/bundle

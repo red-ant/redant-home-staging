@@ -6,9 +6,8 @@
   "author": "Jason Taylor <jason@redant.com.au>",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "concurrently 'yarn build --watch' 'yarn serve'",
     "build": "node _src/esbuild.js",
-    "serve": "bundle exec jekyll serve --livereload"
+    "dev": "bundle exec jekyll serve --livereload"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",

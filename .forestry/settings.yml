@@ -17,10 +17,10 @@ use_front_matter_path: false
 file_template: ":year:/:filename:"
 build:
   preview_env:
-  - JEKYLL_ENV=staging
+    - JEKYLL_ENV=staging
   preview_output_directory: _site
-  install_dependencies_command: bash -c "bundle install && yarn install"
+  install_dependencies_command: bash -c "bundle && yarn"
   preview_docker_image: jekyll/jekyll:4.2.2
   mount_path: "/srv/jekyll"
   instant_preview_command: bash -c "jekyll serve --drafts --unpublished
-    --future --port 8080 --host 0.0.0.0 -d _site"
+    --future --port 8080 --host 0.0.0.0 --destination _site"
