@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: true
 admin_path: "/admin"
-webhook_url: 
+webhook_url:
 sections:
 - type: jekyll-pages
   label: Pages
@@ -22,5 +22,5 @@ build:
   install_dependencies_command: bash -c "bundle install && yarn install"
   preview_docker_image: jekyll/jekyll:4.2.2
   mount_path: "/srv/jekyll"
-  instant_preview_command: bash -c "yarn esbuild && jekyll serve --drafts --unpublished
+  instant_preview_command: bash -c "jekyll serve --drafts --unpublished
     --future --port 8080 --host 0.0.0.0 -d _site"

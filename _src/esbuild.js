@@ -3,12 +3,12 @@ const watch = process.argv.includes("--watch");
 
 require("esbuild")
   .build({
-    entryPoints: ["_src/index.js"],
-    outdir: "assets/bundle",
+    bundle: true,
     watch: watch,
     minify: !watch,
     logLevel: "debug",
-    bundle: true,
+    entryPoints: ["_src/index.js"],
+    outdir: "_site/assets/bundle",
     external: ["/assets/*"],
     loader: {
       ".gif": "file",

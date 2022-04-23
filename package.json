@@ -5,13 +5,10 @@
   "main": "assets/javascript/index.js",
   "author": "Jason Taylor <jason@redant.com.au>",
   "license": "UNLICENSED",
-  "engines": {
-    "node": "16.14.2"
-  },
   "scripts": {
-    "dev": "concurrently 'yarn esbuild --watch' 'yarn jekyll'",
-    "esbuild": "node _src/esbuild.js",
-    "jekyll": "bundle exec jekyll serve --livereload"
+    "dev": "concurrently 'yarn build --watch' 'yarn serve'",
+    "build": "node _src/esbuild.js",
+    "serve": "bundle exec jekyll serve --livereload"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
