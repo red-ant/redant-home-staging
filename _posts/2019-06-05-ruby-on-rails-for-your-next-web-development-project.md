@@ -314,8 +314,8 @@ publisher: Red Ant
       <div class="col-12">
         <h3 class="mb-4">A short history of some recent technology dead ends</h3>
       </div>
-      <div class="col-md-6 col-lg-4 pl-0">
-        <h5 class="ml-4">Mambo</h5>
+      <div class="col-md-6 col-lg-4 ps-0">
+        <h5 class="ms-4">Mambo</h5>
         <ul>
           <li class="mb-3">
             Released in 2001 - became a very popular open source CMS using PHP.
@@ -337,8 +337,8 @@ publisher: Red Ant
           </li>
         </ul>
       </div>
-      <div class="col-md-6 col-lg-4 pl-0">
-        <h5 class="ml-4">Angular</h5>
+      <div class="col-md-6 col-lg-4 ps-0">
+        <h5 class="ms-4">Angular</h5>
         <ul>
         <li class="mb-3">
           Released in 2010, Angular was a very popular technology that helped
@@ -363,8 +363,8 @@ publisher: Red Ant
         </li>
       </ul>
     </div>
-    <div class="col-md-6 col-lg-4 pl-0">
-      <h5 class="ml-4">Ember</h5>
+    <div class="col-md-6 col-lg-4 ps-0">
+      <h5 class="ms-4">Ember</h5>
         <ul>
           <li class="mb-3">
             First released in 2011, Ember is a javascript framework ideally
