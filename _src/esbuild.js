@@ -7,7 +7,7 @@ require("esbuild")
     watch: watch,
     minify: !watch,
     logLevel: "debug",
-    entryPoints: ["_src/index.js"],
+    entryPoints: ["_src/application.js"],
     outdir: "_site/assets/bundle",
     external: ["/assets/*"],
     loader: {
