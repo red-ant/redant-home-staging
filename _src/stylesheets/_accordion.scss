@@ -1,6 +1,8 @@
+@use "sass:map";
+
 .accordion {
   .card-header {
-    @extend .pl-0;
+    padding-left: 0;
     background: none;
     border-color: $gray-200;
 
@@ -35,8 +37,9 @@
   }
 
   .card-body {
-    @extend .px-2;
-    @extend .pb-0;
+    padding-left: map.get($spacers, 2);
+    padding-right: map.get($spacers, 2);
+    padding-bottom: 0;
     border-bottom: 1px solid $gray-200;
   }
 }

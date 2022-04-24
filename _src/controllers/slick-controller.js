@@ -1,3 +1,9 @@
+// jquery is only required for slick-carousel
+// find another carousel or change to bootstrap with multiple image update
+// https://codingyaar.com/bootstrap-carousel-multiple-items-increment-by-1/
+import jquery from "jquery";
+window.jquery = window.$ = jquery;
+
 import { Controller } from "@hotwired/stimulus";
 import "slick-carousel";
 
