@@ -18,6 +18,3 @@ Stimulus.register("modal-carousel", ModalCarouselController);
 
 import { NavController } from "./nav-controller";
 Stimulus.register("nav", NavController);
-
-import { SlickController } from "./slick-controller";
-Stimulus.register("slick", SlickController);
