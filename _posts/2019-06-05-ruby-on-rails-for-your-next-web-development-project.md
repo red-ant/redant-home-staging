@@ -28,11 +28,11 @@ publisher: Red Ant
 <section id="section-intro" class="bg-black">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-8 pt-5">
+      <div class="col-md-8 pt-3">
         <h1 class="project-title pb-2 mw-100">Why choose Ruby on Rails?</h1>
-        <hr>
+        <hr class="dash" />
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 pt-5 text-center">
         <img class="img-fluid" src="/assets/images/ruby-bg.png" alt="Ruby" width="200" height="225"/>
       </div>
       <div class="col-12 pt-3 pb-5">
@@ -314,8 +314,8 @@ publisher: Red Ant
       <div class="col-12">
         <h3 class="mb-4">A short history of some recent technology dead ends</h3>
       </div>
-      <div class="col-md-6 col-lg-4 pl-0">
-        <h5 class="ml-4">Mambo</h5>
+      <div class="col-md-6 col-lg-4 ps-0">
+        <h5 class="ms-4">Mambo</h5>
         <ul>
           <li class="mb-3">
             Released in 2001 - became a very popular open source CMS using PHP.
@@ -337,8 +337,8 @@ publisher: Red Ant
           </li>
         </ul>
       </div>
-      <div class="col-md-6 col-lg-4 pl-0">
-        <h5 class="ml-4">Angular</h5>
+      <div class="col-md-6 col-lg-4 ps-0">
+        <h5 class="ms-4">Angular</h5>
         <ul>
         <li class="mb-3">
           Released in 2010, Angular was a very popular technology that helped
@@ -363,8 +363,8 @@ publisher: Red Ant
         </li>
       </ul>
     </div>
-    <div class="col-md-6 col-lg-4 pl-0">
-      <h5 class="ml-4">Ember</h5>
+    <div class="col-md-6 col-lg-4 ps-0">
+      <h5 class="ms-4">Ember</h5>
         <ul>
           <li class="mb-3">
             First released in 2011, Ember is a javascript framework ideally
@@ -397,7 +397,7 @@ publisher: Red Ant
 
 <section class="bg-white py-5 text-md">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12 overflow-hidden">
         <h3><strong>Ruby on Rails</strong> release history</h3>
         <p>
@@ -443,7 +443,7 @@ publisher: Red Ant
         </p>
       </div>
     </div>
+
+    <div data-controller="fake-news"></div>  
   </div>
 </section>
-
-<section data-controller="fake-news" class="pb-5 d-none d-sm-block"></section>

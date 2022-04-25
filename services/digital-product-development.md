@@ -88,7 +88,7 @@ class: digital-product-development
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3">Discovery Workshop</h3>
         <p>
-          One day <a href="#faqs-discovery-workshop" data-toggle="collapse" data-target="#a1" data-controller="scroll-to">workshop</a> to get to know you and the core of your product. Bring vision of your business, audiences, stakeholders and organisational goals into focus.
+          One day <a href="#faqs-discovery-workshop" data-bs-toggle="collapse" data-bs-target="#a1" data-controller="scroll-to">workshop</a> to get to know you and the core of your product. Bring vision of your business, audiences, stakeholders and organisational goals into focus.
         </p>
       </div>
     </div>
@@ -99,7 +99,7 @@ class: digital-product-development
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3 text-red-dark">Product Roadmap</h3>
         <p>
-          Using the findings of the workshop, we compile your <a href="#faqs-product-roadmap" data-toggle="collapse" data-target="#a2" data-controller="scroll-to">Product Roadmap</a>.
+          Using the findings of the workshop, we compile your <a href="#faqs-product-roadmap" data-bs-toggle="collapse" data-bs-target="#a2" data-controller="scroll-to">Product Roadmap</a>.
         </p>
         <p>
           This one page document communicates the big picture of your product with phases of development and business goals. So you can promote and share your vision with your stakeholder with confidence.
@@ -116,7 +116,7 @@ class: digital-product-development
           Back up your product development with a this actionable guide and show how you can get thins done.
         </p>
         <p>
-          Using <a href="#faqs-agile-methodology" data-toggle="collapse" data-target="#a5" data-controller="scroll-to"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
+          Using <a href="#faqs-agile-methodology" data-bs-toggle="collapse" data-bs-target="#a5" data-controller="scroll-to"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
         </p>
       </div>
     </div>
@@ -159,8 +159,8 @@ class: digital-product-development
                 <button
                   class="btn btn-link collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a1"
                   aria-expanded="true"
                   aria-controls="a1"
                   data-ga-trigger="click-faqs">
@@ -191,8 +191,8 @@ class: digital-product-development
                 <button
                   class="btn btn-link collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a2"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a2"
                   aria-expanded="true"
                   aria-controls="a2"
                   data-ga-trigger="click-faqs">
@@ -213,8 +213,8 @@ class: digital-product-development
                 <button
                   class="btn btn-link collapsed "
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a4"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a4"
                   aria-expanded="true"
                   aria-controls="a4"
                   data-ga-trigger="click-faqs">
@@ -236,8 +236,8 @@ class: digital-product-development
                 <button
                   class="btn btn-link  collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a5"
                   aria-expanded="true"
                   aria-controls="a5"
                   data-ga-trigger="click-faqs">

@@ -5,10 +5,10 @@
     <div class="main-layout">
       {% include nav.html %}
 
-      <header id="section-project-intro" class="ga-section project-preview ">
+      <header id="section-project-intro" class="ga-section project-preview">
         <div class="project-preview-content">
           <div class="bg-angled bg-detail-{{ page.theme }}"></div>
-          <div class="bg-gradient"></div>
+          <div class="bg-project-preview"></div>
           {% include svg/preview-left.svg title=page.title images=page.images %}
         </div>
       </header>
@@ -67,7 +67,7 @@
                   {% endif %}
                 </ul>
               </div>
-              <hr class="hr-black mb-5" />
+              <hr class="dash dash-black mb-5" />
               {% include gallery.html images=page.images alt_attr=page.title %}
             </div>
 

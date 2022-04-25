@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What we've been working on- Helping PlanDo redefine career
-permalink: "/our-work/redefining-digital-hr-with-plan-do/"
+permalink: "/our-work/redefining-digital-dash dash-with-plan-do/"
 type: news
 categories:
 - digital-products

@@ -1,9 +1,7 @@
-// This is mainly for bootstrap or other jquery crap. Aim to get rid of it.
-import jquery from "jquery";
-window.jquery = window.$ = jquery;
+import Carousel from "bootstrap/js/dist/carousel.js";
+import Collapse from "bootstrap/js/dist/collapse.js";
+import Modal from "bootstrap/js/dist/modal.js";
 
-import "./stylesheets/application.scss";
-
-import "bootstrap";
 import "./aos";
 import "./controllers";
+import "./stylesheets/application.scss";

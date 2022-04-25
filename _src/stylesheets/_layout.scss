@@ -22,6 +22,7 @@ body {
 .dashed-list {
   ul {
     list-style-type: none;
+    padding-left: revert;
 
     li::before {
       content: "\2014";

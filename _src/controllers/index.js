@@ -13,8 +13,8 @@ Stimulus.register("fake-news", FakeNewsController);
 import { MacyController } from "./macy-controller";
 Stimulus.register("macy", MacyController);
 
+import { ModalCarouselController } from "./modal-carousel-controller";
+Stimulus.register("modal-carousel", ModalCarouselController);
+
 import { NavController } from "./nav-controller";
 Stimulus.register("nav", NavController);
-
-import { SlickController } from "./slick-controller";
-Stimulus.register("slick", SlickController);

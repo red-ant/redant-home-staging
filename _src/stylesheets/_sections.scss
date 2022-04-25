@@ -159,7 +159,7 @@ section {
   &.bg-green {
     background-image: url("/assets/images/bg-testimonials-green.png");
 
-    .card {
+    .carousel-item {
       color: $green-200;
     }
   }
@@ -167,12 +167,12 @@ section {
   &.bg-red {
     background-image: url("/assets/images/bg-testimonials-red.png");
 
-    .card {
+    .carousel-item {
       color: $red;
     }
   }
 
-  .card {
+  .carousel-item {
     background: $transparent;
 
     p {
