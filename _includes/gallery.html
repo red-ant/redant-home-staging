@@ -1,23 +1,15 @@
 {% assign images = include.images | where: "type", "gallery" %}
-<div data-controller="slick" data-slick-style-value="gallery">
-  <div class="row gallery-tiles">
-    {% for image in images %}
-    <div class="col-12">
-      <a
-        href="{{ image.path }}"
-        class="gallery-img"
-        data-bs-toggle="modal"
-        data-bs-target="#gallery-modal"
-        data-slick-index="{{ forloop.index | minus: 1 }}"
-        data-action="click->slick#slideTo">
-        <img
-          src="{{ image.path }}"
-          class="img-fluid"
-          alt="Red Ant - {{ include.alt_attr }}" />
-      </a>
-    </div>
-    {% endfor %}
-  </div>
+<div data-controller="modal-carousel">
+  {% for image in images %}
+    <a
+      href="{{ image.path }}"
+      class="d-block mb-4"
+      data-bs-toggle="modal"
+      data-bs-target="#gallery-modal"
+      data-bs-slide-to="{{ forloop.index | minus: 1 }}">
+      <img src="{{ image.path }}" alt="Red Ant - {{ include.alt_attr }}" />
+    </a>
+  {% endfor %}
 
   <div
     id="gallery-modal"
@@ -26,31 +18,49 @@
     tabindex="-1"
     aria-labelledby="gallery-modal"
     aria-hidden="true"
-    data-bs-backdrop="static">
-    <div
-      class="modal-dialog"
-      role="document"
-      data-action="shown.bs.modal->slick#slideTo">
+    data-modal-carousel-target="modal">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close btn-close-white text-lg pe-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+      </div>
       <div class="modal-content">
-        <div class="modal-header mb-3">
+        <div
+          id="gallery-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-modal-carousel-target="carousel">
+          <div class="carousel-inner">
+            {% for image in images %}
+              <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <img
+                  class="d-block img-fluid"
+                  src="{{ image.path }}"
+                  alt="Red Ant - {{ include.alt_attr }}" />
+              </div>
+            {% endfor %}
+          </div>
           <button
             type="button"
-            class="btn-close btn-close-white text-lg"
-            data-bs-dismiss="modal"
-            aria-label="Close">
+            class="carousel-control-prev"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <section data-slick-target="slider">
-          {% for image in images %}
-          <div class="slide">
-            <img
-              class="d-block img-fluid"
-              src="{{ image.path }}"
-              alt="Red Ant - {{ include.alt_attr }}" />
-            <h5 class="text-center mt-3">{{ image.title }}</h5>
-          </div>
-          {% endfor %}
-        </section>
       </div>
     </div>
   </div>

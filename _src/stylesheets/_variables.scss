@@ -62,6 +62,13 @@ $montserrat-semibold: 600;
 $montserrat-bold: 700;
 $fa-font-path: "font-awesome/fonts";
 
-//
+// Links
 $link-decoration: none;
 $link-hover-decoration: underline;
+
+// Carousel
+$carousel-indicator-width: 20px;
+$carousel-indicator-height: 4px;
+$carousel-indicator-spacer: 5px;
+$carousel-indicator-opacity: .3;
+$carousel-control-width: 10%;

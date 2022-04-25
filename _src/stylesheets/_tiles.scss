@@ -113,18 +113,6 @@
   }
 }
 
-.gallery-tiles {
-  .gallery-img {
-    display: block;
-    margin-bottom: 20px;
-    overflow: hidden;
-
-    img {
-      pointer-events: none;
-    }
-  }
-}
-
 .project-title {
   font-size: $font-size-base * 4.4;
   font-weight: 600;
