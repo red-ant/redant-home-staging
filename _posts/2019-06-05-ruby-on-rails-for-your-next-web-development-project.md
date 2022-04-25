@@ -28,11 +28,11 @@ publisher: Red Ant
 <section id="section-intro" class="bg-black">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-8 pt-5">
+      <div class="col-md-8 pt-3">
         <h1 class="project-title pb-2 mw-100">Why choose Ruby on Rails?</h1>
-        <hr>
+        <hr class="dash" />
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 pt-5 text-center">
         <img class="img-fluid" src="/assets/images/ruby-bg.png" alt="Ruby" width="200" height="225"/>
       </div>
       <div class="col-12 pt-3 pb-5">
