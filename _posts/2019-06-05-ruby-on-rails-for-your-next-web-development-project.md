@@ -397,7 +397,7 @@ publisher: Red Ant
 
 <section class="bg-white py-5 text-md">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12 overflow-hidden">
         <h3><strong>Ruby on Rails</strong> release history</h3>
         <p>
@@ -443,7 +443,7 @@ publisher: Red Ant
         </p>
       </div>
     </div>
+
+    <div data-controller="fake-news"></div>  
   </div>
 </section>
-
-<section data-controller="fake-news" class="pb-5 d-none d-sm-block"></section>

@@ -11,10 +11,8 @@ export class FakeNewsController extends Controller {
 
   render() {
     return `
-      <div class="container">
-        <div class="row">
-          ${this.randomNewsItems.map(this.renderItem).join("")}
-        </div>
+      <div class="row">
+        ${this.randomNewsItems.map(this.renderItem).join("")}
       </div>
     `;
   }
