@@ -6,16 +6,14 @@
       <a
         href="{{ image.path }}"
         class="gallery-img"
-        data-toggle="modal"
-        data-target="#gallery-modal"
+        data-bs-toggle="modal"
+        data-bs-target="#gallery-modal"
         data-slick-index="{{ forloop.index | minus: 1 }}"
-        data-action="click->slick#slideTo"
-      >
+        data-action="click->slick#slideTo">
         <img
           src="{{ image.path }}"
           class="img-fluid"
-          alt="Red Ant - {{ include.alt_attr }}"
-        />
+          alt="Red Ant - {{ include.alt_attr }}" />
       </a>
     </div>
     {% endfor %}
@@ -28,22 +26,18 @@
     tabindex="-1"
     aria-labelledby="gallery-modal"
     aria-hidden="true"
-    data-backdrop="static"
-  >
+    data-bs-backdrop="static">
     <div
       class="modal-dialog"
       role="document"
-      data-action="shown.bs.modal->slick#slideTo"
-    >
+      data-action="shown.bs.modal->slick#slideTo">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header mb-3">
           <button
             type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
+            class="btn-close btn-close-white text-lg"
+            data-bs-dismiss="modal"
+            aria-label="Close">
           </button>
         </div>
         <section data-slick-target="slider">
@@ -52,8 +46,7 @@
             <img
               class="d-block img-fluid"
               src="{{ image.path }}"
-              alt="Red Ant - {{ include.alt_attr }}"
-            />
+              alt="Red Ant - {{ include.alt_attr }}" />
             <h5 class="text-center mt-3">{{ image.title }}</h5>
           </div>
           {% endfor %}
