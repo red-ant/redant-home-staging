@@ -1,45 +1,41 @@
 <footer class="footer py-5">
-  <div id="contact" class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <ul class="unstyled-list">
-          <li>
-            <a href="mailto:info@redant.com.au">info@redant.com.au</a>
-          </li>
-          <li>
-            <a href="tel:+61292678300">+61 2 9267 8300</a>
-          </li>
-          <li>
-            <a href="/privacy-policy">
-              Red Ant Privacy Policy
-            </a>
-          </li>
-        </ul>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-6 col-lg-4 order-1">
+        <p>
+          <a href="mailto:info@redant.com.au">info@redant.com.au</a>
+          <br>
+          <a href="tel:+61292678300">+61 2 9267 8300</a>
+          <br>
+          <a href="/privacy-policy">Red Ant Privacy Policy</a>
+        </p>
       </div>
 
-      <div class="col-md-4">
-        <ul class="unstyled-list icon-list">
-          <li class="d-flex align-items-center">
-            <i class="fa fa-twitter"></i>
-            <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
-              The most mundane Twitter, ever
-            </a>
-          </li>
-          <li class="d-flex align-items-center">
-            <i class="fa fa-linkedin-square"></i>
-            <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
-              Stalk us on Linkedin
-            </a>
-          </li>
-        </ul>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 col-lg-4 order-3 order-lg-2">
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
+            The most mundane Twitter, ever
+          </a>
+          <br>
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
+            Stalk us on Linkedin
+          </a>
+        </p>
       </div>
 
-      <div class="col-md-4">
-        PO Box 250, Vaucluse Sydney NSW 2030 Australia
-        <br />
-        ABN 87 081 223 252
+      <div class="col-6 col-lg-4 order-2 order-lg-3">
+        <p>
+          PO Box 250, Vaucluse Sydney NSW 2030 Australia
+          <br>
+          ABN 87 081 223 252
+        </p>
       </div>
-      <div class="d-flex flex-row flex-wrap justify-content-center mt-4 mt-md-0 link-list">
+    </div>
+
+    <div class="row mb-4">
+      <div class="col px-lg-5 text-center link-list">
         <a href="/jobs/" class="pri me-2">Careers</a>
         <span> | </span>
         <a href="/blog/" class="mx-2">Blog</a>
@@ -72,9 +68,36 @@
           Ruby on Rails Development Approach
         </a>
       </div>
-      <div class="col text-center mt-3">
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
         &copy; Red Ant {{ 'now' | date: "%Y" }}
       </div>
     </div>
   </div>
 </footer>
+
+{% if page.typeform %}
+  <script>
+    (function () {
+      var qs,
+        js,
+        q,
+        s,
+        d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm_share",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q);
+      }
+    })();
+  </script>
+{% endif %}

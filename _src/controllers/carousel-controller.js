@@ -1,25 +1,55 @@
 import { Controller } from "@hotwired/stimulus";
 
 export class CarouselController extends Controller {
-  static targets = ["carousel", "item"];
+  static targets = ["carousel", "inner", "item"];
 
   static values = {
-    normaliseHeight: { type: Boolean, default: false },
     activeClass: { type: String, default: "active" },
+    isNormalised: { type: Boolean, default: false },
+    slides: { type: Number, default: 0 },
   };
 
   connect() {
-    if (this.normaliseHeightValue) {
-      this.normaliseHeight();
+    if (this.isNormalised) {
+      this.normalise();
+    }
+
+    if (this.isMultiple) {
+      this.multiple();
     }
   }
 
-  normaliseHeight() {
+  normalise() {
     const height = this.height;
 
     this.items.forEach((el) => {
       el.style.height = `${height}px`;
     });
+  }
+
+  multiple() {
+    this.items.forEach((el) => {
+      let next = el.nextElementSibling;
+
+      for (let i = 1; i < this.slidesValue; i++) {
+        if (!next) {
+          next = this.items[0];
+        }
+
+        const cloneChild = next.cloneNode(true);
+        el.appendChild(cloneChild.children[0]);
+
+        next = next.nextElementSibling;
+      }
+    });
+  }
+
+  get isMultiple() {
+    return this.slidesValue > 1;
+  }
+
+  get isNormalised() {
+    return this.isNormalisedValue;
   }
 
   get height() {
@@ -42,6 +72,10 @@ export class CarouselController extends Controller {
 
   get carousel() {
     return this.carouselTarget;
+  }
+
+  get inner() {
+    return this.innerTarget;
   }
 
   get items() {

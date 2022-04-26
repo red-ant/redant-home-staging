@@ -6,8 +6,7 @@
       {% include nav.html %}
       <header
         id="section-service-intro"
-        class="dark-header default-padding bg-code-review "
-      >
+        class="dark-header default-padding bg-code-review">
         <div class="container">
           <div class="row">
             <div class="col-md-9 py-3">
@@ -23,9 +22,9 @@
                 <div class="col-sm-6 mb-3 mb-sm-0">
                   <a
                     class="btn btn-primary w-100 py-2"
-                    href="/free-initial-consult-code-review/"
-                  >
-                    <i class="fa fa-comments"></i> {{ page.cta_button_title }}
+                    href="/free-initial-consult-code-review/">
+                    <i class="fa fa-comments"></i>
+                    {{ page.cta_button_title }}
                   </a>
                 </div>
               </div>
@@ -119,12 +118,10 @@
                 {% for page in pages %}
                   <div
                     id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
-                    class="ga-section card mb-1"
-                  >
+                    class="ga-section card mb-1">
                     <a
                       href="{{ page.dir }}"
-                      class="portfolio-tile bg-gray bg-{{ page.theme }}"
-                    >
+                      class="portfolio-tile bg-gray bg-{{ page.theme }}">
                       <div class="content mb-2">
                         <h2>{{ page.title }}</h2>
                         <div class="hr-wrapper">
@@ -150,30 +147,8 @@
           </div>
         </section>
       {% endif %}
-
-      <script>
-        (function() {
-          var qs,
-            js,
-            q,
-            s,
-            d = document,
-            gi = d.getElementById,
-            ce = d.createElement,
-            gt = d.getElementsByTagName,
-            id = 'typef_orm_share',
-            b = 'https://embed.typeform.com/';
-          if (!gi.call(d, id)) {
-            js = ce.call(d, 'script');
-            js.id = id;
-            js.src = b + 'embed.js';
-            q = gt.call(d, 'script')[0];
-            q.parentNode.insertBefore(js, q);
-          }
-        })();
-      </script>
-
-      {% include footer.html %} {% include slidedown-container.html %}
+      {% include footer.html %}
+      {% include slidedown-container.html %}
     </div>
   </body>
 </html>

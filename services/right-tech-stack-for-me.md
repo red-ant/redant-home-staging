@@ -1,5 +1,6 @@
 ---
 layout: service
+typeform: true
 title: Understanding your technical options
 subtitle_1: You might be feeling a bit overwhelmed with all the different technologies
   and approaches available. What’s the best way to evaluate the right path for your
