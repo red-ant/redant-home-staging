@@ -16,6 +16,7 @@ meta:
 excerpt:
 excerpt-short: Viral - doing it right. We analyse 2 website that are using viral as part of their big push for consumer love and affection.
 excerpt-long: Viral has been around for years in the form of word-of-mouth, now it's gone digital it means the speed at which the 'word' spreads is much quicker and trends are much more noticeable. Noticing these trends, brands are now realising that they should be thinking about this within their campaigns, after all, it's free…but is it worth it? The answer is yes, if done right.
+published: false
 ---
 
 Wikipedia defines viral marketing as:

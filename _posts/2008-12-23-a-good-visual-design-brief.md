@@ -16,6 +16,7 @@ meta:
 excerpt:
 excerpt-short: A well written brief is all sorts of good. We explain why and what to consider when writing your own.
 excerpt-long: There are so many things to consider when writing a good creative brief, it's just common sense though really. Once you think about the reasoning behind writing one it'll come naturally, and your project will get the best possible start.
+published: false
 ---
 
 **If you are briefing a design team** you'll find that by committing your ideas and expectations to paper helps make the process more efficient. Sure, writing everything out is a bit of a pain to do, and its much more fun to just get into the visual design process. But when you get initial designs back, you can refer to the brief. Try not to react subjectively: this design is totally cool or I hate that colour. Check with your brief to make sure that these concepts make sense against your objectives. If they do, but you realise that there's a key point that you didn't cover it off, now is the time to revise and follow up with a conversation with your design team.

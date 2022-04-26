@@ -16,6 +16,7 @@ meta:
 excerpt:
 excerpt-short: We're sponsoring an award at the design school of University of Technology, Sydney.
 excerpt-long: We're sponsoring an award at the design school of University of Technology, Sydney. It's competitive, and only the best will make the cut.
+published: false
 ---
 
 The award is made available to the student(s) who are judged through their portfolio and interview to have the most creative and practical approach to design for web media.

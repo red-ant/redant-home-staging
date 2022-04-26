@@ -14,6 +14,7 @@ meta:
 excerpt:
 excerpt-short: Are any humans still actually using IE5? Or is it just bots
 excerpt-long: Are any humans still actually using IE5? Or is it just bots
+published: false
 ---
 
 As part of our development process, we test our work on a set of different web browsers. The browser list varies on different projects depending on client requirements - current versions only for technology sites because their visitors tend to have up-to-date systems, some older versions too for sites targeting a more mainstream audience.

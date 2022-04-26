@@ -14,6 +14,7 @@ meta:
 excerpt:
 excerpt-short: Visualising a list of information in interesting ways
 excerpt-long: Visualising a list of information in interesting ways
+published: false
 ---
 
 This post outlines an idea that we've come up with for visualising a list of information in interesting ways. We've included some code examples, a live example, and you can download the source code to roll your own.
