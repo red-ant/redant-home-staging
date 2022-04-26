@@ -3,12 +3,8 @@ layout: job
 slug: designer-of-awesomeness
 title: Designer of Awesomeness
 description: We’re looking for a super special designer to join our team, and work alongside Rails developers, front end developers, producers and content people.
+published: false
 ---
-
-<div class="job-not-available">
-  <h2>Sorry, this position is no longer available</h2>
-  <a href="/jobs/" title="Work with us">« Back to job list</a>
-</div>
 
 Permanent Full Time Role
 

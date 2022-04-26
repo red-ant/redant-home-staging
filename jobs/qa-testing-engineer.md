@@ -3,12 +3,8 @@ layout: job
 slug: qa-testing-engineer
 title: QA Testing Engineer
 description: Manage our testing process to deliver awesomeness
+published: false
 ---
-
-<div class="job-not-available">
-  <h2>Sorry, this position is no longer available</h2>
-  <a href="/jobs/" title="Work with us">« Back to job list</a>
-</div>
 
 **The projects we work on are growing more and more complex. They release on faster cycles. Consumers are using more and more devices to interact. And the expectation of flawless, continuous service has never been higher.**
 

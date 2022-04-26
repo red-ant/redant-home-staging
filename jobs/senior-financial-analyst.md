@@ -2,12 +2,8 @@
 layout: job
 slug: senior-financial-analyst
 title: Senior Financial Analyst
+published: false
 ---
-
-<div class="job-not-available">
-  <h2>Sorry, this position is no longer available</h2>
-  <a href="/jobs/" title="Work with us">« Back to job list</a>
-</div>
 
 ### The Role
 

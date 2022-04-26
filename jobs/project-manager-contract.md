@@ -4,6 +4,7 @@ slug: project-manager-contract
 title: Account Manager / Project Manager
 image:
   small: /assets/uploads/2014/skater.gif
+published: false
 ---
 
 ## Overview

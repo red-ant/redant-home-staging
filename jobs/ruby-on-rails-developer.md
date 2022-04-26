@@ -1,14 +1,16 @@
 ---
 layout: job
-slug: front-end-javascript-developer
-title: Senior Front Endgnr Javascript Developer
+slug: ruby-on-rails-developer
+title: 'Hey Ruby Developer Yes You'
+description: Senior Ruby Developer
 image:
-  small: /assets/uploads/2014/yoyo.png
+  small: /assets/uploads/2014/bike.jpg
+published: false
 ---
 
 ## Who we’re looking for
 
-<p class="lead">We're looking for an experienced Javascript developer to help us create some incredible digital experiences. Front end technology has changed in amazing and incredible ways. New stuff comes out each week. How it fits in has become more and more critical. We need you to help us build awesome things.</p>
+<p class="lead">We’re looking for an experienced Ruby developer to join our team. By experienced I don't mean that you've just finished a 10 week koding course or have X years of experience working on some bloated Rails app that no one actually used (not that we haven't been there before and have a few sitting around here). I mean that you have deep experience - developing is what you do. A core part of who you are. And you're able to use this experience to provide strong technical leadership on projects.</p>
 
 Lets go off piste here and assume that you are indeed technically awesome.
 
@@ -26,17 +28,16 @@ How about if I explain us a bit more:
 
 4. We work with nice people as our clients. Life is too short to work with dickheads.
 
-
 OK- so that was a few general things. In terms of specifics, we:
 
-* use the usual suspects of Jira, Github and Flowdock
-* use Travis for CI
-* try to find that sweet spot between too few tests and fragile over tested code
-* code review PRs before they are merged, and have a pretty tight release flow
-* aim for 12 factor in all our work
+- use the usual suspects of Jira, Github and Flowdock
+- use Travis for CI
+- use things like Redis, Elasticsearch, and Neo-4J quite a bit
+- try to find that sweet spot between too few tests and fragile over tested code
+- code review PRs before they are merged, and have a pretty tight release flow
+- aim for 12 factor in all our work
 
 In terms of actual front end technology, the picture is a bit blurry right now. Everything we do is Ruby, but sometimes this is a single Rails app, and sometimes separate (JRuby API, Angular FE). But all of this is constantly evolving - we're also evaluating React and let's not even bring up testing frameworks.
-
 
 The things we make are typically large web applications, which we call <a href="/digital-products/">digital products</a>. Have a look at our <a href="/portfolio/">portfolio</a> to get a better idea of the some of the projects we work on.
 

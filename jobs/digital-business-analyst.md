@@ -4,12 +4,8 @@ slug: digital-business-analyst
 title: Digital Business Analyst
 image:
   small: /assets/uploads/2014/skater.gif
+published: false
 ---
-
-<div class="job-not-available">
-  <h2>Sorry, this position is no longer available</h2>
-  <a href="/jobs/" title="Work with us">« Back to job list</a>
-</div>
 
 ## Who we’re looking for - a Digital Business Analyst
 
