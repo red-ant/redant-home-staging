@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /subscription/design-ux
+permalink: /on-demand/design-ux/
 title: Unlimited, award winning Design and UX
 description: UX and Design work when you need it. A design UX subscription replaces unreliable freelancers with a dedicated, experienced team. The you only need to pay for when you need.
 author: Ben Still
@@ -128,28 +128,31 @@ images:
     class="carousel slide"
     data-controller="carousel"
     data-bs-ride="carousel"
-    data-carousel-slides-value="3">
+    data-carousel-slides-value="3"
+  >
     <div class="carousel-inner" role="listbox">
-      {% assign images = page.images | where: "type", "gallery" %}
-      {% for image in images %}
-        <div
-          class="card-group carousel-item {% if forloop.first %}active{% endif %}"
-          data-carousel-target="item">
-          <div class="card mx-2">
-            <img src="{{ image.path }}" class="card-img-top rounded-3">
-            <div class="card-body px-1">
-              <h4 class="card-title">{{ image.title }}</h4>
-              <p class="card-text">{{ image.description }}</p>
-            </div>
+      {% assign images = page.images | where: "type", "gallery" %} {% for image
+      in images %}
+      <div
+        class="card-group carousel-item {% if forloop.first %}active{% endif %}"
+        data-carousel-target="item"
+      >
+        <div class="card mx-2">
+          <img src="{{ image.path }}" class="card-img-top rounded-3" />
+          <div class="card-body px-1">
+            <h4 class="card-title">{{ image.title }}</h4>
+            <p class="card-text">{{ image.description }}</p>
           </div>
         </div>
+      </div>
       {% endfor %}
     </div>
     <button
       type="button"
       class="carousel-control-prev"
       data-bs-target="#portfolio-carousel"
-      data-bs-slide="prev">
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
@@ -157,7 +160,8 @@ images:
       type="button"
       class="carousel-control-next"
       data-bs-target="#portfolio-carousel"
-      data-bs-slide="next">
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
