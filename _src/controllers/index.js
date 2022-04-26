@@ -7,6 +7,9 @@ Stimulus.register("reveal", Reveal);
 import ScrollTo from "stimulus-scroll-to";
 Stimulus.register("scroll-to", ScrollTo);
 
+import { CarouselController } from "./carousel-controller";
+Stimulus.register("carousel", CarouselController);
+
 import { FakeNewsController } from "./fake-news-controller";
 Stimulus.register("fake-news", FakeNewsController);
 

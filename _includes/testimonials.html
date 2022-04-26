@@ -1,7 +1,9 @@
 <section
   id="section-testimonials"
   class="default-padding bg-{{ include.colour }}"
-  data-ga-trigger="visibility">
+  data-ga-trigger="visibility"
+  data-controller="carousel"
+  data-carousel-normalise-height-value="true">
   <div class="container">
     <h3 class="mb-4">
       Testimonials
@@ -12,7 +14,9 @@
       data-bs-ride="carousel">
       <div class="carousel-inner mb-4">
         {% for testimonial in site.data.testimonials %}
-          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div
+            class="carousel-item {% if forloop.first %}active{% endif %}"
+            data-carousel-target="item">
             <p>"{{ testimonial.quote }}"</p>
             <p class="small">{{ testimonial.author }}</p>
           </div>
