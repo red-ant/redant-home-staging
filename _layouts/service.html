@@ -12,7 +12,7 @@
           <div class="row">
             <div class="col-md-9 py-3">
               <h1 class="py-3">{{ page.title }}</h1>
-              <hr />
+              <hr class="dash" />
               <p class="text-lg">
                 {{ page.subtitle_1 }}
               </p>
@@ -103,49 +103,53 @@
       </section>
       {% endif %}
 
-      <section class="py-5">
-        <div class="container">
-          <h2 class="font-weight-normal mb-5 text-center">
-            Relevant case study project
-          </h2>
-          <div id="macy-container" data-columns="1" data-columns-small="1">
-            {% for slug in page.projects %} {% assign pages = site.pages |
-            where: 'slug', slug %} {% for page in pages %}
+      {% assign count = page.projects | size %}
+      {% if count > 0 %}
+        <section class="py-5">
+          <div class="container">
+            <h2 class="fw-normal mb-5 text-center">
+              Relevant case study project
+            </h2>
             <div
-              id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
-              class="ga-section card mb-1"
-            >
-              <a
-                href="{{ page.dir }}"
-                class="portfolio-tile bg-gray bg-{{ page.theme }}"
-              >
-                <div class="content mb-2">
-                  <h2>{{ page.title }}</h2>
-                  <div class="hr-wrapper">
-                    <hr class="hr-white" />
+              data-controller="macy"
+              data-macy-columns-lg-value="1"
+              data-macy-columns-md-value="1">
+              {% for slug in page.projects %}
+                {% assign pages = site.pages | where: 'slug', slug %}
+                {% for page in pages %}
+                  <div
+                    id="section-card-{{ page.title | downcase | replace: ' ', '-' }}"
+                    class="ga-section card mb-1"
+                  >
+                    <a
+                      href="{{ page.dir }}"
+                      class="portfolio-tile bg-gray bg-{{ page.theme }}"
+                    >
+                      <div class="content mb-2">
+                        <h2>{{ page.title }}</h2>
+                        <div class="hr-wrapper">
+                          <hr class="dash dash-white" />
+                        </div>
+                        <h3 class="h5 my-4">{{ page.tagline }}</h3>
+                        <p>{{ page.description }}</p>
+                        <p>
+                          Click for more details
+                          <i class="fa fa-chevron-right ms-1"></i>
+                        </p>
+                      </div>
+                      <div class="svg-container">
+                        <div class="svg-wrapper">
+                          {% include svg/preview-left.svg title=page.title images=page.images %}
+                        </div>
+                      </div>
+                    </a>
                   </div>
-                  <h3 class="h5 my-4">{{ page.tagline }}</h3>
-                  <p>{{ page.description }}</p>
-                  <p>
-                    Click for more details
-                    <i class="fa fa-chevron-right ml-1"></i>
-                  </p>
-                </div>
-                <div class="svg-container">
-                  <div class="svg-wrapper">
-                    {% if page.project_type == 'mobile' %} {% include
-                    svg/preview-mobile.svg slug=page.slug title=page.title %} {%
-                    else %} {% include svg/preview-left.svg slug=page.slug
-                    title=page.title img_height=page.desktop_img_height %} {%
-                    endif %}
-                  </div>
-                </div>
-              </a>
+                {% endfor %}
+              {% endfor %}
             </div>
-            {% endfor %} {% endfor %}
           </div>
-        </div>
-      </section>
+        </section>
+      {% endif %}
 
       <script>
         (function() {
@@ -169,8 +173,7 @@
         })();
       </script>
 
-      {% include footer.html %} {% include slidedown-container.html %} {%
-      include scripts.html %}
+      {% include footer.html %} {% include slidedown-container.html %}
     </div>
   </body>
 </html>

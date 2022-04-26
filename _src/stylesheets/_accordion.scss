@@ -1,0 +1,45 @@
+@use "sass:map";
+
+.accordion {
+  .card-header {
+    padding-left: 0;
+    background: none;
+    border-color: $gray-200;
+
+    .btn {
+      width: 100%;
+      text-align: left;
+      padding-left: 0;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: $font-size-base * 1.1;
+      color: $red;
+      white-space: normal;
+      position: relative;
+
+      &::after {
+        content: "\f106";
+        font-family: FontAwesome, sans-serif;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -12px;
+      }
+
+      &.collapsed {
+        color: #343a40;
+
+        &::after {
+          content: "\f107";
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding-left: map.get($spacers, 2);
+    padding-right: map.get($spacers, 2);
+    padding-bottom: 0;
+    border-bottom: 1px solid $gray-200;
+  }
+}

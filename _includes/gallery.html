@@ -1,42 +1,67 @@
-<div class="row gallery-tiles">
-  {% for image in include.images %}
-    <div class="col-12">
-      <a href="{{ site.data.webpack[image.filename] }}"
-        class="gallery-img"
-        data-index="{{ forloop.index }}"
-        data-toggle="modal"
-        data-target="#gallery-modal">
-        <img src="{{ site.data.webpack[image.filename] }}" class="img-fluid" alt="Red Ant - {{ include.alt_attr }}">
-      </a>
-    </div>
+{% assign images = include.images | where: "type", "gallery" %}
+<div data-controller="modal-carousel">
+  {% for image in images %}
+    <a
+      href="{{ image.path }}"
+      class="d-block mb-4"
+      data-bs-toggle="modal"
+      data-bs-target="#gallery-modal"
+      data-bs-slide-to="{{ forloop.index | minus: 1 }}">
+      <img src="{{ image.path }}" alt="Red Ant - {{ include.alt_attr }}" />
+    </a>
   {% endfor %}
-</div>
 
-<div id="gallery-modal"
-  class="modal fade"
-  data-backdrop="static"
-  aria-labelledby="gallery-modal"
-  aria-hidden="true"
-  role="dialog"
-  tabindex="-1">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+  <div
+    id="gallery-modal"
+    class="modal fade"
+    role="dialog"
+    tabindex="-1"
+    aria-labelledby="gallery-modal"
+    aria-hidden="true"
+    data-modal-carousel-target="modal">
+    <div class="modal-dialog modal-xl" role="document">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button
+          type="button"
+          class="btn-close btn-close-white text-lg pe-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close">
         </button>
       </div>
-      <section class="carousel-wrapper">
-        <div class="carousel-arrows"></div>
-        <div class="carousel">
-          {% for image in include.images %}
-            <div class="slide">
-              <img class="d-block img-fluid" src="{{ site.data.webpack[image.filename] }}" alt="Red Ant - {{ include.alt_attr }}">
-              <h5 class="text-center mt-3">{{ image.title }}</h5>
-            </div>
-          {% endfor %}
+      <div class="modal-content">
+        <div
+          id="gallery-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-modal-carousel-target="carousel">
+          <div class="carousel-inner">
+            {% for image in images %}
+              <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <img
+                  class="d-block img-fluid"
+                  src="{{ image.path }}"
+                  alt="Red Ant - {{ include.alt_attr }}" />
+              </div>
+            {% endfor %}
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 </div>

@@ -17,7 +17,7 @@ technologies:
   - Kubernetes
   - Amazon Web Services (AWS)
 images: []
-project_type: ''
+
 lines_of_code: ''
 published: false
 

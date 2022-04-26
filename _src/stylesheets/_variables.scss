@@ -1,0 +1,74 @@
+$about-red: #df4040;
+$about-green: #40df40;
+$blue-100: #4040df;
+$gray-smoke: #e4e4f5;
+$gray-100: #f7f7f7;
+$gray-200: #ddd;
+$gray-300: #838689;
+$gray-400: #666;
+$gray-500: #484d53;
+$gray-600: #343a40;
+$gray-700: #161b1f;
+$gray-900: #343a40;
+$green-100: #dee7e1;
+$green-200: #7b9e89;
+$green-300: #435549;
+$orange-100: #f6e6d3;
+$orange-200: #f18805;
+$red: #df4140;
+$red-light: #ff004b;
+$red-100: #f9dfdf;
+$red-200: #edaeae;
+$red-300: #b41e1e;
+$transparent: rgba(255, 255, 255, 0);
+$white: #fff !default;
+
+$project-colors: (
+  beautyheaven: #00deff,
+  bondi-vet: #2991f2,
+  campaign-xpress: #00aeeb,
+  huggies: #df4040,
+  12wbt: #0047ba,
+  momentum: #00deff,
+  nps: #401a6e,
+  petmatcher: #84c722,
+  plando: #e68600,
+  raywhite: #ffe512,
+  redant: #cd232e,
+  selleys-diy: #113770,
+  tribe: #b0f,
+  move: #bdd736,
+  voome: #00ffa8,
+  whats-on: #666,
+  mentor: #ba0970,
+  yates: #8cc63f,
+  managed: #7109d2,
+  matrix-education: #a30133,
+  sydney-trains: #e56e0f,
+);
+
+$layout-max-width: 1400px;
+$navbar-height: 68px;
+$announcement-bar-height: 40px;
+$slide-footer-height: 400px;
+
+// Fonts
+$font-size-base: 1.05rem;
+$montserrat: "Montserrat", sans-serif;
+$montserrat-light: 300;
+$montserrat-regular: 400;
+$montserrat-medium: 500;
+$montserrat-semibold: 600;
+$montserrat-bold: 700;
+$fa-font-path: "font-awesome/fonts";
+
+// Links
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Carousel
+$carousel-indicator-width: 20px;
+$carousel-indicator-height: 4px;
+$carousel-indicator-spacer: 5px;
+$carousel-indicator-opacity: .3;
+$carousel-control-width: 10%;

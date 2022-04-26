@@ -15,16 +15,21 @@ technologies:
   - Amazon Web Services (AWS)
   - Stripe Payments
   - Jira
-images:
-  - filename: pst-1.jpg
-  - filename: pst-2.jpg
-  - filename: pst-3.jpg
-  - filename: pst-4.jpg
-  - filename: pst-5.jpg
 team_size:
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/project-summary-tool/pst-1.jpg
+  - type: gallery
+    path: /assets/images/projects/project-summary-tool/pst-2.jpg
+  - type: gallery
+    path: /assets/images/projects/project-summary-tool/pst-3.jpg
+  - type: gallery
+    path: /assets/images/projects/project-summary-tool/pst-4.jpg
+  - type: gallery
+    path: /assets/images/projects/project-summary-tool/pst-5.jpg
+  - type: desktop
+    path: /assets/images/projects/project-summary-tool/project-summary-tool-hero-desktop.jpg
 ---
 
 ## Project Description

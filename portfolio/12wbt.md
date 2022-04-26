@@ -32,13 +32,20 @@ technologies:
   - Brightcove
   - Online Payment Systems
 images:
-  - filename: 12wbt-1.jpg
-  - filename: 12wbt-2.jpg
-  - filename: 12wbt-3.jpg
-  - filename: 12wbt-4.jpg
-  - filename: 12wbt-5.jpg
-project_type: ''
-
+  - type: gallery
+    path: /assets/images/projects/12wbt/12wbt-1.jpg
+  - type: gallery
+    path: /assets/images/projects/12wbt/12wbt-2.jpg
+  - type: gallery
+    path: /assets/images/projects/12wbt/12wbt-3.jpg
+  - type: gallery
+    path: /assets/images/projects/12wbt/12wbt-4.jpg
+  - type: gallery
+    path: /assets/images/projects/12wbt/12wbt-5.jpg
+  - type: mobile
+    path: /assets/images/projects/12wbt/12wbt-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/12wbt/12wbt-hero-desktop.jpg
 ---
 
 [12WBT.com]({{ page.project_url }}) - an extremely successful online health and fitness platform.
@@ -64,7 +71,7 @@ We started on this way back in 2011. Back then there was a basic MVP built with 
 
 One of the interesting things about working on this project is that they have a very large group of highly engaged members, each of which is on a quite personal journey. There are a lot of them, they seem to use it pretty much all the time, and they are highly passionate and involved with the product.
 
-![Member Zone]({{ site.data.webpack['desktop-12wbt-4.jpg'] }})
+![Member Zone](/assets/images/projects/12wbt/desktop-12wbt-4.jpg)
 
 All of which means we get pretty immediate feedback. And if you're going to ask for feedback, you'd better be prepared to do something about it. I won't bore you with details, but one morning we pushed a new feature. It became quickly apparent that while they liked some parts, other bits (that we'd de-prioritised) were in fact required. We scrambled and got two teams (front end and back end) working on an update, which we pushed out later that afternoon. I'm glossing over a few things here, like the reason that we were able to build and release a significant update quickly was partly due to all the foundation work before - the boring stuff like an automated test suite, continuous integration, and seamless "no downtime" deploy flow.
 

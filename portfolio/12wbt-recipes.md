@@ -9,14 +9,14 @@ title: 12WBT Recipes
 tagline: Restructuring the recipe data
 description: ''
 client: 12WBT
-project_type: ''
 lines_of_code: ''
 technologies: []
 images:
-  - '/assets/uploads/2019/12wbt-recipes-1.jpg'
-  - '/assets/uploads/2019/12wbt-recipes-hero.jpg'
+  - type: gallery
+    path: '/assets/uploads/2019/12wbt-recipes-1.jpg'
+  - type: gallery
+    path: '/assets/uploads/2019/12wbt-recipes-hero.jpg'
 published: false
-
 ---
 
 **Backround**

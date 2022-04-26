@@ -13,11 +13,13 @@ technologies:
   - Amazon Web Services (AWS)
   - Ruby on Rails
   - Stripe Payments
-images: []
 client: ''
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: mobile
+    path: /assets/images/projects/momentum/momentum-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/momentum/momentum-hero-desktop.jpg
 ---
 
 ## Project Description

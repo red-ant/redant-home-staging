@@ -84,14 +84,6 @@ fields:
   name: project_date
   label: project_date
   default: '2013 - '
-- type: select
-  name: project_type
-  config:
-    source:
-      type: simple
-    options:
-    - mobile
-  label: project_type
 - type: text
   name: team_size
   label: team_size
@@ -116,9 +108,6 @@ fields:
     Tableau, Vue.js, Vzaar, WAVE (visually impaired testing tool) as part of CI build
     chain, Websockets, Wistia, Wit.ai API, Withings, YesMail, iOS Push, Docker, Heroku,
     Projectt, Twilio, Jira'
-- type: image_gallery
-  name: images
-  label: images
 pages:
 - portfolio/12wbt-daily-app.md
 - portfolio/12wbt-dynamic-video.md

@@ -1,33 +1,38 @@
 <section
   id="section-testimonials"
+  class="default-padding bg-{{ include.colour }}"
   data-ga-trigger="visibility"
-  class="testimonials default-padding bg-{{ include.colour }}"
->
+  data-controller="carousel"
+  data-carousel-normalise-height-value="true">
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <h3>Testimonials</h3>
+    <h3 class="mb-4">
+      Testimonials
+    </h3>
+    <div
+      id="testimonial-carousel"
+      class="carousel carousel-dark slide col-lg-9"
+      data-bs-ride="carousel">
+      <div class="carousel-inner mb-4">
+        {% for testimonial in site.data.testimonials %}
+          <div
+            class="carousel-item {% if forloop.first %}active{% endif %}"
+            data-carousel-target="item">
+            <p>"{{ testimonial.quote }}"</p>
+            <p class="small">{{ testimonial.author }}</p>
+          </div>
+        {% endfor %}
       </div>
-    </div>
-    <div class="row slick-redant">
-      <div class="col-md-9">
-        <div class="card py-4">
-          <p>
-            "Working with Red Ant was a real pleasure. They developed a deep
-            understanding of our business and came up with great strategic and
-            tactical ideas for growth"
-          </p>
-          <p class="small">Peter Mercer</p>
-        </div>
-      </div>
-      <div class="col-lg-9">
-        <div class="card py-4">
-          <p>
-            "I've worked with Red Ant for nearly 20 years. The best development
-            agency in Sydney, one that won't let you down."
-          </p>
-          <p class="small">Binh Wilson</p>
-        </div>
+      <div class="carousel-indicators position-relative justify-content-start m-0">
+        {% for testimonial in site.data.testimonials %}
+          <button
+            type="button"
+            class="{% if forloop.first %}active{% endif %}"
+            aria-current="{% if forloop.first %}active{% endif %}"
+            data-bs-target="#testimonial-carousel"
+            data-bs-slide-to="{{ forloop.index | minus: 1 }}"
+            aria-label="{{ testimonial.author }}">
+         </button>
+        {% endfor %}
       </div>
     </div>
   </div>

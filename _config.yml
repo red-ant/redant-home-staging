@@ -3,62 +3,41 @@ email: ben@redant.com.au
 description: >-
   Red Ant is a Technical Agency. We create & build exceptional digital products.
   These live as web sites, in mobile apps, and in social networks.
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://redant.com.au' # the base hostname & protocol for your site, e.g. http://example.com
-url_host: 'redant.com.au'
-logo: 'assets/webpack/logo_redant.png'
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://redant.com.au" # the base hostname & protocol for your site, e.g. http://example.com
+url_host: "redant.com.au"
 announcement_bar: true
 
 # Build settings
 permalink: /:title/
 markdown: kramdown
 google_analtyics: UA-421251-1
+
 gtm:
   dev: GTM-N3CM249
   prod: GTM-P7QNBDH
-ampdir: amp
+
 defaults:
   - scope:
       path: admin
     values:
       sitemap: false
 
-# Jekyll Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - amp-jekyll
   - jekyll-redirect-from
 
-# Include for processing.
 include:
   - _pages
-  - _posts
-  - portfolio
-  - services
-  - technology
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
   - docker-compose.yml
   - Dockerfile
+  - esbuild.config.js
   - package.json
+  - Rakefile
   - README.md
-  - script
-  - src
-  - webpack.config.js
   - yarn.lock
   - yarn-error.log
-  - archive
-  - drafts
-  - _posts/archive
-  - _posts/drafts
-  - jobs/archive
-  - .release.json
-  - .stage
-  - vendor

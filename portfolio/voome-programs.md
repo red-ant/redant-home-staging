@@ -23,14 +23,19 @@ technologies:
   - Wordpress
   - Facebook
   - Brightcove
-images:
-  - filename: voome-programs-1.jpg
-  - filename: voome-programs-2.jpg
-  - filename: voome-programs-3.jpg
 team_size:
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/voome-programs/voome-programs-1.jpg
+  - type: gallery
+    path: /assets/images/projects/voome-programs/voome-programs-2.jpg
+  - type: gallery
+    path: /assets/images/projects/voome-programs/voome-programs-3.jpg
+  - type: mobile
+    path: /assets/images/projects/voome-programs/voome-programs-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/voome-programs/voome-programs-hero-desktop.jpg
 ---
 
 ## Project Description

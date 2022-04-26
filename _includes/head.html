@@ -2,28 +2,19 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78" />
   {% seo %}
-  <link rel="icon" href="{{ site.data.webpack['favicon.ico'] }}" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="stylesheet" href="{{ site.data.webpack['vendor.css'] }}" />
-  <link rel="stylesheet" href="{{ site.data.webpack['app.css'] }}" />
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <![endif]-->
-  <meta
-    name="google-site-verification"
-    content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  {% if site.gtm %} {% include gtm.html %} {% endif %} {% if page.path contains
-  '_posts' %}
-  <link
-    rel="amphtml"
-    href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}"
-  />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/bundle/application.css" />
+  <script src="/assets/bundle/application.js"></script>
+  <script src="https://kit.fontawesome.com/7809694789.js" crossorigin="anonymous"></script>
+  <script>
+    if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+      document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+    }
+  </script>
+  {% if site.gtm %}
+    {% include gtm.html %}
   {% endif %}
 </head>

@@ -1,0 +1,251 @@
+@use "sass:math";
+
+a {
+  color: $red;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: rgba($red, 0.75);
+  }
+}
+
+blockquote {
+  border-left: 5px solid $gray-100;
+  padding: 0 30px 0 30px;
+}
+
+h1,
+.h1 {
+  @include montserrat($montserrat-bold);
+  font-size: 36px;
+}
+
+h2,
+.h2 {
+  @include montserrat($montserrat-bold);
+  font-size: 36px;
+}
+
+h3,
+.h3 {
+  @include montserrat($montserrat-bold);
+  font-size: 26px;
+}
+
+h4,
+.h4 {
+  @include montserrat($montserrat-semibold);
+  font-size: 20px;
+}
+
+h5,
+.h5 {
+  @include montserrat($montserrat-semibold);
+  font-size: 16px;
+}
+
+.dash {
+  @include block();
+  height: 3px !important;
+  opacity: 1;
+}
+
+.dash-1 {
+  height: 1px !important;
+}
+
+.dash-black {
+  background-color: #212529;
+}
+
+.dash-gray {
+  background-color: $gray-200;
+}
+
+.dash-green {
+  background-color: $green-200;
+}
+
+.dash-orange {
+  background-color: $orange-200;
+}
+
+.dash-white {
+  background-color: $white;
+}
+
+.dash-long {
+  width: 100%;
+}
+
+.hr-wrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba($white, 0.65);
+
+  hr {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+.about-us-list {
+  padding-left: 62px;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: math.div($grid-gutter-width, 2);
+
+    &::before {
+      @include block();
+      content: "";
+      display: block;
+      position: absolute;
+      left: -62px;
+      top: 10px;
+    }
+
+    &.red::before {
+      background-color: $about-red;
+    }
+
+    &.green::before {
+      background-color: $about-green;
+    }
+
+    &.blue::before {
+      background-color: $blue-100;
+    }
+  }
+}
+
+.project-detail-content {
+  font-size: 0.9375rem;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.subheading {
+  @include montserrat($montserrat-medium);
+  font-size: 20px;
+}
+
+.subheading-small {
+  @include montserrat($montserrat-medium);
+  font-size: 16px;
+}
+
+.tagline {
+  @include montserrat($montserrat-medium);
+  font-size: 20px;
+}
+
+.text-hover-underline {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: rgba($white, 0.75);
+    transition: 0.2s;
+  }
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.text-md {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.text-xl {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.text-blue {
+  color: $blue-100;
+}
+
+.text-gray {
+  color: $gray-200;
+}
+
+.text-green {
+  color: $green-200;
+}
+
+.text-green-dark {
+  color: $green-300;
+}
+
+.text-orange {
+  color: $orange-200;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-red-light {
+  color: $red-light;
+}
+
+.text-red-dark {
+  color: $red-300;
+}
+
+.text-white {
+  color: $white;
+}
+
+.underscore {
+  &::before {
+    @include block();
+    content: "";
+    display: block;
+    left: -62px;
+    top: 10px;
+    background-color: $red-light;
+  }
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+@include media-breakpoint-up(sm) {
+  h1,
+  .h1 {
+    font-size: 46px;
+  }
+}
