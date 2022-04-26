@@ -51,8 +51,16 @@ h5,
   opacity: 1;
 }
 
+.dash-1 {
+  height: 1px !important;
+}
+
 .dash-black {
   background-color: #212529;
+}
+
+.dash-gray {
+  background-color: $gray-200;
 }
 
 .dash-green {
@@ -68,7 +76,6 @@ h5,
 }
 
 .dash-long {
-  height: 0;
   width: 100%;
 }
 
