@@ -139,7 +139,8 @@
         </div>
       </section>
 
-      {% if page.projects | size > 0 %}
+      {% assign count = page.projects | size %}
+      {% count > 0 %}
         <div class="container">
           <hr class="dash dash-1 dash-long dash-gray">
         </div>
