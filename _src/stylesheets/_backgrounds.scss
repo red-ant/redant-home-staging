@@ -5,11 +5,18 @@
   background-size: cover;
 }
 
-.bg-subscriptions {
-  background-image: url('/assets/images/bg-subscriptions.jpg');
+.bg-on-demand {
+  background-image: url("/assets/images/bg-get-started-hero.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg-on-demand-header {
+  background-image: url("/assets/images/on-demand/header.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 .bg-agreement {
@@ -18,7 +25,7 @@
 }
 
 .bg-services {
-  background-image: url('/assets/images/bg-get-started-services.png');
+  background-image: url("/assets/images/bg-get-started-services.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +63,7 @@
 }
 
 .bg-green-img {
-  background-image: url('/assets/images/bg-green.jpg');
+  background-image: url("/assets/images/bg-green.jpg");
 }
 
 .bg-code-review {
@@ -131,12 +138,28 @@
   }
 }
 
+.bg-faq:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/bg-code-review-hero.png");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
 .bg-white {
   background-color: $white;
 }
 
 .bg-red {
   background-color: $red-100 !important;
+}
+
+.bg-red-light {
+  background-color: lighten($red-100, 5%) !important;
 }
 
 @each $name, $value in $project-colors {

@@ -14,14 +14,14 @@ faqs:
 
   - q: Can I really get as much work as I can?
     a: |
-	  Yep! For a subscription we don't charge per project or hour worked. You put your tasks into a Trello queue, we’ll work with you to prioritise that queue. We’ll work on one task at a time. 
-	  
-	  If you’ve got a bigger project in mind, you might be interested in our project based engagements.
-	  
+      Yep! For a subscription we don't charge per project or hour worked. You put your tasks into a Trello queue, we’ll work with you to prioritise that queue. We’ll work on one task at a time.
+
+      If you’ve got a bigger project in mind, you might be interested in our project based engagements.
+
   - q: So really - I pay one low fixed fee and I get as much work as I want?
     a: |
-	  Pretty much. The limit is that for each subscription, we’re only working on one task at a time. Each task needs to be tested and accepted before the next begins. So if you have a bigger project with a looming timeline, engaging with us on a project basis might make more sense. But we’ll let you know if we think that would work better for you.
-      
+      Pretty much. The limit is that for each subscription, we’re only working on one task at a time. Each task needs to be tested and accepted before the next begins. So if you have a bigger project with a looming timeline, engaging with us on a project basis might make more sense. But we’ll let you know if we think that would work better for you.
+
   - q: How long does it take?
     a: |
       Typically, a task will take a few days. But sometimes you might want to revise, change your mind, or the task might be a bit more complex.
@@ -44,19 +44,17 @@ faqs:
 
   - q: OK, so how do I actually get a task done?
     a: |
-	  Well, the first step is to define a brief. Write something down. Make sure it makes sense and clearly explains what you’re after. Include relevant examples or context. We don’t need War and Peace.
-	  
-	  As part of your subscription, you’ll get your own Trello board. Stick in your brief, and this becomes a task in your Backlog. We’ll then review, and ask any clarifying questions or more information. We might need to break a large request into several smaller tasks.
-	  
-	  Once this is ready to go, drag the task into your Active swimlane. You can only have one at a time.
-	  
-	  When the work is done, the files will be attached to the ticket or in a code repository as appropriate, and the ticket will move into the approved swimlane.
-      
+      Well, the first step is to define a brief. Write something down. Make sure it makes sense and clearly explains what you’re after. Include relevant examples or context. We don’t need War and Peace.
+
+      As part of your subscription, you’ll get your own Trello board. Stick in your brief, and this becomes a task in your Backlog. We’ll then review, and ask any clarifying questions or more information. We might need to break a large request into several smaller tasks.
+
+      Once this is ready to go, drag the task into your Active swimlane. You can only have one at a time.
+
+      When the work is done, the files will be attached to the ticket or in a code repository as appropriate, and the ticket will move into the approved swimlane.
 
   - q: What if the work is terrible and I hate it?
     a: |
       We’ll keep on working until you’re happy.
-
 
   - q: Is there a contract or a commitment?
     a: |
@@ -79,6 +77,7 @@ faqs:
   - q: Once I’m done, how do I pause or cancel?
     a: |
       Easy - just log in and pause or cancel your subscription
+
 images:
   - type: gallery
     title: Sydney Trains
@@ -110,7 +109,7 @@ images:
     path: /assets/webpack/voome-programs-1.3f4ae4d1363af99f6dbf.jpg
 ---
 
-<header class="bg-subscriptions default-padding pb-2">
+<header class="bg-on-demand default-padding pb-2">
   <div class="container mb-4">
     <div class="row">
       <div class="col-10 offset-1 text-center">
@@ -433,32 +432,5 @@ images:
 </section>
 
 <section class="default-padding bg-gray-light">
-  <div class="container">
-    <h2 class="mb-4 text-center">FAQs</h2>
-    <div class="accordion border-top border-2" id="faqs">
-      {% for faq in page.faqs %}
-      <div class="card bg-transparent py-2 border-bottom border-2">
-        <div class="card-header border-0 ml-2">
-          <h2 class="mb-0">
-            <button
-              class="btn btn-link btn-block text-dark collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#faq-{{ forloop.index }}"
-            >
-              {{ faq.q }}
-            </button>
-          </h2>
-        </div>
-        <div
-          id="faq-{{ forloop.index }}"
-          class="card-body p-0 mb-3 border-0 collapse"
-          data-parent="#faqs"
-        >
-          {{ faq.a | newline_to_br }}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+  <div class="container">{% include faqs.html %}</div>
 </section>
