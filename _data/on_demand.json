@@ -38,127 +38,136 @@
       }
     }
   ],
-  "plans": [
-    {
-      "title": {
-        "index": "Design & UX Service",
-        "ux": "Design & UX Service",
-        "fe": "FE developer service",
-        "be": "Ruby developer service",
-      },
-      "body": {
-        "index": "For start ups and growing businesses",
-        "ux": "For start ups and growing businesses",
-        "fe": "Front end work as you need it done",
-        "be": "Access our Ruby engineering talent",
-      },
-      "price": {
-        "index": "xx",
-        "ux": "4800",
-        "fe": "5800",
-        "be": "7000",
-      },
-      "href":  {
-        "index": "xx",
-        "ux": "https://buy.stripe.com/test_aEUcNS2WFc6fb287sw",
-        "fe": "https://buy.stripe.com/test_6oE5lq0Ox3zJ2vC4gi",
-        "be": "https://buy.stripe.com/test_fZe5lqdBjb2bgmscMN",
-      },
-      "includes": {
-        "index": [],
-        "ux": [
-          "Access to our experienced designers",
-        ],
-        "fe": [
-          "Access our Front End development team",
-        ],
-        "be": [
-          "Ruby and general development tasks",
-        ],
-        "common": [
-          "Unlimited requests",
-          "Unlimited revisions",
-          "All work is 100% yours",
-          "Pause or cancel any time"
-        ]
-      }
+
+  "plans": {
+    "ux": {
+      "title": "Design & UX",
+      "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
+      "permalink": "/on-demand/design-ux/",
+      "offers": [
+        {
+          "title": "Design & UX Service",
+          "body": "For start ups and growing businesses",
+          "price": "$4,800",
+          "href": "https://buy.stripe.com/test_aEUcNS2WFc6fb287sw",
+          "includes": [
+            "Access to our experienced designers",
+            "Unlimited requests",
+            "Unlimited revisions",
+            "All work is 100% yours",
+            "Pause or cancel any time"
+          ]
+        },
+        {
+          "title": "UX plus Front end Dev",
+          "body": "You might want to call on a mix of both Front End development and User Experience design",
+          "price": "$6,400",
+          "href": "https://buy.stripe.com/test_3cs4hm7cV2vFgmscMR",
+          "includes": [
+            "All the design and UX features",
+            "JavaScript and front end development work as well",
+            "Ongoing support and maintenance"
+          ]
+        },
+        {
+          "title": "Project based engagement",
+          "body": "Project based design and development services, where you get access to our full team",
+          "href": "https://red-ant.typeform.com/to/qGIy4B",
+          "includes": [
+            "Simultaneous requests",
+            "Blend of UX, FE and BE development as required",
+            "Project based costs as required",
+            "Expedited delivery",
+            "Real time collaboration"
+          ]
+        }
+      ]
     },
-    {
-      "title": {
-        "index": "Design & UX Service",
-        "ux": "UX plus Front end Dev",
-        "fe": "Front end Dev plus UX",
-        "be": "Ruby plus UX",
-      },
-      "body":  {
-        "index": "You might want to call on a mix of both Front End development and User Experience design",
-        "ux": "You might want to call on a mix of both Front End development and User Experience design",
-        "fe": "You might want to call on a mix of both Front End development and User Experience design",
-        "be": "If you need a mix of both Ruby development and User Experience design",
-      },
-      "price":  {
-        "index": "xx",
-        "ux": "6400",
-        "fe": "6200",
-        "be": "7200",
-      },
-      "href":  {
-        "index": "xx",
-        "ux": "https://buy.stripe.com/test_3cs4hm7cV2vFgmscMR",
-        "fe": "https://buy.stripe.com/test_3cs4hm7cV2vFgmscMR",
-        "be": "https://buy.stripe.com/test_fZe5lq8gZ7PZfiocMM",
-      },
-      "includes": {
-        "index": [],
-        "ux": [
-          "All the design and UX features",
-          "JavaScript and front end development work as well"
-        ],
-        "fe": [
-          "All the FE dev features",
-          "UX and design work also included"
-        ],
-        "be": [
-          "All the Ruby dev features",
-          "UX and design work also included"
-        ],
-        "common": [
-          "Ongoing support and maintenance"
-        ]
-      },
+    "fe": {
+      "title": "Front end Dev",
+      "body": "Need Front End, React, javascript, HTML or CSS work? Utilise our experienced development team.",
+      "permalink": "/on-demand/frontend-javascript/",
+      "offers": [
+        {
+          "title": "FE developer service",
+          "body": "Front end work as you need it done",
+          "price": "$5,800",
+          "href": "https://buy.stripe.com/test_6oE5lq0Ox3zJ2vC4gi",
+          "includes": [
+            "Access our Front End development team",
+            "Unlimited requests",
+            "Unlimited revisions",
+            "All work is 100% yours",
+            "Pause or cancel any time"
+          ]
+        },
+        {
+          "title": "Front end Dev plus UX",
+          "body": "You might want to call on a mix of both Front End development and User Experience design",
+          "price": "$6,200",
+          "href": "https://buy.stripe.com/test_3cs4hm7cV2vFgmscMR",
+          "includes": [
+            "All the FE dev features",
+            "UX and design work also included",
+            "Ongoing support and maintenance"
+          ]
+        },
+        {
+          "title": "Project based engagement",
+          "body": "Project based design and development services, where you get access to our full team",
+          "href": "https://red-ant.typeform.com/to/qGIy4B",
+          "includes": [
+            "Simultaneous requests",
+            "Blend of UX, FE and BE development as required",
+            "Project based costs as required",
+            "Expedited delivery",
+            "Real time collaboration"
+          ]
+        }
+      ]
     },
-    {
-      "title": {
-        "index": "Project based engagement",
-        "ux": "Project based engagement",
-        "fe": "Project based engagement",
-        "be": "Project based engagement",
-      },
-      "body": {
-        "index": "xx",
-        "ux": "Project based design and development services, where you get access to our full team",
-        "fe": "Project based design and development services, where you get access to our full team",
-        "be": "Project based design and development services, where you get access to our full capacity"
-      },
-      "href": {
-        "index": "xx",
-        "ux": "xx",
-        "fe": "xx",
-        "be": "xx",
-      },
-      "includes": {
-        "index": [],
-        "ux": [],
-        "fe": [],
-        "be": [],
-        "common": [
-          "Simultaneous requests",
-          "Blend of UX, FE and BE development as required",
-          "Project based costs as required",
-          "Expedited delivery",
-          "Real time collaboration"
-        ]
-      },
+    "be": {
+      "title": "Ruby & Back End dev",
+      "body": "Access our amazing Ruby engineering talent, and pay for it with a flexible subscription that suits your business.",
+      "permalink": "/on-demand/backend-ruby-on-rails/",
+      "offers": [
+        {
+          "title": "Ruby developer service",
+          "body": "Access our Ruby engineering talent for those small ongoing tasks that aren’t getting done.",
+          "price": "$7,000",
+          "href": "https://buy.stripe.com/test_fZe5lqdBjb2bgmscMN",
+          "includes": [
+            "Ruby and general development tasks",
+            "Unlimited requests",
+            "Unlimited revisions",
+            "All work is 100% yours",
+            "Pause or cancel any time"
+          ]
+        },
+        {
+          "title": "Ruby plus UX",
+          "body": "If you need a mix of both Ruby development and User Experience design.",
+          "price": "$7,200",
+          "href": "https://buy.stripe.com/test_fZe5lq8gZ7PZfiocMM",
+          "includes": [
+            "All the Ruby dev features",
+            "UX and design work also included",
+            "Ongoing support and maintenance"
+          ]
+        },
+        {
+          "title": "Project based engagement",
+          "body": "Project based design and development services, where you get access to our full team",
+          "href": "https://red-ant.typeform.com/to/qGIy4B",
+          "includes": [
+            "Simultaneous requests",
+            "Blend of UX, FE and BE development as required",
+            "Project based costs as required",
+            "Expedited delivery",
+            "Real time collaboration"
+          ]
+        }
+      ]
     }
-  ]
+  }
 }

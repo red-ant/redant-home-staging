@@ -112,7 +112,10 @@ faqs:
   <div class="container">
     <h2 class="mb-5 text-center">Available plans</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      {% for item in site.data.on_demand.plans-index %}
+      {% assign plans = site.data.on_demand.plans %}
+      {% assign items = "" | split: "" %}
+      {% assign items = items | push: plans.ux | push: plans.fe | push: plans.be %}
+      {% for item in items %}
       <div class="col">
         <div class="card bg-transparent h-100">
           <img

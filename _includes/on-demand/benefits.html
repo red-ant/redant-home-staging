@@ -8,9 +8,9 @@
       />
       <p>
         <strong class="d-block mb-2">{{ item.title }}</strong>
-        {% if item.body %}
+        {% if item.body && include.key %}
           <span class="d-block">
-            {{ item.body }}
+            {{ item.body[include.key] }}
           </span>
         {% endif %}
       </p>
