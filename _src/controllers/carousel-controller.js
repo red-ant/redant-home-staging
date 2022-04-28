@@ -1,13 +1,18 @@
 import { Controller } from "@hotwired/stimulus";
+import { random } from "../utils";
 
 export class CarouselController extends Controller {
   static targets = ["carousel", "inner", "item"];
 
   static values = {
     activeClass: { type: String, default: "active" },
+    activateFirst: { type: Boolean, default: false },
     isNormalised: { type: Boolean, default: false },
+    randomSlides: { type: Number, default: 0 },
     slides: { type: Number, default: 0 },
   };
+
+  slides;
 
   connect() {
     if (this.isNormalised) {
@@ -16,6 +21,10 @@ export class CarouselController extends Controller {
 
     if (this.isMultiple) {
       this.multiple();
+    }
+
+    if (this.activateFirstValue) {
+      this.activateFirst();
     }
   }
 
@@ -27,13 +36,20 @@ export class CarouselController extends Controller {
     });
   }
 
+  activateFirst() {
+    this.items[0].classList.add(this.activeClass);
+    this.element.classList.remove("d-none");
+  }
+
   multiple() {
-    this.items.forEach((el) => {
+    const slides = this.items;
+
+    slides.forEach((el) => {
       let next = el.nextElementSibling;
 
       for (let i = 1; i < this.slidesValue; i++) {
         if (!next) {
-          next = this.items[0];
+          next = slides[0];
         }
 
         const cloneChild = next.cloneNode(true);
@@ -79,10 +95,31 @@ export class CarouselController extends Controller {
   }
 
   get items() {
+    if (this.slides) {
+      return this.slides;
+    }
+
+    if (this.randomSlides > 0) {
+      this.slides = random(this.itemTargets).slice(0, this.randomSlides);
+
+      // remove unslected items
+      this.itemTargets.forEach((item) => {
+        if (!this.slides.includes(item)) {
+          item.remove();
+        }
+      });
+
+      return this.slides;
+    }
+
     return this.itemTargets;
   }
 
   get activeClass() {
     return this.activeClassValue;
+  }
+
+  get randomSlides() {
+    return this.randomSlidesValue;
   }
 }

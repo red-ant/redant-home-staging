@@ -1,0 +1,47 @@
+<div
+  id="portfolio-carousel"
+  class="carousel slide d-none"
+  data-controller="carousel"
+  data-bs-ride="carousel"
+  data-carousel-slides-value="3"
+  data-carousel-random-slides-value="9"
+  data-carousel-activate-first-value="true"
+>
+  <div class="carousel-inner" role="listbox">
+    {% for slug in site.data.portfolio.order %}
+      {% assign pages = site.pages | where:'slug', slug %}
+      {% for page in pages %}
+        {% assign image = page.images | where: "type", "desktop" | first %}
+        <div class="card-group carousel-item" data-carousel-target="item">
+          <div class="card mx-2">
+            <div class="rounded-3" style="overflow:hidden; height:300px;">
+              <img src="{{ image.path }}" class="img-fluid" />
+            </div>
+            <div class="card-body px-1">
+              <h4 class="card-title">{{ page.title }}</h4>
+              <p class="card-text">{{ page.tagline }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <button
+    type="button"
+    class="carousel-control-prev"
+    data-bs-target="#portfolio-carousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    type="button"
+    class="carousel-control-next"
+    data-bs-target="#portfolio-carousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

@@ -1,0 +1,19 @@
+<h2 class="mb-5 text-center">Benefits</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+  {% for item in site.data.on_demand.benefits %}
+    <div class="col">
+      <img
+        src="/assets/images/on-demand/b{{ forloop.index }}.png"
+        class="mb-4"
+      />
+      <p>
+        <strong class="d-block mb-2">{{ item.title }}</strong>
+        {% if item.body %}
+          <span class="d-block">
+            {{ item.body }}
+          </span>
+        {% endif %}
+      </p>
+    </div>
+  {% endfor %}
+</div>

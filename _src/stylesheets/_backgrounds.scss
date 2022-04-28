@@ -12,11 +12,17 @@
   background-size: cover;
 }
 
+.bg-on-demand-detail {
+  background-image: url("/assets/images/bg-technology-hero.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .bg-on-demand-header {
   background-image: url("/assets/images/on-demand/header.png");
   background-position: center right;
   background-repeat: no-repeat;
-  // background-size: cover;
 }
 
 .bg-agreement {

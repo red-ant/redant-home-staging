@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /on-demand/design-ux/
+permalink: /on-demand/backend-ruby-on-rails/
 title: Unlimited, award winning Design and UX
 description: UX and Design work when you need it. A design UX subscription replaces unreliable freelancers with a dedicated, experienced team. You only need to pay for when you need.
 author: Ben Still
@@ -77,149 +77,39 @@ faqs:
   - q: Once I’m done, how do I pause or cancel?
     a: |
       Easy - just log in and pause or cancel your subscription
-
-images:
-  - type: gallery
-    title: Sydney Trains
-    description: A complex data visualisation tool to model different scenarios for Sydney's rail network
-    path: /assets/webpack/sydney-trains-1.0b75712f8732988881b3.jpg
-  - type: gallery
-    title: Managed
-    description: A payment and management platform for rental property
-    path: /assets/images/redant-office/redant-office-1.jpg
-  - type: gallery
-    title: OMA Automated Proposal Platform
-    description: An automated proposal booking platform for Australia’s largest outdoor advertising networks
-    path: /assets/webpack/outdoor-automated-proposal-platform-1.f68bfb938f8884cd523a.jpg
-  - type: gallery
-    title: Huggies
-    description: Parent focussed web site for Huggies brand in Australia & NZ
-    path: /assets/webpack/huggies-2.27435380f66e1a43eb12.jpg
-  - type: gallery
-    title: Voome
-    description: Health and fitness program
-    path: /assets/webpack/voome-programs-1.3f4ae4d1363af99f6dbf.jpg
-  - type: gallery
-    title: 12WBT
-    description: Health and fitness program
-    path: /assets/webpack/voome-programs-1.3f4ae4d1363af99f6dbf.jpg
-  - type: gallery
-    title: Pearsons
-    description: Ecommerce and fulfillment optimisation
-    path: /assets/webpack/voome-programs-1.3f4ae4d1363af99f6dbf.jpg
 ---
 
-<header class="bg-on-demand default-padding pb-2">
-  <div class="container mb-4">
-    <div class="row">
-      <div class="col-10 offset-1 text-center">
-        <h1 class="mb-4">
-          Experienced Ruby development. Low monthly fixed cost. Access our team
-          on demand to help you scale.
-        </h1>
-        <p class="subheading mb-4">
-          Work with us on your terms. Pay as a subscription, cancel any time
-        </p>
-        <p>
-          <a
-            href="#plans"
-            class="btn btn-lg btn-primary rounded-pill"
-            data-controller="scroll-to"
-            data-scroll-to-offset-value="80"
-          >
-            See Plans
-          </a>
-        </p>
-      </div>
+<header class="bg-on-demand-detail pb-2">
+  <div class="container default-padding">
+    <div class="row text-center">
+      <h1 class="mb-4">
+        Experienced Ruby development. Low monthly fixed cost. Access our team
+        on demand to help you scale.
+      </h1>
+      <p class="subheading mb-4">
+        Work with us on your terms. Pay as a subscription, cancel any time
+      </p>
+      <p>
+        <a
+          href="#plans"
+          class="btn btn-lg btn-primary rounded-pill"
+          data-controller="scroll-to"
+          data-scroll-to-offset-value="80"
+        >
+          See Plans
+        </a>
+      </p>
     </div>
   </div>
 
-  <div
-    id="portfolio-carousel"
-    class="carousel slide"
-    data-controller="carousel"
-    data-bs-ride="carousel"
-    data-carousel-slides-value="3"
-  >
-    <div class="carousel-inner" role="listbox">
-      {% assign images = page.images | where: "type", "gallery" %} {% for image
-      in images %}
-      <div
-        class="card-group carousel-item {% if forloop.first %}active{% endif %}"
-        data-carousel-target="item"
-      >
-        <div class="card mx-2">
-          <img src="{{ image.path }}" class="card-img-top rounded-3" />
-          <div class="card-body px-1">
-            <h4 class="card-title">{{ image.title }}</h4>
-            <p class="card-text">{{ image.description }}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <button
-      type="button"
-      class="carousel-control-prev"
-      data-bs-target="#portfolio-carousel"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      type="button"
-      class="carousel-control-next"
-      data-bs-target="#portfolio-carousel"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div class="py-4">
+    {% include on-demand/carousel.html %}
   </div>
 </header>
 
 <section class="default-padding bg-gray-light">
   <div class="container text-center">
-    <div class="row">
-      <div class="col-12 mb-4">
-        <h2 class="mb-4">How it works</h2>
-      </div>
-      <div class="col-3">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          Add your work requests. We’ll ask questions, and work with you to
-          establish scope.
-        </p>
-      </div>
-      <div class="col-3">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          We work with you to prioritise tasks and issues, picking the best one
-          to start work on.
-        </p>
-      </div>
-      <div class="col-3">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>Once you’re happy with the task, we’ll start work straight away.</p>
-      </div>
-      <div class="col-3">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>We’ll revise the work until you’re 100% happy.</p>
-      </div>
-    </div>
+    {% include on-demand/how-it-works.html %}
   </div>
 </section>
 
@@ -254,102 +144,21 @@ images:
 
 <section class="default-padding bg-white">
   <div class="container text-center">
-    <div class="row">
-      <div class="col-12 mb-4">
-        <h2 class="mb-4">Benefits</h2>
-      </div>
-      <div class="col-4">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          <strong>Unlimited requests. Unlimited revisions</strong>
-        </p>
-      </div>
-      <div class="col-4">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          <strong>Fixed monthly rate</strong>
-        </p>
-      </div>
-      <div class="col-4">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          <strong>Flexible. Pause at any time</strong>
-        </p>
-      </div>
-      <div class="col-4">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          <strong>Experience & quality</strong><br />
-          Highly experienced, senior designers.
-        </p>
-      </div>
-      <div class="col-4">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          <strong>Technically astute</strong><br />
-          Our team have both UX and Dev experience, so designs "make sense" both
-          technically and from a users POV.
-        </p>
-      </div>
-      <div class="col-4">
-        <img
-          src="https://via.placeholder.com/110"
-          class="rounded-circle mb-4"
-        />
-        <p>
-          <strong>Unique and yours </strong><br />
-          All IP and assets are owned by you. They are unique and custom built.
-        </p>
-      </div>
-    </div>
+    {% include on-demand/benefits.html %}
   </div>
 </section>
 
 <section class="default-padding bg-gray-light">
   <div class="container">
-    <div class="row">
-      <div class="col-10 offset-1 text-center mb-4">
-        <h2 class="mb-4">
+    <div class="row mb-4">
+      <div class="col-12 col-md-10 offset-md-1 text-center mb-4">
+        <h2>
           Landing pages, forms, javascript
-          <span class="font-weight-normal">(and lots more!)</span>
+          <span class="fw-normal">(and lots more!)</span>
         </h2>
       </div>
     </div>
-    <div class="row justify-content-between">
-      <ul class="col-4 list-unstyled">
-        <li class="mb-3 py-3 border-2 border-dark border-bottom">
-          Marketplace designs
-        </li>
-        <li class="mb-3 py-3 border-2 border-bottom">Landing pages</li>
-        <li class="mb-3 py-3 border-2 border-bottom">Marketing emails</li>
-        <li class="mb-3 py-3 border-2 border-bottom">User signup forms</li>
-      </ul>
-      <ul class="col-4 list-unstyled">
-        <li class="mb-3 py-3 border-2 border-bottom">Theme customisations</li>
-        <li class="mb-3 py-3 border-2 border-bottom">Clickable prototypes</li>
-        <li class="mb-3 py-3 border-2 border-bottom">A</li>
-      </ul>
-      <ul class="col-4 list-unstyled">
-        <li class="mb-3 py-3 border-2 border-bottom">User sign up forms</li>
-        <li class="mb-3 py-3 border-2 border-bottom">Pitch decks</li>
-        <li class="mb-3 py-3 border-2 border-bottom">Infographics</li>
-      </ul>
-    </div>
+    {% include on-demand/lots-more.html %}
   </div>
 </section>
 
@@ -361,83 +170,10 @@ images:
         <p class="subheading mb-4">No hassle terms - pause or cancel anytime</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 px-4 dashed-list border-left border-2">
-        <h4>Front End developer service</h4>
-        <p>For start ups and growing businesses</p>
-        <h3 class="font-weight-light mb-1">$X,XXX / month</h3>
-        <p class="text-black-50 mb-4">Pause or cancel anytime</p>
-        <p class="mb-4">
-          <a
-            class="btn btn-primary btn-green rounded-pill my-2"
-            href="#/ms/signup/62578012bd9cb70004d0d7af"
-          >
-            Get Started
-          </a>
-        </p>
-        <h5 class="mb-4">What's included</h5>
-        <ul class="dashed-green">
-          <li class="mb-3">Unlimited requests</li>
-          <li class="mb-3">Unlimited revisions</li>
-          <li class="mb-3">All work is 100% yours</li>
-          <li class="mb-3">Pause or cancel any time</li>
-        </ul>
-      </div>
-      <div class="col-4 px-4 dashed-list border-left border-right border-2">
-        <h4>FRuby Dev plus UX</h4>
-        <p>For start ups and growing businesses</p>
-        <h3 class="font-weight-light mb-1">$XXX / month</h3>
-        <p class="text-black-50 mb-4">Pause or cancel anytime</p>
-        <p class="mb-4">
-          <a
-            class="btn btn-primary btn-green rounded-pill my-2"
-            href="#/ms/signup/6257802bf8b9740004bc0f48"
-          >
-            Get Started
-          </a>
-        </p>
-        <h5 class="mb-4">What's included</h5>
-        <ul class="dashed-green">
-          <li class="mb-3">Unlimited requests</li>
-          <li class="mb-3">Unlimited revisions</li>
-          <li class="mb-3">All work is 100% yours</li>
-          <li class="mb-3">Pause or cancel any time</li>
-          <li class="mb-3">
-            Javascript and front end development work as well
-          </li>
-          <li class="mb-3">Ongoing support and maintenance</li>
-        </ul>
-      </div>
-      <div class="col-4 px-4 dashed-list border-right border-2">
-        <h4>Project Based Engagement</h4>
-        <p>
-          Project based design and development services, where you get access to
-          our full team
-        </p>
-        <h3 class="text-white mb-2">-</h3>
-        <p class="mb-4">
-          <a
-            class="typeform-share btn btn-primary btn-green rounded-pill my-2"
-            href="https://red-ant.typeform.com/to/qGIy4B"
-            data-mode="popup"
-            target="_blank"
-          >
-            Book a call
-          </a>
-        </p>
-        <h5 class="mb-4">What's included</h5>
-        <ul class="dashed-green">
-          <li class="mb-3">Simultaneous requests</li>
-          <li class="mb-3">Blend of UX, FE and BE development as required</li>
-          <li class="mb-3">Projest based costs as required</li>
-          <li class="mb-3">Expediated delivery</li>
-          <li class="mb-3">Real time collaboration</li>
-        </ul>
-      </div>
-    </div>
+    {% include on-demand/plans.html %}
   </div>
 </section>
 
 <section class="default-padding bg-gray-light">
-  <div class="container">{% include faqs.html %}</div>
+  <div class="container">{% include on-demand/faqs.html %}</div>
 </section>

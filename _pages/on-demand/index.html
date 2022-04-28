@@ -104,109 +104,37 @@ faqs:
 
 <section class="default-padding">
   <div class="container text-center">
-    <div class="row">
-      <div class="col-12 mb-4">
-        <h2 class="mb-4">How it works</h2>
-      </div>
-      <div class="col-3">
-        <img src="/assets/images/on-demand/h1.png" class="mb-4" />
-        <p>
-          Add your design requests. We’ll ask questions, and work with you to
-          establish a brief.
-        </p>
-      </div>
-      <div class="col-3">
-        <img src="/assets/images/on-demand/h2.png" class="mb-4" />
-        <p>
-          We work with you to prioritise tasks and briefs, picking the best one
-          to start work on.
-        </p>
-      </div>
-      <div class="col-3">
-        <img src="/assets/images/on-demand/h3.png" class="mb-4" />
-        <p>Once you’re happy with the brief, we’ll start work straight away.</p>
-      </div>
-      <div class="col-3">
-        <img src="/assets/images/on-demand/h4.png" class="mb-4" />
-        <p>We’ll revise the design until you’re 100% happy.</p>
-      </div>
-    </div>
+    {% include on-demand/how-it-works.html %}
   </div>
 </section>
 
 <section class="default-padding bg-red-light">
   <div class="container">
-    <div class="row text-center mb-4">
-      <h2 class="mb-4">Available Plans</h2>
-    </div>
-    <div class="row card-group">
-      <div class="col-4 card bg-transparent">
-        <img src="/assets/images/on-demand/p1.png" class="card-img-top" />
-        <div class="card-body d-flex flex-column justify-content-between">
-          <div class="card-wrapper">
-            <h4 class="card-title mb-4">Design & UX</h4>
-            <p class="card-text mb-4">
-              A design UX subscription replaces unreliable freelancers or
-              expensive internal resources with a dedicated, experienced team.
-              That you only need to pay for when you need.
-            </p>
+    <h2 class="mb-5 text-center">Available plans</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for item in site.data.on_demand.plans %}
+      <div class="col">
+        <div class="card bg-transparent h-100">
+          <img
+            src="/assets/images/on-demand/p{{ forloop.index }}.png"
+            class="card-img-top"
+          />
+          <div class="card-body pt-0">
+            <h4 class="card-title mb-4">{{ item.title }}</h4>
+            <p class="card-text">{{ item.body }}</p>
           </div>
-          <span>
-            <a
-              class="btn btn-primary rounded-pill"
-              href="/on-demand/design-ux/"
-            >
+          <div class="card-footer border-0 bg-transparent">
+            <a class="btn btn-primary rounded-pill" href="{{ item.permalink }}">
               Learn More
             </a>
-          </span>
-        </div>
-      </div>
-
-      <div class="col-4 card bg-transparent">
-        <img src="/assets/images/on-demand/p2.png" class="card-img-top" />
-        <div class="card-body d-flex flex-column justify-content-between">
-          <div class="card-wrapper">
-            <h4 class="card-title mb-4">Frontend Development</h4>
-            <p class="card-text mb-4">
-              Need Front End, React, javascript, HTML or CSS work? Utilise our
-              experienced development team.
-            </p>
           </div>
-          <span>
-            <a
-              class="btn btn-primary rounded-pill"
-              href="/on-demand/frontend-javascript/"
-            >
-              Learn More
-            </a>
-          </span>
         </div>
       </div>
-
-      <div class="col-4 card bg-transparent">
-        <img src="/assets/images/on-demand/p3.png" class="card-img-top" />
-        <div class="card-body d-flex flex-column justify-content-between">
-          <div class="card-wrapper">
-            <h4 class="card-title mb-4">Ruby Development</h4>
-            <p class="card-text mb-4">
-              Access our amazing Ruby engineering talent, and pay for it with a
-              flexible subscription that suits your business.
-            </p>
-          </div>
-          <span>
-            <a
-              class="btn btn-primary rounded-pill"
-              href="/on-demand/backend-ruby-on-rails/"
-            >
-              Learn More
-            </a>
-          </span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
 <section class="default-padding bg-faq">
-  <div class="container">{% include faqs.html %}</div>
+  <div class="container">{% include on-demand/faqs.html %}</div>
 </section>

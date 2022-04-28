@@ -1,0 +1,12 @@
+<h2 class="mb-5 text-center">How it works</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+  {% for item in site.data.on_demand.how_it_works %}
+    <div class="col">
+      <img
+        src="/assets/images/on-demand/h{{ forloop.index }}.png"
+        class="mb-4"
+      />
+      <p>{{ item }}</p>
+    </div>
+  {% endfor %}
+</div>
