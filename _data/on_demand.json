@@ -68,7 +68,7 @@
       ]
     },
     {
-      "title": "UX plus Frontend Dev",
+      "title": "Frontend & Javascript Dev",
       "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
       "price": "$5,600 / month",
       "permalink": "/on-demand/frontend-javascript/",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "title": "Project Based Engagement",
+      "title": "Ruby development",
       "body": "Project based design and development services, where you get access to our full team.",
       "permalink": "/on-demand/backend-ruby-on-rails/",
       "href": "https://red-ant.typeform.com/to/qGIy4B",
@@ -143,7 +143,7 @@
   ]
   "plans-fe": [
     {
-      "title": "Design & UX Service",
+      "title": "Front End development ",
       "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
       "price": "$4,800 / month",
       "permalink": "/on-demand/design-ux/",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "title": "UX plus Frontend Dev",
+      "title": "Frontend Dev plus UX",
       "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
       "price": "$5,600 / month",
       "permalink": "/on-demand/frontend-javascript/",
@@ -187,7 +187,7 @@
   ]
   "plans-be": [
     {
-      "title": "Design & UX Service",
+      "title": "Ruby Development",
       "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
       "price": "$4,800 / month",
       "permalink": "/on-demand/design-ux/",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "title": "UX plus Frontend Dev",
+      "title": "Ruby plus UX",
       "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
       "price": "$5,600 / month",
       "permalink": "/on-demand/frontend-javascript/",
