@@ -1,42 +1,8 @@
-// https://www.codeply.com/p/0CWffz76Q9
-// The order of these styles matter
-// Currently only works when viewing 3 slides, New styles would be needed for
-// other values, ie 4 would need translateX(25%)
-[data-carousel-slides-value="3"] {
-  .carousel-inner {
-    /* mobile */
-    @media (max-width: 767px) {
-      .carousel-item > div {
-        display: none;
-      }
+.swiper-img {
+  overflow: hidden;
+  height: 275px;
 
-      .carousel-item > div:first-child {
-        display: block;
-      }
-    }
-
-    .carousel-item.active,
-    .carousel-item-next,
-    .carousel-item-prev {
-      display: flex;
-    }
-
-    /* medium and up */
-    @media (min-width: 768px) {
-      .carousel-item-end.active,
-      .carousel-item-next {
-        transform: translateX(33.3%);
-      }
-
-      .carousel-item-start.active,
-      .carousel-item-prev {
-        transform: translateX(-33.3%);
-      }
-    }
-
-    .carousel-item-end,
-    .carousel-item-start {
-      transform: translateX(0);
-    }
+  @include media-breakpoint-up(md) {
+    height: 480px;
   }
 }

@@ -79,53 +79,16 @@ faqs:
       Easy - just log in and pause or cancel your subscription
 ---
 
-<header class="bg-on-demand-detail pb-2">
-  <div class="container default-padding">
-    <div class="row text-center">
-      <h1 class="mb-4">
-        Experienced Ruby development. Low monthly fixed cost. Access our team
-        on demand to help you scale.
-      </h1>
-      <p class="subheading mb-4">
-        Work with us on your terms. Pay as a subscription, cancel any time
-      </p>
-      <p>
-        <a
-          href="#plans"
-          class="btn btn-lg btn-primary rounded-pill"
-          data-controller="scroll-to"
-          data-scroll-to-offset-value="80"
-        >
-          See Plans
-        </a>
-      </p>
-    </div>
-  </div>
-
-  <div class="py-4">
-    {% include on-demand/carousel.html %}
-  </div>
-</header>
-
-<section class="default-padding bg-gray-light">
-  <div class="container text-center">
-    {% include on-demand/how-it-works.html %}
-  </div>
-</section>
-
-<section class="default-padding bg-green bg-green-img text-white text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h2 class="h1 mb-4">
-          Top notch Back end Ruby development, when you need it
-        </h2>
-      </div>
-      <div class="col-10 offset-1">
+<header class="bg-on-demand-detail">
+  <div class="default-padding bg-darken">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="mb-4">
+          Experienced Ruby development. Low monthly fixed cost. Access our team
+          on demand to help you scale.
+        </h1>
         <p class="subheading mb-4">
-          A Ruby development subscription replaces unreliable freelancers with a
-          dedicated, experienced team. That you only need to pay for when you
-          need.
+          Work with us on your terms. Pay as a subscription, cancel any time
         </p>
         <p>
           <a
@@ -140,6 +103,41 @@ faqs:
       </div>
     </div>
   </div>
+
+  <div class="py-4">
+    {% include on-demand/carousel.html %}
+  </div>
+</header>
+
+<section class="default-padding bg-gray-light">
+  <div class="container text-center">
+    {% include on-demand/how-it-works.html %}
+  </div>
+</section>
+
+<section class="default-padding bg-green bg-green-img">
+  <div class="container">
+    <div class="row text-white text-center">
+      <h2 class="h1 mb-4 col-lg-8 offset-lg-2">
+        Top notch Back end Ruby development, when you need it
+      </h2>
+      <p class="subheading mb-5 col-lg-10 offset-lg-1">
+        A Ruby development subscription replaces unreliable freelancers with a
+        dedicated, experienced team. That you only need to pay for when you
+        need.
+      </p>
+      <p>
+        <a
+          href="#plans"
+          class="btn btn-lg btn-primary rounded-pill"
+          data-controller="scroll-to"
+          data-scroll-to-offset-value="80"
+        >
+          See Plans
+        </a>
+      </p>
+    </div>
+  </div>
 </section>
 
 <section class="default-padding bg-white">
@@ -150,14 +148,13 @@ faqs:
 
 <section class="default-padding bg-gray-light">
   <div class="container">
-    <div class="row mb-4">
-      <div class="col-12 col-md-10 offset-md-1 text-center mb-4">
-        <h2>
-          Landing pages, forms, javascript
-          <span class="fw-normal">(and lots more!)</span>
-        </h2>
-      </div>
+    <div class="row mb-5">
+      <h2 class="text-sm-center col-lg-8 offset-lg-2">
+        Landing pages, forms, javascript
+        <span class="fw-normal">(and lots more!)</span>
+      </h2>
     </div>
+
     {% include on-demand/lots-more.html %}
   </div>
 </section>

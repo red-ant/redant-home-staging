@@ -19,11 +19,24 @@
   background-size: contain;
 }
 
-.bg-on-demand-header {
+.bg-on-demand-header:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
   background-image: url("/assets/images/on-demand/header.png");
-  background-position: center right;
   background-repeat: no-repeat;
+  background-position: center right;
+
+  @include media-breakpoint-up(lg) {
+    opacity: 1;
+  }
 }
+
 
 .bg-agreement {
   background-repeat: no-repeat;
@@ -166,6 +179,10 @@
 
 .bg-red-light {
   background-color: lighten($red-100, 5%) !important;
+}
+
+.bg-darken {
+  background-color: rgba($black, 0.03);
 }
 
 @each $name, $value in $project-colors {
