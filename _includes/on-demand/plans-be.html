@@ -1,5 +1,5 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  {% for item in site.data.on_demand.plans %}
+  {% for item in site.data.on_demand.plans-be %}
     <div class="col px-4 border-start {% if forloop.last %}border-end{% endif %}">
       <div class="card bg-transparent h-100">
         <div class="card-body pb-0">
@@ -36,7 +36,7 @@
   {% endfor %}
 </div>
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  {% for item in site.data.on_demand.plans %}
+  {% for item in site.data.on_demand.plans-be %}
     <div class="col px-4 border-start {% if forloop.last %}border-end{% endif %}">
       <div class="dashed-list">
         <h5 class="mb-4">What's included</h5>

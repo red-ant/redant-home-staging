@@ -1,0 +1,51 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for item in site.data.on_demand.plans-ux %}
+    <div class="col px-4 border-start {% if forloop.last %}border-end{% endif %}">
+      <div class="card bg-transparent h-100">
+        <div class="card-body pb-0">
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.body }}</p>
+        </div>
+        <div class="card-footer border-0 bg-transparent">
+          {% if item.price %}
+            <h3 class="fw-light mb-1">{{ item.price }}</h3>
+            <p class="text-black-50 small mb-4">Pause or cancel anytime</p>
+          {% endif %}
+          <p class="mb-4">
+            {% if item.typeform %}
+              <a
+                class="typeform-share btn btn-primary btn-green rounded-pill my-2"
+                href="{{ item.href }}"
+                data-mode="popup"
+                target="_blank"
+              >
+                Book a call
+              </a>
+            {% else %}
+              <a
+                class="btn btn-primary btn-green rounded-pill my-2"
+                href="{{ item.href }}"
+              >
+                Get Started
+              </a>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for item in site.data.on_demand.plans-ux %}
+    <div class="col px-4 border-start {% if forloop.last %}border-end{% endif %}">
+      <div class="dashed-list">
+        <h5 class="mb-4">What's included</h5>
+        <ul class="dashed-green">
+          {% for include in item.includes %}
+            <li class="mb-3">{{ include }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>
