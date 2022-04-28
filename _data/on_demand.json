@@ -18,34 +18,17 @@
     },
     {
       "title": "Experience & quality",
-      "body": "Highly experienced, senior designers."
+      "body": {
+		  "ux": "Highly experienced, senior designers.",
+		  "dev": "Highly experienced, senior developers."
+      }
     },
     {
       "title": "Technically astute",
-      "body": "Our designers also have technical experience, so designs \"make sense\" both technically and from a user's POV."
-    },
-    {
-      "title": "Unique and yours",
-      "body": "All IP and assets are owned by you. They are unique and custom."
-    }
-  ],
-  "benefits-dev": [
-    {
-      "title": "Unlimited requests, Unlimited revisions"
-    },
-    {
-      "title": "Fixed monthly rate"
-    },
-    {
-      "title": "Flexible, pause at any time"
-    },
-    {
-      "title": "Experience & quality",
-      "body": "Highly experienced, senior developers."
-    },
-    {
-      "title": "Technically astute",
-      "body": "Our team have both UX and technical experience, so what we build \"makes sense\" both technically and from a user's POV."
+      "body": {
+		  "ux": "Our designers also have technical experience, so designs \"make sense\" both technically and from a user's POV.",
+		  "dev": "Our developers have both UX and extensive development experience, so things \"make sense\" both technically and from a user's POV."
+      }
     },
     {
       "title": "Unique and yours",
@@ -53,180 +36,98 @@
     }
   ],
 
-  "plans-index": [
-    {
-      "title": "Design & UX Service",
-      "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
-      "price": "$4,800 / month",
-      "permalink": "/on-demand/design-ux/",
-      "href": "#/ms/signup/62578012bd9cb70004d0d7af",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time"
-      ]
-    },
-    {
-      "title": "Frontend & Javascript Dev",
-      "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
-      "price": "$5,600 / month",
-      "permalink": "/on-demand/frontend-javascript/",
-      "href": "#/ms/signup/6257802bf8b9740004bc0f48",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time",
-        "Javascript and front end development work as well",
-        "Ongoing support and maintenance"
-      ]
-    },
-    {
-      "title": "Ruby development",
-      "body": "Project based design and development services, where you get access to our full team.",
-      "permalink": "/on-demand/backend-ruby-on-rails/",
-      "href": "https://red-ant.typeform.com/to/qGIy4B",
-      "typeform": true,
-      "includes": [
-        "Simultaneous requests",
-        "Blend of UX, FE and BE development as required",
-        "Projest based costs as required",
-        "Expediated delivery",
-        "Real time collaboration"
-      ]
-    }
-  ]
-  "plans-ux": [
-    {
-      "title": "Design & UX Service",
-      "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
-      "price": "$4,800 / month",
-      "permalink": "/on-demand/design-ux/",
-      "href": "#/ms/signup/62578012bd9cb70004d0d7af",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time"
-      ]
-    },
-    {
-      "title": "UX plus Frontend Dev",
-      "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
-      "price": "$5,600 / month",
-      "permalink": "/on-demand/frontend-javascript/",
-      "href": "#/ms/signup/6257802bf8b9740004bc0f48",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time",
-        "Javascript and front end development work as well",
-        "Ongoing support and maintenance"
-      ]
-    },
-    {
-      "title": "Project Based Engagement",
-      "body": "Project based design and development services, where you get access to our full team.",
-      "permalink": "/on-demand/backend-ruby-on-rails/",
-      "href": "https://red-ant.typeform.com/to/qGIy4B",
-      "typeform": true,
-      "includes": [
-        "Simultaneous requests",
-        "Blend of UX, FE and BE development as required",
-        "Projest based costs as required",
-        "Expediated delivery",
-        "Real time collaboration"
-      ]
-    }
-  ]
-  "plans-fe": [
-    {
-      "title": "Front End development ",
-      "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
-      "price": "$4,800 / month",
-      "permalink": "/on-demand/design-ux/",
-      "href": "#/ms/signup/62578012bd9cb70004d0d7af",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time"
-      ]
-    },
-    {
-      "title": "Frontend Dev plus UX",
-      "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
-      "price": "$5,600 / month",
-      "permalink": "/on-demand/frontend-javascript/",
-      "href": "#/ms/signup/6257802bf8b9740004bc0f48",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time",
-        "Javascript and front end development work as well",
-        "Ongoing support and maintenance"
-      ]
-    },
-    {
-      "title": "Project Based Engagement",
-      "body": "Project based design and development services, where you get access to our full team.",
-      "permalink": "/on-demand/backend-ruby-on-rails/",
-      "href": "https://red-ant.typeform.com/to/qGIy4B",
-      "typeform": true,
-      "includes": [
-        "Simultaneous requests",
-        "Blend of UX, FE and BE development as required",
-        "Projest based costs as required",
-        "Expediated delivery",
-        "Real time collaboration"
-      ]
-    }
-  ]
-  "plans-be": [
-    {
-      "title": "Ruby Development",
-      "body": "A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.",
-      "price": "$4,800 / month",
-      "permalink": "/on-demand/design-ux/",
-      "href": "#/ms/signup/62578012bd9cb70004d0d7af",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time"
-      ]
-    },
-    {
-      "title": "Ruby plus UX",
-      "body": "Same as the UX plan, but with Front End Javascript included in the skill set.",
-      "price": "$5,600 / month",
-      "permalink": "/on-demand/frontend-javascript/",
-      "href": "#/ms/signup/6257802bf8b9740004bc0f48",
-      "includes": [
-        "Unlimited requests",
-        "Unlimited revisions",
-        "All work is 100% yours",
-        "Pause or cancel any time",
-        "Javascript and front end development work as well",
-        "Ongoing support and maintenance"
-      ]
-    },
-    {
-      "title": "Project Based Engagement",
-      "body": "Project based design and development services, where you get access to our full team.",
-      "permalink": "/on-demand/backend-ruby-on-rails/",
-      "href": "https://red-ant.typeform.com/to/qGIy4B",
-      "typeform": true,
-      "includes": [
-        "Simultaneous requests",
-        "Blend of UX, FE and BE development as required",
-        "Projest based costs as required",
-        "Expediated delivery",
-        "Real time collaboration"
-      ]
-    }
+
+  "plans": [
+      {
+        "title": {
+     	   	"index": "Design & UX Service",
+  			"ux": "Design & UX Service",
+      		"fe": "Front End development",
+      		"be": "Ruby Development",
+   	   			},
+        "body":  {
+     	   	"index": "For start ups and growing businesses",
+  			"ux": "For start ups and growing businesses",
+      		"fe": "xx",
+      		"be": "xx",
+   	   			},
+  	 "price":  {
+  		    "index": "xx",
+  		  	"ux": "xx",
+  		    "fe": "xx",
+  		    "be": "xx",
+  		   	   	},
+  	"href":  {
+  		    "index": "xx",
+  		  	"ux": "xx",
+  		    "fe": "xx",
+  		    "be": "xx",
+  		   	   			},
+  	"includes": [
+  			 "Unlimited requests",
+  			 "Unlimited revisions",
+  			 "All work is 100% yours",
+  			"Pause or cancel any time"
+  			  ]
+  		},
+	    {
+	      "title": {
+	   	   		"index": "Design & UX Service",
+				"ux": "Design & UX Service",
+	    		"fe": "Front End development",
+	    		"be": "Ruby Development",
+	 	   			},
+	      "body":  {
+	   	   		"index": "For start ups and growing businesses",
+				"ux": "For start ups and growing businesses",
+	    		"fe": "xx",
+	    		"be": "xx",
+	 	   			},
+		 "price":  {
+			    "index": "xx",
+			  	"ux": "xx",
+			    "fe": "xx",
+			    "be": "xx",
+			   	   	},
+		"href":  {
+			    "index": "xx",
+			  	"ux": "xx",
+			    "fe": "xx",
+			    "be": "xx",
+			   	   			},
+		"includes": [
+				"Unlimited requests",
+				"Unlimited revisions",
+				"All work is 100% yours",
+				"Pause or cancel any time"
+			  ]
+			},
+		    {
+		      "title": {
+		   	   		"index": "Ruby and Backend Dev",
+					"detail": "Project based engagement",
+		 	   			},
+		      "body":  {
+		   	   		"index": "Access our amazing Ruby engineering talent, and pay for it with a flexible subscription that suits your business",
+					"detail": "Project based design and development services, where you get access to our full team.",
+
+		 	   			},
+			"href":  {
+				    "index": "xx",
+				  	"detail": "xx"				   	   			},
+			"includes": 
+				[
+					"Simultaneous requests",
+					"Blend of UX, FE and BE development as required",
+					"Full project management",
+					"Projest based costs as required",
+					"Expedited delivery",
+					"Real time collaboration"
+				]
+
+				}
+				
+	
+	
   ]
 }
