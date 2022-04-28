@@ -1,26 +1,29 @@
 <h2 class="mb-4 text-center">FAQs</h2>
-<div class="accordion border-top border-2" id="faqs">
+<div
+  id="faqs-accordion"
+  class="accordion accordion-flush border-top border-bottom">
   {% for faq in page.faqs %}
-  <div class="card bg-transparent py-2 border-bottom border-2">
-    <div class="card-header border-0 ml-2">
-      <h2 class="mb-0">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
         <button
-          class="btn btn-link btn-block text-dark collapsed"
           type="button"
-          data-toggle="collapse"
-          data-target="#faq-{{ forloop.index }}"
-        >
+          class="accordion-button collapsed fw-bold"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq-{{ forloop.index }}"
+          aria-expanded="false"
+          aria-controls="faq-{{ forloop.index }}">
           {{ faq.q }}
         </button>
       </h2>
+      <div
+        id="faq-{{ forloop.index }}"
+        class="accordion-collapse collapse"
+        aria-labelledby="faq-{{ forloop.index }}"
+        data-bs-parent="#faqs-accordion">
+        <div class="accordion-body pt-0">
+          {{ faq.a | newline_to_br }}
+        </div>
+      </div>
     </div>
-    <div
-      id="faq-{{ forloop.index }}"
-      class="card-body p-0 mb-3 border-0 collapse"
-      data-parent="#faqs"
-    >
-      {{ faq.a | newline_to_br }}
-    </div>
-  </div>
   {% endfor %}
 </div>
