@@ -1,17 +1,29 @@
 <div
-  data-controller="carousel"
-  data-carousel-random-value="true"
-  data-carousel-count-value="6">
+  data-controller="random carousel"
+  data-random-count-value="6"
+  data-random-update-key-value="src"
+  data-carousel-options-value='{
+    "autoplay": true,
+    "centeredSlides": true,
+    "centeredSlidesBounds": true,
+    "loop": true,
+    "spaceBetween": 35,
+    "slidesPerView": 1.7,
+    "speed": 750
+  }'>
   <div class="swiper-wrapper">
     {% for slug in site.data.portfolio.order %}
       {% assign pages = site.pages | where:"slug", slug %}
       {% for page in pages %}
         {% assign image = page.images | where: "type", "desktop" | first %}
-        <div class="swiper-slide" data-carousel-target="slide">
+        <div class="swiper-slide" data-carousel-target="slide" data-random-target="item">
           <div class="card-group">
             <div class="card">
-              <div class="swiper-img rounded-3 shadow-sm border border-light">
-                <img src="{{ image.path }}" class="img-fluid" />
+              <div class="img-wrapper rounded-3 shadow-sm border border-light">
+                <img
+                  src="{% if i <= 4 %}{{ image.path }}{% endif %}"
+                  data-random-src="{{ image.path }}"
+                  class="img-fluid" />
               </div>
               <div class="card-body px-1">
                 <h4 class="card-title">{{ page.title }}</h4>
