@@ -49,8 +49,7 @@ jobs:
         run: yarn install --pure-lockfile
 
       - name: Build
-        run:
-          - jekyll build
+        run: jekyll build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
