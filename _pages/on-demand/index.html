@@ -4,6 +4,24 @@ permalink: /on-demand/
 title: Unlimited, award winning Design and UX
 description: UX and Design work when you need it. A design UX subscription replaces unreliable freelancers with a dedicated, experienced team. You only need to pay for when you need.
 author: Ben Still
+
+how_it_works:
+  - Once you activate your subscription, you can add your work requests. We’ll ask questions, and work with you to establish scope.
+  - We work with you to prioritise tasks and briefs, picking the best one to start work on.
+  - Once you're happy with scope, we’ll start work straight away.
+  - We’ll revise the work until you're 100% happy
+
+plans:
+  - title: Design & UX
+    body: A design UX subscription replaces unreliable freelancers or expensive internal resources with a dedicated, experienced team. That you only need to pay for when you need.
+    link: /on-demand/design-ux/
+  - title: Front end Dev
+    body: Need Front End, React, javascript, HTML or CSS work? Utilise our experienced development team.
+    link: /on-demand/frontend-javascript/
+  - title: Ruby & Back End dev
+    body: Access our amazing Ruby engineering talent, and pay for it with a flexible subscription that suits your business.
+    link: /on-demand/backend-ruby-on-rails/
+
 faqs:
   - q: Is it really unlimited? Or are you just saying that and meaning something else?
     a: |
@@ -112,10 +130,7 @@ faqs:
   <div class="container">
     <h2 class="mb-5 text-center">Available plans</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      {% assign plans = site.data.on_demand.plans %}
-      {% assign items = "" | split: "" %}
-      {% assign items = items | push: plans.ux | push: plans.fe | push: plans.be %}
-      {% for item in items %}
+      {% for item in page.plans %}
       <div class="col">
         <div class="card bg-transparent h-100">
           <img
@@ -127,8 +142,8 @@ faqs:
             <p class="card-text">{{ item.body }}</p>
           </div>
           <div class="card-footer border-0 bg-transparent">
-            <a class="btn btn-primary rounded-pill" href="{{ item.permalink }}">
-              Learn More
+            <a class="btn btn-primary rounded-pill" href="{{ item.link }}">
+              See plans
             </a>
           </div>
         </div>

@@ -1,18 +1,7 @@
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-  <ul class="col list-unstyled my-0">
-    <li class="mb-3 py-3 border-bottom">Marketplace designs</li>
-    <li class="mb-3 py-3 border-bottom">Landing pages</li>
-    <li class="mb-3 py-3 border-bottom">Marketing emails</li>
-    <li class="mb-3 py-3 border-bottom">Email graphics</li>
-  </ul>
-  <ul class="col list-unstyled my-0">
-    <li class="mb-3 py-3 border-bottom">UX wireframes</li>
-    <li class="mb-3 py-3 border-bottom">Clickable prototypes</li>
-    <li class="mb-3 py-3 border-bottom">Style guides</li>
-  </ul>
-  <ul class="col list-unstyled my-0">
-    <li class="mb-3 py-3 border-bottom">User sign up forms</li>
-    <li class="mb-3 py-3 border-bottom">Pitch decks</li>
-    <li class="mb-3 py-3 border-bottom">Infographics</li>
-  </ul>
-</div>
+<ul class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+  {% for item in page.lots_more %}
+    <li class="col mb-3">
+      <span class="d-block ps-2 pb-2 border-bottom">{{ item }}</span>
+    </li>
+  {% endfor %}
+<ul>
