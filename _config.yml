@@ -15,7 +15,7 @@ markdown: kramdown
 google_analtyics: UA-421251-1
 
 intercom: false
-on_demand: false
+on_demand: true
 
 gtm:
   dev: GTM-N3CM249
