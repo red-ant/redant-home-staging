@@ -14,6 +14,9 @@ permalink: /:title/
 markdown: kramdown
 google_analtyics: UA-421251-1
 
+intercom: true
+on_demand: false
+
 gtm:
   dev: GTM-N3CM249
   prod: GTM-P7QNBDH

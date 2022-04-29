@@ -39,11 +39,13 @@
                       Get started
                     </a>
                   </li>
+                  {% if site.on_demand %}
                   <li class="nav-item">
                     <a href="/on-demand/" data-nav-target="link" class="nav-link">
                       On Demand
                     </a>
                   </li>
+                  {% endif %}
                   <li class="nav-item">
                     <a href="/about/" data-nav-target="link" class="nav-link">
                       About us
@@ -91,9 +93,11 @@
           <li>
             <a href="/get-started/" data-nav-target="link">Get started</a>
           </li>
+          {% if site.on_demand %}
           <li>
             <a href="/on-demand/" data-nav-target="link">On Demand</a>
           </li>
+          {% endif %}
           <li>
             <a href="/about/" data-nav-target="link">About us</a>
           </li>
