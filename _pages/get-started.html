@@ -40,7 +40,7 @@ keywords: Code Review Ruby on Rails
             <th scope="col" class="column-40 border-top-0">
               <img
                 class="service-illustration img-fluid mb-4"
-                src="{{ site.data.webpack['illustration-services-1.png'] }}"
+                src="/assets/images/illustration-services-1.png"
               />
               <h2>
                 Code
@@ -51,7 +51,7 @@ keywords: Code Review Ruby on Rails
             <th scope="col" class="column-40 border-top-0">
               <img
                 class="service-illustration img-fluid mb-4"
-                src="{{ site.data.webpack['illustration-services-2.png'] }}"
+                src="/assets/images/illustration-services-2.png"
               />
               <h2>
                 Digital Product
@@ -63,9 +63,9 @@ keywords: Code Review Ruby on Rails
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="border-top">
           <tr>
-            <td class="pl-0 table-title">What you get</td>
+            <td class="ps-0 table-title">What you get</td>
             <td>
               <p>
                 An expert review of your code for security issues, performance
@@ -80,13 +80,13 @@ keywords: Code Review Ruby on Rails
             </td>
           </tr>
           <tr>
-            <td class="pl-0 table-title">Who is it for</td>
+            <td class="ps-0 table-title">Who is it for</td>
             <td><p>Ideal for owners of an existing digital product</p></td>
             <td><p>Ideal for a new website or relaunch</p></td>
           </tr>
           <tr>
-            <td class="pl-0 table-title">Benefits</td>
-            <td class="dashed dashed-green">
+            <td class="border-0 ps-0 table-title">Benefits</td>
+            <td class="border-0 dashed dashed-green">
               <p>Overcome persistent bugs and errors</p>
               <p>Understand your technology options</p>
               <p>
@@ -99,7 +99,7 @@ keywords: Code Review Ruby on Rails
               <p>Be able to prioritise development decisions</p>
               <p>Understand security vulnerability</p>
             </td>
-            <td class="dashed">
+            <td class="border-0 dashed">
               <p>
                 Hit your business goals by building a unique digital product to
                 delight your target audiences
@@ -116,8 +116,8 @@ keywords: Code Review Ruby on Rails
             </td>
           </tr>
           <tr>
-            <td class="border-top-0 py-0"></td>
-            <td class="border-top-0 py-0">
+            <td class="border-0 py-0"></td>
+            <td class="border-0 py-0">
               <a
                 class="btn btn-primary btn-green rounded-pill"
                 href="/ruby-on-rails-code-review/"
@@ -125,7 +125,7 @@ keywords: Code Review Ruby on Rails
                 Find out more
               </a>
             </td>
-            <td class="border-top-0 py-0">
+            <td class="border-0 py-0">
               <a
                 class="btn btn-primary rounded-pill"
                 href="/services/digital-product-development/"
@@ -142,24 +142,24 @@ keywords: Code Review Ruby on Rails
       <div class="col-12 bg-services-1">
         <img
           class="service-illustration img-fluid mb-4"
-          src="{{ site.data.webpack['illustration-services-1.png'] }}"
+          src="/assets/images/illustration-services-1.png"
         />
         <h2>
           Code
           <span class="d-inline d-lg-block text-green-dark">Review</span>
           <span class="d-block text-green">and Checkup</span>
         </h2>
-        <hr class="my-4 hr-long bg-black" />
+        <hr class="my-4 dash dash-long bg-black" />
         <h3 class="table-title h4">What you get</h3>
         <p>
           An expert review of your code for security issues, performance
           problems and quality. You’ll get a good idea of how your code
           benchmarks against industry standards.
         </p>
-        <hr class="my-4 hr-long bg-black" />
+        <hr class="my-4 dash dash-long bg-black" />
         <p class="table-title">Who is it for</p>
         <p>Ideal for owners of an existing digital product.</p>
-        <hr class="my-4 hr-long bg-black" />
+        <hr class="my-4 dash dash-long bg-black" />
         <h3 class="table-title h4">Benefits</h3>
         <p>Overcome persistent bugs and errors</p>
         <p>Understand your technology options</p>
@@ -179,22 +179,22 @@ keywords: Code Review Ruby on Rails
       <div class="col-12 bg-services-2 mt-5">
         <img
           class="service-illustration img-fluid mb-4"
-          src="{{ site.data.webpack['illustration-services-2.png'] }}"
+          src="/assets/images/illustration-services-2.png"
         />
         <h2>
           Digital Product
           <span class="d-inline d-lg-block text-red-dark">Development</span>
           <span class="d-block text-red">Workshop</span>
         </h2>
-        <hr class="my-4 hr-long bg-black" />
+        <hr class="my-4 dash dash-long bg-black" />
         <h3 class="table-title h4">What you get</h3>
         <p>
           1 day Discovery Workshop, Product Roadmap and Agile Sprint Plan
         </p>
-        <hr class="my-4 hr-long bg-black" />
+        <hr class="my-4 dash dash-long bg-black" />
         <p class="table-title">Who is it for</p>
         <p>Ideal for a new website or relaunch.</p>
-        <hr class="my-4 hr-long bg-black" />
+        <hr class="my-4 dash dash-long bg-black" />
         <h3 class="table-title h4">Benefits</h3>
         <p>
           Hit your business goals by building a unique digital product to
@@ -248,5 +248,6 @@ keywords: Code Review Ruby on Rails
   </div>
 </section>
 
-{% include section-companies.html %} {% include testimonials.html colour='red'
-%} {% include cta-panel.html %}
+{% include section-companies.html %}
+{% include testimonials.html colour='red' %}
+{% include cta-panel.html %}

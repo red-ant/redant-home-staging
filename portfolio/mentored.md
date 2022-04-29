@@ -15,11 +15,13 @@ technologies:
   - Kubernetes
   - Amazon Web Services (AWS)
   - Stripe Payments
-desktop_img_height: 463
-images: []
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: mobile
+    path: /assets/images/projects/mentored/mentored-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/mentored/mentored-hero-desktop.jpg
+    height: 463
 ---
 
 ## Project Description

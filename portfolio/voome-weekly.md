@@ -20,13 +20,17 @@ technologies:
   - Wordpress
   - Facebook
   - Brightcove
-images:
-  - filename: voome-weekly-1.jpg
-  - filename: voome-weekly-2.jpg
 team_size: 4 people
 lines_of_code: '2000'
-project_type: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/voome-weekly/voome-weekly-1.jpg
+  - type: gallery
+    path: /assets/images/projects/voome-weekly/voome-weekly-2.jpg
+  - type: mobile
+    path: /assets/images/projects/voome-weekly/voome-weekly-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/voome-weekly/voome-weekly-hero-desktop.jpg
 ---
 
 #### Project Description

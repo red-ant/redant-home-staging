@@ -1,0 +1,29 @@
+<h2 class="mb-4 text-center">FAQs</h2>
+<div
+  id="faqs-accordion"
+  class="accordion accordion-flush border-top border-bottom">
+  {% for faq in page.faqs %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          type="button"
+          class="accordion-button collapsed fw-bold"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq-{{ forloop.index }}"
+          aria-expanded="false"
+          aria-controls="faq-{{ forloop.index }}">
+          {{ faq.q }}
+        </button>
+      </h2>
+      <div
+        id="faq-{{ forloop.index }}"
+        class="accordion-collapse collapse"
+        aria-labelledby="faq-{{ forloop.index }}"
+        data-bs-parent="#faqs-accordion">
+        <div class="accordion-body pt-0">
+          {{ faq.a | newline_to_br }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

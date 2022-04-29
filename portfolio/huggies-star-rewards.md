@@ -17,11 +17,14 @@ technologies:
   - MySQL
   - Carrierwave
   - Amazon Web Services (AWS)
-images:
-  - filename: huggies-star-rewards-1.jpg
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/huggies-star-rewards/huggies-star-rewards-1.jpg
+  - type: mobile
+    path: /assets/images/projects/huggies-star-rewards/huggies-star-rewards-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/huggies-star-rewards/huggies-star-rewards-hero-desktop.jpg
 ---
 
 ## Project Description

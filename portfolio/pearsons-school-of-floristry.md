@@ -9,7 +9,7 @@ title: Pearsons School of Floristry
 tagline: ''
 description: ''
 client: ''
-project_type: ''
+
 lines_of_code: ''
 technologies: []
 images: []

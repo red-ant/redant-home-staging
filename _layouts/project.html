@@ -5,14 +5,11 @@
     <div class="main-layout">
       {% include nav.html %}
 
-      <header id="section-project-intro" class="ga-section project-preview ">
+      <header id="section-project-intro" class="ga-section project-preview">
         <div class="project-preview-content">
           <div class="bg-angled bg-detail-{{ page.theme }}"></div>
-          <div class="bg-gradient"></div>
-          {% if page.project_type == 'mobile' %} {% include
-          svg/preview-mobile.svg slug=page.slug title=page.title %} {% else %}
-          {% include svg/preview-right-middle.svg slug=page.slug
-          title=page.title img_height=page.desktop_img_height %} {% endif %}
+          <div class="bg-project-preview"></div>
+          {% include svg/preview-left.svg title=page.title images=page.images %}
         </div>
       </header>
 
@@ -36,49 +33,53 @@
                 <h4 class="mb-3">Project Detail</h4>
                 <ul class="project-detail-content unstyled-list m-0">
                   {% if page.client.size > 1 %}
-                  <li><strong>Client:</strong> {{ page.client }}</li>
-                  {% endif %} {% if page.project_date.size > 1 %}
-                  <li><strong>Date:</strong> {{ page.project_date }}</li>
-                  {% endif %} {% if page.project_url.size > 1 %}
-                  <li>
-                    <strong>Project URL:</strong>
-                    <a href="{{ page.project_url }}">{{ page.project_url }}</a>
-                  </li>
-                  {% endif %} {% if page.team_size.size > 1 %}
-                  <li><strong>Team Size:</strong> {{ page.team_size }}</li>
-                  {% endif %} {% if page.lines_of_code.size > 1 %}
-                  <li>
-                    <strong>Lines of code:</strong> {{ page.lines_of_code }}
-                  </li>
-                  {% endif %} {% if page.technologies.size > 1 %}
-                  <li>
-                    <strong>Key technology:</strong>
-                    {% for technology in page.technologies %} {% assign techPage
-                    = site.pages | where: 'title',
-                    page.technologies[forloop.index0] %} {% if techPage.size > 0
-                    %}
-                    <a href="{{ techPage[0].url }}">{{ technology }}</a>, {%
-                    else %} {{ technology }}, {% endif %} {% endfor %}
-                  </li>
+                    <li><strong>Client:</strong> {{ page.client }}</li>
+                  {% endif %}
+                  {% if page.project_date.size > 1 %}
+                    <li><strong>Date:</strong> {{ page.project_date }}</li>
+                  {% endif %}
+                  {% if page.project_url.size > 1 %}
+                    <li>
+                      <strong>Project URL:</strong>
+                      <a href="{{ page.project_url }}">{{ page.project_url }}</a>
+                    </li>
+                  {% endif %}
+                  {% if page.team_size.size > 1 %}
+                    <li><strong>Team Size:</strong> {{ page.team_size }}</li>
+                  {% endif %}
+                  {% if page.lines_of_code.size > 1 %}
+                    <li>
+                      <strong>Lines of code:</strong> {{ page.lines_of_code }}
+                    </li>
+                  {% endif %}
+                  {% if page.technologies.size > 1 %}
+                    <li>
+                      <strong>Key technology:</strong>
+                      {% for technology in page.technologies %}
+                        {% assign techPage = site.pages | where: 'title', page.technologies[forloop.index0] %}
+                        {% if techPage.size > 0 %}
+                          <a href="{{ techPage[0].url }}">{{ technology }}</a>,
+                        {% else %}
+                          {{ technology }},
+                        {% endif %}
+                      {% endfor %}
+                    </li>
                   {% endif %}
                 </ul>
               </div>
-              <hr class="hr-black mb-5" />
+              <hr class="dash dash-black mb-5" />
               {% include gallery.html images=page.images alt_attr=page.title %}
             </div>
 
             <div class="col-md-12 mt-4">
-              <section
-                id="section-read-more"
-                class="ga-section pb-5 d-none d-sm-block"
-                data-read-more
-              ></section>
+              <section data-controller="fake-news" class="ga-section pb-5 d-none d-sm-block">
+              </section>
             </div>
           </div>
         </div>
       </section>
 
-      {% include footer.html %} {% include scripts.html %}
+      {% include footer.html %}
     </div>
   </body>
 </html>

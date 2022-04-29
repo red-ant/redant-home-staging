@@ -6,105 +6,92 @@
       {% include nav.html %}
       <header
         id="section-tech-header"
-        class="ga-section bg-gray-light default-padding bg-technology-detail"
-      >
+        class="ga-section bg-gray-light default-padding bg-technology-detail">
         <div class="container py-0 py-sm-5">
           <div class="row d-block d-sm-none">
             <div class="col text-center">
               <img
                 class="img-responsive rounded-circle w-25"
                 src="{{ page.image }}"
-                alt="{{ page.title }}"
-              />
+                alt="{{ page.title }}">
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="col-12 col-sm-8 col-lg-6">
-              <h1 class="pb-4">{{ page.title }}</h1>
-              <h5 class="subheading mb-2">{{ page.subtitle}}</h5>
-              <div class="col p-md-0">
+              <h1 class="pb-4">
+                {{ page.title }}
+              </h1>
+              <h5 class="subheading mb-2">
+                {{ page.subtitle}}
+              </h5>
+              <div class="col p-md-0 mb-4">
                 {{ page.description }}
               </div>
-
-              <div class="row text-center pt-4">
+              <div class="pt-4">
                 <a
-                  class="btn btn-primary rounded-pill d-block d-sm-inline mx-2 mb-2 mb-sm-0"
-                  href="/free-initial-consult-code-review/"
-                >
+                  class="btn btn-primary rounded-pill d-block d-sm-inline mb-2 mb-sm-0"
+                  href="/free-initial-consult-code-review/">
                   Free initial consult
                 </a>
-
                 <a
-                  class="btn btn-default rounded-pill d-block d-sm-inline mx-2"
-                  href="/ruby-on-rails-code-review/"
-                >
+                  class="btn btn-default rounded-pill d-block d-sm-inline ms-sm-2"
+                  href="/ruby-on-rails-code-review/">
                   Get started
                 </a>
               </div>
             </div>
-
             <div class="col-12 col-sm-4 col-lg-6 d-none d-sm-block text-center">
               <img
                 class="img-fluid rounded-circle"
                 src="{{ page.image }}"
                 alt="{{ page.title }}"
                 data-aos="fade-left"
-                data-aos-once="true"
-              />
+                data-aos-once="true">
             </div>
           </div>
         </div>
       </header>
 
       {% if page.content != "" %}
-      <section
-        id="section-how-we-do-it"
-        class="ga-section navbar-aos default-padding how-section"
-      >
-        <div class="container py-5 py-sm-0">
-          <div class="row">
-            <div class="col">
-              <h2>{{ page.how_title }}</h2>
+        <section id="section-how-we-do-it" class="ga-section navbar-aos default-padding how-section">
+          <div class="container py-5 py-sm-0">
+            <div class="row">
+              <div class="col">
+                <h2>{{ page.how_title }}</h2>
+              </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-md-8">
-              <p>{{ content }}</p>
-            </div>
-            <div class="col-md-4">
-              <ul class="about-us-list">
-                {% for bulletpoint in page.how_bulletpoints %}
-                <li
-                  class="red"
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                  data-aos-delay="{{ index }}00"
-                >
-                  {{ bulletpoint }}
-                </li>
-                {% endfor %}
-              </ul>
+            <div class="row">
+              <div class="col-md-8">
+                <p>{{ content }}</p>
+              </div>
+              <div class="col-md-4">
+                <ul class="about-us-list">
+                  {% for bulletpoint in page.how_bulletpoints %}
+                    <li
+                      class="red"
+                      data-aos="fade-up"
+                      data-aos-once="true"
+                      data-aos-delay="{{ index }}00">
+                      {{ bulletpoint }}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
+        </section>
+
+        <div class="container">
+          <hr class="dash dash-1 dash-long dash-gray">
         </div>
-      </section>
+      {% endif %}
+
+      {% include section-companies.html %}
 
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <hr class="hr-long bg-gray-light" />
-          </div>
-        </div>
-      </div>
-      {% endif %} {% include section-companies.html %}
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <hr class="hr-long bg-gray-light" />
-          </div>
-        </div>
+        <hr class="dash dash-1 dash-long dash-gray">
       </div>
 
       <section id="section-engagement" class="ga-section default-padding">
@@ -116,9 +103,9 @@
           </div>
           <div class="row">
             <div class="col-md-4 mb-3 mb-md-0 border">
-              <div class="px-4 py-5 tile bg-white table rounded-sm">
+              <div class="px-4 py-5 tile bg-white">
                 <p class="mt-0 subheading-xs">New Builds</p>
-                <div class="underscore mb-3"></div>
+                <hr class="dash">
                 We create, design and build new apps and platforms. We can help
                 you design for scale, as well as strategy or product support as
                 you need it. We'll take responsibility for delivering your
@@ -129,9 +116,9 @@
               </div>
             </div>
             <div class="col-md-4 mb-3 mb-md-0 border-top border-bottom">
-              <div class="px-4 py-5 tile bg-white table rounded-sm">
+              <div class="px-4 py-5 tile bg-white">
                 <p class="mt-0 subheading-small">Existing Apps</p>
-                <div class="underscore mb-3"></div>
+                <hr class="dash">
                 We can also take over an existing project. Often companies need
                 a bit more experience, developer resourcing, or help in
                 completing certain features before they launch. Or you might
@@ -139,9 +126,9 @@
               </div>
             </div>
             <div class="col-md-4 mb-3 mb-md-0 border">
-              <div class="px-4 py-5 tile bg-white table rounded-sm">
+              <div class="px-4 py-5 tile bg-white">
                 <p class="mt-0 subheading-small">Devops and Platform Support</p>
-                <div class="underscore mb-3"></div>
+                <hr class="dash">
                 We also provide a comprehensive Devops and Platform Support
                 service. We'll take on responsibility for monitoring and
                 providing technical support as part of an ongoing plan that we
@@ -152,53 +139,46 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <hr class="hr-long bg-gray-light" />
-          </div>
-        </div>
-      </div>
-
-      {% for slug in page.projects %} {% assign pages = site.pages | where:
-      'slug', slug %} {% if forloop.first %}
-      <section class="default-padding">
+      {% assign count = page.projects | size %}
+      {% if count > 0 %}
         <div class="container">
-          <h2 class="mb-5">
-            Some of our {{ page.title }} projects
-          </h2>
-          <div id="macy-container" data-columns="2" data-columns-small="1">
-            {% endif %} {% for item in pages %}
-            <div
-              id="section-card-{{ item.title | downcase | replace: ' ', '-' }}"
-              class="ga-section card mb-1"
-            >
-              <a
-                href="{{ item.dir }}"
-                class="portfolio-tile bg-gray bg-{{ item.theme }} text-black"
-              >
-                <div class="content mb-2">
-                  <h2 class="text-{{ item.theme }}">{{ item.title }}</h2>
-                  <p class="my-4 subheading-small">{{ item.tagline }}</p>
-                  <p class="technology-description">{{ item.description }}</p>
-                </div>
-                <div class="svg-container">
-                  <div class="svg-wrapper">
-                    {% if item.project_type == 'mobile' %} {% include
-                    svg/preview-mobile.svg slug=item.slug title=item.title %} {%
-                    else %} {% include svg/preview-left.svg slug=item.slug
-                    title=item.title img_height=item.desktop_img_height %} {%
-                    endif %}
-                  </div>
-                </div>
-              </a>
-            </div>
-            {% endfor %} {% if forloop.last %}
-          </div>
+          <hr class="dash dash-1 dash-long dash-gray">
         </div>
-      </section>
-      {% endif %} {% endfor %} {% include footer.html %} {% include scripts.html
-      %}
+
+        <section class="default-padding">
+          <div class="container">
+            <h2 class="mb-5">
+              Some of our {{ page.title }} projects
+            </h2>
+            <div
+              data-controller="macy"
+              data-macy-columns-lg-value="2"
+              data-macy-columns-md-value="1">
+              {% for slug in page.projects %}
+                {% assign pages = site.pages | where: 'slug', slug %}
+                {% for page in pages %}
+                  <div id="section-card-{{ page.title | downcase | replace: ' ', '-' }}" class="ga-section card mb-1">
+                    <a href="{{ page.dir }}" class="portfolio-tile bg-gray bg-{{ page.theme }} text-black">
+                      <div class="content mb-2">
+                        <h2 class="text-{{ page.theme }}">{{ page.title }}</h2>
+                        <p class="my-4 subheading-small">{{ page.tagline }}</p>
+                        <p class="technology-description">{{ page.description }}</p>
+                      </div>
+                      <div class="svg-container">
+                        <div class="svg-wrapper">
+                          {% include svg/preview-left.svg title=page.title images=page.images %}
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+      {% endif %}
+
+      {% include footer.html %}
     </div>
   </body>
 </html>

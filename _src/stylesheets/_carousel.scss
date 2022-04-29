@@ -1,0 +1,8 @@
+.img-wrapper {
+  overflow: hidden;
+  height: 275px;
+
+  @include media-breakpoint-up(md) {
+    height: 480px;
+  }
+}

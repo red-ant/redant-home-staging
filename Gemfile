@@ -1,4 +1,4 @@
-ruby "2.7.5"
+ruby "3.1.1"
 
 source "https://rubygems.org"
 
@@ -10,8 +10,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
-gem "amp-jekyll"
+gem "jekyll"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -30,8 +29,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Install manually as Forestry can't locate this
 gem "public_suffix"
 
-# Required by heroku to build via the rake task
-gem "rake"
-
-# Installs yarn for heroku, not used anywhere else
-gem "webpacker"
+# Required for Ruby v3
+gem "webrick"

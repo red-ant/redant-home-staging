@@ -7,44 +7,48 @@
     </clipPath>
   </defs>
   <g clip-path="url(#clip)">
-    {% assign desktop_img = include.slug | append: '-hero-desktop.jpg' %}
-    {% assign mobile_img = include.slug | append: '-hero-mobile.jpg' %}
-    {% assign img_height = include.img_height | default: '729'  %}
-    {% if site.data.webpack[desktop_img] %}
-      <g class="big" transform="translate(-25 55)">
+    {% assign image = include.images | where: "type", "mobile" | first %}
+    {% if image %}
+      {% assign width = image.width | default: '187'  %}
+      {% assign height = image.height | default: '334'  %}
+      <g class="small" transform="translate(-20 385)">
         <g opacity="0.05" class="shadow4">
-          <rect fill="#000000" width="450" height="{{ img_height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 185 0) skewX(30)"></rect>
         </g>
         <g opacity="0.08" class="shadow3">
-          <rect fill="#000000" width="450" height="{{ img_height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 185 0) skewX(30)"></rect>
         </g>
         <g opacity="0.11" class="shadow2">
-          <rect fill="#000000" width="450" height="{{ img_height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 185 0) skewX(30)"></rect>
         </g>
         <g opacity="0.14" class="shadow1">
-          <rect fill="#000000" width="450" height="{{ img_height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 185 0) skewX(30)"></rect>
         </g>
-        <g transform="rotate(-30 450 0) skewX(30)" class="art">
-          <image overflow="visible" width="450" height="{{ img_height }}" xlink:href="{{ site.data.webpack[desktop_img] }}"></image>
+        <g transform="rotate(-30 187 0) skewX(30)" class="art">
+          <image overflow="visible" width="{{ width }}" height="{{ height }}" xlink:href="{{ image.path }}"></image>
         </g>
       </g>
     {% endif %}
-    {% if site.data.webpack[mobile_img] %}
-      <g class="small" transform="translate(-20 385)">
+
+    {% assign image = include.images | where: "type", "desktop" | first %}
+    {% if image %}
+      {% assign width = image.width | default: '450'  %}
+      {% assign height = image.height | default: '729'  %}
+      <g class="big" transform="translate(-25 55)">
         <g opacity="0.05" class="shadow4">
-          <rect fill="#000000" width="187" height="334" transform="rotate(-30 185 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
         </g>
         <g opacity="0.08" class="shadow3">
-          <rect fill="#000000" width="187" height="334" transform="rotate(-30 185 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
         </g>
         <g opacity="0.11" class="shadow2">
-          <rect fill="#000000" width="187" height="334" transform="rotate(-30 185 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
         </g>
         <g opacity="0.14" class="shadow1">
-          <rect fill="#000000" width="187" height="334" transform="rotate(-30 185 0) skewX(30)"></rect>
+          <rect fill="#000000" width="{{ width }}" height="{{ height }}" transform="rotate(-30 450 0) skewX(30)"></rect>
         </g>
-        <g transform="rotate(-30 187 0) skewX(30)" class="art">
-          <image overflow="visible" width="187" height="334" xlink:href="{{ site.data.webpack[mobile_img] }}"></image>
+        <g transform="rotate(-30 450 0) skewX(30)" class="art">
+          <image overflow="visible" width="{{ width }}" height="{{ height }}" xlink:href="{{ image.path }}"></image>
         </g>
       </g>
     {% endif %}

@@ -16,15 +16,21 @@ technologies:
   - Social API integrations
   - Stripe Payments
 team_size: 4 people
-desktop_img_height: 646
-images:
-  - filename: tribe-influencer-marketplace-1.jpg
-  - filename: tribe-influencer-marketplace-2.jpg
-  - filename: tribe-influencer-marketplace-3.jpg
-  - filename: tribe-influencer-marketplace-4.jpg
-project_type: ''
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/tribe-influencer-marketplace/tribe-influencer-marketplace-1.jpg
+  - type: gallery
+    path: /assets/images/projects/tribe-influencer-marketplace/tribe-influencer-marketplace-2.jpg
+  - type: gallery
+    path: /assets/images/projects/tribe-influencer-marketplace/tribe-influencer-marketplace-3.jpg
+  - type: gallery
+    path: /assets/images/projects/tribe-influencer-marketplace/tribe-influencer-marketplace-4.jpg
+  - type: mobile
+    path: /assets/images/projects/tribe-influencer-marketplace/tribe-influencer-marketplace-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/tribe-influencer-marketplace/tribe-influencer-marketplace-hero-desktop.jpg
+    height: 646
 ---
 
 ## How it works

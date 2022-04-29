@@ -1,5 +1,6 @@
 ---
-layout: campaign
+layout: default
+typeform: true
 title: 1:1 Digital Product Development Workshop. Product Roadmap and Sprint Plan.
 description: Plan, develop and deliver your digital product. Articulate a compelling vision of your idea and share your enthusiasm with your stakeholders with confidence.
 slug: digital-product-development
@@ -24,7 +25,7 @@ class: digital-product-development
       <div class="col-sm-6 d-flex justify-content-center align-items-center">
         <img
           class="img-responsive"
-          src="{{ site.data.webpack['illustration-services-2.png'] }}"
+          src="/assets/images/illustration-services-2.png"
         />
       </div>
     </div>
@@ -78,28 +79,28 @@ class: digital-product-development
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p class="h1 text-center mb-5" >How it works</p>
+        <p class="h1 text-center mb-5">How it works</p>
       </div>
     </div>
     <div class="row align-items-center pb-4">
       <div class="col-6 offset-3 col-md-5 offset-md-0 order-md-2 px-4 py-sm-4 py-lg-0">
-        <img class="img-fluid" src="{{ site.data.webpack['icon-workshop.png'] }}" alt="Red Ant Digital Disovery Workshop. One day workshop to get to know you and the core of your product" />
+        <img class="img-fluid" src="/assets/images/services/digital-workshop/icon-workshop.png" alt="Red Ant Digital Disovery Workshop. One day workshop to get to know you and the core of your product" />
       </div>
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3">Discovery Workshop</h3>
         <p>
-          One day <a href="#faqs-discovery-workshop" data-toggle="collapse" data-target="#a1" aria-expanded="true" aria-controls="a1">workshop</a> to get to know you and the core of your product. Bring vision of your business, audiences, stakeholders and organisational goals into focus.
+          One day <a href="#faqs-discovery-workshop" data-bs-toggle="collapse" data-bs-target="#a1" data-controller="scroll-to">workshop</a> to get to know you and the core of your product. Bring vision of your business, audiences, stakeholders and organisational goals into focus.
         </p>
       </div>
     </div>
     <div class="row align-items-center py-4">
       <div class="col-6 offset-3 col-md-5 offset-md-0 px-4 py-sm-4 py-lg-0">
-        <img class="img-fluid" src="{{ site.data.webpack['icon-roadmap.png'] }}" alt="Red Ant Product Roadmap. Using the findings of the workshop, we compile your very own Product Roadmap." />
+        <img class="img-fluid" src="/assets/images/services/digital-workshop/icon-roadmap.png" alt="Red Ant Product Roadmap. Using the findings of the workshop, we compile your very own Product Roadmap." />
       </div>
       <div class="col-12 col-md-7">
         <h3 class="mb-4 mt-3 text-red-dark">Product Roadmap</h3>
         <p>
-          Using the findings of the workshop, we compile your <a href="#faqs-product-roadmap" data-toggle="collapse" data-target="#a2" aria-expanded="true" aria-controls="a2">Product Roadmap</a>.
+          Using the findings of the workshop, we compile your <a href="#faqs-product-roadmap" data-bs-toggle="collapse" data-bs-target="#a2" data-controller="scroll-to">Product Roadmap</a>.
         </p>
         <p>
           This one page document communicates the big picture of your product with phases of development and business goals. So you can promote and share your vision with your stakeholder with confidence.
@@ -108,7 +109,7 @@ class: digital-product-development
     </div>
     <div class="row align-items-center pt-4">
       <div class="col-6 offset-3 col-md-5 offset-md-0 order-md-2 px-4 py-sm-4 py-lg-0">
-        <img class="img-fluid" src="{{ site.data.webpack['icon-sprint-plan.png'] }}" alt="Red Ant Agile Sprint Plan. Back up your product development with a this actionable guide and show how you can get things done " />
+        <img class="img-fluid" src="/assets/images/services/digital-workshop/icon-sprint-plan.png" alt="Red Ant Agile Sprint Plan. Back up your product development with a this actionable guide and show how you can get things done " />
       </div>
       <div class="col-12 col-md-7">
         <h3  class="mb-4 mt-3 text-red"> Agile Sprint Plan</h3>
@@ -116,7 +117,7 @@ class: digital-product-development
           Back up your product development with a this actionable guide and show how you can get thins done.
         </p>
         <p>
-          Using <a href="#faqs-agile-methodology" data-toggle="collapse" data-target="#a5" aria-expanded="true" aria-controls="a5"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
+          Using <a href="#faqs-agile-methodology" data-bs-toggle="collapse" data-bs-target="#a5" data-controller="scroll-to"> Agile methodology</a> we break down your digital product in phases of development include testing criteria. Help you manage risk, identify dependencies from start to finish.
         </p>
       </div>
     </div>
@@ -133,8 +134,8 @@ class: digital-product-development
     </div>
     <div class="row">
       <div class="col">
-        <img class="d-md-block d-none img-fluid" src="{{ site.data.webpack['client-logo-desktop.png'] }}" alt="Red Ant clients" />
-        <img class="d-md-none img-fluid" src="{{ site.data.webpack['client-logo-mobile.png'] }}" alt="Red Ant clients" />
+        <img class="d-md-block d-none img-fluid" src="/assets/images/client-logo-desktop.png" alt="Red Ant clients" />
+        <img class="d-md-none img-fluid" src="/assets/images/client-logo-mobile.png" alt="Red Ant clients" />
       </div>
     </div>
   </div>
@@ -154,14 +155,13 @@ class: digital-product-development
       <div class="col">
         <div class="accordion" id="workshop-faqs">
           <div class="card">
-            <div class="anchor" id="faqs-discovery-workshop" ></div>
-            <div class="card-header">
+            <div id="faqs-discovery-workshop" class="card-header">
               <h3 class="mb-0">
                 <button
                   class="btn btn-link collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a1"
                   aria-expanded="true"
                   aria-controls="a1"
                   data-ga-trigger="click-faqs">
@@ -187,14 +187,13 @@ class: digital-product-development
             </div>
           </div>
           <div class="card">
-            <div class="anchor" id="faqs-product-roadmap" ></div>
-            <div class="card-header">
+            <div id="faqs-product-roadmap" class="card-header">
               <h3 class="mb-0">
                 <button
                   class="btn btn-link collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a2"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a2"
                   aria-expanded="true"
                   aria-controls="a2"
                   data-ga-trigger="click-faqs">
@@ -210,14 +209,13 @@ class: digital-product-development
             </div>
           </div>
           <div class="card">
-            <div class="anchor" id="faqs-agile-sprint-plan" ></div>
-            <div class="card-header" >
+            <div id="faqs-agile-sprint-plan" class="card-header">
               <h3 class="mb-0">
                 <button
                   class="btn btn-link collapsed "
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a4"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a4"
                   aria-expanded="true"
                   aria-controls="a4"
                   data-ga-trigger="click-faqs">
@@ -233,15 +231,14 @@ class: digital-product-development
               </div>
             </div>
           </div>
-          <div class="card" >
-            <div class="anchor" id="faqs-agile-methodology" ></div>
-            <div class="card-header">
-              <h3 class="mb-0" >
+          <div class="card">
+            <div id="faqs-agile-methodology" class="card-header">
+              <h3 class="mb-0">
                 <button
                   class="btn btn-link  collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#a5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a5"
                   aria-expanded="true"
                   aria-controls="a5"
                   data-ga-trigger="click-faqs">

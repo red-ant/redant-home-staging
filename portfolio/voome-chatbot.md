@@ -15,14 +15,25 @@ technologies:
   - Facebook Messenger
   - Wit.ai API
 project_type: mobile
-images:
-  - filename: voome-chatbot-1.jpg
-  - filename: voome-chatbot-2.jpg
-  - filename: voome-chatbot-3.jpg
-  - filename: voome-chatbot-4.jpg
 team_size:
 lines_of_code: ''
-
+images:
+  - type: gallery
+    path: /assets/images/projects/voome-chatbot/voome-chatbot-1.jpg
+  - type: gallery
+    path: /assets/images/projects/voome-chatbot/voome-chatbot-2.jpg
+  - type: gallery
+    path: /assets/images/projects/voome-chatbot/voome-chatbot-3.jpg
+  - type: gallery
+    path: /assets/images/projects/voome-chatbot/voome-chatbot-4.jpg
+  - type: mobile
+    path: /assets/images/projects/voome-chatbot/voome-chatbot-hero-mobile1.jpg
+    width: 300
+    height: 534
+  - type: desktop
+    path: /assets/images/projects/voome-chatbot/voome-chatbot-hero-mobile2.jpg
+    width: 300
+    height: 534
 ---
 
 ## Project Description

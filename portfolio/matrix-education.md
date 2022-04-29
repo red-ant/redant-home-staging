@@ -12,16 +12,17 @@ project_date: January 2019 - now
 team_size: 5 people
 lines_of_code: 25,000+
 technologies:
-- Ruby on Rails
-- ReactJS
-- CSS
-- HTML
-- Stripe Payments
-images:
-- filename: matrix-education-1.jpg
-project_type: ''
+  - Ruby on Rails
+  - ReactJS
+  - CSS
+  - HTML
+  - Stripe Payments
 published: false
-
+images:
+  - type: gallery
+    path: /assets/images/projects/matrix-education/matrix-education-1.jpg
+  - type: desktop
+    path: /assets/images/projects/matrix-education/matrix-education-hero-desktop.jpg
 ---
 ## Digital roadmapping, Agile Process, Ruby on Rails, React, Systems Integration, Stripe Payments
 

@@ -21,9 +21,11 @@ technologies:
   - MoneyTech
   - ReactJS
   - Refile
-images: []
-project_type: ''
-
+images:
+  - type: mobile
+    path: /assets/images/projects/managed/managed-hero-mobile.jpg
+  - type: desktop
+    path: /assets/images/projects/managed/managed-hero-desktop.jpg
 ---
 
 Managed is a platform for residential real estate. It’s used by property management agents to run a portfolio of rental properties.
@@ -49,12 +51,12 @@ A common thread we heard from owners was around transparency. They don’t want 
 The Managed platform strengthens the connection between owner and PM. They get paid immediately, and can get a real time view of incoming and outgoing payments. Key information like benchmarking
 
 <div class="alert alert-info">
-<i class="fa fa-bar-chart mr-2"></i> Similar properties to yours are getting 10% more rent
+<i class="fa fa-bar-chart me-2"></i> Similar properties to yours are getting 10% more rent
 </div>
 
 and improvements based on condition report data
 
-<div class="alert alert-info"> <i class="fa fa-line-chart mr-2"></i> If you put in a new kitchen, it would cost between $8-12k but with the increased rent you’d make that back in around 8 months </div>
+<div class="alert alert-info"> <i class="fa fa-line-chart me-2"></i> If you put in a new kitchen, it would cost between $8-12k but with the increased rent you’d make that back in around 8 months </div>
 
 ## For Tenants
 

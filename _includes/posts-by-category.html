@@ -7,7 +7,7 @@
     {% endfor %}
   </div>
 
-  <div id="macy-container" data-columns="3" data-columns-small="2">
+  <div data-controller="macy">
     {% for post in site.categories[include.category] offset:1 limit:postLimit %}
       {% include post-card.html %}
     {% endfor %}
@@ -15,9 +15,9 @@
 </section>
 
 {% if postCount > postLimit %}
-<div class="container text-center py-5">
-  <a href="/blog">
-    <h5 class="mb-0">Show more posts</h5>
-  </a>
-</div>
+  <div class="container text-center py-5">
+    <a href="/blog">
+      <h5 class="mb-0">Show more posts</h5>
+    </a>
+  </div>
 {% endif %}

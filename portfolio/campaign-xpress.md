@@ -11,7 +11,6 @@ description:
 project_url: https://campaignxpress.com.au/
 client: CAMPAIGNxpress
 project_date: 2017 - now
-desktop_img_height: 450
 technologies:
   - Kubernetes
   - Amazon Web Services (AWS)
@@ -24,13 +23,15 @@ technologies:
   - DocuSign
   - Paypal
   - Paperclip
-images:
-  - filename: campaign-xpress-1.jpg
 team_size: 4 people
 technolog: []
-project_type: ''
 lines_of_code: 450k+
-
+images:
+  - type: gallery
+    path: /assets/images/projects/campaign-xpress/campaign-xpress-1.jpg
+  - type: desktop
+    path: /assets/images/projects/campaign-xpress/campaign-xpress-hero-desktop.jpg
+    height: 450
 ---
 
 ## Project Description

@@ -1,0 +1,171 @@
+@import "mixins";
+
+body {
+  background-color: $gray-700;
+}
+
+.anchor-offset {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+.dashed {
+  @include dashes();
+
+  &.dashed-green {
+    @include dashes($green-200);
+  }
+}
+
+.dashed-list {
+  ul {
+    list-style-type: none;
+    padding-left: revert;
+
+    li::before {
+      content: "\2014";
+      position: absolute;
+      margin-left: -38px;
+      font-weight: bold;
+    }
+  }
+}
+
+.dashed-green {
+  li::before {
+    color: $green-200;
+  }
+}
+
+.dashed-red {
+  li::before {
+    color: $red;
+  }
+}
+
+.default-padding {
+  padding: 40px 0 40px 0;
+}
+
+.main-layout {
+  position: relative;
+  max-width: $layout-max-width;
+  margin: auto;
+  background-color: $white;
+
+  @include montserrat();
+  overflow: hidden;
+
+  &.default-layout {
+    padding-bottom: $slide-footer-height;
+
+    // CSS for containers to hide the slidedown element
+    > header,
+    > section,
+    > footer,
+    > .container,
+    > .bg-gray-light {
+      z-index: 2;
+      position: relative;
+    }
+
+    > header,
+    > section,
+    > .container {
+      background-color: $white;
+    }
+
+    > .bg-gray-light {
+      background-color: $gray-100;
+    }
+  }
+}
+
+.post-content {
+  img {
+    @extend .img-fluid;
+  }
+}
+
+.post-detail-container {
+  padding: 40px 0;
+  margin-top: 40px;
+
+  &.section-border {
+    padding-bottom: 40px;
+  }
+}
+
+.ruby {
+  background-image: url("/assets/images/ruby.png");
+}
+
+.homepage .ruby {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  height: 100%;
+  min-height: 200px;
+}
+
+.slidedown-container {
+  background-color: $gray-500;
+  bottom: 0;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $layout-max-width;
+  min-height: $slide-footer-height;
+  position: fixed;
+  width: 100%;
+
+  a {
+    color: $white;
+  }
+}
+
+.table-services {
+  .column-20 {
+    width: 20%;
+  }
+
+  .column-40 {
+    width: 30%;
+  }
+}
+
+.unstyled-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+@include media-breakpoint-up(sm) {
+  .default-padding {
+    padding: 100px 0 100px 0;
+  }
+
+  .project-detail-container {
+    margin-top: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .table-services {
+    .column-20 {
+      width: 20%;
+    }
+
+    .column-40 {
+      width: 40%;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .container {
+    max-width: 960px;
+  }
+}

@@ -1,0 +1,26 @@
+.footer {
+  background-color: $gray-600;
+  color: $white;
+  font-size: 0.9375rem;
+
+  a {
+    color: $white;
+
+    &:hover {
+      transition: 0.2s;
+    }
+  }
+
+  .icon-list {
+    .fa {
+      margin-left: -20px;
+      position: absolute;
+    }
+  }
+
+  .link-list {
+    span {
+      opacity: 0.4;
+    }
+  }
+}

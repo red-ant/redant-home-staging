@@ -1,0 +1,273 @@
+section {
+  &.faqs {
+    background-color: $gray-500 !important;
+    color: $white;
+
+    .accordion {
+      .card {
+        background-color: $gray-500;
+        border-top: 1px solid $gray-300;
+        border-bottom: 1px solid $gray-300;
+        border-radius: 0;
+        margin-top: -1px;
+
+        .card-header {
+          border: none;
+          margin-bottom: 0;
+
+          .btn {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-hero {
+  background-color: $gray-100;
+  background-image: url("/assets/images/bg-home-hero-mobile.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .hero-image {
+    background-image: url("/assets/images/home-hero.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    margin: 10px 0 0 0;
+  }
+}
+
+#section-code-review-hero {
+  background-image: url("/assets/images/bg-code-review-hero.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section-job-content {
+  h3 {
+    margin: 40px 0 10px 0;
+  }
+}
+
+#section-project-content {
+  h2 {
+    @extend .h4;
+  }
+
+  img {
+    @extend .img-fluid;
+  }
+
+  .card .card-img-wrapper {
+    height: auto;
+  }
+
+  .project-detail-container {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+#section-service-options {
+  table {
+    th {
+      border-bottom: 1px solid $black;
+    }
+
+    th,
+    td {
+      border-top: 1px solid $black;
+      padding: 50px 0.75rem 50px 0.75rem;
+    }
+  }
+
+  .bg-services-1 {
+    background-image: url("/assets/images/bg-services-mobile-1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bg-services-2 {
+    background-image: url("/assets/images/bg-services-mobile-2.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .table-title {
+    @include montserrat($montserrat-bold);
+  }
+}
+
+#section-stuff-we-made {
+  .content {
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 60px 0 0 0;
+    position: relative;
+  }
+
+  .svg-wrapper {
+    bottom: 0;
+    height: 100%;
+    margin-bottom: -10px;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    width: 100%;
+
+    svg {
+      height: auto;
+    }
+  }
+}
+
+#section-tech-header {
+  img.img-responsive {
+    max-width: 200px;
+  }
+}
+
+#section-technology-list {
+  h5 {
+    @include montserrat($montserrat-bold);
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+#section-testimonials {
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 5rem;
+
+  &.bg-green {
+    background-image: url("/assets/images/bg-testimonials-green.png");
+
+    .carousel-item {
+      color: $green-200;
+    }
+  }
+
+  &.bg-red {
+    background-image: url("/assets/images/bg-testimonials-red.png");
+
+    .carousel-item {
+      color: $red;
+    }
+  }
+
+  .carousel-item {
+    background: $transparent;
+
+    p {
+      @include montserrat($montserrat-medium);
+      font-size: 22px;
+
+      &.small {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+#section-work-reasons {
+  @include dashes($orange-200);
+
+  &.about-reasons {
+    background-image: url("/assets/images/bg-work-reasons.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.section-border {
+  border-top: 1px solid $gray-smoke;
+  border-bottom: 1px solid $gray-smoke;
+  padding-bottom: 30px;
+
+  &.border-red {
+    border-top: 1px solid $red;
+    border-bottom: 1px solid $red;
+  }
+}
+
+#section-workshop-hero {
+  background-image: url("/assets/images/bg-product-dev-hero.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cta-panel {
+  background-color: #353933;
+  background-image: url("/assets/images/services/digital-workshop/bg-cta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h2,
+  p {
+    color: #fff;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #section-service-options {
+    background-image: url("/assets/images/bg-get-started-services.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #section-stuff-we-made {
+    .content {
+      padding: 100px 0 90px 0;
+    }
+
+    .svg-wrapper {
+      position: absolute;
+      width: 50%;
+
+      svg {
+        bottom: 0;
+        position: absolute;
+      }
+    }
+  }
+
+  .section-border {
+    padding-bottom: 100px;
+  }
+
+  .section-hero {
+    background-image: url("/assets/images/bg-home-hero.png");
+
+    .hero-image {
+      margin: 0;
+      height: 650px;
+    }
+  }
+
+  #section-tech-header {
+    img.img-responsive {
+      max-width: 300px;
+    }
+  }
+}

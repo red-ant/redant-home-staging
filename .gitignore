@@ -1,13 +1,7 @@
 .DS_Store
-.sass-cache
-.asset-cache
-.jekyll-metadata
-.stage
+.jekyll-cache
 .tool-versions
 *.log
 *.bak
-_data/webpack.json
-_includes/amp/index.css
 _site
 node_modules
-assets/webpack
