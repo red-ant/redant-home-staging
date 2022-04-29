@@ -14,6 +14,9 @@ Stimulus.register("scroll-to", ScrollTo);
 import { FakeNewsController } from "./fake-news-controller";
 Stimulus.register("fake-news", FakeNewsController);
 
+import { NormaliseHeightController } from "./normalise-height-controller";
+Stimulus.register("normalise-height", NormaliseHeightController);
+
 import { MacyController } from "./macy-controller";
 Stimulus.register("macy", MacyController);
 

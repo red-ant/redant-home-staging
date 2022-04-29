@@ -29,11 +29,19 @@ export class NavController extends Controller {
     link.classList.add(this.activeClass);
   }
 
-  get links() {
-    return this.linkTargets || [];
+  setHeight(event) {
+    const { height } = event.detail || {};
+
+    if (height) {
+      this.element.style.height = `${height}px`;
+    }
   }
 
   get activeClass() {
     return this.activeClassValue;
+  }
+
+  get links() {
+    return this.linkTargets || [];
   }
 }

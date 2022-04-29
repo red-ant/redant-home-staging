@@ -48,8 +48,6 @@ $project-colors: (
 );
 
 $layout-max-width: 1400px;
-$navbar-height: 68px;
-$announcement-bar-height: 40px;
 $slide-footer-height: 400px;
 
 // Fonts
@@ -70,7 +68,7 @@ $link-hover-decoration: underline;
 $carousel-indicator-width: 20px;
 $carousel-indicator-height: 4px;
 $carousel-indicator-spacer: 5px;
-$carousel-indicator-opacity: .3;
+$carousel-indicator-opacity: 0.3;
 $carousel-control-width: 10%;
 
 // Accordion

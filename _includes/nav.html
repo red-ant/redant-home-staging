@@ -1,122 +1,116 @@
 <div
-  class="nav-container"
-  data-controller="nav reveal"
-  data-reveal-hidden-class="open">
-  {% if site.announcement_bar == true %}
-    <div class="bg-dark d-flex justify-content-center align-items-center announcement-bar">
-      <span>A new way of working with us!</span> Low monthly fixed cost. Access our team on demand to help you scale
-      <span>
-        <a href="/on-demand/">
-          More info
-        </a>
-      </span>
-    </div>
-  {% endif %}
-  {% if page.nav == 'navbar-aos' %}
-  <nav
-    class="navbar nav-overlay"
-    data-aos-anchor=".navbar-aos"
-    data-aos="navbar-aos"
-    data-aos-anchor-placement="bottom-bottom"
-    data-reveal-target="item"
-  >
-  {% else %}
-  <nav class="navbar nav-overlay" data-reveal-target="item">
-  {% endif %}
-    <div class="container">
-      <div class="d-flex flex-column">
-        <div class="d-flex justify-content-between">
-          <a href="/" class="navbar-brand">
-            <img
-              class="logo"
-              src="/assets/images/logo.svg"
-              alt="Red Ant logo"
-            />
-          </a>
-          <div class="d-flex justify-content-end align-items-center w-100">
-            <div class="d-none d-lg-block">
-              <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a href="/get-started/" data-nav-target="link" class="nav-link">
-                    Get started
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/on-demand/" data-nav-target="link" class="nav-link">
-                    On Demand
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/about/" data-nav-target="link" class="nav-link">
-                    About us
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/portfolio/" data-nav-target="link" class="nav-link">
-                    Portfolio
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/technology/" data-nav-target="link" class="nav-link">
-                    Technology
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/blog/" data-nav-target="link" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="/contact-us/" data-nav-target="link" class="nav-link">
-                    Contact
-                  </a>
-                </li>
-              </ul>
+  data-controller="nav reveal normalise-height"
+  data-reveal-hidden-class="open"
+  data-action="normalise:height->nav#setHeight">
+  <div class="nav-container" data-normalise-height-target="item">
+    {% if site.announcement_bar == true %}
+      <div class="bg-dark text-white text-center p-2">
+        <strong>A new way of working with us!</strong>
+        Low monthly fixed cost. Access our team on demand to help you scale.
+        <a href="/on-demand/" class="fw-bold ms-2">More info</a>
+      </div>
+    {% endif %}
+    {% if page.nav == 'navbar-aos' %}
+    <nav
+      class="navbar nav-overlay"
+      data-aos-anchor=".navbar-aos"
+      data-aos="navbar-aos"
+      data-aos-anchor-placement="bottom-bottom"
+      data-reveal-target="item"
+    >
+    {% else %}
+    <nav class="navbar nav-overlay" data-reveal-target="item">
+    {% endif %}
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between">
+            <a href="/" class="navbar-brand">
+              <img
+                class="logo"
+                src="/assets/images/logo.svg"
+                alt="Red Ant logo"
+              />
+            </a>
+            <div class="d-flex justify-content-end align-items-center w-100">
+              <div class="d-none d-lg-block">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a href="/get-started/" data-nav-target="link" class="nav-link">
+                      Get started
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/on-demand/" data-nav-target="link" class="nav-link">
+                      On Demand
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/about/" data-nav-target="link" class="nav-link">
+                      About us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio/" data-nav-target="link" class="nav-link">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/technology/" data-nav-target="link" class="nav-link">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blog/" data-nav-target="link" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact-us/" data-nav-target="link" class="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-link d-block d-lg-none nav-toggle-icon"
+                data-action="click->reveal#toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
-            <button
-              type="button"
-              class="btn btn-link d-block d-lg-none nav-toggle-icon"
-              data-action="click->reveal#toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container nav-links mx-4 mx-md-auto">
-      <ul class="links">
-        <li>
-          <a href="/" data-nav-target="link">Home</a>
-        </li>
-        <li>
-          <a href="/get-started/" data-nav-target="link">Get started</a>
-        </li>
-        <li>
-          <a href="/on-demand/" data-nav-target="link">On Demand</a>
-        </li>
-        <li>
-          <a href="/about/" data-nav-target="link">About us</a>
-        </li>
-        <li>
-          <a href="/portfolio/" data-nav-target="link">Portfolio</a>
-        </li>
-        <li>
-          <a href="/technology/" data-nav-target="link">Technology</a>
-        </li>
-        <li>
-          <a href="/blog/" data-nav-target="link">Blog</a>
-        </li>
-        <li>
-          <a href="/contact-us/" data-nav-target="link">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="container nav-links mx-4 mx-md-auto">
+        <ul class="links">
+          <li>
+            <a href="/" data-nav-target="link">Home</a>
+          </li>
+          <li>
+            <a href="/get-started/" data-nav-target="link">Get started</a>
+          </li>
+          <li>
+            <a href="/on-demand/" data-nav-target="link">On Demand</a>
+          </li>
+          <li>
+            <a href="/about/" data-nav-target="link">About us</a>
+          </li>
+          <li>
+            <a href="/portfolio/" data-nav-target="link">Portfolio</a>
+          </li>
+          <li>
+            <a href="/technology/" data-nav-target="link">Technology</a>
+          </li>
+          <li>
+            <a href="/blog/" data-nav-target="link">Blog</a>
+          </li>
+          <li>
+            <a href="/contact-us/" data-nav-target="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
-{% if site.announcement_bar == true %}
-  <div class="announcement-spacer"></div>
-{% else %}
-  <div class="nav-spacer"></div>
-{% endif %}
