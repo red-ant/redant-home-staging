@@ -14,7 +14,7 @@ permalink: /:title/
 markdown: kramdown
 google_analtyics: UA-421251-1
 
-intercom: true
+intercom: false
 on_demand: false
 
 gtm:
