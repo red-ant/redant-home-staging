@@ -1,20 +1,21 @@
 import { Controller } from "@hotwired/stimulus";
 
 export class NavController extends Controller {
+  static targets = ["item"];
+
   static values = {
     activeClass: { type: String, default: "active" },
   };
 
-  static targets = ["link"];
-
   connect() {
+    if (!this.items) return;
     this.toggleActive();
   }
 
   toggleActive() {
-    this.links
-      .filter((link) => this.isActive(link))
-      .forEach((link) => this.setActive(link));
+    this.items
+      .filter(this.isActive.bind(this))
+      .forEach(this.setActive.bind(this));
   }
 
   isActive(link) {
@@ -41,7 +42,7 @@ export class NavController extends Controller {
     return this.activeClassValue;
   }
 
-  get links() {
-    return this.linkTargets || [];
+  get items() {
+    return this.itemTargets;
   }
 }
