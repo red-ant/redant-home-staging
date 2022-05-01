@@ -23,6 +23,13 @@ $red-300: #b41e1e;
 $transparent: rgba(255, 255, 255, 0);
 $white: #fff !default;
 
+$primary: $red;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
 $project-colors: (
   beautyheaven: #00deff,
   bondi-vet: #2991f2,
@@ -79,3 +86,10 @@ $accordion-button-active-color: $gray-900;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
 $accordion-icon-color: $gray-900;
+
+// Buttons
+$btn-font-weight: $montserrat-semibold;
+$btn-padding-y-lg: .75rem;
+$btn-padding-x-lg: 1.25rem;
+$btn-focus-width: 0;
+$btn-focus-box-shadow: 0;

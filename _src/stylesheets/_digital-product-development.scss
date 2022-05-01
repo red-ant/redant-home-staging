@@ -80,12 +80,6 @@
         margin-right: -175px;
       }
     }
-
-    @include media-breakpoint-up(md) {
-      .btn-lg {
-        font-size: 1.7rem;
-      }
-    }
   }
 
   section {
