@@ -19,7 +19,7 @@ class: digital-product-development
           Help you plan, develop and deliver your digital product. Start with a 1:1 Workshop, and finish with your very own Product Roadmap and Agile Sprint Plan.
         </p>
         <p>
-          <a href="https://red-ant.typeform.com/to/wW5Q1I" class="btn btn-primary typeform-share rounded-pill mt-4" data-mode="popup">Let’s start now</a>
+          <a href="https://red-ant.typeform.com/to/wW5Q1I" class="btn btn-lg btn-primary typeform-share rounded-pill mt-4" data-mode="popup">Let’s start now</a>
         </p>
       </div>
       <div class="col-sm-6 d-flex justify-content-center align-items-center">
@@ -158,7 +158,7 @@ class: digital-product-development
             <div id="faqs-discovery-workshop" class="card-header">
               <h3 class="mb-0">
                 <button
-                  class="btn btn-link collapsed"
+                  class="btn collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#a1"
@@ -190,7 +190,7 @@ class: digital-product-development
             <div id="faqs-product-roadmap" class="card-header">
               <h3 class="mb-0">
                 <button
-                  class="btn btn-link collapsed"
+                  class="btn collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#a2"
@@ -212,7 +212,7 @@ class: digital-product-development
             <div id="faqs-agile-sprint-plan" class="card-header">
               <h3 class="mb-0">
                 <button
-                  class="btn btn-link collapsed "
+                  class="btn collapsed "
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#a4"
@@ -235,7 +235,7 @@ class: digital-product-development
             <div id="faqs-agile-methodology" class="card-header">
               <h3 class="mb-0">
                 <button
-                  class="btn btn-link  collapsed"
+                  class="btn collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#a5"

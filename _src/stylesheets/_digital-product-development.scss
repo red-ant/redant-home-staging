@@ -69,21 +69,12 @@
   .hero,
   .intro {
     @include media-breakpoint-down(sm) {
-      margin-top: 20px;
-      padding-top: 3rem !important;
-
       &::before {
         width: 345px;
         height: 345px;
         bottom: 10px;
         right: 50%;
         margin-right: -175px;
-      }
-    }
-
-    @include media-breakpoint-up(md) {
-      .btn-lg {
-        font-size: 1.7rem;
       }
     }
   }
