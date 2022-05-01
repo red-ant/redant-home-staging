@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus";
+import { random } from "../utils";
 
 export class FakeNewsController extends Controller {
   static values = {
@@ -33,15 +34,8 @@ export class FakeNewsController extends Controller {
     `;
   }
 
-  random(items) {
-    return items
-      .map((value) => ({ value, sort: Math.random() }))
-      .sort((a, b) => a.sort - b.sort)
-      .map(({ value }) => value);
-  }
-
   get randomNewsItems() {
-    return this.random(this.news).splice(0, this.count);
+    return random(this.news).splice(0, this.count);
   }
 
   get count() {

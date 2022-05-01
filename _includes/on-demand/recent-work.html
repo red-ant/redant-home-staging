@@ -1,24 +1,24 @@
+{% assign pages = "" | split: "" %}
+{% for slug in site.data.portfolio.order %}
+  {% assign slugs = site.pages | where:"slug", slug %}
+  {% assign pages = pages | concat: slugs %}
+{% endfor %}
 <div
   class="row row-cols-2 g-4"
-  data-controller="random"
-  data-random-count-value="4"
-  data-random-update-key-value="src">
-  {% for slug in site.data.portfolio.order %}
-    {% assign pages = site.pages | where:"slug", slug %}
-    {% for page in pages %}
-      {% assign image = page.images | where: "type", "desktop" | first %}
-      <div
-        class="col"
-        data-random-target="item">
-        <div class="img-wrapper rounded-3 shadow-sm border border-light">
-          <a href="{{ page.url }}">
-            <img
-              src="{% if i <= 4 %}{{ image.path }}{% endif %}"
-              data-random-src="{{ image.path }}"
-              class="img-fluid" />
-          </a>
-        </div>
+  data-controller="randomise"
+  data-randomise-count-value="4">
+  {% for page in pages %}
+    {% assign image = page.images | where: "type", "desktop" | first %}
+    <div class="col" data-randomise-target="item">
+      <div class="img-wrapper rounded-3 shadow-sm border border-light">
+        <a href="{{ page.url }}">
+          <img
+            data-controller="image"
+            data-image-src="{{ image.path }}"
+            class="img-fluid"
+            lazy="true" />
+        </a>
       </div>
-    {% endfor %}
+    </div>
   {% endfor %}
 </div>
