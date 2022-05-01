@@ -69,9 +69,6 @@
   .hero,
   .intro {
     @include media-breakpoint-down(sm) {
-      margin-top: 20px;
-      padding-top: 3rem !important;
-
       &::before {
         width: 345px;
         height: 345px;
