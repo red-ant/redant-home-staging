@@ -6,7 +6,7 @@
   "author": "Jason Taylor <jason@redant.com.au>",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "node _src/esbuild.js",
+    "build": "node _src/lib/esbuild.js",
     "dev": "bundle exec jekyll serve --livereload"
   },
   "dependencies": {
