@@ -1,6 +1,5 @@
 ---
 layout: service
-intercom: true
 title: 'Improving performance for fast growing sites '
 subtitle_1: Do you feel like your website, app or platform isn’t keeping up or if
   you’ve been struggling with persistent performance issues - we can help you get
