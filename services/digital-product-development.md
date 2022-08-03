@@ -1,6 +1,5 @@
 ---
 layout: default
-typeform: true
 title: 1:1 Digital Product Development Workshop. Product Roadmap and Sprint Plan.
 description: Plan, develop and deliver your digital product. Articulate a compelling vision of your idea and share your enthusiasm with your stakeholders with confidence.
 slug: digital-product-development
@@ -19,7 +18,9 @@ class: digital-product-development
           Help you plan, develop and deliver your digital product. Start with a 1:1 Workshop, and finish with your very own Product Roadmap and Agile Sprint Plan.
         </p>
         <p>
-          <a href="https://red-ant.typeform.com/to/wW5Q1I" class="btn btn-lg btn-primary typeform-share rounded-pill mt-4" data-mode="popup">Let’s start now</a>
+          <a class="btn btn-lg btn-primary intercom-launcher rounded-pill mt-4">
+            Let’s start now
+          </a>
         </p>
       </div>
       <div class="col-sm-6 d-flex justify-content-center align-items-center">

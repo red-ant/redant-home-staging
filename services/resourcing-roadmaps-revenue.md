@@ -1,6 +1,5 @@
 ---
 layout: service
-typeform: true
 title: The 3Rs - resourcing, roadmaps, revenue
 subtitle_1: These 3Rs are the most important aspects of your website development.
   They are linked, and they will determine if your product is a success.
