@@ -3,48 +3,46 @@ layout: project
 theme: 12wbt
 slug: 12wbt-daily-app
 title: 12WBT Daily App
-tagline:
-  A companion iOS app for this extremely successful online health and fitness
+tagline: A companion iOS app for this extremely successful online health and fitness
   platform
-description:
-  This app is used by people doing the 12WBT program. It has workouts,
+description: This app is used by people doing the 12WBT program. It has workouts,
   recipes and daily stats.
 project_url: https://www.12wbt.com/features/introducing-12wbt-daily
 client: 12WBT
-project_date: 2015-now
+project_date: 2015-2020
 team_size: 6 people
 lines_of_code: 30k
 technologies:
-  - Swift
-  - FB authentication
-  - iOS Push
-  - CoreData
+- Swift
+- FB authentication
+- iOS Push
+- CoreData
 subtitle: ''
 projects: []
 image: ''
 how_title: ''
 how_bulletpoints: []
 images:
-  - type: gallery
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-1.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-2.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-3.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-4.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-5.jpg
-  - type: mobile
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-hero-mobile1.jpg
-    width: 300
-    height: 534
-  - type: desktop
-    path: /assets/images/projects/12wbt-daily-app/12wbt-daily-app-hero-mobile2.jpg
-    width: 300
-    height: 534
----
+- type: gallery
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-1.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-2.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-3.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-4.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-5.jpg"
+- type: mobile
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-hero-mobile1.jpg"
+  width: 300
+  height: 534
+- type: desktop
+  path: "/assets/images/projects/12wbt-daily-app/12wbt-daily-app-hero-mobile2.jpg"
+  width: 300
+  height: 534
 
+---
 You've probably heard about the wildly popular fitness program [12WBT by Michelle Bridges](/portfolio/12wbt/). You can read a bit more about [12WBT here](/portfolio/12wbt/).
 
 Lots of people start digital projects by listing an App as one of their requirements. Digging deeper, typically what they **actually** want is to connect to an audience of customers - many of which are predominantly mobile. Don't jump to the solution just yet - an App is just one way to to do this. But you need to start by addressing the core requirement - creating something that your audience of customers really want.
