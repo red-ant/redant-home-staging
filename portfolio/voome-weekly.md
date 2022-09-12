@@ -7,32 +7,32 @@ tagline: A health and fitness product
 description: Voome is an extremely successful online health and fitness platform
 project_url: https://www.voome.com.au
 client: 12WBT
-project_date: '2016'
+project_date: 2016-2017
 technologies:
-  - Ruby on Rails
-  - PostgreSQL
-  - AngularJS
-  - Salesforce Marketing Cloud
-  - Redis
-  - Elasticsearch
-  - BigQuery
-  - Chargify
-  - Wordpress
-  - Facebook
-  - Brightcove
+- Ruby on Rails
+- PostgreSQL
+- AngularJS
+- Salesforce Marketing Cloud
+- Redis
+- Elasticsearch
+- BigQuery
+- Chargify
+- Wordpress
+- Facebook
+- Brightcove
 team_size: 4 people
-lines_of_code: '2000'
+lines_of_code: "2000"
 images:
-  - type: gallery
-    path: /assets/images/projects/voome-weekly/voome-weekly-1.jpg
-  - type: gallery
-    path: /assets/images/projects/voome-weekly/voome-weekly-2.jpg
-  - type: mobile
-    path: /assets/images/projects/voome-weekly/voome-weekly-hero-mobile.jpg
-  - type: desktop
-    path: /assets/images/projects/voome-weekly/voome-weekly-hero-desktop.jpg
----
+- type: gallery
+  path: "/assets/images/projects/voome-weekly/voome-weekly-1.jpg"
+- type: gallery
+  path: "/assets/images/projects/voome-weekly/voome-weekly-2.jpg"
+- type: mobile
+  path: "/assets/images/projects/voome-weekly/voome-weekly-hero-mobile.jpg"
+- type: desktop
+  path: "/assets/images/projects/voome-weekly/voome-weekly-hero-desktop.jpg"
 
+---
 #### Project Description
 
 Voome, brought to you by the team behind 12WBT.
@@ -43,4 +43,4 @@ Voome has an intuitive sign up process that allows the user to respond to questi
 
 It goes even further! Using a Spotify style model, the meals you choose and the fitness videos you watch will personalise your experience as you interact with it. You can also pause your subscription at any time.
 
-Understanding that users may not want both the fitness AND the nutrition elements of Voome together, we’re currently updating the site to add bundles - Fitness, Nutrition, or both. More on that coming soon...
+Understanding that users may not want both the fitness AND the nutrition elements of Voome together, we adapted the buying model to bundles - Fitness, Nutrition, or both. 
