@@ -4,24 +4,29 @@ theme: sydney-trains
 slug: sydney-trains
 title: Transport for NSW (Sydney Trains)
 tagline: Visualisation Tool to improve timetable management
-description: A data visualisation tool utilises customer data to better predict and plan maintenance and other timetable changes.
-project_url:
+description: A data visualisation tool utilises customer data to better predict and
+  plan maintenance and other timetable changes.
+project_url: ''
 client: Transport NSW and Veitch Lister Consulting
-project_date: 2019 (~6 months)
-team_size: 5
-lines_of_code:
+project_date: 2019  - current
+team_size: "5"
+lines_of_code: ''
 technologies:
-  - Ruby on Rails
+- ReactJS
+- Docker
+- Amazon Web Services (AWS)
+- PostgresSQL
+- Ruby on Rails
 images:
-  - type: gallery
-    path: /assets/images/projects/sydney-trains/sydney-trains-1.jpg
-  - type: gallery
-    path: /assets/images/projects/sydney-trains/sydney-trains-2.jpg
-  - type: desktop
-    path: /assets/images/projects/sydney-trains/sydney-trains-hero-desktop.jpg
-    height: 450
----
+- type: gallery
+  path: "/assets/images/projects/sydney-trains/sydney-trains-1.jpg"
+- type: gallery
+  path: "/assets/images/projects/sydney-trains/sydney-trains-2.jpg"
+- type: desktop
+  path: "/assets/images/projects/sydney-trains/sydney-trains-hero-desktop.jpg"
+  height: 450
 
+---
 ## Project background
 
 Transport for NSW (Sydney Trains) with their partner Veitch Lister Consulting and Red Ant help smooth Sydney’s transport network everyday. The number of transport users is on the rise - up 12% since 2015. The task of optimising the transport network has never been more pressing.
