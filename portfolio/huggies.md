@@ -4,55 +4,54 @@ theme: huggies
 slug: huggies
 title: Huggies
 tagline: A place for parents to learn &amp; share
-description:
-  Need to take your customer engagement to the next level? Take a look
+description: Need to take your customer engagement to the next level? Take a look
   at how Huggies is dominating the pregnancy and parenting category by building a
   site with over 42,000 pages of content, plus lots of interactive tools and member
   features for almost 2M members.
 project_url: https://www.huggies.com.au
 client: Kimberly Clark
-project_date: 2005-now
+project_date: 2005-2022
 technologies:
-  - Ruby on Rails
-  - MySQL
-  - Comfy CMS
-  - Radiant CMS
-  - Grape API
-  - Rack API
-  - Memcached
-  - Salesforce Marketing Cloud
-  - Salesforce Predictive Intelligence
-  - Vzaar
-  - Fastly
-  - Sidekiq
-  - Omniauth
-  - YesMail
-  - Reactful
-  - 'Channel Advisor price data '
-  - Facebook authentication
+- Ruby on Rails
+- MySQL
+- Comfy CMS
+- Radiant CMS
+- Grape API
+- Rack API
+- Memcached
+- Salesforce Marketing Cloud
+- Salesforce Predictive Intelligence
+- Vzaar
+- Fastly
+- Sidekiq
+- Omniauth
+- YesMail
+- Reactful
+- 'Channel Advisor price data '
+- Facebook authentication
 team_size: 12 people
 lines_of_code: ''
 images:
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-1.jpg
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-2.jpg
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-3.jpg
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-4.jpg
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-5.jpg
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-6.jpg
-  - type: gallery
-    path: /assets/images/projects/huggies/huggies-7.jpg
-  - type: mobile
-    path: /assets/images/projects/huggies/huggies-hero-mobile.jpg
-  - type: desktop
-    path: /assets/images/projects/huggies/huggies-hero-desktop.jpg
----
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-1.jpg"
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-2.jpg"
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-3.jpg"
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-4.jpg"
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-5.jpg"
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-6.jpg"
+- type: gallery
+  path: "/assets/images/projects/huggies/huggies-7.jpg"
+- type: mobile
+  path: "/assets/images/projects/huggies/huggies-hero-mobile.jpg"
+- type: desktop
+  path: "/assets/images/projects/huggies/huggies-hero-desktop.jpg"
 
+---
 Running a successful consumer brand in Australia is really tough. Retailers are constantly discounting, and teach consumers to buy on discount signals rather than product quality. Then Disrupters like Amazon make it even harder.
 
 Consider Huggies: a strong brand with a super high quality product (relied on by +90% of newborn mums), that gets aggressively discounted to well below cost price by retailers. They do this to get people in the door - so even though they lose \$5 on the nappies, they make it back on the other stuff you hopefully buy.

@@ -4,29 +4,28 @@ slug: huggies-star-rewards
 theme: huggies
 title: Huggies Star Rewards
 tagline: A place for parents to learn &amp; share
-description:
-  We’ve been working with Huggies for over a decade and in that time we’ve
+description: We’ve been working with Huggies for over a decade and in that time we’ve
   worked on many promotions together. Most recently, we created a shop and redeem
   rewards program in partnership with Fisher-Price Smart Stages.
 project_url: https://huggies.com.au
 client: Huggies
-project_date: '2016'
-team_size: 4 people
+project_date: "2016"
+team_size: 5 people
 technologies:
-  - Ruby on Rails
-  - MySQL
-  - Carrierwave
-  - Amazon Web Services (AWS)
+- Ruby on Rails
+- MySQL
+- Carrierwave
+- Amazon Web Services (AWS)
 lines_of_code: ''
 images:
-  - type: gallery
-    path: /assets/images/projects/huggies-star-rewards/huggies-star-rewards-1.jpg
-  - type: mobile
-    path: /assets/images/projects/huggies-star-rewards/huggies-star-rewards-hero-mobile.jpg
-  - type: desktop
-    path: /assets/images/projects/huggies-star-rewards/huggies-star-rewards-hero-desktop.jpg
----
+- type: gallery
+  path: "/assets/images/projects/huggies-star-rewards/huggies-star-rewards-1.jpg"
+- type: mobile
+  path: "/assets/images/projects/huggies-star-rewards/huggies-star-rewards-hero-mobile.jpg"
+- type: desktop
+  path: "/assets/images/projects/huggies-star-rewards/huggies-star-rewards-hero-desktop.jpg"
 
+---
 ## Project Description
 
 We’ve been working with Huggies for over a decade and in that time we’ve worked on many promotions together. Most recently, we created a shop and redeem rewards program in partnership with Fisher-Price Smart Stages. We were asked to find a simple solution that promoted brand loyalty to Huggies and boosted traffic to their site. Our solution was the Huggies Star Rewards Program. We needed this promotion to be integrated into the huggies.com.au site so we could connect with the existing 600,000 members. That was easy – we were already well-acquainted with the site.
