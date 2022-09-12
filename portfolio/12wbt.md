@@ -4,50 +4,49 @@ theme: 12wbt
 slug: 12wbt
 title: Michelle Bridges 12WBT
 tagline: 12 week health & fitness product
-description:
-  Australia’s most popular health platform, with incredible growth. Nutrition,
+description: Australia’s most popular health platform, with incredible growth. Nutrition,
   fitness and mindset.
 project_url: https://www.12wbt.com
 client: Michelle Bridges 12WBT
 project_date: 2011 - 2019
-team_size: 15 people
+team_size: 25 people
 lines_of_code: 450k+
 technologies:
-  - Ruby on Rails
-  - PostgreSQL
-  - AngularJS
-  - Salesforce Marketing Cloud
-  - Redis
-  - Elasticsearch
-  - Google BigQuery
-  - Wordpress
-  - Locomotive CMS
-  - MongoDB
-  - Chargify
-  - Paypal
-  - Facebook
-  - MyFitnessPal
-  - Fitbit
-  - Withings
-  - Brightcove
-  - Online Payment Systems
+- Ruby on Rails
+- PostgreSQL
+- AngularJS
+- Salesforce Marketing Cloud
+- Redis
+- Elasticsearch
+- Google BigQuery
+- Wordpress
+- Locomotive CMS
+- MongoDB
+- Chargify
+- Paypal
+- Facebook
+- MyFitnessPal
+- Fitbit
+- Withings
+- Brightcove
+- Online Payment Systems
 images:
-  - type: gallery
-    path: /assets/images/projects/12wbt/12wbt-1.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt/12wbt-2.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt/12wbt-3.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt/12wbt-4.jpg
-  - type: gallery
-    path: /assets/images/projects/12wbt/12wbt-5.jpg
-  - type: mobile
-    path: /assets/images/projects/12wbt/12wbt-hero-mobile.jpg
-  - type: desktop
-    path: /assets/images/projects/12wbt/12wbt-hero-desktop.jpg
----
+- type: gallery
+  path: "/assets/images/projects/12wbt/12wbt-1.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt/12wbt-2.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt/12wbt-3.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt/12wbt-4.jpg"
+- type: gallery
+  path: "/assets/images/projects/12wbt/12wbt-5.jpg"
+- type: mobile
+  path: "/assets/images/projects/12wbt/12wbt-hero-mobile.jpg"
+- type: desktop
+  path: "/assets/images/projects/12wbt/12wbt-hero-desktop.jpg"
 
+---
 [12WBT.com]({{ page.project_url }}) - an extremely successful online health and fitness platform.
 
 12WBT is one of Australia's most successful and enduring health & fitness products, featuring a comprehensive fitness and nutrition program created by celebrity trainer Michelle Bridges (Biggest Loser).
