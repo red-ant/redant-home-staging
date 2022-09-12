@@ -7,7 +7,7 @@ tagline: A companion iOS app for this extremely successful online health and fit
   platform
 description: This app is used by people doing the 12WBT program. It has workouts,
   recipes and daily stats.
-project_url: https://www.12wbt.com/features/introducing-12wbt-daily
+project_url: ''
 client: 12WBT
 project_date: 2015-2020
 team_size: 6 people
