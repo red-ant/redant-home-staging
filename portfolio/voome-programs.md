@@ -4,40 +4,39 @@ theme: voome
 slug: voome-programs
 title: Voome Programs
 tagline: A health and fitness product
-description:
-  Voome Programs. It’s for those who don’t like to commit long term, but
+description: Voome Programs. It’s for those who don’t like to commit long term, but
   still need a bit of guidance and enjoy working out to the dulcet tones of their
   favourite fitness and nutrition experts.
 project_url: https://www.voome.com.au
 client: 12WBT
-project_date: '2017'
+project_date: "2017"
 technologies:
-  - Ruby on Rails
-  - PostgreSQL
-  - AngularJS
-  - Salesforce Marketing Cloud
-  - Redis
-  - Elasticsearch
-  - Google BigQuery
-  - Chargify
-  - Wordpress
-  - Facebook
-  - Brightcove
-team_size:
+- Ruby on Rails
+- PostgreSQL
+- AngularJS
+- Salesforce Marketing Cloud
+- Redis
+- Elasticsearch
+- Google BigQuery
+- Chargify
+- Wordpress
+- Facebook
+- Brightcove
+team_size: ''
 lines_of_code: ''
 images:
-  - type: gallery
-    path: /assets/images/projects/voome-programs/voome-programs-1.jpg
-  - type: gallery
-    path: /assets/images/projects/voome-programs/voome-programs-2.jpg
-  - type: gallery
-    path: /assets/images/projects/voome-programs/voome-programs-3.jpg
-  - type: mobile
-    path: /assets/images/projects/voome-programs/voome-programs-hero-mobile.jpg
-  - type: desktop
-    path: /assets/images/projects/voome-programs/voome-programs-hero-desktop.jpg
----
+- type: gallery
+  path: "/assets/images/projects/voome-programs/voome-programs-1.jpg"
+- type: gallery
+  path: "/assets/images/projects/voome-programs/voome-programs-2.jpg"
+- type: gallery
+  path: "/assets/images/projects/voome-programs/voome-programs-3.jpg"
+- type: mobile
+  path: "/assets/images/projects/voome-programs/voome-programs-hero-mobile.jpg"
+- type: desktop
+  path: "/assets/images/projects/voome-programs/voome-programs-hero-desktop.jpg"
 
+---
 ## Project Description
 
 Voome Programs. It’s for those who don’t like to commit long term, but still need a bit of guidance and enjoy working out to the dulcet tones of their favourite fitness and nutrition experts.
@@ -50,4 +49,4 @@ Working primarily with fitness and nutrition influencers to create 4 week progra
 
 Working with these influencers is a win win win situation. From their perspective, they gain more followers. From the user perspective, they get to work with their favourite coach. From a business perspective, Voome gains more member through the influencer’s fanbase.
 
-As time goes on more programs will be added to the list, allowing the user to filter by workout style, length, intensity, and much more.
+Over time more programs were made available, allowing the user to filter by workout style, length, intensity, and more.
