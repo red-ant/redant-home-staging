@@ -1,11 +1,11 @@
 ---
-layout: Pearsons Florist
-theme: 12wbt
-project_url: https://www.pearsonsflorist.com.au/
-project_date: "2020"
+layout: MUP
+theme: redant
+project_url: https://
+project_date: "2021"
 team_size: 0 people
 slug: ''
-title: Pearsons Florist
+title: MUP
 tagline: ''
 description: ''
 client: ''
@@ -13,9 +13,9 @@ lines_of_code: ''
 technologies: []
 images:
 - type: mobile
-  path: "/assets/images/projects/pearsons-florist/pearsons-florist-mobile.jpg"
+  path: "/assets/images/projects/mup/mup-mobile.jpg"
 - type: desktop
-  path: "/assets/images/projects/pearsons-florist/pearsons-florist.jpg"
+  path: "/assets/images/projects/mup/mup.jpg"
 published: false
 
 ---
