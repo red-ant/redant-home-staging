@@ -1,10 +1,10 @@
 ---
-layout: The grants hub
-theme: redant
+layout: project
+theme: the-grants-hub
 project_url: https://
 project_date: "2021"
 team_size: 0 people
-slug: ''
+slug: 'the-grants-hub'
 title: The grants hub
 tagline: ''
 description: ''

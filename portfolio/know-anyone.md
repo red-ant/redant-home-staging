@@ -1,10 +1,10 @@
 ---
-layout: Know Anyone
-theme: redant
+layout: project
+theme: know-anyone
 project_url: https://knowanyone.com/
 project_date: 2019 - 2020
 team_size: 0 people
-slug: ''
+slug: 'know-anyone'
 title: Know Anyone
 tagline: ''
 description: ''

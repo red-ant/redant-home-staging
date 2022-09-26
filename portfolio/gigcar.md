@@ -1,10 +1,10 @@
 ---
-layout: Gigcar
-theme: redant
+layout: project
+theme: gigcar
 project_url: https://gigcar.com.au/
 project_date: "2021"
 team_size: 0 people
-slug: ''
+slug: 'gigcar'
 title: Gigcar
 tagline: ''
 description: ''

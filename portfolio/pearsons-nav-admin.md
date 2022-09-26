@@ -1,10 +1,10 @@
 ---
-layout: Pearsons NAV Admin
-theme: redant
+layout: project
+theme: pearsons-nav-admin
 project_url: https://
 project_date: 2019 - 2021
 team_size: 0 people
-slug: ''
+slug: 'pearsons-nav-admin'
 title: Pearsons NAV Admin
 tagline: ''
 description: ''

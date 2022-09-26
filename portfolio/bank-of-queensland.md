@@ -1,10 +1,10 @@
 ---
-layout: Bank of Queensland
-theme: redant
+layout: project
+theme: bank-of-queensland
 project_url: https://
 project_date: "2019"
 team_size: 0 people
-slug: ''
+slug: 'bank-os-queensland'
 title: Bank of Queensland
 tagline: ''
 description: ''

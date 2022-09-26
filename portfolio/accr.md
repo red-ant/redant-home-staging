@@ -1,10 +1,10 @@
 ---
-layout: ACCR
-theme: redant
+layout: project
+theme: accr
 project_url: https://
 project_date: "2021"
 team_size: 0 people
-slug: ''
+slug: 'accr'
 title: ACCR
 tagline: ''
 description: ''

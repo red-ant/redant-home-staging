@@ -1,10 +1,10 @@
 ---
-layout: Smata
-theme: redant
+layout: project
+theme: smata
 project_url: https://
 project_date: "2021"
 team_size: 0 people
-slug: ''
+slug: 'smata'
 title: Smata
 tagline: ''
 description: ''

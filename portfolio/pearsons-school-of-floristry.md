@@ -1,10 +1,10 @@
 ---
-layout: Pearsons School of Floristry
-theme: redant
+layout: project
+theme: pearsons-school-of-floristry
 project_url: https://pearsonsschool.com.au/
 project_date: "2019"
 team_size: 0 people
-slug: ''
+slug: 'pearsons-school-of-floristry'
 title: Pearsons School of Floristry
 tagline: ''
 description: ''
