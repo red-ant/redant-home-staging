@@ -31,3 +31,6 @@ gem "public_suffix"
 
 # Required for Ruby v3
 gem "webrick"
+
+# Required to run rake tasks on Heroku
+gem "rake"
