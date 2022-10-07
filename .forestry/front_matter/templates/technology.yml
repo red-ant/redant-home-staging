@@ -103,7 +103,6 @@ fields:
     source:
       type: documents
 pages:
-- technology/assembly.md
 - technology/aws.md
 - technology/docker.md
 - technology/elastic-search.md
@@ -119,3 +118,4 @@ pages:
 - technology/swift.md
 - technology/tableau.md
 - technology/twilio.md
+- technology/zai.md
