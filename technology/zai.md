@@ -12,4 +12,6 @@ projects:
 image: '/assets/uploads/2022/zai.png'
 how_title:
 how_bulletpoints:
+redirect_from:
+  - /technology/assembly
 ---
