@@ -19,10 +19,7 @@ projects:
 - momentum
 - project-summary-tool
 image: "/assets/uploads/2019/stripe.png"
-how_title: By going through the Certification process, our team has a good understanding
-  of all of the different Stripe products and what they do. Because we’ve got pretty
-  deep technical expertise, we can help you understand which products suit you best,
-  and which areas would need additional functionality built out.
+how_title: Stripe Payments
 how_bulletpoints: []
 
 ---
