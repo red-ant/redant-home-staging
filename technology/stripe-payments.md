@@ -21,6 +21,7 @@ projects:
 image: "/assets/uploads/2019/stripe.png"
 how_title: Stripe Payments
 how_bulletpoints: []
+image_hero: "/assets/uploads/2022/stripe-hero.png"
 
 ---
 Red Ant is a Certified Stripe Partner, which means we’ve been through additional Stripe training and certification. We have both Architect and Developer certifications. To achieve this, we’ve had to go through examples of work we’ve done, as well as additional training and technical exams.
