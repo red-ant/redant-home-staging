@@ -12,13 +12,13 @@
     "centeredSlidesBounds": true,
     "loop": true,
     "spaceBetween": 35,
-    "slidesPerView": 1.7,
+    "slidesPerView": 4.7,
     "speed": 750
   }'
 >
   <div data-carousel-target="container">
     {% for page in pages %}
-      {% assign image = page.images | where: "type", "desktop" | first %}
+      {% assign image = page.images | where: "type", "mobile" | first %}
       <div data-carousel-target="item" data-randomise-target="item">
         <div class="card-group">
           <div class="card">
