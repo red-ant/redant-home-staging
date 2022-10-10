@@ -83,6 +83,13 @@ fields:
 - type: file
   name: image
   label: image
+- name: image_hero
+  type: file
+  config:
+    maxSize: 64
+  label: image_hero
+  description: The image that appears in the tech detail page. If not set, the image
+    in the 'image' field gets used.
 - type: text
   name: how_title
   label: how_title
