@@ -110,6 +110,11 @@ body {
   min-height: 200px;
 }
 
+/* Remove once updated to Bootstrap 5.2*/
+.rounded-4 {
+  border-radius: 1rem;
+}
+
 .slidedown-container {
   background-color: $gray-500;
   bottom: 0;
