@@ -4,13 +4,8 @@ category: Payments
 type: Technology
 title: Stripe Payments
 subtitle: We’re Stripe Payments integration Experts
-description: Red Ant is a leading, Australian based team of Ruby on Rails Developers.
-  We’ve worked with hundreds of companies and startups to integrate their apps with
-  Stripe Payments.
-listing_description: Stripe payments are a flexible and reliable payment gateway for
-  online transactions. Stripe is easy to install, scalable and highly reliable. We
-  have used Stripe in many e-commerce platforms including our very own <a href="/ruby-on-rails-code-review/">Red
-  Ant Code Review</a>.
+description: Red Ant is a leading, Australian based team of Ruby on Rails Developers. We’ve worked with hundreds of companies and startups to integrate their apps with Stripe Payments.
+listing_description: Red Ant is a Certified Stripe Partner, which means we’ve been through additional Stripe training and certification. It also means we have expertise in the various Stripe products and how to best integrate them into your application.<br />I’m sure you may run into many development teams that can say “yeah, we use Stripe”. And that’s true - Stripe is very widely used, it’s really easy to set up, and it works well. For a simple payment flow.<br />But as your needs grow, and you probably need to talk to a Certified developer to take advantage of some of the more advanced functionality and products that Stripe offers, a good understanding of the different products and how they fit with your objectives becomes more important.
 slug: stripe-payments
 projects:
 - matrix-education

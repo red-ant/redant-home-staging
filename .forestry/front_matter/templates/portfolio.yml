@@ -99,7 +99,7 @@ fields:
     Postgres, Sidekiq, Swift, Wordpress, Amazon Web Services (AWS), Chargify, Comfy
     CMS, Elasticsearch, Facebook, Fastly, Google BigQuery, Locomotive CMS, Memcached,
     Paperclip, Paypal, ReactJS, Redis, SendGrid, Shopify, ABC / VFX signs API integration,
-    Angular JS, Assembly, Carrierwave, Channel Advisor price data, Cloudinary, CoreData,
+    Angular JS, Zai, Carrierwave, Channel Advisor price data, Cloudinary, CoreData,
     Delayed Job, DocuSign, FB Authentication, FB authentication, Facebook Messenger,
     Facebook authentication, Fitbit, Google Machine Learning, Grape API, Grape Ruby
     API, Indesign Server, MoneyTech, MongoDB, MyDesktop API integration, MyFitnessPal,

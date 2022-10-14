@@ -10,10 +10,17 @@
         <div class="container py-0 py-sm-5">
           <div class="row d-block d-sm-none">
             <div class="col text-center">
-              <img
+              {% if page.image_hero %}
+                <img
+                  class="img-responsive"
+                  src="{{page.image_hero}}"
+                  alt="{{ page.title }}">
+              {% else %}
+                <img
                 class="img-responsive rounded-circle w-25"
-                src="{{ page.image }}"
+                src="{{page.image}}"
                 alt="{{ page.title }}">
+              {% endif %}
             </div>
           </div>
 
@@ -42,12 +49,21 @@
               </div>
             </div>
             <div class="col-12 col-sm-4 col-lg-6 d-none d-sm-block text-center">
-              <img
-                class="img-fluid rounded-circle"
-                src="{{ page.image }}"
-                alt="{{ page.title }}"
-                data-aos="fade-left"
-                data-aos-once="true">
+              {% if page.image_hero %}
+                <img
+                  class="img-fluid"
+                  src="{{page.image_hero}}"
+                  alt="{{ page.title }}"
+                  data-aos="fade-left"
+                  data-aos-once="true">
+              {% else %}
+                <img
+                  class="img-fluid rounded-circle"
+                  src="{{page.image}}"
+                  alt="{{ page.title }}"
+                  data-aos="fade-left"
+                  data-aos-once="true">
+              {% endif %}
             </div>
           </div>
         </div>

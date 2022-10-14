@@ -17,7 +17,7 @@ technologies:
   - Ruby on Rails
   - React
   - Sidekiq
-  - Assembly
+  - Zai
   - MoneyTech
   - ReactJS
   - Refile
