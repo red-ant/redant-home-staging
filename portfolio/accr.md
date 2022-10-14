@@ -1,11 +1,11 @@
 ---
 layout: project
-theme: pearsons-nav-admin
+theme: accr
 project_url: https://
-project_date: 2019 - 2021
+project_date: "2021"
 team_size: 0 people
-slug: 'pearsons-nav-admin'
-title: Pearsons NAV Admin
+slug: 'accr'
+title: ACCR
 tagline: ''
 description: ''
 client: ''
@@ -13,9 +13,9 @@ lines_of_code: ''
 technologies: []
 images:
 - type: mobile
-  path: "/assets/images/projects/pearsons-nav-admin/pearsons-nav-admin-mobile.jpg"
+  path: "/assets/images/projects/accr/accr-mobile.jpg"
 - type: desktop
-  path: "/assets/images/projects/pearsons-nav-admin/pearsons-nav-admin.jpg"
+  path: "/assets/images/projects/accr/accr-desktop.jpg"
 published: false
 
 ---

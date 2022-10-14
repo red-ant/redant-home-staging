@@ -16,25 +16,37 @@ fields:
     required: true
     options:
     - 12wbt
+    - accr
+    - bank-of-queensland
     - beautyheaven
     - bondi-vet
     - campaign-xpress
+    - gigcar
     - huggies
+    - know-anyone
+    - managed
+    - matrix-education
     - mentor
     - momentum
+    - mup
     - redant
     - nps
     - move
+    - pearsons-florist
+    - pearsons-nav-admin
+    - pearsons-school-of-floristry
+    - placeos
     - plando
     - petmatcher
     - sellers-diy
+    - smata
+    - sydney-trains
+    - the-grants-hub
     - tribe
     - voome
     - whatson
     - yates
     - managed
-    - matrix-education
-    - sydney-trains
   label: theme
   default: 12wbt
 - type: text
@@ -113,6 +125,7 @@ pages:
 - portfolio/12wbt-dynamic-video.md
 - portfolio/12wbt-recipes.md
 - portfolio/12wbt.md
+- portfolio/accr.md
 - portfolio/bank-of-queensland.md
 - portfolio/beautyheaven-beautorium.md
 - portfolio/beautyheaven.md
@@ -126,6 +139,7 @@ pages:
 - portfolio/matrix-education.md
 - portfolio/mentored.md
 - portfolio/momentum.md
+- portfolio/mup.md
 - portfolio/move.md
 - portfolio/nps-medicinewise.md
 - portfolio/outdoor-automated-proposal-platform.md
@@ -137,7 +151,9 @@ pages:
 - portfolio/project-summary-tool.md
 - portfolio/real-pet-matcher.md
 - portfolio/selleys-diy.md
+- portfolio/smata.md
 - portfolio/sydney-trains.md
+- portfolio/the-grants-hub.md
 - portfolio/tribe-influencer-marketplace.md
 - portfolio/voome-chatbot.md
 - portfolio/voome-programs.md
