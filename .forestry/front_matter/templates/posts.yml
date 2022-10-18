@@ -91,11 +91,13 @@ fields:
   type: datetime
   description: If the post has been updated, set this date
   config:
-    required: false
-    date_format: 
+    required: true
+    date_format: DD-MM-YYYY
     time_format: 
     display_utc: false
+    export_format: YYYY-MM-DD
   label: updated_at
+  default: now
 - name: publisher
   type: text
   config:
