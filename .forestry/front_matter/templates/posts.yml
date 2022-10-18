@@ -87,6 +87,15 @@ fields:
   label: date_published
   hidden: true
   default: now
+- name: updated_at
+  type: datetime
+  description: If the post has been updated, set this date
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: updated_at
 - name: publisher
   type: text
   config:
