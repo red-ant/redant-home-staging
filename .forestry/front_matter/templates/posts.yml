@@ -85,7 +85,7 @@ fields:
     display_utc: false
     export_format: " YYYY-MM-DD"
   label: date_published
-  hidden: true
+  hidden: false
   default: now
 - name: updated_at
   type: datetime
