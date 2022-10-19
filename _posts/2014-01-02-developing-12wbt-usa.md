@@ -26,6 +26,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2014-01-02'
 publisher: Red Ant
+updated_at: 2014-01-02
 
 ---
 From NYTimes article:

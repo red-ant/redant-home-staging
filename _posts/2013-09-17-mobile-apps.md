@@ -22,6 +22,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2013-09-17'
 publisher: Red Ant
+updated_at: 2013-09-17
 
 ---
 Like many complex things, it can suffer from being over simplified. Doing mobile well can occasionally get simplified to make a mobile App and get it listed in the App store - tick. Make the site responsive - tick. But what are the drawbacks or compromises? Are they really the best options?

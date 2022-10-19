@@ -20,6 +20,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2018-09-17'
 publisher: Red Ant
+updated_at: 2018-09-17
 
 ---
 I had one of those unfortunate meetings the other day. The kind that leaves you pondering the Big Questions, like "why am I even here?". Is Australia some weird backwater where developers are the serfs?

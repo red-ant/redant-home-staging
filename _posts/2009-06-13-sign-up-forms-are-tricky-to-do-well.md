@@ -18,6 +18,9 @@ excerpt:
 excerpt-short: Ryan Singer talks about 10 different ways to do sign up forms.
 excerpt-long: Ryan Signer goes through 10 different things we can do to make sign up forms awesome. They are the entry point for conversion, so it's important to focus on visual simplicity and ease of use.
 published: false
+date_published: ! ' 2009-06-13'
+updated_at: 2009-06-13
+
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J00ehBG0VNg?rel=0" frameborder="0" allowfullscreen layout="responsive"></iframe>

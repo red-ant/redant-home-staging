@@ -23,6 +23,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-06-17'
 publisher: Red Ant
+updated_at: 2012-06-17
 
 ---
 What started at 5% grew to 10% the next year, then doubled again, and now some of our sites are over 40%. Email is even more interesting - checking an email from your phone is now pretty easy, which drives the mobile vs PC rate right up. Campaign Monitor is [predicting this month (Mobile set to surpass desktop and webmail email client usage by July)](http://bit.ly/LzpeKE) over half of their emails will get opened on a mobile device.

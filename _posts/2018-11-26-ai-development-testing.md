@@ -22,6 +22,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2018-11-26'
 publisher: Red Ant
+updated_at: 2018-11-26
 
 ---
 Before you start pitching to your investors about how amazing the world will be once you get some AI in your product, spare a thought for the engineering team behind Tay, [the Microsoft AI chatbot](https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist).

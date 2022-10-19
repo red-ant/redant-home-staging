@@ -24,6 +24,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2018-03-27'
 publisher: Red Ant
+updated_at: 2018-03-27
 
 ---
 The Australian Tax Office has signalled changes to the R&D Tax incentive for software development — which really goes to the heart of what it means to be technically innovative.

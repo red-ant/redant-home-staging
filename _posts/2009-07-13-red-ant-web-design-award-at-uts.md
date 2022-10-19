@@ -26,6 +26,8 @@ time: ''
 redirect_from: []
 date_published: ! ' 2009-07-13'
 publisher: Red Ant
+updated_at: 2009-07-13
+
 ---
 
 We've been sponsoring a design award at our local university - UTS. We've been involved with UTS for a few years now, including doing studio visits and professional practice talks.

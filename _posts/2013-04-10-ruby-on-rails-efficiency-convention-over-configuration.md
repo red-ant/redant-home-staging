@@ -25,6 +25,7 @@ redirect_from:
 - "/lean-development/ruby-on-rails-efficiency-convention-over-configuration/"
 date_published: ! ' 2013-04-10'
 publisher: Red Ant
+updated_at: 2013-04-10
 
 ---
 ## The problem

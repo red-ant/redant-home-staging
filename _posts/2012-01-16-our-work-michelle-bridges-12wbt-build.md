@@ -21,6 +21,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-01-16'
 publisher: Red Ant
+updated_at: 2012-01-16
 
 ---
 The site has a few interesting technical challenges:

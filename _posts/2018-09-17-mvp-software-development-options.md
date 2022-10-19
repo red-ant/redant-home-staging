@@ -25,6 +25,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2018-09-17'
 publisher: Red Ant
+updated_at: 2018-09-17
 
 ---
 A really common scenario: you've had some code developed, but now you're feeling a bit stuck. Typically:

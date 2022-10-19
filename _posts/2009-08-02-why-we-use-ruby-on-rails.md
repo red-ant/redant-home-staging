@@ -29,6 +29,8 @@ redirect_from:
   - '/blog/text-cloud-in-flash/'
 date_published: ! ' 2009-08-02'
 publisher: Red Ant
+updated_at: 2009-08-02
+
 ---
 
 Heres my summary of what Rails is and why we use it.

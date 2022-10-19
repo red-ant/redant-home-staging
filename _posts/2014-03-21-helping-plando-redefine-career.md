@@ -27,6 +27,7 @@ description: The world of employment and careers is due for a shakeup. We have b
   helping Plando build a career management platform that we think will fundamentally
   change the careers landscape.
 publisher: Red Ant
+updated_at: 2014-01-02
 
 ---
 PlanDo are accommodating for and promoting the shift in the professional workplace towards career mobility by building a platform which will allow for individuals to manage their own careers. That means that instead of an employee being reliant on their employer's HR practices and tools, they will be able to take control of their performance review cycles and independently map out their career path both within an organisation and beyond.

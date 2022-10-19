@@ -21,6 +21,7 @@ time: 10 Mins Read
 redirect_from: []
 date_published: ! ' 2012-01-25'
 publisher: Red Ant
+updated_at: 2012-01-25
 
 ---
 We use [Jira](https://www.atlassian.com/software/jira) to keep track of all of our tasks - without it wed be overwhelmed with the sheer volume of stuff you need to keep track of on a typical project. For each of our projects, the client can email in issues to our team via a project email address. These emails don't come directly to us - first they're processed by Jira, which then transforms them into an issue in Jira. One of our Project Managers then picks this up, clarifying the task if necessary, and then assigns it to the right team or person.

@@ -24,6 +24,7 @@ excerpt-long: Building a SaaS platform isn’t a modular commodity with a fixed 
   your tech break even and understand how far your funding runway really is.
 redirect_from:
 - "/strategy/what-is-the-right-budget-for-my-website/"
+updated_at: 2020-02-27
 
 ---
 Building technology isn’t a modular commodity - something with a fixed price that you can buy just like you buy a grocery item. Some tech is - for example creating a public “this is what we do” Wordpress site. **Get 5 quotes and they’ll all be roughly in line. Get 5 quotes for building a SaaS platform and they’ll be all over the place.**

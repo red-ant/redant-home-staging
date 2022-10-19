@@ -26,6 +26,7 @@ redirect_from:
 - blog/the-story-behind-our-wallboard/
 date_published: ! ' 2010-11-18'
 publisher: Red Ant
+updated_at: 2010-11-18
 
 ---
 ![Red Ant Wallboard](/assets/uploads/2010/redant-wallboard-preview.jpg){:height="343" width="610"}

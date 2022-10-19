@@ -24,6 +24,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2009-07-13'
 publisher: Red Ant
+updated_at: 2009-07-13
 
 ---
 Beauty Heaven is the leading independent Beauty site in Australia, and we're thrilled to be working with them. The site has a thriving membership, who continually add content and reviews to the site. They have a really neat-o loyalty system, where members get points the more they participate on the site- writing reviews of products, comments, and forum postings. Members review beauty products, and there is a crack team of users to that road test various lotions and potions.

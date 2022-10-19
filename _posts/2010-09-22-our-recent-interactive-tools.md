@@ -26,6 +26,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2010-09-22'
 publisher: Red Ant
+updated_at: 2010-09-22
 ---
 
 #### Yates Virtual Garden

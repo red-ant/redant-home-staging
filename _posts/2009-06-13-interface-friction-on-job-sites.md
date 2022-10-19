@@ -17,6 +17,9 @@ excerpt-short: How many steps do you really need to take to put a job ad up?
 excerpt-long: "In the past 6 months, we've advertised for three different
 positions: a designer, a project manager, and a web developer. How many steps do you really need to take to put a job ad up and is there a one size fits all for getting what you need?"
 published: false
+date_published: ! ' 2009-06-13'
+updated_at: 2009-06-13
+
 ---
 
 In the past 6 months, we've advertised for three different positions: a designer, a project manager, and a web developer. We've tried two different job boards to advertise these positions, [Seek](http://www.seek.com.au) and [37 Signals Job board](http://jobs.37signals.com/). I thought it was interesting to see the difference in the number of steps required (aka [interface friction](http://www.codinghorror.com/blog/archives/000866.html)) between two sites performing essentially the same task:
