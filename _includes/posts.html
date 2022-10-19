@@ -1,6 +1,7 @@
 <section class="py-5 container">
   <div data-controller="macy">
-    {% for post in site.posts %}
+    {% assign posts = site.posts | sort: 'updated_at' | reverse %}
+    {% for post in posts %}
       {% unless include.type != nil or include.type == post.type %}
         {% include post-card.html %}
       {% endunless %}
