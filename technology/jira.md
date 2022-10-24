@@ -12,4 +12,5 @@ projects:
 image: '/assets/uploads/2019/jira.png'
 how_title:
 how_bulletpoints:
+redirect_from: []
 ---

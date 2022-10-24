@@ -102,6 +102,9 @@ fields:
     use_select: false
     source:
       type: documents
+- type: tag_list
+  label: redirect_from
+  name: redirect_from
 pages:
 - technology/aws.md
 - technology/docker.md

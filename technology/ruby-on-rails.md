@@ -41,6 +41,7 @@ how_bulletpoints:
   - We’ve got a ton of Ruby on Rails experience
   - Ruby on Rails is a very reliable and flexible framework
   - Ruby can also be integrated with other APIs and frameworks such as React and Angular
+redirect_from: []
 ---
 
 We started providing professional Ruby development services in 2005, so we’ve got some experience. Ruby is our core technology stack, and we’ve found it to be incredibly flexible and reliable. Technologies come and go, and it can be easy to get left behind. We’ve got some projects that are over 10y old that haven’t missed a beat.

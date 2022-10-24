@@ -11,4 +11,5 @@ projects:
 image: '/assets/uploads/2019/tableau.png'
 how_title:
 how_bulletpoints:
+redirect_from: []
 ---

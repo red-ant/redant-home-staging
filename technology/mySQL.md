@@ -20,4 +20,5 @@ projects:
 image: "/assets/uploads/2019/mysql.png"
 how_title: MySQL
 how_bulletpoints:
+redirect_from: []
 ---

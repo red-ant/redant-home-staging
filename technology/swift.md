@@ -17,6 +17,7 @@ how_bulletpoints:
   - We’ve got solid native iOS platform development experience
   - Language focused on performance and promoting bug-free code
   - Huge market exposure on the Apple App Store
+redirect_from: []
 ---
 
 Swift is the established programming language to develop native applications for all of the Apple platforms: iOS, macOS, watchOS, and tvOS. It was built using a modern approach to safety, performance, and software design patterns with the goal of making code easier to write and maintain.

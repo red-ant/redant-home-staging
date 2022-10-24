@@ -15,6 +15,7 @@ how_bulletpoints:
   - React solves many of the problems developers face when creating large, modern apps
   - Backed by Facebook and a large open source community
   - A developer can push to web, iOS and Android with the one set of code
+redirect_from: []
 ---
 
 React is a JavaScript framework maintained by Facebook that's ideal for building complex, modern user interfaces. React solves many of the problems that developers face when trying to build and maintain large, complex web applications. It’s an open source technology that is supported both by Facebook and a large open source community.
