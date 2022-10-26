@@ -19,6 +19,7 @@ how_bulletpoints:
   - Building SFMC Data Extensions and Filters
   - API and data ingestion
   - Salesforce Marketing Cloud technical integration
+redirect_from: []
 ---
 
 Salesforce Marketing Cloud is a powerful messaging platform that can be used to create customer journeys or send specific messages. It can do pretty much anything in terms of customer engagement. SFMC started life with the name "Exact Target", and then became Salesforce Marketing Cloud.
