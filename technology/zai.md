@@ -14,4 +14,5 @@ how_title:
 how_bulletpoints:
 redirect_from:
   - "/technology/assembly"
+  - "/technology/assembly/"
 ---
