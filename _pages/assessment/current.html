@@ -1,0 +1,34 @@
+---
+layout: blank
+permalink: /assessment/current
+title: 
+description: 
+class: assessment
+sitemap: false
+redirect_from: 
+  - "/assessment/"
+---
+<div data-controller="assessment">
+  {% include assessment/header.html %}
+  {% include assessment/modal.html %}
+
+  <section class="bg-white">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow rounded-4">
+            
+            <div class="card-header bg-white">
+              {% include assessment/tabs.html sections = site.data.assessment2 %}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ site.data.assessment2.current.title }}</h5>
+              <p class="card-text">{{ site.data.assessment2.current.description }}</p>
+              {% include assessment/questions.html section = site.data.assessment2.current next-section = site.data.assessment2.your-team.slug %}
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+</div>

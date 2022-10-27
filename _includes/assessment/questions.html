@@ -1,0 +1,38 @@
+</div>
+<div class="d-flex">
+  {% for question in include.section.questions %}
+    <a
+      href="{{ include.section.slug }}?q={{ forloop.index }}"
+      class="border rounded-4 flex-fill">
+      <i class="fa fa-{{ question.icon }}"></i>
+      <p>{{ question.title }}</p>
+    </a>
+  {% endfor %}
+</div>
+<div class="card-body">
+  <div class="d-flex flex-column">
+    {% for question in include.section.questions %}
+      {% if forloop.last == true %}
+        {% assign next-question-url = include.next-section %}
+      {% else %}
+        {% assign next-question-number = forloop.index | plus: 1 %}
+        {% assign next-question-url = include.section.slug | append: "?q=" | append: next-question-number %}
+      {% endif %}
+      <div data-assessment-target="question" class="d-none">
+        <h6>{{ question.description }}</h6>
+        <div class="d-flex flex-column">
+          {% for answer in question.answers %}
+            <a
+              href="{{ next-question-url }}"
+              class="col p-2 border flex-fill" 
+              data-assessment-target="answer"
+              data-action="click->assessment#select:prevent"
+              data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}">
+              {{ answer }}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
