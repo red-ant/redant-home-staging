@@ -1,28 +1,30 @@
 ---
-layout: blank
+layout: assessment
 permalink: /assessment/owner
 title: 
 description: 
 class: assessment
 ---
 
-{% include assessment/header.html %}
+<div data-controller="assessment">
+  {% include assessment/header.html %}
 
-<section class="bg-white">
-  <div class="container pt-5">
-    <div class="row">
-      <div class="col-12">
-        <div class="card shadow rounded-4" data-controller="assessment">
-          <div class="card-header bg-white">
-            {% include assessment/tabs.html sections = site.data.assessment2 %}
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">{{ site.data.assessment2.owner.title }}</h5>
-            <p class="card-text">{{ site.data.assessment2.owner.description }}</p>
-            {% include assessment/questions.html section = site.data.assessment2.owner next-section = site.data.assessment2.technology.slug %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow rounded-4" data-controller="assessment">
+            <div class="card-header bg-transparent px-5 py-0 d-flex">
+              {% include assessment/tabs.html sections = site.data.assessment2 %}
+            </div>
+            <div class="card-body p-5">
+              <h2 class="card-title pb-4">{{ site.data.assessment2.owner.title }}</h2>
+              <p class="card-text pb-4">{{ site.data.assessment2.owner.description }}</p>
+              {% include assessment/questions.html section = site.data.assessment2.owner next-section = site.data.assessment2.technology.slug %}
+            </div>
           </div>
         </div>
       </div>
-    </div>    
-  </div>
-</section>
+    </div>
+  </section>
+</div>

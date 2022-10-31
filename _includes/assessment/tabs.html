@@ -1,24 +1,36 @@
 <a 
   href="{{ include.sections.current.slug }}?q=1" 
-  class=""
+  class="stripe-link text-black fs-6 fw-bold pe-3 text-decoration-none 
+  {% if page.permalink == '/assessment/current' %}border-gradient{% endif %}"
   data-assessment-target="section">
-  {{ include.sections.current.tab }}
+  <p class="position-relative py-3 m-0 {% if page.permalink != '/assessment/current' %}text-muted{% endif %}">
+    {{ include.sections.current.tab }}
+  </p>
 </a>
 <a 
   href="{{ include.sections.your-team.slug }}?q=1" 
-  class=""
+  class="stripe-link text-black fs-6 fw-bold pe-3 text-decoration-none 
+  {% if page.permalink == '/assessment/your-team' %}border-gradient{% endif %}"
   data-assessment-target="section">
-  {{ include.sections.your-team.tab }}
+  <p class="position-relative py-3 m-0 {% if page.permalink != '/assessment/your-team' %}text-muted{% endif %}">
+    {{ include.sections.your-team.tab }}
+  </p>
 </a>
 <a 
   href="{{ include.sections.owner.slug }}?q=1" 
-  class=""
+  class="stripe-link text-black fs-6 fw-bold pe-3 text-decoration-none 
+  {% if page.permalink == '/assessment/owner' %}border-gradient{% endif %}"
   data-assessment-target="section">
-  {{ include.sections.owner.tab }}
+  <p class="position-relative py-3 m-0 {% if page.permalink != '/assessment/owner' %}text-muted{% endif %}">
+    {{ include.sections.owner.tab }}
+  </p>
 </a>
 <a 
   href="{{ include.sections.technology.slug }}?q=1" 
-  class=""
+  class="stripe-link text-black fs-6 fw-bold text-decoration-none 
+  {% if page.permalink == '/assessment/technology' %}border-gradient{% endif %}"
   data-assessment-target="section">
-  {{ include.sections.technology.tab }}
+  <p class="position-relative py-3 m-0 {% if page.permalink != '/assessment/technology' %}text-muted{% endif %}">
+    {{ include.sections.technology.tab }}
+  </p>
 </a>

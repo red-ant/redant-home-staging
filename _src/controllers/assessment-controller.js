@@ -5,12 +5,7 @@ export class AssessmentController extends Controller {
 
   connect() {
     this.checkIncomplete();
-    this.setActiveSection();
     this.setActiveQuestion();
-  }
-
-  setActiveSection() {
-    this.sectionTarget.classList.add("active");
   }
 
   setActiveQuestion() {

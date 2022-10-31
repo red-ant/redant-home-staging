@@ -228,6 +228,16 @@ section {
   }
 }
 
+.assessment {
+  .main-layout {
+    background-color: $blue-100;
+  }
+
+  .card-body {
+    z-index: $zindex-popover;
+  }  
+}
+
 @include media-breakpoint-up(sm) {
   #section-service-options {
     background-image: url("/assets/images/bg-get-started-services.png");

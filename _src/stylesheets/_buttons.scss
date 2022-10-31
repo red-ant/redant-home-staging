@@ -27,3 +27,7 @@
     color: $red;
   }
 }
+
+.btn-purple {
+  @include button-variant($purple, $purple, $white);
+}

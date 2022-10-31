@@ -1,21 +1,33 @@
-{% include assessment/header.html %}
+<div data-controller="assessment">
+  {% include assessment/header.html %}
 
-<section class="bg-white">
-  <div class="container pt-5">
-    <div class="row">
-      <div class="col-12">
-        <div class="card shadow rounded-4" data-controller="assessment">
-          <div class="card-header bg-white">
-            {% include assessment/tabs.html sections = site.data.assessment2 %}
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Results</h5>
-            
-            <p class="card-text">These are your results</p>
-            
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow rounded-4">
+            <div class="card-body p-5">
+              <h2 class="card-title pb-4">Results</h5>
+              <p class="card-text pb-4">Before you get your results, please fill in your email address</p>
+
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="Email">
+              </div>
+
+              <button
+                class="btn btn-purple rounded-pill">
+                Submit
+              </button>
+
+              <button
+                class="btn btn-purple rounded-pill d-none">
+                Download
+                <i class="fa fa-file-arrow-down"></i>
+            </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>    
-  </div>
-</section>
+      </div>    
+    </div>
+  </section>
+</div>
