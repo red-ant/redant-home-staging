@@ -27,6 +27,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2014-01-16'
 publisher: Red Ant
+updated_at: 2014-01-16
 
 ---
 The other issue is that monolithic MySQL dumps tend to add up in size. The usual solution is to rotate out the backups and discard old ones based on what is ultimately an arbitrary schedule. When the backup you need is from eight days ago, you can be sure that you have only kept them for the last seven days. This problem can also be solved by implementing complex incremental backups or by shunting files off to cheaper storage like Amazon, but then every new step in the backup path is a new dependency or point of failure just waiting to ruin your day. Tools like [rdiff-backup](http://www.nongnu.org/rdiff-backup/) (sometimes via [Backupninja](https://labs.riseup.net/code/projects/backupninja)) are also used, but the stored diffs are hard to manually verify.

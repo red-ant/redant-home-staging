@@ -23,6 +23,7 @@ time: 5 Mins Read
 redirect_from: []
 date_published: ! ' 2013-10-23'
 publisher: Red Ant
+updated_at: 2013-10-23
 
 ---
 How I ended up here:

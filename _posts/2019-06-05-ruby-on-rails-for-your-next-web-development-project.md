@@ -23,6 +23,7 @@ excerpt-long:
 redirect_from: []
 date_published: ! " 2019-06-05"
 publisher: Red Ant
+updated_at: 2019-06-05
 ---
 
 <section id="section-intro" class="bg-black">

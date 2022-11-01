@@ -22,6 +22,8 @@ time: ''
 redirect_from: []
 date_published: ! ' 2009-07-13'
 publisher: Red Ant
+updated_at: 2009-07-13
+
 ---
 
 We've been super busy over the last month or so, counting down the days to our [APEC lockdown](http://www.theaustralian.news.com.au/story/0,,22145672-28737,00.html). We're going to stock up on coffee big time just in case George decides he likes it here and chooses to [stay a bit longer](http://www.smh.com.au/news/national/bush-may-stay-in-town-longer/2007/08/09/1186530533168.html).

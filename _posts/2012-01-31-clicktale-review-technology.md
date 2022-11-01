@@ -27,6 +27,8 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-01-31'
 publisher: Red Ant
+updated_at: 2012-01-31
+
 ---
 
 This Clicktale review is completely independent. We've used it on several projects where we wanted to better understand user interactions. In doing this we had a chance to look at both the way it collects data and how it reports this information. We've also had the opportunity to compare the results against other other software tracking tools, as well as other approaches to the same task such as physical eye tracking. We started using Clicktale based on many of the positive reviews we'd read, but on further investigation many of these were paid reviews (via affiliate commission).

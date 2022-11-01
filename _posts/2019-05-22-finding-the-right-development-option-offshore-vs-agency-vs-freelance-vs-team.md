@@ -24,6 +24,7 @@ image: "/assets/uploads/2019/crowd.jpg"
 redirect_from: []
 date_published: ! ' 2019-05-22'
 publisher: Red Ant
+updated_at: 2019-05-22
 
 ---
 

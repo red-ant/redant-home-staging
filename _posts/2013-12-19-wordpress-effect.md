@@ -26,6 +26,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2013-12-19'
 publisher: Red Ant
+updated_at: 2013-12-19
 
 ---
 ## On one side are the Marketers

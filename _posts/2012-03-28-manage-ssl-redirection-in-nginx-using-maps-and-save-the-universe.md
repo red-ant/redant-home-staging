@@ -22,6 +22,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-03-28'
 publisher: Red Ant
+updated_at: 2012-03-28
 
 ---
 ## The problem

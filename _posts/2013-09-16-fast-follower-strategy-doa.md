@@ -24,6 +24,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2013-09-16'
 publisher: Red Ant
+updated_at: 2013-09-16
 
 ---
 There's an [interesting discussion by Hunter Walk](http://hunterwalk.com/2013/09/09/has-mobile-killed-the-fast-follower-strategy-sure-looks-that-way/) about fast follower strategy and whether mobile has been instrumental in killing it off. He outlines four reasons (which are mobile iOS centric) that make the whole fast follower approach a bit redundant.

@@ -22,6 +22,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2009-07-30'
 publisher: Red Ant
+updated_at: 2009-07-30
 
 ---
 I won't bore you with all the various tweaks and changes, but one page in particular was interesting in terms of refactoring a design. The page was a product menu. It lists several product groups and the products within each. Each product menu has between two and seven groups of products.

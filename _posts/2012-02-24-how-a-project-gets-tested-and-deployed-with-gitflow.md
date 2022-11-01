@@ -22,6 +22,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-02-24'
 publisher: Red Ant
+updated_at: 2012-02-24
 
 ---
 How we manage our test and deploy workflow has changed massively over the years. Many moons ago we started off with no tests, manual publishing and not much of a workflow. We've gradually changed this as weve started making bigger sites with more complex requirements.

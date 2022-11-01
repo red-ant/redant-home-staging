@@ -22,6 +22,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2009-07-13'
 publisher: Red Ant
+updated_at: 2009-07-13
 
 ---
 We've finally launched an update to the 551 project- you can check out [the sparkly new goodness here](http://tailsforwhales.org).

@@ -23,6 +23,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2009-07-30'
 publisher: Red Ant
+updated_at: 2009-07-30
 
 ---
 In several recent projects, we've experimented with extending the footer area. We've had some mixed results. It certainly seems like a good idea- the theory being that the user scrolls to the bottom of the page and gets a prompt or call to action to go to another page. There is a good summary of why on [Web Designers Wall (Benefits of Placing a Sitemap in the Footer)](http://www.webdesignerwall.com/trends/modern-sitemap-and-footer/) that I've summarised here:

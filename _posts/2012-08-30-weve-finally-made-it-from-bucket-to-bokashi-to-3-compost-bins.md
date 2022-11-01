@@ -20,6 +20,7 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-08-30'
 publisher: Red Ant
+updated_at: 2012-08-30
 
 ---
 We've just bought our second compost bin, to sit alongside our existing bin and worm farm.

@@ -25,6 +25,8 @@ time: ''
 redirect_from: []
 date_published: ! ' 2012-08-03'
 publisher: Red Ant
+updated_at: 2012-08-03
+
 ---
 
 ![](/assets/uploads/2012/shopify-account-comparison-chart.png){:height="624" width="533"}

@@ -24,6 +24,7 @@ time: 5 Mins Read
 redirect_from: []
 date_published: ! ' 2011-01-19'
 publisher: Red Ant
+updated_at: 2011-01-19
 
 ---
 A few months ago, we started working with a project management coach.

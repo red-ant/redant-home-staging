@@ -26,6 +26,8 @@ time: ''
 redirect_from: []
 date_published: ! ' 2010-05-18'
 publisher: Red Ant
+updated_at: 2010-05-18
+
 ---
 
 The Tails for Whales site has been selected as an honoree for [the Webby Awards](http://www.webbyawards.com/webbys/current_honorees.php?media_id=96&season=14)
