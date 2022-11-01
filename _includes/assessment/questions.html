@@ -26,12 +26,12 @@
         <div class="row flex-column">
           {% for answer in question.answers %}
             <a
-              href="{{ next-question-url }}"
               class="col p-2 flex-fill text-decoration-none"
               data-assessment-target="answer"
               data-action="click->assessment#select:prevent"
-              data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}">
-              <div class="d-flex flex-column rounded-4 bg-blue-100 p-3 text-black border border-light">
+              data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
+              data-assessment-href-param="{{ next-question-url }}">
+              <div class="answer-content d-flex flex-column rounded-4 bg-blue-100 p-3 text-black border border-light">
                 <p class="m-0">{{ answer }}</p>
               </div>
             </a>

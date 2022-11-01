@@ -1,6 +1,14 @@
-<div data-controller="assessment">
-  {% include assessment/header.html %}
+---
+layout: assessment
+permalink: /assessment/result
+title: 
+description: 
+class: assessment
+sitemap: false
+---
 
+<div>
+  {% include assessment/header.html %}
   <section>
     <div class="container">
       <div class="row">
@@ -8,22 +16,37 @@
           <div class="card shadow rounded-4">
             <div class="card-body p-5">
               <h2 class="card-title pb-4">Results</h5>
-              <p class="card-text pb-4">Before you get your results, please fill in your email address</p>
+              <p class="card-text pb-4">
+                Fill in your email address to access your results.
+              </p>
 
-              <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="Email">
+              <div data-assessment-target="contact">
+                <div class="input-group mb-3">
+                  <input 
+                    type="email" 
+                    class="form-control" 
+                    placeholder="Email" 
+                    aria-label="Email" 
+                    aria-describedby="Email"
+                    data-assessment-target="email">
+                </div>
+  
+                <button
+                  class="btn btn-purple rounded-pill"
+                  data-action="click->assessment#submit">
+                  Submit
+                </button>
               </div>
 
-              <button
-                class="btn btn-purple rounded-pill">
-                Submit
-              </button>
-
-              <button
-                class="btn btn-purple rounded-pill d-none">
-                Download
-                <i class="fa fa-file-arrow-down"></i>
-            </button>
+              <section data-assessment-target="results">
+                <!-- to do: build results layout -->
+                <button
+                  class="btn btn-purple rounded-pill d-none"
+                  data-action="click->assessment#download">
+                  Download
+                  <i class="fa fa-file-arrow-down"></i>
+                </button>
+              </section>
             </div>
           </div>
         </div>

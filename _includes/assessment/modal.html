@@ -1,20 +1,21 @@
-<!-- <div class="alert alert-warning d-none" role="alert">
-  You've previously already started filling in this assessment but didn't complete it. Would you like to resume where you left off?
-</div> -->
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="assessmentModal" tabindex="-1" aria-labelledby="assessmentModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Resume?</h5>
+        <h5 class="modal-title" id="assessmentModalLabel">Resume assessment</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        You've previously already started filling in this assessment but didn't complete it. Would you like to resume where you left off?
+        <p>
+          You've already started filling in this assessment but didn't finish it.
+        </p>
+        <p>
+          Would you like to resume where you left off?
+        </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-        <button type="button" class="btn btn-primary">Yes</button>
+        <a href="/assessment/current?q=1" class="btn btn-secondary" data-bs-dismiss="modal">No</a>
+        <button type="button" href="" class="btn btn-primary">Yes</button>
       </div>
     </div>
   </div>

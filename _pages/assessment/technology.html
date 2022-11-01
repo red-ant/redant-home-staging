@@ -4,16 +4,17 @@ permalink: /assessment/technology
 title: 
 description: 
 class: assessment
+sitemap: false
 ---
 
-<div data-controller="assessment">
+<div>
   {% include assessment/header.html %}
 
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="card shadow rounded-4" data-controller="assessment">
+          <div class="card shadow rounded-4">
             <div class="card-header bg-transparent px-5 py-0 d-flex">
               {% include assessment/tabs.html sections = site.data.assessment2 %}
             </div>

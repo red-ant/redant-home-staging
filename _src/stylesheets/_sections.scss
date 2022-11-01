@@ -235,7 +235,7 @@ section {
 
   .card-body {
     z-index: $zindex-popover;
-  }  
+  }
 }
 
 @include media-breakpoint-up(sm) {

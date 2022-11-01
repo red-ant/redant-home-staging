@@ -10,7 +10,6 @@ $gray-400: #666;
 $gray-500: #484d53;
 $gray-600: #343a40;
 $gray-700: #161b1f;
-$gray-900: #343a40;
 $green-100: #dee7e1;
 $green-200: #7b9e89;
 $green-300: #435549;
@@ -104,10 +103,10 @@ $carousel-control-width: 10%;
 $accordion-bg: transparent;
 $accordion-border-color: $gray-300;
 $accordion-button-active-bg: $accordion-bg;
-$accordion-button-active-color: $gray-900;
+$accordion-button-active-color: $gray-600;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
-$accordion-icon-color: $gray-900;
+$accordion-icon-color: $gray-600;
 
 // Buttons
 $btn-font-weight: $montserrat-semibold;
