@@ -21,13 +21,12 @@
         {% assign next-question-number = forloop.index | plus: 1 %}
         {% assign next-question-url = include.section.slug | append: "?q=" | append: next-question-number %}
       {% endif %}
-      <div data-assessment-target="question" class="d-none">
+      <div class="d-none" data-assessment-target="question">
         <p class="py-4 fs-4">{{ question.description }}</p>
         <div class="row flex-column">
           {% for answer in question.answers %}
             <a
               class="col p-2 flex-fill text-decoration-none"
-              data-assessment-target="answer"
               data-action="click->assessment#select:prevent"
               data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
               data-assessment-href-param="{{ next-question-url }}">

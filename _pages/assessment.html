@@ -13,40 +13,50 @@ class: assessment
       <div class="row">
         <div class="col-12">
           <div class="card shadow rounded-4">
-            <div class="card-body d-flex flex-column flex-sm-row p-5">
-              <div class="d-flex flex-column w-75">
-                <small class="text-purple pb-4">5 minute quiz</small>
-                
-                <h2 class="card-title pb-4">
-                  Identifying where your product stands to unlock potential with stripe products
-                </h2>
-                
-                <p class="card-text pb-4 mb-0">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel natus aut sequi expedita blanditiis eum fugit voluptas facilis, iusto nulla, similique consequatur recusandae itaque reprehenderit placeat et corrupti rerum eligendi?
-                </p>
-                
-                <small data-assessment-target="resume" class="d-none pb-4">
-                  You've already started this assessment but didn't finish.
-                  <a href="#" class="text-purple d-block" data-action="click->assessment#resume:prevent">
-                    Click here to resume where you left off.
-                  </a>
-                </small>
+            <div class="card-body p-5">
+              <div class="pb-4">
+                <small class="text-purple">5 minute quiz</small>
+              </div>
 
-                <div class="d-flex">
-                  <a
-                    class="btn btn-purple rounded-pill"
-                    href="/assessment/current?q=1">
-                    Start now 
-                    <i class="fa fa-chevron-right"></i>
-                  </a>
+              <div class="d-flex flex-column flex-md-row">
+                <div class="d-flex ps-md-5 order-md-2">
+                  <img
+                    class="img-fluid ps-md-5 mb-4 mb-md-0"
+                    src="/assets/images/stripe/device.png"
+                  />
+                </div>
+
+                <div class="d-flex flex-column w-75">
+                  <h2 class="card-title pb-4">
+                    Identifying where your product stands to unlock potential with stripe products
+                  </h2>
+                  
+                  <p class="card-text pb-4 mb-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel natus aut sequi expedita blanditiis eum fugit voluptas facilis, iusto nulla, similique consequatur recusandae itaque reprehenderit placeat et corrupti rerum eligendi?
+                  </p>
+                  
+                  <small 
+                    class="d-none pb-4"
+                    data-assessment-target="resume">
+                    You've already started this assessment but didn't finish.
+                    <a 
+                      href="#" 
+                      class="text-purple d-block" 
+                      data-action="click->assessment#resume:prevent">
+                      Click here to resume where you left off.
+                    </a>
+                  </small>
+
+                  <div class="d-flex">
+                    <a
+                      class="btn btn-purple rounded-pill"
+                      href="/assessment/current?q=1">
+                      Start now 
+                      <i class="fa fa-chevron-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-              
-              <img
-                class="img-fluid ps-5"
-                src="/assets/images/stripe/device.png"
-                width="300"
-              />
             </div>
             
             <img

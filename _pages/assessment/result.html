@@ -16,36 +16,16 @@ sitemap: false
           <div class="card shadow rounded-4">
             <div class="card-body p-5">
               <h2 class="card-title pb-4">Results</h5>
-              <p class="card-text pb-4">
-                Fill in your email address to access your results.
-              </p>
-
-              <div data-assessment-target="contact">
-                <div class="input-group mb-3">
-                  <input 
-                    type="email" 
-                    class="form-control" 
-                    placeholder="Email" 
-                    aria-label="Email" 
-                    aria-describedby="Email"
-                    data-assessment-target="email">
-                </div>
-  
-                <button
-                  class="btn btn-purple rounded-pill"
-                  data-action="click->assessment#submit">
-                  Submit
-                </button>
-              </div>
+              
+              <button
+                class="btn btn-purple rounded-pill"
+                data-action="click->assessment#download">
+                Download
+                <i class="fa fa-file-arrow-down"></i>
+              </button>
 
               <section data-assessment-target="results">
                 <!-- to do: build results layout -->
-                <button
-                  class="btn btn-purple rounded-pill d-none"
-                  data-action="click->assessment#download">
-                  Download
-                  <i class="fa fa-file-arrow-down"></i>
-                </button>
               </section>
             </div>
           </div>

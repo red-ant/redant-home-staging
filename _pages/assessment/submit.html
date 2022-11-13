@@ -1,0 +1,83 @@
+---
+layout: assessment
+permalink: /assessment/submit
+title: 
+description: 
+class: assessment
+sitemap: false
+---
+
+<div>
+  {% include assessment/header.html %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow rounded-4">
+            <div class="card-body p-5">
+              <h2 class="card-title pb-4">Submit</h5>
+              <p class="card-text pb-4">
+                Fill in your details to submit your answers and access your results.
+              </p>
+              
+              <div class="row justify-content-center">
+                <div class="col-6">
+                  <form 
+                    class="gform"
+                    method="POST"
+                    data-assessment-target="form"
+                    action="https://script.google.com/macros/s/AKfycbwvnNYCraPJJ4GzFHUG9nHc_6wzcPqnUR03z0UPqFb_Nn6uAQnxonKRY9MMXYXY4Io9/exec">
+
+                    <div class="form-elements">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input id="name" name="name" class="form-control">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email">Email:</label>
+                        <input 
+                          id="email"
+                          name="email"
+                          class="form-control"
+                          data-action="input->assessment#clearErrors"
+                          data-assessment-target="emailInput"
+                          type="email"
+                          value=""
+                          aria-describedby="emailHelp"
+                          required/>
+                          <small class="d-none text-red" data-assessment-target="invalidEmail">
+                            Please enter a valid email address.
+                          </small>
+                      </div>
+
+                      <input 
+                        id="answers"
+                        name="answers"
+                        data-assessment-target="answersInput"
+                        value=""
+                        hidden />
+                      <input id="honeypot" class="d-none" name="honeypot" value="" />
+
+                      <div class="text-center">
+                        <button 
+                          class="btn btn-purple rounded-pill"
+                          data-assessment-target="submitButton"
+                          data-action="click->assessment#submit:prevent">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <p class="d-none text-green" data-assessment-target="response">
+                You will receive an email with your results!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+</div>
