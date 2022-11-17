@@ -116,7 +116,7 @@ export class AssessmentController extends Controller {
     return {data: formData, honeypot: honeypot};
   }
 
-  submit(event) {
+  submit() {
     if (this.validateEmail() === false) {
       this.invalidEmailTarget.classList.remove("d-none");
       return false;
@@ -204,6 +204,6 @@ export class AssessmentController extends Controller {
   validateEmail() {
     const regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    return regexp.test(String(this.emailInputTarget.value).toLowerCase());
+    return regexp.test(this.emailInputTarget.value.toLowerCase());
   }
 }
