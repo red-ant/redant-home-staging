@@ -1,48 +1,43 @@
-<a 
-  href="{{ include.sections.current.slug }}?q=1" 
-  class="stripe-link text-black fs-6 fw-bold pe-3 text-decoration-none 
+<button
+  class="btn btn-link text-black fs-6 fw-bold p-0 pe-3 border-0 text-decoration-none
   {% if page.permalink == '/assessment/current' %}border-gradient{% endif %}"
+  data-action="click->assessment#selectSection"
+  data-assessment-href-param="{{ include.sections.current.slug }}?q=1"
   data-assessment-target="section">
-  <p 
-    class="position-relative py-3 m-0 
-    {% if page.permalink != '/assessment/current' %}opacity-25{% endif %}"
-    data-assessment-target="sectionTile">
+  <p class="position-relative py-3 m-0">
     {{ include.sections.current.tab }}
   </p>
-</a>
-<a 
-  href="{{ include.sections.your-team.slug }}?q=1"
-  class="stripe-link text-black fs-6 fw-bold pe-3 text-decoration-none 
+</button>
+<button
+  class="btn btn-link text-black fs-6 fw-bold p-0 pe-3 border-0 text-decoration-none opacity-25
   {% if page.permalink == '/assessment/your-team' %}border-gradient{% endif %}"
-  data-assessment-target="section">
-  <p 
-    class="position-relative py-3 m-0 
-    {% if page.permalink != '/assessment/your-team' %}opacity-25{% endif %}"
-    data-assessment-target="sectionTile">
+  data-action="click->assessment#selectSection"
+  data-assessment-href-param="{{ include.sections.your-team.slug }}?q=1"
+  data-assessment-target="section"
+  disabled>
+  <p class="position-relative py-3 m-0">
     {{ include.sections.your-team.tab }}
   </p>
-</a>
-<a 
-  href="{{ include.sections.owner.slug }}?q=1" 
-  class="stripe-link text-black fs-6 fw-bold pe-3 text-decoration-none 
+</button>
+<button
+  class="btn btn-link text-black fs-6 fw-bold p-0 pe-3 border-0 text-decoration-none opacity-25
   {% if page.permalink == '/assessment/owner' %}border-gradient{% endif %}"
-  data-assessment-target="section">
-  <p 
-    class="position-relative py-3 m-0 
-    {% if page.permalink != '/assessment/owner' %}opacity-25{% endif %}"
-    data-assessment-target="sectionTile">
+  data-action="click->assessment#selectSection"
+  data-assessment-href-param="{{ include.sections.owner.slug }}?q=1"
+  data-assessment-target="section"
+  disabled>
+  <p class="position-relative py-3 m-0">
     {{ include.sections.owner.tab }}
   </p>
-</a>
-<a 
-  href="{{ include.sections.technology.slug }}?q=1" 
-  class="stripe-link text-black fs-6 fw-bold text-decoration-none 
+</button>
+<button
+  class="btn btn-link text-black fs-6 fw-bold p-0 border-0 text-decoration-none opacity-25
   {% if page.permalink == '/assessment/technology' %}border-gradient{% endif %}"
-  data-assessment-target="section">
-  <p 
-    class="position-relative py-3 m-0 
-    {% if page.permalink != '/assessment/technology' %}opacity-25{% endif %}"
-    data-assessment-target="sectionTile">
+  data-action="click->assessment#selectSection"
+  data-assessment-href-param="{{ include.sections.technology.slug }}?q=1"
+  data-assessment-target="section"
+  disabled>
+  <p class="position-relative py-3 m-0">
     {{ include.sections.technology.tab }}
   </p>
-</a>
+</button>

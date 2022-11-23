@@ -16,7 +16,9 @@ $green-300: #435549;
 $magenta: #E93E6A;
 $orange-100: #f6e6d3;
 $orange-200: #f18805;
-$purple: #9966FF;
+$purple-100: #f7f4ff;
+$purple-200: #C5B1FB;
+$purple-300: #9966FF;
 $red: #df4140;
 $red-light: #ff004b;
 $red-100: #f9dfdf;
@@ -32,7 +34,7 @@ $theme-colors: (
   "dark": $gray-600,
   "gray-100": $gray-100,
   "primary": $red,
-  "purple": $purple
+  "purple": $purple-300
 );
 
 @import "bootstrap/scss/functions";

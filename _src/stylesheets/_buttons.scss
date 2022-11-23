@@ -29,5 +29,5 @@
 }
 
 .btn-purple {
-  @include button-variant($purple, $purple, $white);
+  @include button-variant($purple-300, $purple-300, $white);
 }

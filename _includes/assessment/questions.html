@@ -1,14 +1,14 @@
-<div class="row">
+<div class="row flex-column flex-md-row">
   {% for question in include.section.questions %}
     <div class="col">
-      <a
-        href="{{ include.section.slug }}?q={{ forloop.index }}"
-        class="text-decoration-none">
-        <div class="d-flex flex-column align-items-center justify-content-center rounded-4 bg-blue-100 py-4 text-black border border-light">
-          <i class="fa fa-{{ question.icon }} pb-2"></i>
-          <p class="m-0 lh-1">{{ question.title }}</p>
-        </div>
-      </a>
+      <button
+        data-action="click->assessment#selectQuestion"
+        data-assessment-href-param="{{ include.section.slug }}?q={{ forloop.index }}"
+        class="d-flex flex-column align-items-center justify-content-center w-100 rounded-4 bg-blue-100 py-4 text-black border border-light"
+        data-assessment-target="question">
+        <i class="fa fa-{{ question.icon }} pb-2"></i>
+        <p class="m-0 lh-1">{{ question.title }}</p>
+      </button>
     </div>
   {% endfor %}
 </div>
@@ -21,19 +21,25 @@
         {% assign next-question-number = forloop.index | plus: 1 %}
         {% assign next-question-url = include.section.slug | append: "?q=" | append: next-question-number %}
       {% endif %}
-      <div class="d-none" data-assessment-target="question">
+      <div 
+        class="d-none" 
+        data-assessment-target="answerSection">
         <p class="py-4 fs-4">{{ question.description }}</p>
         <div class="row flex-column">
           {% for answer in question.answers %}
-            <a
-              class="col p-2 flex-fill text-decoration-none"
-              data-action="click->assessment#select:prevent"
-              data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
-              data-assessment-href-param="{{ next-question-url }}">
-              <div class="answer-content d-flex flex-column rounded-4 bg-blue-100 p-3 text-black border border-light">
-                <p class="m-0">{{ answer }}</p>
-              </div>
-            </a>
+            <div class="col p-2 d-flex">
+              <button
+                class="btn btn-link text-decoration-none flex-fill"
+                data-action="click->assessment#selectAnswer"
+                data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
+                data-assessment-href-param="{{ next-question-url }}">
+                <div 
+                  class="answer-content d-flex flex-column rounded-4 bg-blue-100 p-3 text-black border border-light"
+                  data-assessment-target="answer">
+                  <p class="text-start m-0">{{ answer }}</p>
+                </div>
+              </button>
+            </div>
           {% endfor %}
         </div>
       </div>

@@ -2,21 +2,22 @@ import { Controller } from "@hotwired/stimulus";
 
 export class AssessmentController extends Controller {
   static targets = [
+    "answer",
     "answersInput",
+    "answerSection",
     "emailInput",
     "form",
     "invalidEmail",
     "question",
     "response",
-    "results",
+    // "results",
     "resume",
     "section",
-    "sectionTile",
     "submitButton"
   ];
 
   static values = {
-    answers: Object
+    sections: {type: Array, default: ["current", "your-team", "owner", "technology"]}
   }
 
   connect() {
@@ -28,7 +29,9 @@ export class AssessmentController extends Controller {
       // to do: check to see the verified param exists and show results
       this.calculate();
     } else {
-      this.setActiveQuestion();
+      this.setActiveSections();
+      this.setActiveQuestions();
+      this.setActiveAnswer();
     }
   }
 
@@ -41,7 +44,7 @@ export class AssessmentController extends Controller {
     const answers = this.getAnswers();
 
     if (Object.entries(answers).length > 0) {
-      this.resumeTarget.classList.remove("d-none");
+      this.resumeTarget.classList.toggle("d-none");
     }
   }
   
@@ -51,7 +54,7 @@ export class AssessmentController extends Controller {
 
   clearErrors() {
     if (!this.invalidEmailTarget.classList.contains("d-none")) {
-      this.invalidEmailTarget.classList.add("d-none")
+      this.invalidEmailTarget.classList.toggle("d-none")
     }
   }
 
@@ -62,10 +65,6 @@ export class AssessmentController extends Controller {
   getAnswers() {
     const answers = localStorage.getItem("answers");
     return answers === 'null' || answers === null ? {} : JSON.parse(answers);
-  }
-
-  getParams() {
-    return new Map(location.search.slice(1).split('&').map(kv => kv.split('=')));
   }
 
   getFormData() {
@@ -99,6 +98,7 @@ export class AssessmentController extends Controller {
         
         for (var i = 0; i < element.length; i++) {
           const item = element.item(i);
+          
           if (item.checked || item.selected) {
             data.push(item.value);
           }
@@ -116,9 +116,18 @@ export class AssessmentController extends Controller {
     return {data: formData, honeypot: honeypot};
   }
 
+  getParams() {
+    return new Map(location.search.slice(1).split('&').map(kv => kv.split('=')));
+  }
+  
+  getQuestionIndexFromUrlParams() {
+    const params = this.getParams();
+    return params.has('q') ? parseInt(params.get('q')) - 1 : 0;
+  }
+
   submit() {
     if (this.validateEmail() === false) {
-      this.invalidEmailTarget.classList.remove("d-none");
+      this.invalidEmailTarget.classList.toggle("d-none");
       return false;
     }
 
@@ -141,13 +150,13 @@ export class AssessmentController extends Controller {
       if (xhr.readyState === 4 && xhr.status === 200) {
         self.formTarget.reset();
         self.clearAnswers();
-        self.formTarget.classList.add("d-none");
-        self.responseTarget.classList.remove("d-none");
+        self.formTarget.classList.toggle("d-none");
+        self.responseTarget.classList.toggle("d-none");
       }
     };
 
     var encoded = Object.keys(formData.data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(formData.data[k]);
+      return encodeURIComponent(k) + "=" + encodeURIComponent(formData.data[k]);
     }).join('&');
 
     xhr.send(encoded);
@@ -156,8 +165,8 @@ export class AssessmentController extends Controller {
   readyStateChange(xhr) {
     if (xhr.readyState === 4 && xhr.status === 200) {
       this.formTarget.reset();
-      this.formTarget.classList.add("d-none");
-      this.responseTarget.classList.remove("d-none");
+      this.formTarget.classList.toggle("d-none");
+      this.responseTarget.classList.toggle("d-none");
     }
   }
 
@@ -171,20 +180,74 @@ export class AssessmentController extends Controller {
     }
   }
 
-  select(event) {
+  selectAnswer(event) {
     this.setAnswer(event.params.answer);
     location.href = `/assessment/${event.params.href}`;
   }
 
-  setActiveQuestion() {
-    const params = this.getParams();
-    const question = params.has('q') ? parseInt(params.get('q')) - 1 : 0;
+  selectQuestion(event) {
+    location.href = `/assessment/${event.params.href}`;
+  }
 
-    this.questionTargets[question].classList.remove("d-none");
+  selectSection(event) {
+    location.href = `/assessment/${event.params.href}`;
+  }
+
+  setActiveAnswer() {
+    const answers = this.getAnswers();
+    const currentQuestionIndex = this.getQuestionIndexFromUrlParams();
+
+    if (Object.entries(answers).length > 0) {
+      for (const i in this.sectionsValue) {
+        if (!answers[this.sectionsValue[i]]) break;
+        const savedSection = answers[this.sectionsValue[i]];
+
+        if (location.pathname.includes(this.sectionsValue[i]) && savedSection) {
+          if (!savedSection[currentQuestionIndex]) break;
+          const answerIndex = savedSection[currentQuestionIndex][0] - 1;
+          // if savedAnswer & answerIndex doesn't make sense, see the saved data format in setAnswer()
+
+          this.answerTargets[answerIndex].classList.toggle("border-light");
+          this.answerTargets[answerIndex].classList.toggle("active-question");
+        }
+      }
+    }
+  }
+
+  setActiveQuestions() {
+    const index = this.getQuestionIndexFromUrlParams();
+
+    this.answerSectionTargets[index].classList.toggle("d-none");
+    this.questionTargets[index].classList.toggle("border-light");
+    this.questionTargets[index].classList.toggle("active-question");
+
+    for (const i in this.questionTargets) {
+      if (i > index) {
+        this.questionTargets[i].setAttribute("disabled", true);
+        this.questionTargets[i].classList.toggle("opacity-25");
+      }
+    }
+  }
+  
+  setActiveSections() {
+    const answers = this.getAnswers();
+
+    if (Object.entries(answers).length > 0) {
+      const sections = Object.keys(answers);
+    
+      for (const i in this.sectionsValue) {
+        const slug = this.sectionsValue[i];
+
+        if (location.pathname.includes(slug) || sections.find(section => section === slug)) {
+          this.sectionTargets[i].removeAttribute("disabled");
+          this.sectionTargets[i].classList.remove("opacity-25");
+        }
+      }
+    }
   }
 
   setAnswer(data) {
-    // data format: "section-slug,question-number,answer-number,answer-weight"
+    // Data format: "section-slug,question-number,answer-number,answer-weight"
     const answer = data.split(',');
     var answers = this.getAnswers();
 
@@ -198,6 +261,8 @@ export class AssessmentController extends Controller {
       answers[answer[0]] = [[answer[2], answer[3]]];
     }
 
+    // Saved data format: {"sectionName": ["answerNumber", "answerWeight"]}
+    // Note: the answer array position indicates the number of the question
     localStorage.setItem("answers", JSON.stringify(answers));
   }
 
