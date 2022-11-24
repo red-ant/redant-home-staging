@@ -1,0 +1,158 @@
+---
+layout: assessment
+permalink: /assessment/results
+title: 
+description: 
+class: assessment
+sitemap: false
+---
+
+<div>
+  {% include assessment/header.html %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow rounded-4">
+            <div class="card-body p-5">
+              <div class="d-flex justify-content-between pb-4">
+                <h2 class="card-title">
+                  <span class="d-none d-print-inline">Assessment </span>
+                  Results
+                </h5>
+
+                <button
+                  class="btn btn-purple rounded-pill d-print-none"
+                  data-action="click->assessment#download">
+                  Download
+                  <i class="fa fa-file-arrow-down"></i>
+                </button>
+              </div>
+
+              <p class="card-text d-print-none">
+                Based on your answers and our experience this is a summary of where we think your product lies.
+              </p>
+              <p class="card-text pb-4 d-print-none">
+                Independently of your results, we'd love to <a href="/contact-us/" class="text-purple">have a chat</a>.
+              </p>
+
+              <table 
+                class="table table-borderless boder-light rounded-4 results-table"
+                data-assessment-target="results">
+                <thead class="rounded-top rounded-4">
+                  <tr class="rounded-top rounded-4 text-white">
+                    <th 
+                      class="p-1"
+                      scope="col">
+                      <span class="d-flex py-1 px-2 rounded-2">
+                        Area
+                      </span>
+                    </th>
+                    <th 
+                      class="py-1"
+                      scope="col">
+                      <span class="d-flex py-1 px-2 rounded-2">
+                        Score
+                      </span>
+                    </th>
+                    <th 
+                      class="p-1"
+                      scope="col"
+                      colspan="2">
+                      <span class="d-flex py-1 px-2 rounded-2">
+                        Notes
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Current state
+                      </span>
+                    </td>
+                    <td class="py-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Amazing
+                      </span>
+                    </td>
+                    <td 
+                      class="p-1"
+                      colspan="2">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident unde possimus recusandae libero nobis a corrupti nemo sit sequi. Ratione sit nihil tempore assumenda quasi quo molestias, cupiditate vel.
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Payemnts team
+                      </span>
+                    </td>
+                    <td class="py-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Good
+                      </span>
+                    </td>
+                    <td
+                      class="p-1"
+                      colspan="2">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Payments owner
+                      </span>
+                    </td>
+                    <td class="py-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Good
+                      </span>
+                    </td>
+                    <td
+                      class="p-1"
+                      colspan="2">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos, consectetur voluptas eveniet delectus molestias facere voluptatem qui necessitatibus quos earum repellendus! Neque praesentium totam nulla quod, explicabo delectus natus.
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Technology
+                      </span>
+                    </td>
+                    <td class="py-1">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-red align-items-stretch">
+                        Bad
+                      </span>
+                    </td>
+                    <td
+                      class="p-1"
+                      colspan="2">
+                      <span class="d-flex py-1 px-2 rounded-2 bg-blue-100 align-items-stretch">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos, consectetur voluptas eveniet delectus molestias facere voluptatem qui necessitatibus quos earum repellendus! Neque praesentium totam nulla quod, explicabo delectus natus.
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <img
+              class="bg-stripe img-fluid position-absolute fixed-bottom"
+              src="/assets/images/stripe/bg.png"
+            />
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+</div>

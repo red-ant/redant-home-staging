@@ -25,7 +25,7 @@ export class AssessmentController extends Controller {
       this.checkIncomplete();
     } else if (location.pathname === "/assessment/submit") {
       this.answersInputTarget.value = JSON.stringify(this.getAnswers());
-    } else if (location.pathname === "/assessment/result") {
+    } else if (location.pathname === "/assessment/results") {
       // to do: check to see the verified param exists and show results
       this.calculate();
     } else {
@@ -37,7 +37,7 @@ export class AssessmentController extends Controller {
 
   calculate() {
     // to do: calculate, insert data into html table
-    this.clearAnswers();
+    const params = this.getParams();
   }
 
   checkIncomplete() {
@@ -199,16 +199,16 @@ export class AssessmentController extends Controller {
 
     if (Object.entries(answers).length > 0) {
       for (const i in this.sectionsValue) {
-        if (!answers[this.sectionsValue[i]]) break;
-        const savedSection = answers[this.sectionsValue[i]];
-
-        if (location.pathname.includes(this.sectionsValue[i]) && savedSection) {
-          if (!savedSection[currentQuestionIndex]) break;
-          const answerIndex = savedSection[currentQuestionIndex][0] - 1;
-          // if savedAnswer & answerIndex doesn't make sense, see the saved data format in setAnswer()
+        if (
+          location.pathname.includes(this.sectionsValue[i]) && 
+          answers[this.sectionsValue[i]] && 
+          answers[this.sectionsValue[i]][currentQuestionIndex]) {
+          // The answerIndex constant doesn't make sense?
+          // See comment on saved data format in setAnswer()
+          const answerIndex = answers[this.sectionsValue[i]][currentQuestionIndex][0] - 1;
 
           this.answerTargets[answerIndex].classList.toggle("border-light");
-          this.answerTargets[answerIndex].classList.toggle("active-question");
+          this.answerTargets[answerIndex].classList.toggle("active-purple");
         }
       }
     }
@@ -219,7 +219,7 @@ export class AssessmentController extends Controller {
 
     this.answerSectionTargets[index].classList.toggle("d-none");
     this.questionTargets[index].classList.toggle("border-light");
-    this.questionTargets[index].classList.toggle("active-question");
+    this.questionTargets[index].classList.toggle("active-purple");
 
     for (const i in this.questionTargets) {
       if (i > index) {
