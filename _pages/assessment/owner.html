@@ -1,0 +1,31 @@
+---
+layout: assessment
+permalink: /assessment/owner
+title: 
+description: 
+class: assessment
+sitemap: false
+---
+
+<div>
+  {% include assessment/header.html %}
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow rounded-4">
+            <div class="card-header bg-transparent px-5 py-0 d-flex">
+              {% include assessment/tabs.html sections = site.data.assessment2 %}
+            </div>
+            <div class="card-body p-5">
+              <h2 class="card-title pb-4">{{ site.data.assessment2.owner.title }}</h2>
+              <p class="card-text pb-4">{{ site.data.assessment2.owner.description }}</p>
+              {% include assessment/questions.html section = site.data.assessment2.owner next-section = site.data.assessment2.technology.slug %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

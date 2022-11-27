@@ -1,0 +1,50 @@
+.active-purple {
+  background-color: $purple-100 !important;
+  border-color: $purple-200 !important;
+  color: $purple-300 !important;
+}
+
+.results-table {
+  thead {
+    th {
+      span {
+        width: 100%;
+        background-color: #20b5e3;
+        background-image:
+          linear-gradient(
+            to right, 
+            #20b5e3, #1086db
+          );
+      }
+  
+      &:first-of-type {
+        span {
+          background-color: #16cbe1;
+          background-image:
+            linear-gradient(
+              to right, 
+              #16cbe1, #20b5e3
+            );
+        }
+      }
+  
+      &:last-of-type {
+        span {
+          background-color: #1086db;
+          background-image:
+            linear-gradient(
+              to right, 
+              #1086db, #1959e6
+            );
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -54,6 +54,7 @@ body {
   max-width: $layout-max-width;
   margin: auto;
   background-color: $white;
+  min-height: 100vh;
 
   @include montserrat();
   overflow: hidden;

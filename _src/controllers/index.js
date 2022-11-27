@@ -8,6 +8,9 @@ import ScrollTo from "stimulus-scroll-to";
 Stimulus.register("scroll-to", ScrollTo);
 
 
+import { AssessmentController } from "./assessment-controller";
+Stimulus.register("assessment", AssessmentController);
+
 import { Carousel } from "./carousel-controller";
 Stimulus.register("carousel", Carousel);
 

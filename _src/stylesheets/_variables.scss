@@ -1,6 +1,7 @@
 $about-red: #df4040;
 $about-green: #40df40;
-$blue-100: #4040df;
+$blue-100: #F5F9FC;
+$blue-200: #4040df;
 $gray-smoke: #e4e4f5;
 $gray-100: #f7f7f7;
 $gray-200: #ddd;
@@ -9,12 +10,15 @@ $gray-400: #666;
 $gray-500: #484d53;
 $gray-600: #343a40;
 $gray-700: #161b1f;
-$gray-900: #343a40;
 $green-100: #dee7e1;
 $green-200: #7b9e89;
 $green-300: #435549;
+$magenta: #E93E6A;
 $orange-100: #f6e6d3;
 $orange-200: #f18805;
+$purple-100: #f7f4ff;
+$purple-200: #C5B1FB;
+$purple-300: #9966FF;
 $red: #df4140;
 $red-light: #ff004b;
 $red-100: #f9dfdf;
@@ -23,7 +27,15 @@ $red-300: #b41e1e;
 $transparent: rgba(255, 255, 255, 0);
 $white: #fff !default;
 
-$primary: $red;
+$border-light: #F2F5F7;
+
+$theme-colors: (
+  "blue-100": $blue-100,
+  "dark": $gray-600,
+  "gray-100": $gray-100,
+  "primary": $red,
+  "purple": $purple-300
+);
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -93,10 +105,10 @@ $carousel-control-width: 10%;
 $accordion-bg: transparent;
 $accordion-border-color: $gray-300;
 $accordion-button-active-bg: $accordion-bg;
-$accordion-button-active-color: $gray-900;
+$accordion-button-active-color: $gray-600;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
-$accordion-icon-color: $gray-900;
+$accordion-icon-color: $gray-600;
 
 // Buttons
 $btn-font-weight: $montserrat-semibold;
@@ -104,3 +116,6 @@ $btn-padding-y-lg: .75rem;
 $btn-padding-x-lg: 1.25rem;
 $btn-focus-width: 0;
 $btn-focus-box-shadow: 0;
+
+// Inputs
+$input-border-color: $gray-200;
