@@ -15,9 +15,12 @@ sitemap: false
         <div class="col-12">
           <div class="card shadow rounded-4">
             <div class="card-body p-5">
-              <h2 class="card-title pb-4">Submit</h5>
+              <h2 class="card-title pb-4">Submit</h2>
+              <p class="card-text">
+                Thanks for taking the time to respond.
+              </p>
               <p class="card-text pb-4">
-                Fill in your details to submit your answers and access your results.
+                Fill in your details below so we can crunch the numbers and present your results.
               </p>
               
               <div class="row justify-content-center">
@@ -26,12 +29,18 @@ sitemap: false
                     class="gform"
                     method="POST"
                     data-assessment-target="form"
-                    action="https://script.google.com/macros/s/AKfycbwMot1gHM69H_4GtvGObJFpZOhVtnxsr7LCaeYO3y-RQVxQ-iTfS5XC1SRd7HPTCaoa/exec">
-
+                    action="https://script.google.com/macros/s/AKfycbw0u9-srunlI-1SK1WDF13pbcRZtmtRshgHF1syRtdS7VEu6bz01YGnffSyAjEmXvi2/exec">
                     <div class="form-elements">
                       <div class="mb-3">
-                        <label for="name" class="form-label">Name:</label>
-                        <input id="name" name="name" class="form-control">
+                        <label 
+                          for="name" 
+                          class="form-label">
+                          Name:
+                        </label>
+                        <input 
+                          id="name" 
+                          name="name" 
+                          class="form-control">
                       </div>
 
                       <div class="mb-3">
@@ -46,7 +55,9 @@ sitemap: false
                           value=""
                           aria-describedby="emailHelp"
                           required/>
-                          <small class="d-none text-red" data-assessment-target="invalidEmail">
+                          <small 
+                            class="d-none text-red" 
+                            data-assessment-target="invalidEmail">
                             Please enter a valid email address.
                           </small>
                       </div>
@@ -57,7 +68,12 @@ sitemap: false
                         data-assessment-target="answersInput"
                         value=""
                         hidden />
-                      <input id="honeypot" class="d-none" name="honeypot" value="" />
+
+                      <input 
+                        id="honeypot" 
+                        class="d-none" 
+                        name="honeypot" 
+                        value="" />
 
                       <div class="text-center">
                         <button 
@@ -71,9 +87,20 @@ sitemap: false
                   </form>
                 </div>
               </div>
-              <p class="d-none text-green" data-assessment-target="response">
-                You will receive an email with your results!
-              </p>
+
+              <div 
+                class="d-none flex-column align-items-center"
+                data-assessment-target="response">
+                <p class="text-green text-center">
+                  You will receive an email with your results!
+                </p>
+
+                <a 
+                  href="/" 
+                  class="btn btn-purple rounded-pill mt-3">
+                  Back
+                </a>
+              </div>
             </div>
           </div>
         </div>

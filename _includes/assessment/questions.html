@@ -2,7 +2,7 @@
   {% for question in include.section.questions %}
     <div class="col">
       <button
-        data-action="click->assessment#selectQuestion"
+        data-action="click->assessment#select"
         data-assessment-href-param="{{ include.section.slug }}?q={{ forloop.index }}"
         class="d-flex flex-column align-items-center justify-content-center w-100 rounded-4 bg-blue-100 py-4 text-black border border-light"
         data-assessment-target="question">
@@ -30,7 +30,7 @@
             <div class="col p-2 d-flex">
               <button
                 class="btn btn-link text-decoration-none flex-fill"
-                data-action="click->assessment#selectAnswer"
+                data-action="click->assessment#select"
                 data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
                 data-assessment-href-param="{{ next-question-url }}">
                 <div 

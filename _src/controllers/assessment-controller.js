@@ -24,9 +24,14 @@ export class AssessmentController extends Controller {
     if (location.pathname === "/assessment/") {
       this.checkIncomplete();
     } else if (location.pathname === "/assessment/submit") {
-      this.answersInputTarget.value = JSON.stringify(this.getAnswers());
+      const answers = this.getAnswers();
+
+      if (Object.entries(answers).length > 0) {
+        this.answersInputTarget.value = JSON.stringify(this.getAnswers());
+      } else {
+        this.navigateTo();
+      }
     } else if (location.pathname === "/assessment/results") {
-      // to do: check to see the verified param exists and show results
       this.calculate();
     } else {
       this.setActiveSections();
@@ -36,8 +41,9 @@ export class AssessmentController extends Controller {
   }
 
   calculate() {
-    // to do: calculate, insert data into html table
     const params = this.getParams();
+    const responses = params.has('r') ? decodeURIComponent(params.get('r')) : {};
+    // to do: calculate & insert data into html table
   }
 
   checkIncomplete() {
@@ -71,6 +77,7 @@ export class AssessmentController extends Controller {
     const elements = this.formTarget.elements;
     var honeypot;
     var formData = {};
+    var email = "";
 
     var fields = Object.keys(elements).filter(function(k) {
       if (elements[k].name === "honeypot") {
@@ -93,6 +100,10 @@ export class AssessmentController extends Controller {
       const element = elements[name];
       formData[name] = element.value;
 
+      if (elements[name].name === "email") {
+        email = formData[name];
+      }
+
       if (element.length) {
         var data = [];
         
@@ -111,7 +122,7 @@ export class AssessmentController extends Controller {
     // add form-specific values into the data
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = this.formTarget.dataset.sheet || "responses";
-    formData.formGoogleSendEmail = this.formTarget.dataset.email || "";
+    formData.formGoogleSendEmail = email;
 
     return {data: formData, honeypot: honeypot};
   }
@@ -123,6 +134,10 @@ export class AssessmentController extends Controller {
   getQuestionIndexFromUrlParams() {
     const params = this.getParams();
     return params.has('q') ? parseInt(params.get('q')) - 1 : 0;
+  }
+
+  navigateTo(href = '') {
+    location.href = `/assessment/${href}`;
   }
 
   submit() {
@@ -152,6 +167,7 @@ export class AssessmentController extends Controller {
         self.clearAnswers();
         self.formTarget.classList.toggle("d-none");
         self.responseTarget.classList.toggle("d-none");
+        self.responseTarget.classList.toggle("d-flex");
       }
     };
 
@@ -160,14 +176,6 @@ export class AssessmentController extends Controller {
     }).join('&');
 
     xhr.send(encoded);
-  }
-
-  readyStateChange(xhr) {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      this.formTarget.reset();
-      this.formTarget.classList.toggle("d-none");
-      this.responseTarget.classList.toggle("d-none");
-    }
   }
 
   resume() {
@@ -180,17 +188,12 @@ export class AssessmentController extends Controller {
     }
   }
 
-  selectAnswer(event) {
-    this.setAnswer(event.params.answer);
-    location.href = `/assessment/${event.params.href}`;
-  }
+  select(event) {
+    if (event.params.answer) {
+      this.setAnswer(event.params.answer);
+    }
 
-  selectQuestion(event) {
-    location.href = `/assessment/${event.params.href}`;
-  }
-
-  selectSection(event) {
-    location.href = `/assessment/${event.params.href}`;
+    this.navigateTo(event.params.href);
   }
 
   setActiveAnswer() {
@@ -253,16 +256,16 @@ export class AssessmentController extends Controller {
 
     if (answers[answer[0]]) {
       if (answers[answer[0]][answer[1] - 1]) {
-        answers[answer[0]][answer[1] - 1] = [answer[2], answer[3]];
+        answers[answer[0]][answer[1] - 1] = [parseInt(answer[2]), parseInt(answer[3])];
       } else {
-        answers[answer[0]].push([answer[2], answer[3]]);
+        answers[answer[0]].push([parseInt(answer[2]), parseInt(answer[3])]);
       }
     } else {
-      answers[answer[0]] = [[answer[2], answer[3]]];
+      answers[answer[0]] = [[parseInt(answer[2]), parseInt(answer[3])]];
     }
 
-    // Saved data format: {"sectionName": ["answerNumber", "answerWeight"]}
-    // Note: the answer array position indicates the number of the question
+    // Saved data format: {"sectionName": [["answerNumber", "answerWeightNumber"], ["answerNumber", "answerWeightNumber"]]}
+    // The answer positions in the setionName array correspond to the question number
     localStorage.setItem("answers", JSON.stringify(answers));
   }
 
