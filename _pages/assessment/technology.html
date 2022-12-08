@@ -16,12 +16,12 @@ sitemap: false
         <div class="col-12">
           <div class="card shadow rounded-4">
             <div class="card-header bg-transparent px-5 py-0 d-flex">
-              {% include assessment/tabs.html sections = site.data.assessment2 %}
+              {% include assessment/tabs.html sections = site.data.assessment %}
             </div>
             <div class="card-body p-5">
-              <h2 class="card-title pb-4">{{ site.data.assessment2.technology.title }}</h5>
-              <p class="card-text pb-4">{{ site.data.assessment2.technology.description }}</p>
-              {% include assessment/questions.html section = site.data.assessment2.technology next-section = 'submit' %}
+              <h2 class="card-title pb-4">{{ site.data.assessment.technology.title }}</h5>
+              <p class="card-text pb-4">{{ site.data.assessment.technology.description }}</p>
+              {% include assessment/questions.html section = site.data.assessment.technology next-section = 'submit' %}
             </div>
           </div>
         </div>

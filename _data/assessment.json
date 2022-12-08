@@ -1,270 +1,242 @@
-[
-  {
+{
+  "current": {
     "tab": "Current",
+    "slug": "current",
     "title": "Your current state",
     "description": "Tell us a bit about the current state of your payments process",
     "questions": [
       {
-        "name": "Current state",
-        "content": "If you were to describe where your business is right now in terms of taking digital payments, where would you put it?",
+        "title": "Current state",
+        "description": "If you were to describe where your business is right now in terms of taking digital payments, where would you put it?",
         "icon": "rocket-launch",
         "weight": "5",
         "answers": [
-          {
-            "we_really_suck": "Somewhere just past the Stone Age",
-            "reliable": "Early days - we don't do much. Actually not at all.",
-            "efficient": "The business does process some digital payments, but we're still trying to expand",
-            "responsive": "Everything is digital. And we're pretty awesome at it",
-            "agile": "Everything is digital, but we know there is room for improvement"
-          }
+          "Somewhere just past the Stone Age",
+          "Early days - we don't do much. Actually not at all.",
+          "The business does process some digital payments, but we're still trying to expand",
+          "Everything is digital. And we're pretty awesome at it",
+          "Everything is digital, but we know there is room for improvement"
         ]
       },
       {
-        "name": "Volume",
-        "content": "Looking at volume of all revenue, what percentage is currently digital?",
+        "title": "Volume",
+        "description": "Looking at volume of all revenue, what percentage is currently digital?",
         "icon": "money-bill",
         "weight": "5",
         "answers": [
-          {
-            "we_really_suck": "Nup. Nada.",
-            "reliable": "An occasional one, but they are unusual",
-            "efficient": "Most payments are done this way",
-            "responsive": "All payments are done this way",
-            "agile": "All payments are digital, but we know we can always improve speed and resilience."
-          }
+          "Nup. Nada.",
+          "An occasional one, but they are unusual",
+          "Most payments are done this way",
+          "All payments are done this way",
+          "All payments are digital, but we know we can always improve speed and resilience."
         ]
       },
       {
-        "name": "Design",
-        "content": "What is the scope of your payment process design?",
+        "title": "Design",
+        "description": "What is the scope of your payment process design?",
         "icon": "telescope",
         "weight": "10",
         "answers": [
-          {
-            "we_really_suck": "Process what?",
-            "reliable": "We haven't really designed much. But we know we need to.",
-            "efficient": "We've redesigned from end to end, but at this stage it's unclear how this will fit in with other data and processes",
-            "responsive": "We've redesigned from end to end, but at this stage it's fully integrated with our internal data and processes",
-            "agile": "Our payment process and data have been designed and integrated from end to end, and they also integrate with customer and supplier processes and data."
-          }
+          "Process what?",
+          "We haven't really designed much. But we know we need to.",
+          "We've redesigned from end to end, but at this stage it's unclear how this will fit in with other data and processes",
+          "We've redesigned from end to end, but at this stage it's fully integrated with our internal data and processes",
+          "Our payment process and data have been designed and integrated from end to end, and they also integrate with customer and supplier processes and data."
         ]
       },
       {
-        "name": "Security",
-        "content": "How is system security and fraud managed in your organisation",
+        "title": "Security",
+        "description": "How is system security and fraud managed in your organisation",
         "icon": "camera-cctv",
         "weight": "10",
         "answers": [
-          {
-            "we_really_suck": "If I told you, you'd probably cry",
-            "reliable": "We have some basic security in place. More of a security by obscurity kind of approach.",
-            "efficient": "We have some tools to manage fraud, but we rely on someone to pick this up. We do penetration tests periodically, but nothing formal",
-            "responsive": "We have automated scanning tools, and also processes to look for fraudulent behavior. We consider ourselves very well protected and have determined that we've secured every possible way into our system. Our leadership team have approved this approach and we're very confident",
-            "agile": "We have extensive tooling and automated procedures in place around both payment fraud and system security. However all of our team and the leadership is aware of the need for constant improvement and adjustment of our security. We accept that almost any data can get compromised, and we try to deal with this threat pragmatically. We have active procedures to remove old data and expired API end points to minimise our threat surface."
-          }
+          "If I told you, you'd probably cry",
+          "We have some basic security in place. More of a security by obscurity kind of approach.",
+          "We have some tools to manage fraud, but we rely on someone to pick this up. We do penetration tests periodically, but nothing formal",
+          "We have automated scanning tools, and also processes to look for fraudulent behavior. We consider ourselves very well protected and have determined that we've secured every possible way into our system. Our leadership team have approved this approach and we're very confident",
+          "We have extensive tooling and automated procedures in place around both payment fraud and system security. However all of our team and the leadership is aware of the need for constant improvement and adjustment of our security. We accept that almost any data can get compromised, and we try to deal with this threat pragmatically. We have active procedures to remove old data and expired API end points to minimise our threat surface."
         ]
       },
       {
-        "name": "Context",
-        "content": "How well does your organisation understand it's needs around payment process and customer data?",
+        "title": "Context",
+        "description": "How well does your organisation understand it's needs around payment process and customer data?",
         "icon": "paper-plane-top",
         "weight": "4",
         "answers": [
-          {
-            "we_really_suck": "Picture a scene from the movie Dumb and Dumber",
-            "reliable": "We've worked out the payment processes, and data required for inputs, outputs, suppliers, and customers have been identified.  We don't really have a formal payment processes and data architecture. Business Process Integration is limited to Line of Business objectives.",
-            "efficient": "We have a pretty good understanding of the needs of the payment processes and the customers data. We have a formal plan to guide use of payment processes and data architecture.",
-            "responsive": "The payment process has an Owner within the business, and they've set up performance expectations and KPIs with other areas. We've formalised our data and process in an agreed Architecture.",
-            "agile": "The payment Owner and others int the business have established clear SLAs. Our process is really well defined for both internal and external flows. We monitor this performance via a live dashboard with key payment metrics."
-          }
+          "Picture a scene from the movie Dumb and Dumber",
+          "We've worked out the payment processes, and data required for inputs, outputs, suppliers, and customers have been identified.  We don't really have a formal payment processes and data architecture. Business Process Integration is limited to Line of Business objectives.",
+          "We have a pretty good understanding of the needs of the payment processes and the customers data. We have a formal plan to guide use of payment processes and data architecture.",
+          "The payment process has an Owner within the business, and they've set up performance expectations and KPIs with other areas. We've formalised our data and process in an agreed Architecture.",
+          "The payment Owner and others int the business have established clear SLAs. Our process is really well defined for both internal and external flows. We monitor this performance via a live dashboard with key payment metrics."
         ]
       }
     ]
   },
-  {
+  "your-team": {
     "tab": "Your team",
+    "slug": "your-team",
     "title": "Your payments team",
     "description": "What are the skills and approach of your payments team",
     "questions": [
       {
-        "name": "Documentation",
-        "content": "How well are payment processes and data documented?",
+        "title": "Documentation",
+        "description": "How well are payment processes and data documented?",
         "icon": "pencil",
         "weight": "4",
         "answers": [
-          {
-            "we_really_suck": "I think there is general feeling that if you don't document, no one can be blamed if it breaks",
-            "reliable": "We have some documentation, but it might be a bit out of date. It's a bit unclear who is meant to update it.",
-            "efficient": "We have pretty good documentation. It's an end to end document which covers the design of payment process and data to some degree. Business drivers are also covered.",
-            "responsive": "We have documentation which is linked into each system, so it's easily accessible. If someone notices a problem or something missing, they are able to flag this while using either the system or documenation, which helps keep it up to date.",
-            "agile": "Our users love our documentation, and we get lots of feedback about it. We've put a lot of effort into making it as useful and detailed as we can. Wherever we can, we've tried to integrate the documentation with the live process, so you can quickly see things like volume rates, errors, and how something might work. This helps users quickly understand and resolve problems that brought them to the documentation."
-          }
+          "I think there is general feeling that if you don't document, no one can be blamed if it breaks",
+          "We have some documentation, but it might be a bit out of date. It's a bit unclear who is meant to update it.",
+          "We have pretty good documentation. It's an end to end document which covers the design of payment process and data to some degree. Business drivers are also covered.",
+          "We have documentation which is linked into each system, so it's easily accessible. If someone notices a problem or something missing, they are able to flag this while using either the system or documenation, which helps keep it up to date.",
+          "Our users love our documentation, and we get lots of feedback about it. We've put a lot of effort into making it as useful and detailed as we can. Wherever we can, we've tried to integrate the documentation with the live process, so you can quickly see things like volume rates, errors, and how something might work. This helps users quickly understand and resolve problems that brought them to the documentation."
         ]
       },
       {
-        "name": "Knowledge",
-        "content": "How well does your team and organisation know the payment processes?",
+        "title": "Knowledge",
+        "description": "How well does your team and organisation know the payment processes?",
         "icon": "thought-bubble",
         "weight": "4",
         "answers": [
-          {
-            "we_really_suck": "We're taking baby steps. Not many people know it even exists.",
-            "reliable": "Most people have at least some idea of how it works. Maybe not most - let's say some. OK maybe just me.",
-            "efficient": "Most people can describe the overall flow, and know where to look or who to ask about problems. OK, lets say some people, and they know to ask me if anything goes wrong.",
-            "responsive": "Most key people understand and can describe the process pretty well. They also understand how it might impact or affect other parts of the business.",
-            "agile": "I'm confident that all of the key people that do need to know about our payment process are quite aware of system detail, how it works and the impact on the rest of the business."
-          }
+          "We're taking baby steps. Not many people know it even exists.",
+          "Most people have at least some idea of how it works. Maybe not most - let's say some. OK maybe just me.",
+          "Most people can describe the overall flow, and know where to look or who to ask about problems. OK, lets say some people, and they know to ask me if anything goes wrong.",
+          "Most key people understand and can describe the process pretty well. They also understand how it might impact or affect other parts of the business.",
+          "I'm confident that all of the key people that do need to know about our payment process are quite aware of system detail, how it works and the impact on the rest of the business."
         ]
       },
       {
-        "name": "Skills",
-        "content": "What is the skill level in your team and wider organisation when it comes to payments?",
+        "title": "Skills",
+        "description": "What is the skill level in your team and wider organisation when it comes to payments?",
         "icon": "seal-question",
         "weight": "6",
         "answers": [
-          {
-            "we_really_suck": "Non existent",
-            "reliable": "Payments are pretty much a black box. If it breaks, they ring the vendor.",
-            "efficient": "People understand the basics, but some of the more complex issues are often either ignored or take ages to resolve because many people don't know how to diagnose and resolve themselves.",
-            "responsive": "We have a variety of expertise levels. We have a few people who are experts, and we are training the relevant people to get the skills they need to respond to issues.",
-            "agile": "The team is very proactive, and jumps on issues because they are all fairly confident with how things work."
-          }
+          "Non existent",
+          "Payments are pretty much a black box. If it breaks, they ring the vendor.",
+          "People understand the basics, but some of the more complex issues are often either ignored or take ages to resolve because many people don't know how to diagnose and resolve themselves.",
+          "We have a variety of expertise levels. We have a few people who are experts, and we are training the relevant people to get the skills they need to respond to issues.",
+          "The team is very proactive, and jumps on issues because they are all fairly confident with how things work."
         ]
       },
       {
-        "name": "Behavior",
-        "content": "How does the payments team handle their responsibilities around payments and payment data?",
+        "title": "Behavior",
+        "description": "How does the payments team handle their responsibilities around payments and payment data?",
         "icon": "bell-concierge",
         "weight": "8",
         "answers": [
-          {
-            "we_really_suck": "Every day, I am surprised that customers trust us with this. If only they knew...",
-            "reliable": "Most people on the team don't seem to feel payments is anything to do with them or their role.",
-            "efficient": "The team does acknowledge that their job does have some remote connection to our payments process actually working properly",
-            "responsive": "Most people on the team understand that if our payments process works well, they get paid and still have a job. They approach problems and resolve issues in a methodical way, and we're super happy that Henry in Accounts has stopped blaming any payment problem on Covid and seems to have developed some form of confidence in the team being able to resolve payment problems.",
-            "agile": "The team seeks continual feedback and input from everyone else in the organisation, and are very receptive to feedback. They've created a really good feedback loop, because any small issues that do come up are getting resolved very quickly."
-          }
+          "Every day, I am surprised that customers trust us with this. If only they knew...",
+          "Most people on the team don't seem to feel payments is anything to do with them or their role.",
+          "The team does acknowledge that their job does have some remote connection to our payments process actually working properly",
+          "Most people on the team understand that if our payments process works well, they get paid and still have a job. They approach problems and resolve issues in a methodical way, and we're super happy that Henry in Accounts has stopped blaming any payment problem on Covid and seems to have developed some form of confidence in the team being able to resolve payment problems.",
+          "The team seeks continual feedback and input from everyone else in the organisation, and are very receptive to feedback. They've created a really good feedback loop, because any small issues that do come up are getting resolved very quickly."
         ]
       }
     ]
   },
-  {
+  "owner": {
     "tab": "Owner",
+    "slug": "owner",
     "title": "The owner of payments",
     "description": "The key person responsible for the payments in your organisation",
     "questions": [
       {
-        "name": "HR",
-        "content": "How does the HR policies of your organisation work for the payment team",
+        "title": "HR",
+        "description": "How does the HR policies of your organisation work for the payment team",
         "icon": "people",
         "weight": "3",
         "answers": [
-          {
-            "we_really_suck": "HR thinks we do payroll",
-            "reliable": "I'm pretty sure HR just thinks the payments stuff is some kind of magic trick we do at the end of each month. It certainly isn't in any job descriptions or KPIs",
-            "efficient": "HR may have heard of the payments team. They regularly ask what we actually do. They also think we spend all day trading Bitcoin.",
-            "responsive": "HR organises regular training and helps with skill improvements. Payment team job descriptions and KPIs are clear and articulated, and HR understands the integration of payments to the organisation.",
-            "agile": "Our hiring, development and reward systems are geared towards making sure our payment team members are working together well and achieving measurable goals, which are also payment specific."
-          }
+          "HR thinks we do payroll",
+          "I'm pretty sure HR just thinks the payments stuff is some kind of magic trick we do at the end of each month. It certainly isn't in any job descriptions or KPIs",
+          "HR may have heard of the payments team. They regularly ask what we actually do. They also think we spend all day trading Bitcoin.",
+          "HR organises regular training and helps with skill improvements. Payment team job descriptions and KPIs are clear and articulated, and HR understands the integration of payments to the organisation.",
+          "Our hiring, development and reward systems are geared towards making sure our payment team members are working together well and achieving measurable goals, which are also payment specific."
         ]
       },
       {
-        "name": "Who is the owner",
-        "content": "In your organisation, is there a clear owner of the payments process?",
+        "title": "Who is the owner",
+        "description": "In your organisation, is there a clear owner of the payments process?",
         "icon": "person",
         "weight": "8",
         "answers": [
-          {
-            "we_really_suck": "That's funny - the Police had the same question",
-            "reliable": "Not really",
-            "efficient": "There was someone, but they left a few years ago.",
-            "responsive": "There is a clear owner",
-            "agile": "There is a clear owner, who is a senior person in the organisation. They are able to focus on payment related issues."
-          }
+          "That's funny - the Police had the same question",
+          "Not really",
+          "There was someone, but they left a few years ago.",
+          "There is a clear owner",
+          "There is a clear owner, who is a senior person in the organisation. They are able to focus on payment related issues."
         ]
       },
       {
-        "name": "Responsibilities",
-        "content": "What does the payments process owner do?",
+        "title": "Responsibilities",
+        "description": "What does the payments process owner do?",
         "icon": "circle-user",
         "weight": "6",
         "answers": [
-          {
-            "we_really_suck": "Great question",
-            "reliable": "That's actually something we're still trying to clarify",
-            "efficient": "They are the person who everyone blames when something goes wrong. So they spend a lot of their time trying to avoid being blamed.",
-            "responsive": "The owner works with the team to create goals and improve the process. They are on top of all performance metrics, and make final decision on product direction and design choices.",
-            "agile": "The owner develops a strategic plan to manage the ongoing development process. They work with other people in the organisation to incorporate feedback and share progress. They are the key decision maker in any development, but consult widely to make sure decisions are well considered and pragmatic."
-          }
+          "Great question",
+          "That's actually something we're still trying to clarify",
+          "They are the person who everyone blames when something goes wrong. So they spend a lot of their time trying to avoid being blamed.",
+          "The owner works with the team to create goals and improve the process. They are on top of all performance metrics, and make final decision on product direction and design choices.",
+          "The owner develops a strategic plan to manage the ongoing development process. They work with other people in the organisation to incorporate feedback and share progress. They are the key decision maker in any development, but consult widely to make sure decisions are well considered and pragmatic."
         ]
       }
     ]
   },
-  {
+  "technology": {
     "tab": "Technology",
+    "slug": "technology",
     "title": "Technology and Metrics",
     "description": "Development and technical execution, tracking performance",
     "questions": [
       {
-        "name": "Authority",
-        "content": "What kind of authority does the payments owner have?",
+        "title": "Authority",
+        "description": "What kind of authority does the payments owner have?",
         "icon": "gears",
         "weight": "6",
         "answers": [
-          {
-            "we_really_suck": "It's more of an honorary position",
-            "reliable": "If we knew who it was, then I'm sure we could then work out what they can do",
-            "efficient": "They need to be able to influence other team leaders, because they don't have much authority to start or pay for any projects. Any decision they try to make typically gets over ruled by someone else anyway.",
-            "responsive": "The payment owner controls IT systems that support the payment process and any projects that change the process. They have some influence over resource allocation and evaluations as well as the payment process budget.",
-            "agile": "The payment process owner controls the process’s budget and exerts strong influence over resource allocation and evaluations."
-          }
+          "It's more of an honorary position",
+          "If we knew who it was, then I'm sure we could then work out what they can do",
+          "They need to be able to influence other team leaders, because they don't have much authority to start or pay for any projects. Any decision they try to make typically gets over ruled by someone else anyway.",
+          "The payment owner controls IT systems that support the payment process and any projects that change the process. They have some influence over resource allocation and evaluations as well as the payment process budget.",
+          "The payment process owner controls the process’s budget and exerts strong influence over resource allocation and evaluations."
         ]
       },
       {
-        "name": "Architecture",
-        "content": "Does your technical architecture follow any kind of standards or practices? What are they?",
+        "title": "Architecture",
+        "description": "Does your technical architecture follow any kind of standards or practices? What are they?",
         "icon": "city",
         "weight": "6",
         "answers": [
-          {
-            "we_really_suck": "You might have heard of the term Reinventing the Wheel...",
-            "reliable": "Our architecture is more of an informal By Mutual Agreement style of system architecture.",
-            "efficient": "Some patterns and formats used, but I think we'd be exagerating things a bit if we said there was any actual formal architecture or practices. We feel our own way and evolve over time.",
-            "responsive": "We use frameworks and practices in conjunction with a formal SOAmethod and architectures. Our overall business information model is still evolving - still in it's infancy.",
-            "agile": "Service components are designed using formal methods, practices, and frameworks that promote the reuse of assets. Formal enterprise-wide business information services have been developed and deployed."
-          }
+          "You might have heard of the term Reinventing the Wheel...",
+          "Our architecture is more of an informal By Mutual Agreement style of system architecture.",
+          "Some patterns and formats used, but I think we'd be exagerating things a bit if we said there was any actual formal architecture or practices. We feel our own way and evolve over time.",
+          "We use frameworks and practices in conjunction with a formal SOAmethod and architectures. Our overall business information model is still evolving - still in it's infancy.",
+          "Service components are designed using formal methods, practices, and frameworks that promote the reuse of assets. Formal enterprise-wide business information services have been developed and deployed."
         ]
       },
       {
-        "name": "Applications",
-        "content": "What does the internal application landscape look like in your organisation?",
+        "title": "Applications",
+        "description": "What does the internal application landscape look like in your organisation?",
         "icon": "truck",
         "weight": "6",
         "answers": [
-          {
-            "we_really_suck": "We haven't deployed for several years",
-            "reliable": "We pride ourselves on keeping old IT systems and applications well past their sunset date. Since our organisation is a notoriously slow payer, none of our vendors are willing to come back to make updates, and we're too scared to update anything. Plus IT won't allow us to download anything anyway. Not since they found out about those torrent servers Brett in Marketing was running.",
-            "efficient": "Lots of legacy IT, with some integration between different applications. But honestly most apps just run on their own little islands. When we say api integration, we actually mean sticking a CSV file onto a thumb drive and walking it over. We have plans to integrate our payment applications into the wider organisation, but no one has worked out how to unlock the firewall. So that's a non starter.",
-            "responsive": "Integration between applications, which are made from functional components or services which are shared in the organisation. Separation at logical layers, with common translation layers used.",
-            "agile": "A highly modular architecture, which adheres to best practice around communication of data within the enterprise. Uses enterprise service bus style approach to transfer of data within the enterprise. Tight process around security and protecting sensitive data by best practice approach. Regular audits and performance tests."
-          }
+          "We haven't deployed for several years",
+          "We pride ourselves on keeping old IT systems and applications well past their sunset date. Since our organisation is a notoriously slow payer, none of our vendors are willing to come back to make updates, and we're too scared to update anything. Plus IT won't allow us to download anything anyway. Not since they found out about those torrent servers Brett in Marketing was running.",
+          "Lots of legacy IT, with some integration between different applications. But honestly most apps just run on their own little islands. When we say api integration, we actually mean sticking a CSV file onto a thumb drive and walking it over. We have plans to integrate our payment applications into the wider organisation, but no one has worked out how to unlock the firewall. So that's a non starter.",
+          "Integration between applications, which are made from functional components or services which are shared in the organisation. Separation at logical layers, with common translation layers used.",
+          "A highly modular architecture, which adheres to best practice around communication of data within the enterprise. Uses enterprise service bus style approach to transfer of data within the enterprise. Tight process around security and protecting sensitive data by best practice approach. Regular audits and performance tests."
         ]
       },
       {
-        "name": "Metrics",
-        "content": "How do you track, log and measure performance?",
+        "title": "Metrics",
+        "description": "How do you track, log and measure performance?",
         "icon": "dumpster-fire",
         "weight": "8",
         "answers": [
-          {
-            "we_really_suck": "Since there is no performance to measure, we decided to remove the requirement for metrics",
-            "reliable": "We track which parts of our payments system aren't working by complaints coming in from customers",
-            "efficient": "Someone has a spreadsheet, which we update before the end of each quarter. We track key payment related data points, and send this around to stakeholders in the organisation.",
-            "responsive": "Our KPI and metric scoreboard is partially automated. It tracks both payment related and company metrics where they overlap and influence each other.",
-            "agile": "Our KPI and metrics scoreboard is fully automated and receives live data. It tracks all relevant payment metrics, as well as company wide ones where there is an intersection or influence. The metrics include application throughput and errors, as well as user behaviour, infrastructure and financial data points."
-          }
+          "Since there is no performance to measure, we decided to remove the requirement for metrics",
+          "We track which parts of our payments system aren't working by complaints coming in from customers",
+          "Someone has a spreadsheet, which we update before the end of each quarter. We track key payment related data points, and send this around to stakeholders in the organisation.",
+          "Our KPI and metric scoreboard is partially automated. It tracks both payment related and company metrics where they overlap and influence each other.",
+          "Our KPI and metrics scoreboard is fully automated and receives live data. It tracks all relevant payment metrics, as well as company wide ones where there is an intersection or influence. The metrics include application throughput and errors, as well as user behaviour, infrastructure and financial data points."
         ]
       }
     ]
   }
-]
+}
