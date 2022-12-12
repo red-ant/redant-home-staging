@@ -199,22 +199,20 @@ export class AssessmentController extends Controller {
 
   setActiveAnswer() {
     const answers = this.getAnswers();
-
-    if (Object.keys(answers).length === 0) return;
-
-    const flattenedAnswers = Object.keys(answers)
-      .reduce((accumulator, currentValue) => {
-        return accumulator.concat(answers[currentValue])
-      }, []);
-
-    for (const i in flattenedAnswers) {
+    const section = location.pathname.split('/').reverse()[0];
+  
+    if (Object.entries(answers).length === 0) return;
+  
+    for (const i in this.answerTargets) {
       const target = this.answerTargets[i];
 
-      if (!target) return;
-
-      const element = target.children[flattenedAnswers[i][0] - 1];
+      if (!answers[section] || !answers[section][i]) return;
+  
+      const oldAnswer = answers[section][i][0];
       
-      // debugger;
+      if (!target || !oldAnswer) return;
+  
+      const element = target.children[oldAnswer - 1];
       
       element.classList.toggle("border-light");
       element.classList.toggle("active-purple");
@@ -225,15 +223,15 @@ export class AssessmentController extends Controller {
     const index = this.getQuestionIndexFromUrlParams();
     const answers = this.getAnswers();
     const section = location.pathname.split('/').reverse()[0];
-
+  
     this.answerSectionTargets[index].classList.toggle("d-none");
     this.questionTargets[index].classList.toggle("border-light");
     this.questionTargets[index].classList.toggle("active-purple");
-
+  
     for (const i in this.questionTargets) {
-      if (!!answers[section] && !!answers[section][i]) return;
+      const hasAnswer = !!answers[section] && !!answers[section][i];
 
-      if (i > index) {
+      if (!hasAnswer && i > index) {
         this.questionTargets[i].setAttribute("disabled", true);
         this.questionTargets[i].classList.toggle("opacity-25");
       }
