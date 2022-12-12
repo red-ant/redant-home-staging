@@ -25,21 +25,17 @@
         class="d-none" 
         data-assessment-target="answerSection">
         <p class="py-4 fs-4">{{ question.description }}</p>
-        <div class="row flex-column">
+        <div 
+          class="row flex-column"
+          data-assessment-target="answer">
           {% for answer in question.answers %}
-            <div class="col p-2 d-flex">
-              <button
-                class="btn btn-link text-decoration-none flex-fill"
-                data-action="click->assessment#select"
-                data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
-                data-assessment-href-param="{{ next-question-url }}">
-                <div 
-                  class="answer-content d-flex flex-column rounded-4 bg-blue-100 p-3 text-black border border-light"
-                  data-assessment-target="answer">
-                  <p class="text-start m-0">{{ answer }}</p>
-                </div>
-              </button>
-            </div>
+            <button
+              class="d-flex btn btn-link text-decoration-none w-100 rounded-4 bg-blue-100 p-3 mb-3 text-black border border-light text-start"
+              data-action="click->assessment#select"
+              data-assessment-answer-param="{{ include.section.slug }},{{ forloop.parentloop.index }},{{ forloop.index }},{{ question.weight }}"
+              data-assessment-href-param="{{ next-question-url }}">
+              {{ answer }}
+            </button>
           {% endfor %}
         </div>
       </div>

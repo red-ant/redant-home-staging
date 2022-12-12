@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus";
+import results from '../../_data/results.json' assert { type: 'JSON' };
 
 export class AssessmentController extends Controller {
   static targets = [
@@ -27,7 +28,7 @@ export class AssessmentController extends Controller {
       const answers = this.getAnswers();
 
       if (Object.entries(answers).length > 0) {
-        this.answersInputTarget.value = JSON.stringify(this.getAnswers());
+        this.answersInputTarget.value = JSON.stringify(answers);
       } else {
         this.navigateTo();
       }
@@ -198,33 +199,40 @@ export class AssessmentController extends Controller {
 
   setActiveAnswer() {
     const answers = this.getAnswers();
-    const currentQuestionIndex = this.getQuestionIndexFromUrlParams();
 
-    if (Object.entries(answers).length > 0) {
-      for (const i in this.sectionsValue) {
-        if (
-          location.pathname.includes(this.sectionsValue[i]) && 
-          answers[this.sectionsValue[i]] && 
-          answers[this.sectionsValue[i]][currentQuestionIndex]) {
-          // The answerIndex constant doesn't make sense?
-          // See comment on saved data format in setAnswer()
-          const answerIndex = answers[this.sectionsValue[i]][currentQuestionIndex][0] - 1;
+    if (Object.keys(answers).length === 0) return;
 
-          this.answerTargets[answerIndex].classList.toggle("border-light");
-          this.answerTargets[answerIndex].classList.toggle("active-purple");
-        }
-      }
+    const flattenedAnswers = Object.keys(answers)
+      .reduce((accumulator, currentValue) => {
+        return accumulator.concat(answers[currentValue])
+      }, []);
+
+    for (const i in flattenedAnswers) {
+      const target = this.answerTargets[i];
+
+      if (!target) return;
+
+      const element = target.children[flattenedAnswers[i][0] - 1];
+      
+      // debugger;
+      
+      element.classList.toggle("border-light");
+      element.classList.toggle("active-purple");
     }
   }
 
   setActiveQuestions() {
     const index = this.getQuestionIndexFromUrlParams();
+    const answers = this.getAnswers();
+    const section = location.pathname.split('/').reverse()[0];
 
     this.answerSectionTargets[index].classList.toggle("d-none");
     this.questionTargets[index].classList.toggle("border-light");
     this.questionTargets[index].classList.toggle("active-purple");
 
     for (const i in this.questionTargets) {
+      if (!!answers[section] && !!answers[section][i]) return;
+
       if (i > index) {
         this.questionTargets[i].setAttribute("disabled", true);
         this.questionTargets[i].classList.toggle("opacity-25");
@@ -241,7 +249,7 @@ export class AssessmentController extends Controller {
       for (const i in this.sectionsValue) {
         const slug = this.sectionsValue[i];
 
-        if (location.pathname.includes(slug) || sections.find(section => section === slug)) {
+        if (location.pathname.includes(slug) || !!sections.find(section => section === slug)) {
           this.sectionTargets[i].removeAttribute("disabled");
           this.sectionTargets[i].classList.remove("opacity-25");
         }
