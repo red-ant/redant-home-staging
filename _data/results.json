@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Current",
+    "slug": "current",
+    "results": [
+      {
+        "min_score": "5",
+        "lebel": "Terrible",
+        "notes": "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "8",
+        "lebel": "Bad",
+        "notes": "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "12",
+        "lebel": "Good",
+        "notes": "3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "20",
+        "lebel": "Excellent",
+        "notes": "4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      }
+    ]
+  },
+  {
+    "title": "Your team",
+    "slug": "your-team",
+    "results": [
+      {
+        "min_score": "5",
+        "lebel": "Terrible",
+        "notes": "5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "8",
+        "lebel": "Bad",
+        "notes": "6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "12",
+        "lebel": "Good",
+        "notes": "7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "20",
+        "lebel": "Excellent",
+        "notes": "8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      }
+    ]
+  },
+  {
+    "title": "Owner",
+    "slug": "owner",
+    "results": [
+      {
+        "min_score": "5",
+        "lebel": "Terrible",
+        "notes": "9Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "8",
+        "lebel": "Bad",
+        "notes": "10Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "12",
+        "lebel": "Good",
+        "notes": "11Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "20",
+        "lebel": "Excellent",
+        "notes": "12Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      }
+    ]
+  },
+  {
+    "title": "Technology",
+    "slug": "technology",
+    "results": [
+      {
+        "min_score": "5",
+        "lebel": "Does your technical architecture follow any kind of standards or practices? What are they?",
+        "notes": "13Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "8",
+        "lebel": "What does the internal application landscape look like in your organisation?",
+        "notes": "14Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "12",
+        "lebel": "How do you track, log and measure performance?",
+        "notes": "15Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      },
+      {
+        "min_score": "20",
+        "lebel": "How are metrics used in your organisation?",
+        "notes": "16Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis maxime mollitia, officiis culpa nulla sequi dolore expedita incidunt, consequatur delectus, laboriosam exercitationem sint beatae nobis architecto cumque earum totam!"
+      }
+    ]
+  }
+]
