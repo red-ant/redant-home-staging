@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Code review and checkup | Red Ant</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Code review and checkup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We perform an expert review of your code for security issues, performance problems and a quality analysis on your Ruby on Rails. You’ll get a good idea of how your code benchmarks against industry standards. - Ruby on Rails, React, Javascript, Swift iOS" />
+<meta property="og:description" content="We perform an expert review of your code for security issues, performance problems and a quality analysis on your Ruby on Rails. You’ll get a good idea of how your code benchmarks against industry standards. - Ruby on Rails, React, Javascript, Swift iOS" />
+<link rel="canonical" href="https://redant.com.au/ruby-on-rails-code-review/" />
+<meta property="og:url" content="https://redant.com.au/ruby-on-rails-code-review/" />
+<meta property="og:site_name" content="Red Ant" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Code review and checkup" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"We perform an expert review of your code for security issues, performance problems and a quality analysis on your Ruby on Rails. You’ll get a good idea of how your code benchmarks against industry standards. - Ruby on Rails, React, Javascript, Swift iOS","headline":"Code review and checkup","url":"https://redant.com.au/ruby-on-rails-code-review/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/bundle/application.css" />
+  <script src="/assets/bundle/application.js"></script>
+  <script src="https://kit.fontawesome.com/c0cec62a8d.js" crossorigin="anonymous"></script>
+  <script>
+    if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+      document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+    }
+  </script>
+  
+    <style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+  var gtmId = window.location.host.includes("redant.com.au")
+    ? "GTM-P7QNBDH"
+    : "GTM-N3CM249";
+
+  // Google Optimize page hiding snippet
+  (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+  })(window,document.documentElement,'async-hide','dataLayer',500,{[gtmId]:true});
+
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',gtmId);
+</script>
+
+  
+</head>
+
+  <body class="">
+    <div class="main-layout default-layout">
+      <div
+  data-controller="nav reveal normalise-height"
+  data-reveal-hidden-class="open"
+  data-action="normalise:height->nav#setHeight">
+  <div class="nav-container" data-normalise-height-target="item">
+    
+      <div class="bg-dark text-white text-center p-2">
+        <strong>A new way of working with us!</strong>
+        Low monthly fixed cost. Access our team on demand to help you scale.
+        <a href="/on-demand/" class="fw-bold ms-2">More info</a>
+      </div>
+    
+    
+    <nav class="navbar nav-overlay" data-reveal-target="item">
+    
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between">
+            <a href="/" class="navbar-brand">
+              <img
+                class="logo"
+                src="/assets/images/logo.svg"
+                alt="Red Ant logo"
+              />
+            </a>
+            <div class="d-flex justify-content-end align-items-center w-100">
+              <div class="d-none d-lg-block">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a href="/get-started/" data-nav-target="item" class="nav-link">
+                      Get started
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/on-demand/" data-nav-target="item" class="nav-link">
+                      On Demand
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/about/" data-nav-target="item" class="nav-link">
+                      About us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio/" data-nav-target="item" class="nav-link">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/technology/" data-nav-target="item" class="nav-link">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blog/" data-nav-target="item" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact-us/" data-nav-target="item" class="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-link d-block d-lg-none nav-toggle-icon"
+                data-action="click->reveal#toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container nav-links mx-4 mx-md-auto">
+        <ul class="links">
+          <li>
+            <a href="/" data-nav-target="item">Home</a>
+          </li>
+          <li>
+            <a href="/get-started/" data-nav-target="item">Get started</a>
+          </li>
+          
+          <li>
+            <a href="/on-demand/" data-nav-target="item">On Demand</a>
+          </li>
+          
+          <li>
+            <a href="/about/" data-nav-target="item">About us</a>
+          </li>
+          <li>
+            <a href="/portfolio/" data-nav-target="item">Portfolio</a>
+          </li>
+          <li>
+            <a href="/technology/" data-nav-target="item">Technology</a>
+          </li>
+          <li>
+            <a href="/blog/" data-nav-target="item">Blog</a>
+          </li>
+          <li>
+            <a href="/contact-us/" data-nav-target="item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+      <header
+  id="section-code-review-hero"
+  class="section hero bg-gray-light default-padding"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1 class="mb-4">
+          Code
+          <span class="d-block text-green-dark">Review</span>
+          <span class="d-block text-green">and Checkup</span>
+        </h1>
+
+        <p class="subheading-small">
+          Just like checking your own health, it is useful to get your code
+          reviewed and checked out by a different set of eyes. We can give you a
+          better idea of the good and the bad, and help you understand technical
+          debt.
+        </p>
+
+        <p class="subheading-small">
+          We'll perform an expert review of your code for security issues,
+          performance problems and a quality analysis. You’ll get a good idea of
+          how your code benchmarks against industry standards.
+        </p>
+        <a class="btn btn-lg btn-green intercom-launcher rounded-pill mt-4">
+          Let’s start now
+        </a
+        >
+      </div>
+      <div class="col-sm-6 d-flex justify-content-center align-items-center">
+        <img
+          class="img-fluid"
+          src="/assets/images/illustration-services-1.png"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="code-review-questions" class="default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 dashed dashed-green">
+        <h2 class="mb-4 h3">Common questions people want answers to</h2>
+        <div class="row">
+          <div class="col-md-6 dashed dashed-green">
+            <p class="mb-4">
+              How good/reliable is the code we already have?
+            </p>
+          </div>
+          <div class="col-md-6 dashed dashed-green">
+            <p class="mb-4">
+              Is it ready to go live?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 dashed dashed-green">
+            <p class="mb-4">
+              Have we made the right technology choice?
+            </p>
+          </div>
+          <div class="col-md-6 dashed dashed-green">
+            <p class="mb-4">
+              What are my options from here?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 dashed dashed-green">
+            <p class="mb-4">
+              We keep on having this issue with X and Y. Are these resolved or
+              do you think they’ll get worse?
+            </p>
+          </div>
+          <div class="col-md-6 dashed dashed-green">
+            <p class="mb-4">
+              We have this code and our developer thinks it is fantastic, but it
+              keeps on breaking. Why? Is it good or bad?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="code-review-options" class="default-padding bg-gray-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="h1">Get started with us now!</h2>
+      </div>
+      <div class="col-sm-4 mb-5 d-flex align-items-stretch">
+        <section class="card w-100 card--review card--level1">
+          <div class="card-header text-center border-bottom-0">
+            <h3 class="mb-0 card-title">Project Review</h3>
+          </div>
+          <div
+            class="card-body d-flex align-items-start flex-column dashed-list dashed-green"
+          >
+            <ul>
+              <li class="mb-3">Review progress and team</li>
+              <li class="mb-3">
+                Quick review of areas such as tests and architecture
+              </li>
+              <li class="mb-3">
+                Provide analysis and options based on experience
+              </li>
+              <li class="mb-3">Phone or hangout to run through</li>
+            </ul>
+          </div>
+          <div class="card-footer text-center">
+            <a class="intercom-launcher btn btn-md btn-green rounded-pill py-3">
+              Book now
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm-4 mb-5 d-flex align-items-stretch">
+        <section class="card card--review card--level2 w-100">
+          <div class="card-header text-center border-bottom-0">
+            <h3 class="mb-0 card-title">Product Roadmap</h3>
+          </div>
+          <div
+            class="card-body d-flex align-items-start flex-column dashed-list dashed-green"
+          >
+            <ul>
+              <li class="mb-3">
+                Review of Code, setup and automated test analysis of one repo
+              </li>
+              <li class="mb-3">
+                Review your development progress, and road map going forward
+              </li>
+              <li class="mb-3">
+                Report + chat (phone or hangouts)
+                <ul class="">
+                  <li class="mb-3">Architecture</li>
+                  <li class="mb-3">Security</li>
+                  <li class="mb-3">Best practices</li>
+                  <li class="mb-3">Tech debt</li>
+                  <li class="mb-3">Test coverage & reliability</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer text-center">
+            <a class="intercom-launcher btn btn-md btn-green rounded-pill py-3">
+              Book now
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm-4 mb-5 d-flex align-items-stretch">
+        <section class="card card--review  card--level3 w-100">
+          <div class="card-header text-center border-bottom-0">
+            <h3 class="mb-0 card-title">Agile Sprint Plan</h3>
+          </div>
+          <div
+            class="card-body d-flex align-items-start flex-column dashed-list dashed-green"
+          >
+            <ul>
+              <li class="mb-3">A bigger version of Standard Code Review</li>
+              <li class="mb-3">
+                Depending on app setup, there may be several different areas of
+                the app we’ll look at in detail such as infrastructure
+              </li>
+              <li class="mb-3">Review application performance</li>
+              <li class="mb-3">Review logs, for errors</li>
+              <li class="mb-3">Report + Meeting (in person or phone)</li>
+            </ul>
+          </div>
+          <div class="card-footer text-center">
+            <a class="intercom-launcher btn btn-md btn-green rounded-pill py-3">
+              Book now
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  id="our-clients"
+  data-ga-trigger="visibility"
+  class="our-clients section text-center default-padding"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>We are 100% Aussie Team</h3>
+        <p class="mt-2 mb-5">Our clients</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img
+          class="d-md-block d-none img-fluid"
+          src="/assets/images/client-logo-desktop.png"
+          alt="Red Ant clients"
+        />
+        <img
+          class="d-md-none img-fluid"
+          src="/assets/images/client-logo-mobile.png"
+          alt="Red Ant clients"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  id="section-testimonials"
+  class="default-padding bg-green"
+  data-ga-trigger="visibility">
+  <div class="container">
+    <h3 class="ps-3">
+      Testimonials
+    </h3>
+    <div
+      id="testimonial-carousel"
+      class="carousel carousel-dark slide col-lg-9"
+      data-bs-ride="carousel">
+      <div class="card bg-transparent h-100">
+        <div class="card-body pb-0">
+          <div class="carousel-inner">
+            
+              <div
+                class="carousel-item active"
+                data-carousel-target="item">
+                <p>"Working with Red Ant was a real pleasure. They developed a deep understanding of our business and came up with great strategic and tactical ideas for growth"</p>
+                <p class="small">Peter Mercer</p>
+              </div>
+            
+              <div
+                class="carousel-item "
+                data-carousel-target="item">
+                <p>"I've worked with Red Ant for nearly 20 years. The best development agency in Sydney, one that won't let you down."</p>
+                <p class="small">Binh Wilson</p>
+              </div>
+            
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <div class="carousel-indicators position-relative justify-content-start m-0">
+            
+              <button
+                type="button"
+                class="active"
+                aria-current="active"
+                data-bs-target="#testimonial-carousel"
+                data-bs-slide-to="0"
+                aria-label="Peter Mercer">
+             </button>
+            
+              <button
+                type="button"
+                class=""
+                aria-current=""
+                data-bs-target="#testimonial-carousel"
+                data-bs-slide-to="1"
+                aria-label="Binh Wilson">
+             </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="faqs" data-ga-trigger="visibility" class="faqs default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 class="mb-4">Frequently Asked Questions</h3>
+      </div>
+    </div>
+    <div class="row mt-3d">
+      <div class="col">
+        <div class="accordion" id="review-faqs">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">
+                <button
+                  class="btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a1"
+                  aria-expanded="true"
+                  aria-controls="a1"
+                >
+                  Who does the review?
+                </button>
+              </h3>
+            </div>
+            <div id="a1" class="collapse" data-parent="#review-faqs">
+              <div class="card-body border-0">
+                <p>
+                  One of our experienced engineers will conduct the review. The
+                  findings are then peer reviewed by a second engineer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">
+                <button
+                  class="btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a2"
+                  aria-expanded="true"
+                  aria-controls="a2"
+                >
+                  What do we check?
+                </button>
+              </h3>
+            </div>
+            <div id="a2" class="collapse" data-parent="#review-faqs">
+              <div class="card-body border-0">
+                <p>
+                  Everything to do with your code. We’ll look for problems -
+                  like repeating lines of code that could be a single function.
+                  Or unnecessary complexity. Or bits of code that never actually
+                  get called. We’ll look for strengths - what we think is done
+                  well or documented clearly.
+                </p>
+                <p>
+                  An in-depth code review can also include User Experience
+                  Design, Product Development, Payment flow. Just ask us.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">
+                <button
+                  class="btn collapsed "
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a4"
+                  aria-expanded="true"
+                  aria-controls="a4"
+                >
+                  What’s the cost of a code review?
+                </button>
+              </h3>
+            </div>
+            <div id="a4" class="collapse" data-parent="#review-faqs">
+              <div class="card-body border-0">
+                <p>
+                  We offer 3 levels of code review depending upon your needs and
+                  size of code base:
+                </p>
+                <ul>
+                  <li>A free Project review</li>
+                  <li>A $660 standard code review cover a single code base</li>
+                  <li>
+                    A detailed in-depth code review for more complex code bases.
+                    These cost is estimated based on your App and needs for
+                    review.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">
+                <button
+                  class="btn  collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a5"
+                  aria-expanded="true"
+                  aria-controls="a5"
+                >
+                  What’s involved?
+                </button>
+              </h3>
+            </div>
+            <div id="a5" class="collapse" data-parent="#review-faqs">
+              <div class="card-body border-0">
+                <p>
+                  Once we have access to your code based via GitHub we will run
+                  a series of standardised tests to check performance, security
+                  penetration and code analysis. At the same time, our senior
+                  developers will analyse the code code for it’s strengths and
+                  weaknesses. We’ll perform an expert review of your code for
+                  security issues, performance problems and a quality analysis.
+                  You’ll get a good idea of how your code benchmarks against
+                  industry standards and how to prioritise remedial issues to
+                  move forward.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">
+                <button
+                  class="btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a6"
+                  aria-expanded="true"
+                  aria-controls="a6"
+                >
+                  My code development is critical to my business - can you sign
+                  a Non-disclosure Agreement ?
+                </button>
+              </h3>
+            </div>
+            <div id="a6" class="collapse" data-parent="#review-faqs">
+              <div class="card-body border-0">
+                <p>
+                  Yes. We like to sign a non-disclosure agreement (NDA) with all
+                  our clients. It’s just good business practice. We have deep
+                  experience in providing advice on pre-market applications and
+                  our team is ready to manage your application in confidence. We
+                  have a standard NDA we like to use but please contact us if
+                  you have a specific agreement you would like to use.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">
+                <button
+                  class="btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#a7"
+                  aria-expanded="true"
+                  aria-controls="a7"
+                >
+                  How to get started?
+                </button>
+              </h3>
+            </div>
+            <div id="a7" class="collapse" data-parent="#review-faqs">
+              <div class="card-body border-0">
+                <p>
+                  Select the right level of code review for your needs and
+                  complete the form. If you are unsure please
+                  <a class="intercom-launcher">contact us</a> directly and we can talk
+                  through your needs.
+                </p>
+                <p>
+                  Once you have submitted a code-review form we will be in touch
+                  within 24 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <footer class="footer py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-6 col-lg-4 order-1">
+        <p>
+          <a href="mailto:info@redant.com.au">info@redant.com.au</a>
+          <br>
+          <a href="tel:+61292678300">+61 2 9267 8300</a>
+          <br>
+          <a href="/privacy-policy">Red Ant Privacy Policy</a>
+        </p>
+      </div>
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 col-lg-4 order-3 order-lg-2">
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
+            The most mundane Twitter, ever
+          </a>
+          <br>
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
+            Stalk us on Linkedin
+          </a>
+        </p>
+      </div>
+
+      <div class="col-6 col-lg-4 order-2 order-lg-3">
+        <p>
+          PO Box 250, Vaucluse Sydney NSW 2030 Australia
+          <br>
+          ABN 87 081 223 252
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col px-lg-5 text-center link-list">
+        <a href="/jobs/" class="pri me-2">Careers</a>
+        <span> | </span>
+        <a href="/blog/" class="mx-2">Blog</a>
+        <span> | </span>
+        <a href="/automated-testing/" class="mx-2">Automated Testing</a>
+        <span> | </span>
+        <a href="/mobile/" class="mx-2">Mobile</a>
+        <span> | </span>
+        <a href="/software-development/" class="mx-2">Ruby Development</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Our Work</a>
+        <span> | </span>
+        <a href="/red-ant-stuff/" class="mx-2">Red Ant</a>
+        <span> | </span>
+        <a href="/ruby-on-rails-devops/" class="mx-2">Devops</a>
+        <span> | </span>
+        <a href="/ruby-on-rails/" class="mx-2">Ruby on Rails developer</a>
+        <span> | </span>
+        <a href="/strategy/" class="mx-2">Strategy</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Work updates</a>
+        <span> | </span>
+        <a href="/tool-reviews/" class="mx-2">Tool Reviews</a>
+        <span> | </span>
+        <a href="/portfolio/" class="mx-2">Our Portfolio</a>
+        <span> | </span>
+        <a href="/about/" class="mx-2">About Red Ant</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        &copy; Red Ant 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "fd4z6tu3",
+    custom_launcher_selector:'.intercom-launcher'
+  };
+</script>
+
+<script>
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/fd4z6tu3'
+  (function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic("reattach_activator");
+      ic("update", w.intercomSettings);
+    } else {
+      var d = document;
+      var i = function () {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function (args) {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.intercom.io/widget/fd4z6tu3";
+        var x = d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      if (document.readyState === "complete") {
+        l();
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", l);
+      } else {
+        w.addEventListener("load", l, false);
+      }
+    }
+  })();
+</script>
+
+      <div class="slidedown-container">
+  <div class="container py-5 text-center">
+    <p>Let's build something awesome together</p>
+    <a href="/hire-us/" class="display-2 text-hover-underline"><strong>Hire us</strong></a>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

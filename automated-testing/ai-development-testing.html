@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The hard thing about AI isn’t making it - it’s testing that it works | Red Ant</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="The hard thing about AI isn’t making it - it’s testing that it works" />
+<meta name="author" content="Ben Still" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AI and Machine Learning are amazing technologies. But in some cases it can be hard to know when they are actually working" />
+<meta property="og:description" content="AI and Machine Learning are amazing technologies. But in some cases it can be hard to know when they are actually working" />
+<link rel="canonical" href="https://redant.com.au/automated-testing/ai-development-testing" />
+<meta property="og:url" content="https://redant.com.au/automated-testing/ai-development-testing" />
+<meta property="og:site_name" content="Red Ant" />
+<meta property="og:image" content="https://redant.com.au/assets/uploads/2018/extra_large-1498661132-cover-image.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-26T02:31:36+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://redant.com.au/assets/uploads/2018/extra_large-1498661132-cover-image.jpg" />
+<meta property="twitter:title" content="The hard thing about AI isn’t making it - it’s testing that it works" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Still"},"dateModified":"2018-11-26T02:31:36+00:00","datePublished":"2018-11-26T02:31:36+00:00","description":"AI and Machine Learning are amazing technologies. But in some cases it can be hard to know when they are actually working","headline":"The hard thing about AI isn’t making it - it’s testing that it works","image":"https://redant.com.au/assets/uploads/2018/extra_large-1498661132-cover-image.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://redant.com.au/automated-testing/ai-development-testing"},"url":"https://redant.com.au/automated-testing/ai-development-testing"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/bundle/application.css" />
+  <script src="/assets/bundle/application.js"></script>
+  <script src="https://kit.fontawesome.com/c0cec62a8d.js" crossorigin="anonymous"></script>
+  <script>
+    if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+      document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+    }
+  </script>
+  
+    <style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+  var gtmId = window.location.host.includes("redant.com.au")
+    ? "GTM-P7QNBDH"
+    : "GTM-N3CM249";
+
+  // Google Optimize page hiding snippet
+  (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+  })(window,document.documentElement,'async-hide','dataLayer',500,{[gtmId]:true});
+
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',gtmId);
+</script>
+
+  
+</head>
+
+  <body class="">
+    <div class="main-layout">
+      <div
+  data-controller="nav reveal normalise-height"
+  data-reveal-hidden-class="open"
+  data-action="normalise:height->nav#setHeight">
+  <div class="nav-container" data-normalise-height-target="item">
+    
+      <div class="bg-dark text-white text-center p-2">
+        <strong>A new way of working with us!</strong>
+        Low monthly fixed cost. Access our team on demand to help you scale.
+        <a href="/on-demand/" class="fw-bold ms-2">More info</a>
+      </div>
+    
+    
+    <nav class="navbar nav-overlay" data-reveal-target="item">
+    
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between">
+            <a href="/" class="navbar-brand">
+              <img
+                class="logo"
+                src="/assets/images/logo.svg"
+                alt="Red Ant logo"
+              />
+            </a>
+            <div class="d-flex justify-content-end align-items-center w-100">
+              <div class="d-none d-lg-block">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a href="/get-started/" data-nav-target="item" class="nav-link">
+                      Get started
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/on-demand/" data-nav-target="item" class="nav-link">
+                      On Demand
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/about/" data-nav-target="item" class="nav-link">
+                      About us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio/" data-nav-target="item" class="nav-link">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/technology/" data-nav-target="item" class="nav-link">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blog/" data-nav-target="item" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact-us/" data-nav-target="item" class="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-link d-block d-lg-none nav-toggle-icon"
+                data-action="click->reveal#toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container nav-links mx-4 mx-md-auto">
+        <ul class="links">
+          <li>
+            <a href="/" data-nav-target="item">Home</a>
+          </li>
+          <li>
+            <a href="/get-started/" data-nav-target="item">Get started</a>
+          </li>
+          
+          <li>
+            <a href="/on-demand/" data-nav-target="item">On Demand</a>
+          </li>
+          
+          <li>
+            <a href="/about/" data-nav-target="item">About us</a>
+          </li>
+          <li>
+            <a href="/portfolio/" data-nav-target="item">Portfolio</a>
+          </li>
+          <li>
+            <a href="/technology/" data-nav-target="item">Technology</a>
+          </li>
+          <li>
+            <a href="/blog/" data-nav-target="item">Blog</a>
+          </li>
+          <li>
+            <a href="/contact-us/" data-nav-target="item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+      <section class="post-content pt-3 pb-5 text-md">
+        <div class="container">
+          <div class="row mb-sm-4">
+            <div class="col-12">
+              <div class="mb-3 pb-sm-5"><div id="breadcrumbs" class="text-capitalize mt-sm-5">
+  
+  <a href="/">Home</a>
+    /
+  <a
+    href="/automated-testing/"
+    >Automated testing</a
+  >
+     / Ai development testing  
+</div>
+</div>
+              <h1 class="pb-2">The hard thing about AI isn't making it - it's testing that it works</h1>
+              <hr class="dash" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 order-2 order-sm-1">
+              <img
+                class="img-fluid mb-4"
+                src="/assets/uploads/2018/extra_large-1498661132-cover-image.jpg"
+                alt="The hard thing about AI isn't making it - it's testing that it works"
+              />
+              <p>Before you start pitching to your investors about how amazing the world will be once you get some AI in your product, spare a thought for the engineering team behind Tay, <a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">the Microsoft AI chatbot</a>.</p>
+
+<blockquote>
+  <p>Unfortunately, the conversations didn’t stay playful for long. Pretty soon after Tay launched, people starting tweeting the bot with all sorts of misogynistic, racist, and Donald Trumpist remarks. And Tay — being essentially a robot parrot with an internet connection — started repeating these sentiments back to users</p>
+</blockquote>
+
+<p>AI/ML technology is amazing, and it’s changing and evolving at a rapid pace. It’s gone from a hard, obscure technology to a simple service that you can quickly integrate into your product.</p>
+
+<p>But it can often be quite hard to get a handle on how well it’s working. Or if it is actually working at all. In a recent project, we decided to use AI to help us <a href="/portfolio/real-pet-matcher/">choose a good rescue pet</a> to adopt. Basically a recommendation engine that was driven by which animals you liked or didn’t.</p>
+
+<p>So if you looked at this dog</p>
+
+<h1>🐕</h1>
+
+<p>and liked it, should we show you</p>
+
+<h1 id="-1">🐩</h1>
+
+<p>or</p>
+
+<h1 id="-2">🐈</h1>
+
+<p>We used image analysis AI to generate more information about each animal. For example we already knew from the rescue shelter data whether the animal was a dog or a cat. But image analysis helped us understand if it had black and white spots, or was mainly brown, or had short hair. We used text analysis AI to better understand what was written about the animal. For example rescue pets can be rescued by one shelter, but fostered somewhere else. Which would kind of suck if you turned up to the shelter expecting to introduce your kids to the pet of their dreams, only to discover they were located somewhere else. That would be a long trip home.</p>
+
+<p>That all worked. The problem we hit was around recommendations. What to show you next. And specifically around testing this functionality.</p>
+
+<p>To explain: when we write code, it’s good practice to also write some test code to check that. So say the feature you code is a doorbell. Your test might be:</p>
+
+<blockquote>
+  <p><em>when I press the red button with my finger, I should hear a chime</em></p>
+
+  <p><em>when I press the side with my finger, I should not hear a chime</em></p>
+</blockquote>
+
+<p>These tests get fed into Continuous Integration, and get run each time a developer makes changes or deploys code. They can even be run in the live environment to monitor ongoing performance. That’s how we can be certain that our code is working as planned.</p>
+
+<p>But how do you create a test to see if the recommendation you’ve made is the right one? We’ve asked the AI engine</p>
+
+<p><em>“Hey - what should we recommend now?”</em></p>
+
+<p>and the AI has replied</p>
+
+<p><em>“42”</em>.</p>
+
+<p>It can be hard to understand if pet id#42 is in fact the right pet to show for this person or not.</p>
+
+<p>ML works really well in some situations. Say you needed to make a recommendation on what I should watch next on Netflix. You could test to see if I started watching the recommended show. Even better would be to test if I watched to the end. Gave it a thumbs up.</p>
+
+<p>To explain why this works well:</p>
+
+<ol>
+  <li>Netflix has a massive data set of both users and content</li>
+  <li>A user on one side of the country is just as interested in something as on the other</li>
+  <li>Neither the users nor the actual content changes that much</li>
+  <li>There are clear signals by the user as to whether the recommendation was suitable or not</li>
+  <li>Large external references such as IMDB and Rotten Tomatoes</li>
+</ol>
+
+<p>The data set we were working with was quite different</p>
+
+<ul>
+  <li>The data changed a lot - new pets (unfortunately) come into the system all the time.</li>
+  <li>The entire set churns every few months</li>
+  <li>the data set itself (pets available) is a few thousand. Once we apply preferences (the kind of pet you’re after) and location (only show pets in shelters close to you) it gets much smaller.</li>
+  <li>Very difficult to set success criteria. There is no clear data about whether a user actually went on to adopt pet#42. What if they did and it didn’t work out (the recommendation was bad)?</li>
+</ul>
+
+<p>The problem we faced was not knowing if our fancy AI based Machine Learning <insert trendy="" keyword="" here=""> recommendation engine was actually making any difference at all. How different were the results it recommended vs using simple random pick code?</insert></p>
+
+<p>Before you rush out and AI all the Things, get some inspiration here</p>
+
+<p><a href="https://www.iflscience.com/technology/ai-trying-to-design-inspirational-posters-goes-horribly-and-hilariously-wrong/" title="https://www.iflscience.com/technology/ai-trying-to-design-inspirational-posters-goes-horribly-and-hilariously-wrong/">https://www.iflscience.com/technology/ai-trying-to-design-inspirational-posters-goes-horribly-and-hilariously-wrong/</a></p>
+
+<p>and here</p>
+
+<p><a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml" title="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml">https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml</a></p>
+
+            </div>
+            <div class="col-md-4 order-1 order-sm-2">
+              
+              <div class="post-detail-container section-border">
+                <p>AI and Machine Learning are amazing technologies. But in some cases it can be hard to know when they are actually working</p>
+              </div>
+              
+              
+<div data-controller="modal-carousel">
+  
+
+  <div
+    id="gallery-modal"
+    class="modal fade"
+    role="dialog"
+    tabindex="-1"
+    aria-labelledby="gallery-modal"
+    aria-hidden="true"
+    data-modal-carousel-target="modal">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close btn-close-white text-lg pe-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-content">
+        <div
+          id="gallery-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-modal-carousel-target="carousel">
+          <div class="carousel-inner">
+            
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5 d-none d-sm-block">
+        <div class="container" data-controller="fake-news"></div>
+      </section>
+      <footer class="footer py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-6 col-lg-4 order-1">
+        <p>
+          <a href="mailto:info@redant.com.au">info@redant.com.au</a>
+          <br>
+          <a href="tel:+61292678300">+61 2 9267 8300</a>
+          <br>
+          <a href="/privacy-policy">Red Ant Privacy Policy</a>
+        </p>
+      </div>
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 col-lg-4 order-3 order-lg-2">
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
+            The most mundane Twitter, ever
+          </a>
+          <br>
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
+            Stalk us on Linkedin
+          </a>
+        </p>
+      </div>
+
+      <div class="col-6 col-lg-4 order-2 order-lg-3">
+        <p>
+          PO Box 250, Vaucluse Sydney NSW 2030 Australia
+          <br>
+          ABN 87 081 223 252
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col px-lg-5 text-center link-list">
+        <a href="/jobs/" class="pri me-2">Careers</a>
+        <span> | </span>
+        <a href="/blog/" class="mx-2">Blog</a>
+        <span> | </span>
+        <a href="/automated-testing/" class="mx-2">Automated Testing</a>
+        <span> | </span>
+        <a href="/mobile/" class="mx-2">Mobile</a>
+        <span> | </span>
+        <a href="/software-development/" class="mx-2">Ruby Development</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Our Work</a>
+        <span> | </span>
+        <a href="/red-ant-stuff/" class="mx-2">Red Ant</a>
+        <span> | </span>
+        <a href="/ruby-on-rails-devops/" class="mx-2">Devops</a>
+        <span> | </span>
+        <a href="/ruby-on-rails/" class="mx-2">Ruby on Rails developer</a>
+        <span> | </span>
+        <a href="/strategy/" class="mx-2">Strategy</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Work updates</a>
+        <span> | </span>
+        <a href="/tool-reviews/" class="mx-2">Tool Reviews</a>
+        <span> | </span>
+        <a href="/portfolio/" class="mx-2">Our Portfolio</a>
+        <span> | </span>
+        <a href="/about/" class="mx-2">About Red Ant</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        &copy; Red Ant 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "fd4z6tu3",
+    custom_launcher_selector:'.intercom-launcher'
+  };
+</script>
+
+<script>
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/fd4z6tu3'
+  (function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic("reattach_activator");
+      ic("update", w.intercomSettings);
+    } else {
+      var d = document;
+      var i = function () {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function (args) {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.intercom.io/widget/fd4z6tu3";
+        var x = d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      if (document.readyState === "complete") {
+        l();
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", l);
+      } else {
+        w.addEventListener("load", l, false);
+      }
+    }
+  })();
+</script>
+
+    </div>
+  </body>
+</html>

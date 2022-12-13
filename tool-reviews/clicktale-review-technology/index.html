@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Clicktale Review - how the technology works and why it didn’t for us | Red Ant</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Clicktale Review - how the technology works and why it didn’t for us" />
+<meta name="author" content="Ben Still" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Clicktale review which looks at how the technology works and some real world issues that you might face when implementing Clicktale" />
+<meta property="og:description" content="Clicktale review which looks at how the technology works and some real world issues that you might face when implementing Clicktale" />
+<link rel="canonical" href="https://redant.com.au/tool-reviews/clicktale-review-technology/" />
+<meta property="og:url" content="https://redant.com.au/tool-reviews/clicktale-review-technology/" />
+<meta property="og:site_name" content="Red Ant" />
+<meta property="og:image" content="https://redant.com.au/assets/uploads/2012/clicktale.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-01-31T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://redant.com.au/assets/uploads/2012/clicktale.png" />
+<meta property="twitter:title" content="Clicktale Review - how the technology works and why it didn’t for us" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Still"},"dateModified":"2012-01-31T00:00:00+00:00","datePublished":"2012-01-31T00:00:00+00:00","description":"Clicktale review which looks at how the technology works and some real world issues that you might face when implementing Clicktale","headline":"Clicktale Review - how the technology works and why it didn’t for us","image":"https://redant.com.au/assets/uploads/2012/clicktale.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://redant.com.au/tool-reviews/clicktale-review-technology/"},"url":"https://redant.com.au/tool-reviews/clicktale-review-technology/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/bundle/application.css" />
+  <script src="/assets/bundle/application.js"></script>
+  <script src="https://kit.fontawesome.com/c0cec62a8d.js" crossorigin="anonymous"></script>
+  <script>
+    if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+      document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+    }
+  </script>
+  
+    <style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+  var gtmId = window.location.host.includes("redant.com.au")
+    ? "GTM-P7QNBDH"
+    : "GTM-N3CM249";
+
+  // Google Optimize page hiding snippet
+  (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+  })(window,document.documentElement,'async-hide','dataLayer',500,{[gtmId]:true});
+
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',gtmId);
+</script>
+
+  
+</head>
+
+  <body class="">
+    <div class="main-layout">
+      <div
+  data-controller="nav reveal normalise-height"
+  data-reveal-hidden-class="open"
+  data-action="normalise:height->nav#setHeight">
+  <div class="nav-container" data-normalise-height-target="item">
+    
+      <div class="bg-dark text-white text-center p-2">
+        <strong>A new way of working with us!</strong>
+        Low monthly fixed cost. Access our team on demand to help you scale.
+        <a href="/on-demand/" class="fw-bold ms-2">More info</a>
+      </div>
+    
+    
+    <nav class="navbar nav-overlay" data-reveal-target="item">
+    
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between">
+            <a href="/" class="navbar-brand">
+              <img
+                class="logo"
+                src="/assets/images/logo.svg"
+                alt="Red Ant logo"
+              />
+            </a>
+            <div class="d-flex justify-content-end align-items-center w-100">
+              <div class="d-none d-lg-block">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a href="/get-started/" data-nav-target="item" class="nav-link">
+                      Get started
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/on-demand/" data-nav-target="item" class="nav-link">
+                      On Demand
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/about/" data-nav-target="item" class="nav-link">
+                      About us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio/" data-nav-target="item" class="nav-link">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/technology/" data-nav-target="item" class="nav-link">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blog/" data-nav-target="item" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact-us/" data-nav-target="item" class="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-link d-block d-lg-none nav-toggle-icon"
+                data-action="click->reveal#toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container nav-links mx-4 mx-md-auto">
+        <ul class="links">
+          <li>
+            <a href="/" data-nav-target="item">Home</a>
+          </li>
+          <li>
+            <a href="/get-started/" data-nav-target="item">Get started</a>
+          </li>
+          
+          <li>
+            <a href="/on-demand/" data-nav-target="item">On Demand</a>
+          </li>
+          
+          <li>
+            <a href="/about/" data-nav-target="item">About us</a>
+          </li>
+          <li>
+            <a href="/portfolio/" data-nav-target="item">Portfolio</a>
+          </li>
+          <li>
+            <a href="/technology/" data-nav-target="item">Technology</a>
+          </li>
+          <li>
+            <a href="/blog/" data-nav-target="item">Blog</a>
+          </li>
+          <li>
+            <a href="/contact-us/" data-nav-target="item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+      <section class="post-content pt-3 pb-5 text-md">
+        <div class="container">
+          <div class="row mb-sm-4">
+            <div class="col-12">
+              <div class="mb-3 pb-sm-5"><div id="breadcrumbs" class="text-capitalize mt-sm-5">
+  
+  <a href="/">Home</a>
+    /
+  <a
+    href="/tool-reviews/"
+    >Tool reviews</a
+  >
+     / Clicktale review technology  
+</div>
+</div>
+              <h1 class="pb-2">Clicktale Review - how the technology works and why it didn't for us</h1>
+              <hr class="dash" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 order-2 order-sm-1">
+              <img
+                class="img-fluid mb-4"
+                src="/assets/uploads/2012/clicktale.png"
+                alt="Clicktale Review - how the technology works and why it didn't for us"
+              />
+              <p>This Clicktale review is completely independent. We’ve used it on several projects where we wanted to better understand user interactions. In doing this we had a chance to look at both the way it collects data and how it reports this information. We’ve also had the opportunity to compare the results against other other software tracking tools, as well as other approaches to the same task such as physical eye tracking. We started using Clicktale based on many of the positive reviews we’d read, but on further investigation many of these were paid reviews (via affiliate commission).</p>
+
+<p>To summarise our experience, we were quite disappointed with the results. The <a href="http://www.clicktale.com">Clicktale</a> reports seem to illustrate certain behaviours and user problems, but after some investigation we realised these weren’t problems.</p>
+
+<p>Users were in fact behaving very differently to what this tool was telling us.</p>
+
+<p>We wasted a lot of time investigating issues that we couldn’t reproduce, and worrying about defects which weren’t there.</p>
+
+<blockquote>
+  <p>Our problem was that we realised that some of the Clicktale data was wrong but the trouble was we didn’t know which bit.</p>
+</blockquote>
+
+<p>Clicktale seems good for creating impressive looking but superficial “feel good” reports (look - users are using our web site!). The visitor recordings and heatmaps make for great eye candy to flash in front of a bewildered client or manager. Clicktale really blow away their competition both in terms of generating pretty results, and also explaining this well on their website. The site also explains how cheaper it is to use Clicktale vs Eye Tracking and actual user testing, and also state that the results will be close enough to be the same.</p>
+
+<p>Where things fell apart for us was when we tried to use Clicktale to dig deeper. We wanted to analyse how people went through a series of forms, what they were interested in, and gain better insight into where people were getting confused or dropping off.</p>
+
+<p>Clicktales main premise is that it will record what someone has done on your site and then show you a video style playback of what occurred. You can watch what they do and understand how real users behave. This information can also be summarised in a heatmap, which shows where users have clicked and pointed.</p>
+
+<p>The problem is that there are a few technical issues with accurately recording users behaviour, which Clicktale hasn’t really solved.</p>
+
+<p>Here’s a simple example, using the <a href="https://twitter.com/signup">Twitter join form</a> as an example. The first screencast is what a user actually sees:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TxLYUw2PVWI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" layout="responsive"></iframe>
+
+<p>This is (in my humble opinion) a pretty nice join form. It gives lots of clear feedback and helpful suggestions. The form uses Ajax to check if that username is available or in the right format, plus comes up with some helpful suggestions. In this example user tries a few and then chooses one of the suggested names.</p>
+
+<p>This is how the same user behaviour on this form would look like via Clicktale. Note the absence of any kind of prompts or help text, and the pauses while the user reads the validation message (which isn’t visible).</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PocHJYNAR7s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" layout="responsive"></iframe>
+
+<p>If you were viewing this playback to get a sense of how the form was being used, you might conclude that the user is having real trouble with filling it in. Not only that, but none of the prompts are appearing and the form looks totally broken. Have we tested in all browsers? Is this a problem that occurs under load? What is this user doing differently to all our test results?</p>
+
+<p>The reason for this discrepancy is that Clicktale isn’t actually taking a screencast of what the user is doing. Although you could be forgiven for thinking this - it is how it is <a href="http://www.clicktale.com/product/visitor_recordings">explained quite clearly on their site</a>.</p>
+
+<blockquote>
+  <p>See absolutely everything visitors do on your webpage. Watch recordings of your visitors full browsing sessions to discover exactly how they use your site. Its as if you’re looking over their shoulder!</p>
+</blockquote>
+
+<p>Using Clicktale is <strong>not</strong> like looking over their shoulder. Clicktale records mouse position every second or so and keyboard strokes. Then, in a separate process, a <a href="http://en.wikipedia.org/wiki/Web_crawler">Clicktale bot</a> visits your site and takes a screenshot of that page. The actual playback is an animation of this screenshot and an image of a mouse cursor moving over the top of it. Similarly the heatmap uses this screenshot.</p>
+
+<p>There are a few problems with this approach, but the primary one is that <strong>the screen that you’re seeing in the playback can be quite different to the one that your user just saw.</strong> For a site like this one (simple blog style site with static pages that are identical for every user) this approach works. If the site you’re testing has any features that change depending on what a user has done, it won’t.</p>
+
+<p>A few of the ways it can be different:</p>
+
+<ul>
+  <li><strong>Prompts or hints:</strong> if your site has forms with validation or prompts using javascript, these won’t appear (so like we did, you’ll think something has broken for that user when you see the replay)</li>
+  <li><strong>Conditional fields:</strong> (eg: if I have children, ask how many) if the form shows or hides questions based on what you’ve filled in this will seem like the logic doesn’t work</li>
+  <li><strong>Menus:</strong> your site might use menus that expand out from the top of the page. These won’t appear since they use javascript, and your user will look like they are clicking on whatever is directly below the top of the page- which can be misleading.</li>
+  <li><strong>AJAX:</strong> if the form uses Ajax to check something (eg: test if that username already exists), this won’t appear. So the user might be seeing a message, but when you’re looking over their shoulder with Clicktale, all you’ll see is a mysterious blank space and a pause. Or possibly a completely different screen.</li>
+  <li><strong>Prefilling some fields:</strong> if your form is prefilled based on information from a previous screen, this just won’t appear. In the <a href="http://twitter.com">Twitter example</a> , the user fills out name and email on the first page, and then goes to a signup page. Via Clicktale youll get the impression that somehow a user is able to submit the signup page without adding name and email</li>
+  <li><strong>POST forms:</strong> a form can use either POST or GET. POST is generally used for sensitive information like name, email etc, but Clicktale can only use GET. Clicktales (very lean) help document most helpfully suggests as a way of resolving this to simply convert your forms to GET (at which point I was thinking of a word beginning with F that I could tell them to put after get).</li>
+  <li><strong>Multiple step forms:</strong> you might have your form split over several pages, and POST information from one page to the next. This is pretty common, but it seems to completely confuse Clicktale and mouse tracking data from one page will appear on another</li>
+  <li><strong>Cookies:</strong> if your process uses cookies or session information, this won’t come through. Clicktale will show you a cookie-less version, which might be radically different to what your user was served.</li>
+</ul>
+
+<p>None of these are particularly obscure or unusual elements for a web site to have- in fact I’d be surprised if most sites other than a basic static brochureware site wouldn’t use at least a few of these.</p>
+
+<p>If it’s still unclear as to why this would be a problem, here is what I’d see if I used Clicktale to analyse how people are using the <a href="http://www.bookdepository.com/basket">Bookdepository checkout process</a>. As you can see the two screens are quite different. The Clicktale playback will still merrily animate a mouse cursor moving around, but as you can see the image would be completely wrong and misleading. Likewise for the various heatmaps and reports.</p>
+
+<p>What a real user sees:</p>
+
+<img src="/assets/uploads/2012/clicktale-basket.png" alt="clicktale-basket" height="461" width="610" />
+<p>and what you’ll see in the Clicktale report:</p>
+
+<img src="/assets/uploads/2012/clicktale-basket-none.png" alt="clicktale-basket-none" height="434" width="610" />
+<p>Which is puzzling, because on the Clicktale site there are a lot of testimonials gushing about this amazing insight into behaviour which improves shopping and conversions. I’m not really sure how many of these sites don’t use some sort of cookie or session information to facilitate a checkout process.</p>
+
+<p>OK, maybe Clicktale can provide insight in other ways like using the heatmaps to see what people are interested in. Again, we’ve been down the rabbit hole on this one, trying to solve problems that it turns out never actually existed.</p>
+
+<p>Heatmaps run into the same problem as the playback issue above - the screenshot in the background might not be what the user was looking at. You might notice a lot of heatmap activity around the top of your page. That might be people clicking around the header, or if you have a dropdown menu they might be clicking on the menu items. Or they might have been clicking on a message area or banner ad that isn’t in the screenshot.</p>
+
+<p>Now, I’ve always had a soft spot for a nice heatmap, but Clicktale ones have another problem - they’re not heatmaps of what people are looking at, they track where their mouses are pointing.</p>
+
+<p>The Clicktale blog assures us that this isn’t anything to worry about, since there is a very strong correlation between where a user looks and where they point their mouse (84-88). My bullshit detectors went off when I read that. Google pointed me to a few other posts that pointed out that the 88 is based on a misreading of the research, and the figure is more like 30. I’d be surprised if it was even as high as 30, and if you believe the 88% please contact me as I have a very interesting investment scheme in Nigeria that will make you very rich. I promise.</p>
+
+<p>Here’s a simple test: as you read this line of text, where is your mouse right now? Is it hovering over each word? I’m guessing not.</p>
+
+<p>Say we take the 30% number as a broad average, what these heatmaps are actually telling us is where people are <strong>not</strong> looking, most of the time. Try explaining that to your client or manager.</p>
+
+<blockquote>
+  <p>I’ve raised this discrepancy with Clicktale between the report they cite and what they write, asking for more clarification about exactly where the information comes from. The response was the data was from Google</p>
+</blockquote>
+
+<p>Ironically an instance where a user would look at where their mouse is would be as they are filling in a field or clicking a button. Typically things youd do when filling out a form (see issue above)</p>
+
+<p>Other issues we hit:</p>
+
+<ul>
+  <li><strong>privacy:</strong> this is essentially a <a href="http://en.wikipedia.org/wiki/Keystroke_logging">key stroke logger</a>. Yes, the same thing that evil hackers use to discover peoples passwords. Every key stroke is captured and stored in Clicktale. There is an option to hide data like credit cards, but from what we’ve been able to gather this doesn’t mean it isn’t collected, only that it can be hidden during playback. The data is still sent and stored. If people can buy things or submit sensitive information on your site, then it is worth understanding the implications of tracking and storing this kind of information (more <a href="http://chargify.com/blog/what-you-need-to-know-about-pci/">information on PCI here</a> ). At the very least you should adjust your site privacy policy and make sure you are covered- your lawyer may well have a hissy fit when you explain that all customer data is being copied to some 3rd party server.</li>
+  <li><strong>speed:</strong> remember that every additional tag you add slows your site down. Some tags are faster (eg: Google Analytics) than others. If you think asynch solves this you’re not getting the problem. Not only does it fire off some javascript each time, Clicktale has the added bonus of then triggering a bot visit. If speed is important, avoid sticking these tags everywhere.</li>
+  <li><strong>averages which aren’t:</strong> depending on the budget you’ve allocated, Clicktale will only record a certain number of visits a day. Once this runs out, the results won’t appear in your report. So if you’re trying to look at average behaviour, time of day may influence your findings.</li>
+  <li><strong>tracking where people click:</strong> there are lots of tools out there that do this pretty well. Google Analytics anyone?</li>
+</ul>
+
+<p>At the end of the day, Clicktale wasn’t really a great fit. Were trying a more pragmatic approach - solve real problems rather than using a tool to find problems. Some examples:</p>
+
+<ul>
+  <li>using <strong>Event tracking</strong> in Google Analytics to track behaviour in the areas that were interested in (a much lighter approach, tracking what we’re specifically interested in rather than the shotgun approach of recording everything)</li>
+  <li>develop scenarios or hypotheses for what a problem might be, and then ways we could work out if it actually is occurring (looking at logs and New Relic)</li>
+  <li>if we see some people are having trouble with a particular the password reset, use events in GAnalytics to track frequency and evaluate that.</li>
+  <li><strong>Is there a pattern</strong> that a user in trouble might follow, eg: I’ve tried to buy the same item 5 times. When this happens maybe we could be more helpful and trigger a can we help? message or email to get more information? Or at least help the user feel that someone is there to help them.</li>
+  <li>use physical user testing and eye tracking to understand what people are doing and where they are looking</li>
+</ul>
+
+<h2 id="update">Update</h2>
+
+<p>We’ve had several discussions with the guys at Clicktale, they’ve provided some more information, and we’ve done some analysis of their recent updates. And they’d really like us to change this post.</p>
+
+<p>We didn’t discover anything that changed our opinion of this software. In fact some of their new innovations are pretty scary. For example there is a cookie sniffer. But to make this work you need to turn of SSL. Which is a Very Bad Idea. The whole point of encrypting cookies and sessions is to stop other people intercepting that. It is almost that Clicktale comes from an alternate reality where the normal rules of web security and development practices don’t apply.</p>
+
+<p>And to be fair it seems this criticism can be applied to many of the “alternatives to ClickTale” - we know a bit because they keep on contacting us to tell us how awesomely different they are to ClickTale.</p>
+
+<p>Here’s the core problem:</p>
+
+<ul>
+  <li>products like Clicktale are sold by very effective and pushy sales people. They’ll tell you anything. Many blogs you’ll read with so called reviews are getting affiliate payments. So you’re hardly getting an independent review.</li>
+  <li>products like Clicktale are bought by marketers and web site owners desperate for a product like this to improve performance.</li>
+  <li>the Clicktale implementation then gets passed on to a developer, who is then stuck trying to explain what these reports actually mean. If you’re reading this far chances are you’re that guy/girl. - The Clicktale documentation often makes their many product faults the developers problem. They should have a plain english explanation of the implications of sending sensitive information to their service. Be up front about the risks of disabling security to allow snooping. Explain what PCI compliance is and the responsibilities.</li>
+</ul>
+
+<p>Here’s what you can do:</p>
+
+<ul>
+  <li>share this review - I hope it makes at least some sense</li>
+  <li>give Clicktale feedback about your concerns or questions</li>
+  <li>see if you can do real user testing instead. The Tobii eye tracker system is very nice. Or just sit and watch some users</li>
+  <li>there are lots of other systems like Snowplow or Kissmetrics that might better suit requirements</li>
+  <li>write your own review!</li>
+</ul>
+
+            </div>
+            <div class="col-md-4 order-1 order-sm-2">
+              
+              <div class="post-detail-container section-border">
+                <p>Clicktale review which looks at how the technology works and some real world issues that you might face when implementing Clicktale</p>
+              </div>
+              
+              
+<div data-controller="modal-carousel">
+  
+
+  <div
+    id="gallery-modal"
+    class="modal fade"
+    role="dialog"
+    tabindex="-1"
+    aria-labelledby="gallery-modal"
+    aria-hidden="true"
+    data-modal-carousel-target="modal">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close btn-close-white text-lg pe-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-content">
+        <div
+          id="gallery-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-modal-carousel-target="carousel">
+          <div class="carousel-inner">
+            
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5 d-none d-sm-block">
+        <div class="container" data-controller="fake-news"></div>
+      </section>
+      <footer class="footer py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-6 col-lg-4 order-1">
+        <p>
+          <a href="mailto:info@redant.com.au">info@redant.com.au</a>
+          <br>
+          <a href="tel:+61292678300">+61 2 9267 8300</a>
+          <br>
+          <a href="/privacy-policy">Red Ant Privacy Policy</a>
+        </p>
+      </div>
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 col-lg-4 order-3 order-lg-2">
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
+            The most mundane Twitter, ever
+          </a>
+          <br>
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
+            Stalk us on Linkedin
+          </a>
+        </p>
+      </div>
+
+      <div class="col-6 col-lg-4 order-2 order-lg-3">
+        <p>
+          PO Box 250, Vaucluse Sydney NSW 2030 Australia
+          <br>
+          ABN 87 081 223 252
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col px-lg-5 text-center link-list">
+        <a href="/jobs/" class="pri me-2">Careers</a>
+        <span> | </span>
+        <a href="/blog/" class="mx-2">Blog</a>
+        <span> | </span>
+        <a href="/automated-testing/" class="mx-2">Automated Testing</a>
+        <span> | </span>
+        <a href="/mobile/" class="mx-2">Mobile</a>
+        <span> | </span>
+        <a href="/software-development/" class="mx-2">Ruby Development</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Our Work</a>
+        <span> | </span>
+        <a href="/red-ant-stuff/" class="mx-2">Red Ant</a>
+        <span> | </span>
+        <a href="/ruby-on-rails-devops/" class="mx-2">Devops</a>
+        <span> | </span>
+        <a href="/ruby-on-rails/" class="mx-2">Ruby on Rails developer</a>
+        <span> | </span>
+        <a href="/strategy/" class="mx-2">Strategy</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Work updates</a>
+        <span> | </span>
+        <a href="/tool-reviews/" class="mx-2">Tool Reviews</a>
+        <span> | </span>
+        <a href="/portfolio/" class="mx-2">Our Portfolio</a>
+        <span> | </span>
+        <a href="/about/" class="mx-2">About Red Ant</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        &copy; Red Ant 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "fd4z6tu3",
+    custom_launcher_selector:'.intercom-launcher'
+  };
+</script>
+
+<script>
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/fd4z6tu3'
+  (function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic("reattach_activator");
+      ic("update", w.intercomSettings);
+    } else {
+      var d = document;
+      var i = function () {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function (args) {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.intercom.io/widget/fd4z6tu3";
+        var x = d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      if (document.readyState === "complete") {
+        l();
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", l);
+      } else {
+        w.addEventListener("load", l, false);
+      }
+    }
+  })();
+</script>
+
+    </div>
+  </body>
+</html>

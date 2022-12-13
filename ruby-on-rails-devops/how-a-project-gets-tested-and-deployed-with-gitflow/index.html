@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How a project gets tested and deployed with GitFlow | Red Ant</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="How a project gets tested and deployed with GitFlow" />
+<meta name="author" content="Ben Still" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As our projects have grown larger, so has the complexity of testing and deploying work. We’ve started moving projects over to GitFlow in order to simplify this process, read on to see how we do it." />
+<meta property="og:description" content="As our projects have grown larger, so has the complexity of testing and deploying work. We’ve started moving projects over to GitFlow in order to simplify this process, read on to see how we do it." />
+<link rel="canonical" href="https://redant.com.au/ruby-on-rails-devops/how-a-project-gets-tested-and-deployed-with-gitflow/" />
+<meta property="og:url" content="https://redant.com.au/ruby-on-rails-devops/how-a-project-gets-tested-and-deployed-with-gitflow/" />
+<meta property="og:site_name" content="Red Ant" />
+<meta property="og:image" content="https://redant.com.au/assets/uploads/2012/github.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-02-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://redant.com.au/assets/uploads/2012/github.jpg" />
+<meta property="twitter:title" content="How a project gets tested and deployed with GitFlow" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Still"},"dateModified":"2012-02-24T00:00:00+00:00","datePublished":"2012-02-24T00:00:00+00:00","description":"As our projects have grown larger, so has the complexity of testing and deploying work. We’ve started moving projects over to GitFlow in order to simplify this process, read on to see how we do it.","headline":"How a project gets tested and deployed with GitFlow","image":"https://redant.com.au/assets/uploads/2012/github.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://redant.com.au/ruby-on-rails-devops/how-a-project-gets-tested-and-deployed-with-gitflow/"},"url":"https://redant.com.au/ruby-on-rails-devops/how-a-project-gets-tested-and-deployed-with-gitflow/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/bundle/application.css" />
+  <script src="/assets/bundle/application.js"></script>
+  <script src="https://kit.fontawesome.com/c0cec62a8d.js" crossorigin="anonymous"></script>
+  <script>
+    if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+      document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+    }
+  </script>
+  
+    <style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+  var gtmId = window.location.host.includes("redant.com.au")
+    ? "GTM-P7QNBDH"
+    : "GTM-N3CM249";
+
+  // Google Optimize page hiding snippet
+  (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+  })(window,document.documentElement,'async-hide','dataLayer',500,{[gtmId]:true});
+
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',gtmId);
+</script>
+
+  
+</head>
+
+  <body class="">
+    <div class="main-layout">
+      <div
+  data-controller="nav reveal normalise-height"
+  data-reveal-hidden-class="open"
+  data-action="normalise:height->nav#setHeight">
+  <div class="nav-container" data-normalise-height-target="item">
+    
+      <div class="bg-dark text-white text-center p-2">
+        <strong>A new way of working with us!</strong>
+        Low monthly fixed cost. Access our team on demand to help you scale.
+        <a href="/on-demand/" class="fw-bold ms-2">More info</a>
+      </div>
+    
+    
+    <nav class="navbar nav-overlay" data-reveal-target="item">
+    
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between">
+            <a href="/" class="navbar-brand">
+              <img
+                class="logo"
+                src="/assets/images/logo.svg"
+                alt="Red Ant logo"
+              />
+            </a>
+            <div class="d-flex justify-content-end align-items-center w-100">
+              <div class="d-none d-lg-block">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a href="/get-started/" data-nav-target="item" class="nav-link">
+                      Get started
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/on-demand/" data-nav-target="item" class="nav-link">
+                      On Demand
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/about/" data-nav-target="item" class="nav-link">
+                      About us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio/" data-nav-target="item" class="nav-link">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/technology/" data-nav-target="item" class="nav-link">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blog/" data-nav-target="item" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact-us/" data-nav-target="item" class="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-link d-block d-lg-none nav-toggle-icon"
+                data-action="click->reveal#toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container nav-links mx-4 mx-md-auto">
+        <ul class="links">
+          <li>
+            <a href="/" data-nav-target="item">Home</a>
+          </li>
+          <li>
+            <a href="/get-started/" data-nav-target="item">Get started</a>
+          </li>
+          
+          <li>
+            <a href="/on-demand/" data-nav-target="item">On Demand</a>
+          </li>
+          
+          <li>
+            <a href="/about/" data-nav-target="item">About us</a>
+          </li>
+          <li>
+            <a href="/portfolio/" data-nav-target="item">Portfolio</a>
+          </li>
+          <li>
+            <a href="/technology/" data-nav-target="item">Technology</a>
+          </li>
+          <li>
+            <a href="/blog/" data-nav-target="item">Blog</a>
+          </li>
+          <li>
+            <a href="/contact-us/" data-nav-target="item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+      <section class="post-content pt-3 pb-5 text-md">
+        <div class="container">
+          <div class="row mb-sm-4">
+            <div class="col-12">
+              <div class="mb-3 pb-sm-5"><div id="breadcrumbs" class="text-capitalize mt-sm-5">
+  
+  <a href="/">Home</a>
+    /
+  <a
+    href="/ruby-on-rails-devops/"
+    >Ruby on rails devops</a
+  >
+     / How a project gets tested and deployed with gitflow  
+</div>
+</div>
+              <h1 class="pb-2">How a project gets tested and deployed with GitFlow</h1>
+              <hr class="dash" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 order-2 order-sm-1">
+              <img
+                class="img-fluid mb-4"
+                src="/assets/uploads/2012/github.jpg"
+                alt="How a project gets tested and deployed with GitFlow"
+              />
+              <p>How we manage our test and deploy workflow has changed massively over the years. Many moons ago we started off with no tests, manual publishing and not much of a workflow. We’ve gradually changed this as weve started making bigger sites with more complex requirements.</p>
+
+<p>We still check things manually in a browser, but most of the heavy lifting is done via automated tests to check each aspect of the site. Once weve published a new version, it’s hard not to have a poke around to make sure everything is there- but we’re really relying on an automated deploy process to move that from the developers desktop, through staging and on to the production server.</p>
+
+<p>It seems that development workflow is something that varies quite a lot between different companies or teams. Part of this is the size of projects they work on, and part of it is cultural.</p>
+
+<ul>
+  <li><strong>size of project</strong> - for a small static site made by a single developer, a complex workflow might be overkill. As a project grows and gets more people, things can start to get overlooked or broken pretty quickly. People get bogged down in the mundane and detailed steps of getting code onto a server. Days are lost, mistakes are made, everyone gets grumpy.</li>
+  <li><strong>cultural (otherwise known as do you give a f-k?)</strong> - how can I put this diplomatically some teams seem to be more focused on getting things done quickly, or place more emphasis on how something looks rather than how it behaves. This can be a cultural thing- adjusting people and workflow that might have worked well in a traditional advertising agency (for example) can be difficult. Everyone needs to have a strong desire to make nice things well, and <strong>do it</strong> well.</li>
+</ul>
+
+<p>We’ve invested quite a bit in improving our workflow, so that we get very high reliability and confidence. Its meant taking people out of the equation and trying to automate each step. It also means that when we do hit a problem, we keep on tweaking the process to avoid a repeat. We’re now able to continually push up new work to the live site as it gets done.</p>
+
+<p>To help explain where we are at with GitFlow, here is where we’ve been:</p>
+
+<h2 id="ftp">FTP</h2>
+
+<p>Back in the day a developer or designer would make code, and then manually copy files up to the server. This has quite a few flaws - apart from taking time, it is easy to miss a file or forget to change something. What happens to users on the site while you’re uploading new files over the top of what they are using?</p>
+
+<h2 id="version-control">Version control</h2>
+
+<p>We started using Version Control tools like Subversion to allow several developers to work at once and merge changes. The current version is then exported on to the server-ensuring the right version. Improved accuracy, but deployment still takes time and can be prone to errors.</p>
+
+<h2 id="capistrano">Capistrano</h2>
+
+<p>With our move to Rails, our projects were getting a lot bigger. Publishing was no longer about simply copying up some files- we needed to do things like running database migrations and dynamically changing configuration files. We wanted to be able to roll back to an earlier version if there were any issues.</p>
+
+<p>We started using Capistrano to automate things, including checking out the right version, creating a completely new version of the site, and the switching over the web server once the deploy is complete. Over time we added more steps and made the process smarter to talk with other tools like JIRA and our wallboard. We also swapped over to Git for better control and speed in Version Control.</p>
+
+<h2 id="jenkins-continuous-integration">Jenkins (Continuous Integration)</h2>
+
+<p>We added Jenkins (or Jerkins as it is unkindly called when tests fail or take too long) to continually test projects as we work on them. Each of the stages <a href="/automated-testing/a-look-inside-our-jenkins-pipeline-how-we-make-reliable-stuff/">gets visualised in our Jenkins Pipeline</a>, which is like daytime TV for developers - you can sit and watch it all day.</p>
+
+<h2 id="gitflow">GitFlow</h2>
+
+<p>GitFlow helps us manage different releases and versions of a project. Think of it as a set of shortcuts that help manage Git workflow better. Were able to manage the release of different versions of the site, and all of the different branches of code that each of our developers are working on. GitFlow has also helped us improve the way we handle hotfixes, which are those urgent changes that simply must go live. To get a bit more detail on how GitFlow works, <a href="http://nvie.com/posts/a-successful-git-branching-model/">take a look at this post</a></p>
+
+<p>There are lots of different issues that GitFlow solves for us. One example is just before releasing a big new feature, wed be unable to publish small changes as the big feature would block.</p>
+
+<p>To explain: a developer would be working on a new feature, and they would merge their code and push it to staging for customer review. In the meantime, someone might pick up a bug that needs to get fixed. Were then faced with the dilemma of where to make the change - to the new release or the master version? That new feature can effectively block the deployment process until it gets signed off. The customer feels pressured to review and approve the feature so that the little change can get fixed. Previously, we would often end up spending time de-merging changes so that small urgent stuff could go up.</p>
+
+<p>In a typical project, wed have 2-3 of these bigger features in the works, and then a fairly regular flow of small changes that need to go live. Using GitFlow, the small urgent changes get done as Hot Fixes. GitFlow then makes sure that these not only up to the live version, but also get integrated back into any separate features (branches) that other developers are working on.</p>
+
+<p>As features are completed, they are merged back into the Develop branch, which <a href="/automated-testing/a-look-inside-our-jenkins-pipeline-how-we-make-reliable-stuff/">Jenkins then automatically deploys</a> to a development server for review. Once these are all approved, we make a release and these changes get added to the master version. These then get pushed up to the live production site.</p>
+
+            </div>
+            <div class="col-md-4 order-1 order-sm-2">
+              
+              <div class="post-detail-container section-border">
+                <p>As our projects have grown larger, so has the complexity of testing and deploying work. We've started moving projects over to GitFlow in order to simplify this process, read on to see how we do it.</p>
+              </div>
+              
+              
+<div data-controller="modal-carousel">
+  
+
+  <div
+    id="gallery-modal"
+    class="modal fade"
+    role="dialog"
+    tabindex="-1"
+    aria-labelledby="gallery-modal"
+    aria-hidden="true"
+    data-modal-carousel-target="modal">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close btn-close-white text-lg pe-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-content">
+        <div
+          id="gallery-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-modal-carousel-target="carousel">
+          <div class="carousel-inner">
+            
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5 d-none d-sm-block">
+        <div class="container" data-controller="fake-news"></div>
+      </section>
+      <footer class="footer py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-6 col-lg-4 order-1">
+        <p>
+          <a href="mailto:info@redant.com.au">info@redant.com.au</a>
+          <br>
+          <a href="tel:+61292678300">+61 2 9267 8300</a>
+          <br>
+          <a href="/privacy-policy">Red Ant Privacy Policy</a>
+        </p>
+      </div>
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 col-lg-4 order-3 order-lg-2">
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
+            The most mundane Twitter, ever
+          </a>
+          <br>
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
+            Stalk us on Linkedin
+          </a>
+        </p>
+      </div>
+
+      <div class="col-6 col-lg-4 order-2 order-lg-3">
+        <p>
+          PO Box 250, Vaucluse Sydney NSW 2030 Australia
+          <br>
+          ABN 87 081 223 252
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col px-lg-5 text-center link-list">
+        <a href="/jobs/" class="pri me-2">Careers</a>
+        <span> | </span>
+        <a href="/blog/" class="mx-2">Blog</a>
+        <span> | </span>
+        <a href="/automated-testing/" class="mx-2">Automated Testing</a>
+        <span> | </span>
+        <a href="/mobile/" class="mx-2">Mobile</a>
+        <span> | </span>
+        <a href="/software-development/" class="mx-2">Ruby Development</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Our Work</a>
+        <span> | </span>
+        <a href="/red-ant-stuff/" class="mx-2">Red Ant</a>
+        <span> | </span>
+        <a href="/ruby-on-rails-devops/" class="mx-2">Devops</a>
+        <span> | </span>
+        <a href="/ruby-on-rails/" class="mx-2">Ruby on Rails developer</a>
+        <span> | </span>
+        <a href="/strategy/" class="mx-2">Strategy</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Work updates</a>
+        <span> | </span>
+        <a href="/tool-reviews/" class="mx-2">Tool Reviews</a>
+        <span> | </span>
+        <a href="/portfolio/" class="mx-2">Our Portfolio</a>
+        <span> | </span>
+        <a href="/about/" class="mx-2">About Red Ant</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        &copy; Red Ant 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "fd4z6tu3",
+    custom_launcher_selector:'.intercom-launcher'
+  };
+</script>
+
+<script>
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/fd4z6tu3'
+  (function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic("reattach_activator");
+      ic("update", w.intercomSettings);
+    } else {
+      var d = document;
+      var i = function () {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function (args) {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.intercom.io/widget/fd4z6tu3";
+        var x = d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      if (document.readyState === "complete") {
+        l();
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", l);
+      } else {
+        w.addEventListener("load", l, false);
+      }
+    }
+  })();
+</script>
+
+    </div>
+  </body>
+</html>

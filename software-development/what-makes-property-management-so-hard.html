@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="uky3VJEeD3NAFHIK0V4KLdxlYF7fGGXJYyyt96LLe78" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>What makes property management so hard? | Red Ant</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="What makes property management so hard?" />
+<meta name="author" content="Ben Still" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="From the outside looking in, the property management business looks pretty simple." />
+<meta property="og:description" content="From the outside looking in, the property management business looks pretty simple." />
+<link rel="canonical" href="https://redant.com.au/software-development/what-makes-property-management-so-hard" />
+<meta property="og:url" content="https://redant.com.au/software-development/what-makes-property-management-so-hard" />
+<meta property="og:site_name" content="Red Ant" />
+<meta property="og:image" content="https://redant.com.au/assets/uploads/2019/managed.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-12T02:31:36+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://redant.com.au/assets/uploads/2019/managed.png" />
+<meta property="twitter:title" content="What makes property management so hard?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Still"},"dateModified":"2019-02-12T02:31:36+00:00","datePublished":"2019-02-12T02:31:36+00:00","description":"From the outside looking in, the property management business looks pretty simple.","headline":"What makes property management so hard?","image":"https://redant.com.au/assets/uploads/2019/managed.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://redant.com.au/software-development/what-makes-property-management-so-hard"},"url":"https://redant.com.au/software-development/what-makes-property-management-so-hard"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/bundle/application.css" />
+  <script src="/assets/bundle/application.js"></script>
+  <script src="https://kit.fontawesome.com/c0cec62a8d.js" crossorigin="anonymous"></script>
+  <script>
+    if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+      document.write('<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+    }
+  </script>
+  
+    <style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+  var gtmId = window.location.host.includes("redant.com.au")
+    ? "GTM-P7QNBDH"
+    : "GTM-N3CM249";
+
+  // Google Optimize page hiding snippet
+  (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+  })(window,document.documentElement,'async-hide','dataLayer',500,{[gtmId]:true});
+
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',gtmId);
+</script>
+
+  
+</head>
+
+  <body class="">
+    <div class="main-layout">
+      <div
+  data-controller="nav reveal normalise-height"
+  data-reveal-hidden-class="open"
+  data-action="normalise:height->nav#setHeight">
+  <div class="nav-container" data-normalise-height-target="item">
+    
+      <div class="bg-dark text-white text-center p-2">
+        <strong>A new way of working with us!</strong>
+        Low monthly fixed cost. Access our team on demand to help you scale.
+        <a href="/on-demand/" class="fw-bold ms-2">More info</a>
+      </div>
+    
+    
+    <nav class="navbar nav-overlay" data-reveal-target="item">
+    
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between">
+            <a href="/" class="navbar-brand">
+              <img
+                class="logo"
+                src="/assets/images/logo.svg"
+                alt="Red Ant logo"
+              />
+            </a>
+            <div class="d-flex justify-content-end align-items-center w-100">
+              <div class="d-none d-lg-block">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a href="/get-started/" data-nav-target="item" class="nav-link">
+                      Get started
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/on-demand/" data-nav-target="item" class="nav-link">
+                      On Demand
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/about/" data-nav-target="item" class="nav-link">
+                      About us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio/" data-nav-target="item" class="nav-link">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/technology/" data-nav-target="item" class="nav-link">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blog/" data-nav-target="item" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact-us/" data-nav-target="item" class="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-link d-block d-lg-none nav-toggle-icon"
+                data-action="click->reveal#toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container nav-links mx-4 mx-md-auto">
+        <ul class="links">
+          <li>
+            <a href="/" data-nav-target="item">Home</a>
+          </li>
+          <li>
+            <a href="/get-started/" data-nav-target="item">Get started</a>
+          </li>
+          
+          <li>
+            <a href="/on-demand/" data-nav-target="item">On Demand</a>
+          </li>
+          
+          <li>
+            <a href="/about/" data-nav-target="item">About us</a>
+          </li>
+          <li>
+            <a href="/portfolio/" data-nav-target="item">Portfolio</a>
+          </li>
+          <li>
+            <a href="/technology/" data-nav-target="item">Technology</a>
+          </li>
+          <li>
+            <a href="/blog/" data-nav-target="item">Blog</a>
+          </li>
+          <li>
+            <a href="/contact-us/" data-nav-target="item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+      <section class="post-content pt-3 pb-5 text-md">
+        <div class="container">
+          <div class="row mb-sm-4">
+            <div class="col-12">
+              <div class="mb-3 pb-sm-5"><div id="breadcrumbs" class="text-capitalize mt-sm-5">
+  
+  <a href="/">Home</a>
+    /
+  <a
+    href="/software-development/"
+    >Software development</a
+  >
+     / What makes property management so hard  
+</div>
+</div>
+              <h1 class="pb-2">What makes property management so hard?</h1>
+              <hr class="dash" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 order-2 order-sm-1">
+              <img
+                class="img-fluid mb-4"
+                src="/assets/uploads/2019/managed.png"
+                alt="What makes property management so hard?"
+              />
+              <p>Before we started working on the <a href="/portfolio/managed/">Managed Platform</a>, I’d made some assumptions about how Property Management works. In a nutshell, my impression was that things were pretty basic. Easy, even.</p>
+
+<p>Here’s how I thought it worked: A tenant signs a lease, and then sets up regular rent payments. These payments regularly flow like clockwork to the owner’s bank account. The property manager gets paid a fee, they sort out the occasional maintenance task and everything is pretty simple and sweet.</p>
+
+<p>But once you take a look “under the hood” in an industry like this that you see how messy and hard things can be. Turns out managing a portfolio of rental properties is a real time suck. There is no “clockwork” of payments, every payment in needs to be matched to a payment out, and there never seems enough time in the day to follow up on the gazillion things that need doing.</p>
+
+<p>In no particular order:</p>
+
+<p><strong>Problem 1: Trust accounts</strong></p>
+
+<p>Turns out the money doesn’t just go to the owner. It first goes into a Trust account, which is a special type of bank account the Agency must have. This Trust costs the Agency. First they need to employ people to manage the account, and pay for an external company to audit this. And at the same time the law prevents Agencies from earning any interest on funds held, so there is no financial benefit to holding this money.</p>
+
+<p><strong>Problem 2: Fraud</strong></p>
+
+<p>So you’ve got this big pool of money, and lots of cash going in and out. Guess what happens? Obviously this is only in a small percentage of cases, but humans being humans there are two types of fraud:</p>
+
+<p>The first is “soft fraud”, where money comes in for PropertyA. PropertyB’s rent hasn’t yet come in, but a sudden cost needs to get paid. So the money from PropertyA is used to pay for PropertyB.</p>
+
+<p>Sure, it will probably all even out, but it does mean the owner of PropertyA won’t get paid straight away. Very hard to detect, and this might occur deliberately or by accident.</p>
+
+<p>The second type is more straight up fraud:</p>
+
+<ul>
+  <li>NSW real estate agent <a href="http://www.realestatebusiness.com.au/breaking-news/11202-agent-jailed-over-trust-account-fraud">Daniel Nicholson</a> was prosecuted after he failed to lodge almost $93,000 in trust funds</li>
+  <li><a href="https://www.smh.com.au/business/consumer-affairs/millions-in-nsw-real-estate-fraud-prompts-raft-of-new-regulations-20161124-gsx3gf.html">One agent who fraudulently used the funds</a> to purchase illegal drugs used by his wife.</li>
+  <li>Another <a href="https://www.illawarramercury.com.au/story/1982022/warilla-agent-feeds-101m-into-pokies/">whose father reported her to Fair Trading</a> after she stole more than $1.5 million from her real estate agency to use on poker machines.</li>
+  <li>Gambling addiction is identified as a common motivator for trust account fraud, as was the case for one agent who bet $77,000 of trust funds in one day.</li>
+</ul>
+
+<p><strong>Problem 3: Margins, outsourcing and the Privacy Act</strong></p>
+
+<p>Managing a portfolio of rental properties can be very time consuming, and the wage cost might not always align with revenue. This is in contrast to the Sales side of an agency, where new sales align with commissions paid to agents.</p>
+
+<p>This drives a desire to keep costs down, and so some agencies explore outsourcing options such as using staff in offshore centres to manage trust funds. The regulator (eg: Office of Fair Trading in NSW) doesn’t look kindly on this, and processing data in this way would make it difficult to meet the tougher new Data and Privacy obligations.</p>
+
+<p><strong>Problem 4: Speed of payments</strong></p>
+
+<p>There is a general user expectation that payments happen in the blink of an eye. And they can - except when they don’t. It’s all to do with the method (or the “rails” if you want to use fancy FinTech talk) of how the money moves around.</p>
+
+<p>Technically, a payment with credit card is easy. The transaction happens almost immediately, and I can even do a pre-transaction check to make sure you’ve got enough money before we put the transaction through.</p>
+
+<p>But other methods like Direct Debit or BPay are much slower. Or they can be. Confusingly there are faster and slower flavours of each. At its slowest, a Direct Debit takes 3 days to go from a tenant’s account to the platform (eg: Managed). And then another 3 days to go from Managed to the owner. Oh, and if on that first day you did it after the 2pm cutoff, then you need to wait another day. Computer says no. So that means it can be up to 7 business days.</p>
+
+<p>So there is tension here: the consumer expectation is that it happens straight away, and the reality is that sometimes it does (“see - it works!”) and other times takes ages (“this is broken! I want my money back”). Which makes it hard if you had rent due tomorrow and you’ll now be a week overdue by the time your payment lands</p>
+
+<p>The good news is that there has been significant innovation, with NPP and OpenBanking. Our banks are finally moving out of the Mainframe age to a Cloud one, where automation is used to drive down time and improve flexibility. You might have seen some changes in your online banking with terms like “Osko” and paying via mobile number instead of BSB. But these changes aren’t all happening at the same rate across all banks - so the change won’t be even.</p>
+
+<p><strong>Problem 5: Complexity of payments</strong></p>
+
+<p>The payment workflow itself is relatively complex. You’d think it’s simple - tenant is due to pay rent on a certain day, the owner gets the rent. All done.</p>
+
+<p>Not really.</p>
+
+<p>Let’s take timing of payments - from the Tenant’s point of view, as soon as they’ve hit the “pay” button, their rent is paid. But maybe there was insufficient funds, maybe it takes a few days. From the Property Manager’s point of view they haven’t paid rent and they are overdue. From the owners point of view, that rent is only paid once it has arrived in his/her account - which could be another few days after that.</p>
+
+<p>The payment amounts can change - the rent amount isn’t always the same. A lease might be varied, a tenant might need to get reimbursed or pay more. The rental amount might need to get split up to cover costs or outstanding bills. Sometimes the owner might be paying the tenant rather than the other way around.</p>
+
+<p>The tenant might want to change when they pay. So change frequency from weekly to fortnightly, but only starting from the week after next - and so on. All of which changes the amount of each payment.</p>
+
+<p>So, things aren’t as simple as a basic reconciliation of the same regular, predictable payment amount. They take longer than you might expect, or get broken up into odd amounts. There are fees and costs that need to get met. And then of course there are fickle humans who tend to change their minds, their circumstances, lose their credit cards, and generally make life interesting.</p>
+
+            </div>
+            <div class="col-md-4 order-1 order-sm-2">
+              
+              <div class="post-detail-container section-border">
+                <p>From the outside looking in, the property management business looks pretty simple.</p>
+              </div>
+              
+              
+<div data-controller="modal-carousel">
+  
+
+  <div
+    id="gallery-modal"
+    class="modal fade"
+    role="dialog"
+    tabindex="-1"
+    aria-labelledby="gallery-modal"
+    aria-hidden="true"
+    data-modal-carousel-target="modal">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close btn-close-white text-lg pe-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-content">
+        <div
+          id="gallery-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-modal-carousel-target="carousel">
+          <div class="carousel-inner">
+            
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#gallery-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5 d-none d-sm-block">
+        <div class="container" data-controller="fake-news"></div>
+      </section>
+      <footer class="footer py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-6 col-lg-4 order-1">
+        <p>
+          <a href="mailto:info@redant.com.au">info@redant.com.au</a>
+          <br>
+          <a href="tel:+61292678300">+61 2 9267 8300</a>
+          <br>
+          <a href="/privacy-policy">Red Ant Privacy Policy</a>
+        </p>
+      </div>
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 col-lg-4 order-3 order-lg-2">
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/r_e_d_a_n_t" target="_blank" class="ms-2">
+            The most mundane Twitter, ever
+          </a>
+          <br>
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://www.linkedin.com/company/76862" target="_blank" class="ms-2">
+            Stalk us on Linkedin
+          </a>
+        </p>
+      </div>
+
+      <div class="col-6 col-lg-4 order-2 order-lg-3">
+        <p>
+          PO Box 250, Vaucluse Sydney NSW 2030 Australia
+          <br>
+          ABN 87 081 223 252
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col px-lg-5 text-center link-list">
+        <a href="/jobs/" class="pri me-2">Careers</a>
+        <span> | </span>
+        <a href="/blog/" class="mx-2">Blog</a>
+        <span> | </span>
+        <a href="/automated-testing/" class="mx-2">Automated Testing</a>
+        <span> | </span>
+        <a href="/mobile/" class="mx-2">Mobile</a>
+        <span> | </span>
+        <a href="/software-development/" class="mx-2">Ruby Development</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Our Work</a>
+        <span> | </span>
+        <a href="/red-ant-stuff/" class="mx-2">Red Ant</a>
+        <span> | </span>
+        <a href="/ruby-on-rails-devops/" class="mx-2">Devops</a>
+        <span> | </span>
+        <a href="/ruby-on-rails/" class="mx-2">Ruby on Rails developer</a>
+        <span> | </span>
+        <a href="/strategy/" class="mx-2">Strategy</a>
+        <span> | </span>
+        <a href="/our-work/" class="mx-2">Work updates</a>
+        <span> | </span>
+        <a href="/tool-reviews/" class="mx-2">Tool Reviews</a>
+        <span> | </span>
+        <a href="/portfolio/" class="mx-2">Our Portfolio</a>
+        <span> | </span>
+        <a href="/about/" class="mx-2">About Red Ant</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        &copy; Red Ant 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "fd4z6tu3",
+    custom_launcher_selector:'.intercom-launcher'
+  };
+</script>
+
+<script>
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/fd4z6tu3'
+  (function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic("reattach_activator");
+      ic("update", w.intercomSettings);
+    } else {
+      var d = document;
+      var i = function () {
+        i.c(arguments);
+      };
+      i.q = [];
+      i.c = function (args) {
+        i.q.push(args);
+      };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.intercom.io/widget/fd4z6tu3";
+        var x = d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      if (document.readyState === "complete") {
+        l();
+      } else if (w.attachEvent) {
+        w.attachEvent("onload", l);
+      } else {
+        w.addEventListener("load", l, false);
+      }
+    }
+  })();
+</script>
+
+    </div>
+  </body>
+</html>
