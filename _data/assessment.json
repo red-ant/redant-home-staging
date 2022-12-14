@@ -69,15 +69,7 @@
           "The payment process has an Owner within the business, and they've set up performance expectations and KPIs with other areas. We've formalised our data and process in an agreed Architecture.",
           "The payment Owner and others int the business have established clear SLAs. Our process is really well defined for both internal and external flows. We monitor this performance via a live dashboard with key payment metrics."
         ]
-      }
-    ]
-  },
-  "your-team": {
-    "tab": "Your team",
-    "slug": "your-team",
-    "title": "Your payments team",
-    "description": "What are the skills and approach of your payments team",
-    "questions": [
+      },
       {
         "title": "Documentation",
         "description": "How well are payment processes and data documented?",
@@ -90,7 +82,17 @@
           "We have documentation which is linked into each system, so it's easily accessible. If someone notices a problem or something missing, they are able to flag this while using either the system or documenation, which helps keep it up to date.",
           "Our users love our documentation, and we get lots of feedback about it. We've put a lot of effort into making it as useful and detailed as we can. Wherever we can, we've tried to integrate the documentation with the live process, so you can quickly see things like volume rates, errors, and how something might work. This helps users quickly understand and resolve problems that brought them to the documentation."
         ]
-      },
+      }
+    ],
+    "max": "136.8",
+    "min": "22.799999999999997"
+  },
+  "your-team": {
+    "tab": "Your team",
+    "slug": "your-team",
+    "title": "Your payments team",
+    "description": "What are the skills and approach of your payments team",
+    "questions": [
       {
         "title": "Knowledge",
         "description": "How well does your team and organisation know the payment processes?",
@@ -129,15 +131,7 @@
           "Most people on the team understand that if our payments process works well, they get paid and still have a job. They approach problems and resolve issues in a methodical way, and we're super happy that Henry in Accounts has stopped blaming any payment problem on Covid and seems to have developed some form of confidence in the team being able to resolve payment problems.",
           "The team seeks continual feedback and input from everyone else in the organisation, and are very receptive to feedback. They've created a really good feedback loop, because any small issues that do come up are getting resolved very quickly."
         ]
-      }
-    ]
-  },
-  "owner": {
-    "tab": "Owner",
-    "slug": "owner",
-    "title": "The owner of payments",
-    "description": "The key person responsible for the payments in your organisation",
-    "questions": [
+      },
       {
         "title": "HR",
         "description": "How does the HR policies of your organisation work for the payment team",
@@ -150,7 +144,17 @@
           "HR organises regular training and helps with skill improvements. Payment team job descriptions and KPIs are clear and articulated, and HR understands the integration of payments to the organisation.",
           "Our hiring, development and reward systems are geared towards making sure our payment team members are working together well and achieving measurable goals, which are also payment specific."
         ]
-      },
+      }
+    ],
+    "max": "50.400000000000006",
+    "min": "12.600000000000001"
+  },
+  "owner": {
+    "tab": "Owner",
+    "slug": "owner",
+    "title": "The owner of payments",
+    "description": "The key person responsible for the payments in your organisation",
+    "questions": [
       {
         "title": "Who is the owner",
         "description": "In your organisation, is there a clear owner of the payments process?",
@@ -176,15 +180,7 @@
           "The owner works with the team to create goals and improve the process. They are on top of all performance metrics, and make final decision on product direction and design choices.",
           "The owner develops a strategic plan to manage the ongoing development process. They work with other people in the organisation to incorporate feedback and share progress. They are the key decision maker in any development, but consult widely to make sure decisions are well considered and pragmatic."
         ]
-      }
-    ]
-  },
-  "technology": {
-    "tab": "Technology",
-    "slug": "technology",
-    "title": "Technology and Metrics",
-    "description": "Development and technical execution, tracking performance",
-    "questions": [
+      },
       {
         "title": "Authority",
         "description": "What kind of authority does the payments owner have?",
@@ -197,7 +193,17 @@
           "The payment owner controls IT systems that support the payment process and any projects that change the process. They have some influence over resource allocation and evaluations as well as the payment process budget.",
           "The payment process owner controls the process’s budget and exerts strong influence over resource allocation and evaluations."
         ]
-      },
+      }
+    ],
+    "max": "35.99999999999999",
+    "min": "11.999999999999998"
+  },
+  "technology": {
+    "tab": "Technology",
+    "slug": "technology",
+    "title": "Technology and Metrics",
+    "description": "Development and technical execution, tracking performance",
+    "questions": [
       {
         "title": "Architecture",
         "description": "Does your technical architecture follow any kind of standards or practices? What are they?",
@@ -236,7 +242,22 @@
           "Our KPI and metric scoreboard is partially automated. It tracks both payment related and company metrics where they overlap and influence each other.",
           "Our KPI and metrics scoreboard is fully automated and receives live data. It tracks all relevant payment metrics, as well as company wide ones where there is an intersection or influence. The metrics include application throughput and errors, as well as user behaviour, infrastructure and financial data points."
         ]
+      },
+      {
+        "title": "Using metrics",
+        "description": "How are metrics used in your organisation?",
+        "icon": "megaphone",
+        "weight": "8",
+        "answers": [
+          "Great question - no one has asked for it yet",
+          "I'm not sure management is aware. Or if they are, then maybe they are too scared to ask what the metrics are.",
+          "Metrics are used to compare against benchmarks, as well as inform some business decisions. They are limited in scope, which limits how useful they are at the moment. If the data was more accurate and current, it may find more uses within the business.",
+          "Management team use these metrics as part of a team review or motivation. They are aware of any changes, and use them for day to day management of the payment process. Work to include targets and SLAs is being considered.",
+          "Management team use these metrics in reviews, as well as day to day management decisions. Targets and SLAs are designed and set regularly, and everyone is aware if we're not meeting them. Partner data is included in metrics."
+        ]
       }
-    ]
+    ],
+    "max": "67.2",
+    "min": "16.8"
   }
 }

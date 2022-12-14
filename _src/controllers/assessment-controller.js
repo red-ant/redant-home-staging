@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus";
 import results from '../../_data/results.json' assert { type: 'JSON' };
+import questions from '../../_data/assessment.json' assert { type: 'JSON' };
 
 export class AssessmentController extends Controller {
   static targets = [
@@ -11,7 +12,7 @@ export class AssessmentController extends Controller {
     "invalidEmail",
     "question",
     "response",
-    // "results",
+    "results",
     "resume",
     "section",
     "submitButton"
@@ -43,8 +44,45 @@ export class AssessmentController extends Controller {
 
   calculate() {
     const params = this.getParams();
-    const responses = params.has('r') ? decodeURIComponent(params.get('r')) : {};
-    // to do: calculate & insert data into html table
+    const weighting = 0.6;
+    const answers = params.has('r') ? 
+      JSON.parse(decodeURIComponent(params.get('r')).replaceAll('&#34;', '"')) :
+      {};
+
+    const scoreRange = Object.keys(questions)
+      .reduce((accumulator, currentValue) => {
+        return accumulator.concat({
+          max: questions[currentValue]["max"],
+          min: questions[currentValue]["min"]
+        });
+      }, []);
+
+    for (const [i, values] of Object.values(answers).entries()) {
+      // To calculate result: answer_number * (weight * weighting)
+      const sum = values.reduce((accumulator, currentValue) => {
+        return accumulator + (currentValue[0] * (currentValue[1] * weighting))
+      }, 0);
+      
+      if (this.diff(sum, scoreRange[i]["min"]) >= this.diff(sum, scoreRange[i]["max"])) {
+        // upper 1/2
+        if (this.diff(sum, scoreRange[i]["min"] * 2) >= this.diff(sum, scoreRange[i]["min"] * 4)) {
+          // falls in 4/4
+          this.setResult(i, 3);
+        } else {
+          // falls in 3/4
+          this.setResult(i, 2);
+        }
+      } else {
+        // lower 1/2
+        if (this.diff(sum, scoreRange[i]["min"]) >= this.diff(sum, scoreRange[i]["min"] * 2)) {
+          // falls in 2/4
+          this.setResult(i, 1);
+        } else {
+          // fall in 1/4
+          this.setResult(i, 0);
+        }
+      }
+    }
   }
 
   checkIncomplete() {
@@ -62,6 +100,14 @@ export class AssessmentController extends Controller {
   clearErrors() {
     if (!this.invalidEmailTarget.classList.contains("d-none")) {
       this.invalidEmailTarget.classList.toggle("d-none")
+    }
+  }
+
+  diff(x, y) {
+    if ( Math.sign( x ) === Math.sign( y ) ) {
+      return Math.abs( x - y );
+    } else {
+      return Math.abs( x ) + Math.abs( y );
     }
   }
 
@@ -273,6 +319,12 @@ export class AssessmentController extends Controller {
     // Saved data format: {"sectionName": [["answerNumber", "answerWeightNumber"], ["answerNumber", "answerWeightNumber"]]}
     // The answer positions in the setionName array correspond to the question number
     localStorage.setItem("answers", JSON.stringify(answers));
+  }
+
+  setResult(sectionIndex, resultIndex) {
+    this.resultsTargets[sectionIndex].children[0].children[0].innerHTML = results[sectionIndex]["title"];
+    this.resultsTargets[sectionIndex].children[1].children[0].innerHTML = results[sectionIndex]["results"][resultIndex]["title"];
+    this.resultsTargets[sectionIndex].children[2].children[0].innerHTML = results[sectionIndex]["results"][resultIndex]["description"];
   }
 
   validateEmail() {
