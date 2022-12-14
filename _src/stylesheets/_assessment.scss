@@ -44,7 +44,26 @@
 
 @media print {
   @page {
-    margin-top: 0;
-    margin-bottom: 0;
+    size: auto;
+    margin: 0;
+  }
+
+  .card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .results-table {
+    thead {
+      th {
+        span {
+          background-color: #1086db;
+        }
+      }
+    }
+  }
+
+  .shadow {
+    box-shadow: none !important;
   }
 }
