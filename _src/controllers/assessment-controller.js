@@ -58,14 +58,15 @@ export class AssessmentController extends Controller {
       }, []);
 
     for (const [i, values] of Object.values(answers).entries()) {
+      const minScore = scoreRange[i]["min"];
       // To calculate result: answer_number * (weight * weighting)
       const sum = values.reduce((accumulator, currentValue) => {
         return accumulator + (currentValue[0] * (currentValue[1] * weighting))
       }, 0);
       
-      if (this.diff(sum, scoreRange[i]["min"]) >= this.diff(sum, scoreRange[i]["max"])) {
+      if (this.diff(sum, minScore) >= this.diff(sum, scoreRange[i]["max"])) {
         // upper 1/2
-        if (this.diff(sum, scoreRange[i]["min"] * 2) >= this.diff(sum, scoreRange[i]["min"] * 4)) {
+        if (this.diff(sum, minScore * 2) >= this.diff(sum, minScore * 4)) {
           // falls in 4/4
           this.setResult(i, 3);
         } else {
@@ -74,7 +75,7 @@ export class AssessmentController extends Controller {
         }
       } else {
         // lower 1/2
-        if (this.diff(sum, scoreRange[i]["min"]) >= this.diff(sum, scoreRange[i]["min"] * 2)) {
+        if (this.diff(sum, minScore) >= this.diff(sum, minScore * 2)) {
           // falls in 2/4
           this.setResult(i, 1);
         } else {
@@ -322,9 +323,12 @@ export class AssessmentController extends Controller {
   }
 
   setResult(sectionIndex, resultIndex) {
-    this.resultsTargets[sectionIndex].children[0].children[0].innerHTML = results[sectionIndex]["title"];
-    this.resultsTargets[sectionIndex].children[1].children[0].innerHTML = results[sectionIndex]["results"][resultIndex]["title"];
-    this.resultsTargets[sectionIndex].children[2].children[0].innerHTML = results[sectionIndex]["results"][resultIndex]["description"];
+    this.resultsTargets[sectionIndex].children[0].children[0].innerHTML = 
+      `${results[sectionIndex]["title"]}<p class="d-sm-none"><b>Score :</b> ${results[sectionIndex]["results"][resultIndex]["title"]}</p>`;
+    this.resultsTargets[sectionIndex].children[1].children[0].innerHTML = 
+      results[sectionIndex]["results"][resultIndex]["title"];
+    this.resultsTargets[sectionIndex].children[2].children[0].innerHTML = 
+      results[sectionIndex]["results"][resultIndex]["description"];
   }
 
   validateEmail() {

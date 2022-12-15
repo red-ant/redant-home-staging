@@ -1,6 +1,6 @@
 <div class="row flex-column flex-md-row">
   {% for question in include.section.questions %}
-    <div class="col">
+    <div class="col-6 col-sm-auto mb-2">
       <button
         data-action="click->assessment#select"
         data-assessment-href-param="{{ include.section.slug }}?q={{ forloop.index }}"
