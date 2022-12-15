@@ -34,13 +34,6 @@ http {
 		keepalive_timeout 5;
 		client_max_body_size <%= ENV["NGINX_CLIENT_MAX_BODY_SIZE"] || 1 %>M;
 		root _site/;
-
-                rewrite ^([^\?]*[^\/])$ $1/ permanent;
-                
-                location /assesment/current/ {
-                    rewrite ^/assesment/current/?(.*)$ rewrite ^/assesment/current.html?$1 break;
-                }
-                   
-                error_page 404 /404.html;
+    error_page 404 /404.html;
 	}
 }
